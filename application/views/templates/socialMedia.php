@@ -1,0 +1,7 @@
+<a href="https://www.youtube.com/channel/UCF8i_kuxpGG5DycApVK8xxg" title="Videos, Amrapali Group of Institutes" target="_blank"><i class="fa fa-youtube-square" style="font-size:30px;"></i></a>&nbsp;&nbsp;
+<a href="https://www.facebook.com/AGI.HLD" title="Share on Facebook" target="_blank"><i class="fa fa-facebook-square" style="font-size:30px;"></i></a>&nbsp;&nbsp;		            
+<a href="https://twitter.com/agihld" title="Share on Twitter" target="_blank"><i class="fa fa-twitter-square" style="font-size:30px;"></i></a>&nbsp;&nbsp;
+<a href="http://amrapali.ac.in/blog/" title="Share on Blog" target="_blank"><i class="fa fa-bold" style="font-size:30px;"></i></a>&nbsp;&nbsp;
+<a href="https://www.instagram.com/agihld/" title="" target="_blank"><i class="fa fa-instagram" style="font-size:30px;"></i></a>&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/amrapali-group-of-institutes-haldwani-08b26ab7/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:30px;"></i></a>&nbsp;&nbsp;
+<a href="http://golive360.com/demo/amrpali05/all_files/virtual-tour/build.html" title="Virtual Tour, Amrapali Group of Institutes" target="_blank" style="color:#FBE54E"><i class="el"><img style="max-width: 45px;" hspace="0" vspace="0" src="<?PHP echo base_url() . 'assets/img/360.png' ?>" title="360" alt="Amrapali Group of Institute 360 degree view"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;

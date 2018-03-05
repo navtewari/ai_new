@@ -1,0 +1,360 @@
+<body>
+    <div id="st-container" class="st-container">
+        <div class="st-pusher">
+            <div class="st-content">
+                <div class="st-content-inner">
+                    <header>
+                        <?php $this->load->view('templates/menu'); ?>
+                    </header>
+
+                    <div id="x-corp-carousel" class="carousel slide hero-slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#x-corp-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#x-corp-carousel" data-slide-to="1"></li>
+                            <li data-target="#x-corp-carousel" data-slide-to="2"></li>
+                            <li data-target="#x-corp-carousel" data-slide-to="3"></li>
+                            <li data-target="#x-corp-carousel" data-slide-to="4"></li>
+                            <li data-target="#x-corp-carousel" data-slide-to="5"></li>
+                            <li data-target="#x-corp-carousel" data-slide-to="6"></li>
+                            <li data-target="#x-corp-carousel" data-slide-to="7"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="<?php echo base_url('assets/img/slider/bg1.jpg'); ?>" alt="Hero Slide">
+                                <!--Slide Image-->
+
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
+                                        <div class="phone animated lightSpeedIn">1800 180 4027</div>
+                                        <h1 class="animated lightSpeedIn hidden-xs">Rich Library Support</h1>                                            
+                                    </div>
+                                    <!--.carousel-caption-->
+                                </div>
+                                <!--.container-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="item">
+                                <img src="<?php echo base_url('assets/img/slider/bg2.jpg'); ?>" alt="Hero Slide">
+                                <!--Slide Image-->
+
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
+                                        <div class="phone animated lightSpeedIn">1800 180 4027</div>
+                                        <h1 class="animated lightSpeedIn hidden-xs">Eminent Speakers enlightening our scholars</h1> 
+                                    </div>
+                                    <!--.carousel-caption-->
+                                </div>
+                                <!--.container-->
+                            </div>
+                            <!--.item-->
+                            
+                            <div class="item">
+                                <img src="<?php echo base_url('assets/img/slider/bg3.jpg'); ?>" alt="Hero Slide">
+                                <!--Slide Image-->
+
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
+                                        <div class="phone animated lightSpeedIn">1800 180 4027</div>
+                                        <h1 class="animated lightSpeedIn hidden-xs">Hands-on experience through industrial training in reputed organisations</h1> 
+                                    </div>
+                                    <!--.carousel-caption-->
+                                </div>
+                                <!--.container-->
+                            </div>
+                            <!--.item-->
+                            
+                            <div class="item">
+                                <img src="<?php echo base_url('assets/img/slider/bg4.jpg'); ?>" alt="Hero Slide">
+                                <!--Slide Image-->
+
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
+                                        <div class="phone animated lightSpeedIn">1800 180 4027</div>
+                                        <h1 class="animated lightSpeedIn hidden-xs">Celebration & Enthusiasm at annual functions</h1> 
+                                    </div>
+                                    <!--.carousel-caption-->
+                                </div>
+                                <!--.container-->
+                            </div>
+                            <!--.item-->
+                            
+                            <div class="item">
+                                <img src="<?php echo base_url('assets/img/slider/bg5.jpg'); ?>" alt="Hero Slide">
+                                <!--Slide Image-->
+
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
+                                        <div class="phone animated lightSpeedIn">1800 180 4027</div>
+                                        <h1 class="animated lightSpeedIn hidden-xs">Associations & Togetherness</h1> 
+                                    </div>
+                                    <!--.carousel-caption-->
+                                </div>
+                                <!--.container-->
+                            </div>
+                            <!--.item-->
+                            
+                            <div class="item">
+                                <img src="<?php echo base_url('assets/img/slider/bg6.jpg'); ?>" alt="Hero Slide">
+                                <!--Slide Image-->
+
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
+                                        <div class="phone animated lightSpeedIn">1800 180 4027</div>
+                                        <h1 class="animated lightSpeedIn hidden-xs">Over 80,000 books, periodicals, international journals and other research material</h1> 
+                                    </div>
+                                    <!--.carousel-caption-->
+                                </div>
+                                <!--.container-->
+                            </div>
+                            <!--.item-->
+                            
+                            <div class="item">
+                                <img src="<?php echo base_url('assets/img/slider/bg7.jpg'); ?>" alt="Hero Slide">
+                                <!--Slide Image-->
+
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
+                                        <div class="phone animated lightSpeedIn">1800 180 4027</div>
+                                        <h1 class="animated lightSpeedIn hidden-xs">Eminent Speakers enlightening our scholars</h1> 
+                                    </div>
+                                    <!--.carousel-caption-->
+                                </div>
+                                <!--.container-->
+                            </div>
+                            <!--.item-->
+                            <div class="item">
+                                <img src="<?php echo base_url('assets/img/slider/bg8.jpg'); ?>" alt="Hero Slide">
+                                <!--Slide Image-->
+
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
+                                        <div class="phone animated lightSpeedIn">1800 180 4027</div>
+                                        <h1 class="animated lightSpeedIn hidden-xs">Participatory Sessions</h1> 
+                                    </div>
+                                    <!--.carousel-caption-->
+                                </div>
+                                <!--.container-->
+                            </div>
+                            <!--.item-->
+
+                        </div>
+                        <!--.carousel-inner-->
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#x-corp-carousel" role="button" data-slide="prev">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#x-corp-carousel" role="button" data-slide="next">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- #x-corp-carousel-->
+
+
+                    <div class="container">
+                        <div class="content-wrapper">
+                            <section class="intro-wrapper"> 
+                                <div class="row"> 
+                                    <div class="col-lg-7 col-md-8">
+                                        <h1 class="wow fadeInDown">Welcome to Amrapali Group of Institutes</h1>
+                                        <p class="wow fadeInDown">Objectively enable leading-edge infrastructures whereas tactical imperatives. Enthusiastically disintermediate adaptive systems.</p>
+
+                                        <div class="typography-page-tab" role="tabpanel">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs" role="tablist" style="border-bottom: none;">
+                                                <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">News</a></li>
+                                                <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">Upcoming Events</a></li>
+                                                <li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">Announcement</a></li>                        
+                                            </ul>
+                                            <!-- Tab panes -->
+                                            <div class="tab-content tabs">
+                                                <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                                                    <?php $this->load->view('templates/newsevents'); ?>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="Section2">
+                                                    <?php $this->load->view('templates/upcoming'); ?>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="Section3">
+                                                    <?php $this->load->view('templates/announcements'); ?>
+                                                </div>                       
+                                            </div>               
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-lg-5 col-md-4"></div>
+                                </div><!-- /.row -->
+                            </section><!-- /.intro-wrapper -->
+
+                            <section class="advantages-wrapper">
+                                <h2 class="section-title-dark wow fadeInDown">Amrapali Advantage</h2>
+                                <div class="css-tab text-center">
+                                    <div class="row">
+                                        <div class="col-sm-3 text-center experiance-tab-content wow fadeInLeft">
+                                            <h1>18+</h1>
+                                            <p>Years of Academic Excellence</p>
+                                        </div><!--/.col-sm-6 -->
+                                        <div class="col-sm-3 text-center experiance-tab-content wow fadeInRight">
+                                            <h1>200+</h1>
+                                            <p style="text-align:center">Faculty Members</p>
+                                        </div><!--/.col-sm-6 -->
+                                        <div class="col-sm-3 text-center experiance-tab-content wow fadeInRight">
+                                            <h1>4000+</h1>
+                                            <p style="text-align:center">Bright Students</p>
+                                        </div><!--/.col-sm-6 -->
+                                        <div class="col-sm-3 text-center experiance-tab-content wow fadeInRight">
+                                            <h1>10000+</h1>
+                                            <p  style="text-align: center">Glorious Alumni</p>
+                                        </div><!--/.col-sm-6 -->
+                                    </div><!-- /.row -->                                        
+                                </div><!-- /.css-tab -->
+                            </section>
+                            <section class="service-wrapper">
+                                <h2 class="section-title wow fadeInDown">Faculty</h2>
+                                <div class="row">
+                                    <div class="col-md-6 wow fadeInRight">
+                                        <div class="media">
+                                            <a class="media-left" href="#">
+                                                <span class="icon bg1 flaticon-increasing5"></span>
+                                            </a>
+                                            <div class="media-body">
+                                                <h3 class="media-heading"><a href="#">Technology & Sciences</a></h3>
+                                                <p>Computer Science & Engineering (CSE)<br>Mechanical Engineering (ME)<br>Electronics and Communications Engineering (ECE)<br>Electrical and Electronics Engineering (EEE)<br>Diploma in ME <br>Dimploma in EE</p>                                                    
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="#">Know More</a>
+                                            </div> <!-- /.media-body -->
+                                        </div> <!-- /.media -->
+                                    </div> <!-- /.col-md-6 -->
+                                    <div class="col-md-6 wow fadeInRight">
+                                        <div class="media">
+                                            <a class="media-left" href="#">
+                                                <span class="icon bg4 flaticon-royalty"></span>
+                                            </a>
+                                            <div class="media-body">
+                                                <h3 class="media-heading"><a href="#">Hospitality Management</a></h3>
+                                                <p>Bachelor of Hotel Management & Catering Technology (BHMCT)<br>Bachelor of Hospitality Management (BHM)<br>Diploma in Hotel Management & Catering Technology (DHMCT)<br>Diploma in Hotel Management (DHM)</p>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="#">Know More</a>
+                                            </div> <!-- /.media-body -->
+                                        </div> <!-- /.media -->
+                                    </div> <!-- /.col-md-6 -->
+                                    <div class="col-md-6 wow fadeInRight">
+                                        <div class="media">
+                                            <a class="media-left" href="#">
+                                                <span class="icon bg2 flaticon-syncing"></span>
+                                            </a>
+                                            <div class="media-body">
+                                                <h3 class="media-heading"><a href="#">Commerce & Business Management</a></h3>
+                                                <p>Masters of Business Administration (MBA)<br>Bachelor of Business Administration (BBA)<br>Bachelor of Commerce (Honours) (B.Com.)</p>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="#">Know More</a>
+                                            </div> <!-- /.media-body -->
+                                        </div> <!-- /.media -->
+                                    </div> <!-- /.col-md-6 -->
+
+                                    <div class="col-md-6 wow fadeInRight">
+                                        <div class="media">
+                                            <a class="media-left" href="#">
+                                                <span class="icon bg3 flaticon-file24"></span>
+                                            </a>
+                                            <div class="media-body">
+                                                <h3 class="media-heading"><a href="#">Computer Science & Applications</a></h3>
+                                                <p>Masters of Computer Applications (MCA)<br>Masters of Computer Applications Lateral Entry (MCA - Direct IInd year)<br>Bachelor of Computer Applications (BCA)</p>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="#">Know More</a>
+                                            </div> <!-- /.media-body -->
+                                        </div> <!-- /.media -->
+                                    </div> <!-- /.col-md-6 -->
+
+                                    <div class="col-md-6 wow fadeInRight">
+                                        <div class="media">
+                                            <a class="media-left" href="#">
+                                                <span class="icon bg4 flaticon-royalty"></span>
+                                            </a>
+                                            <div class="media-body">
+                                                <h3 class="media-heading"><a href="#">BEd</a></h3>
+                                                <p>B.Ed. stands for an undergraduate academic course known as Bachelor of Education. It is a course offered for those who are interested in pursuing career in teaching and related fields. </p>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="#">Know More</a>
+                                            </div> <!-- /.media-body -->
+                                        </div> <!-- /.media -->
+                                    </div> <!-- /.col-md-6 -->
+                                </div> <!-- /.row -->
+                            </section>                                                               
+                            <section class="trusted-client-wrapper">
+                                <h2 class="section-title wow fadeInDown">Our Recruiters</h2>                                                                           
+                                <ul class="partner-logo">
+                                    <?PHP for ($loop = 1; $loop <= 4; $loop++) { ?>
+                                        <li class="wow zoomIn"><img class="img-responsive" src="<?PHP echo base_url() . 'assets/img/cmpLogos/c' . $loop . '.png'; ?>" alt="Amrapali Recruiters Logo"></li> 
+                                    <?PHP } ?>
+
+                                    <?PHP for ($loop = 1; $loop <= 4; $loop++) { ?>
+                                        <li class="wow zoomIn"><img class="img-responsive" src="<?PHP echo base_url() . 'assets/img/cmpLogos/b' . $loop . '.png'; ?>" alt="Amrapali Recruiters Logo"></li> 
+                                    <?PHP } ?>
+
+                                    <?PHP for ($loop = 1; $loop <= 4; $loop++) { ?>
+                                        <li class="wow zoomIn"><img class="img-responsive" src="<?PHP echo base_url() . 'assets/img/cmpLogos/h' . $loop . '.png'; ?>" alt="Amrapali Recruiters Logo"></li> 
+                                    <?PHP } ?>
+                                    <a class="btn btn-primary btn-lg wow fadeInDown" href="#">See More Recruiters</a>
+                                </ul>                                    
+                            </section>
+
+                            <section class="testimonial-wrapper">
+                                <h2 class="section-title">What our Recruiters Say about us</h2>
+                                <div id="css-testimonial-carousel" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#css-testimonial-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#css-testimonial-carousel" data-slide-to="1"></li>
+                                        <li data-target="#css-testimonial-carousel" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-7">
+                                                    <div class="client-testimonial">
+                                                        <p><img hspace="10" align="right" class="img-responsive" style="max-width: 120px;" src="<?PHP echo base_url() . 'assets/img/recruiters/RahulBhatia.jpg'; ?>" alt="Amrapali Recruiters"> My association with Amrapali Group of Institutes at Haldwani is a long one and throughout it has been a journey filled with tremendous outcomes for all those involved.. B.Tech graduates that we have recruited in the past have demonstrated learning attitude, perseverance and hard work in their corporate lives.</p>
+                                                        <span class="client-name">Rahul Bhatia</span>, <span class="client-org">Manager HR, Wipro Technologies</span>
+                                                    </div>
+                                                </div><!-- /.col-md-8 -->	                                                   
+                                            </div><!-- /.row -->
+                                        </div><!-- /.item -->
+                                        <div class="item">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-7">
+                                                    <div class="client-testimonial">
+                                                        <p><img hspace="10" align="right" class="img-responsive" style="max-width: 120px;" src="<?PHP echo base_url() . 'assets/img/recruiters/PrabhakarArya.jpg'; ?>" alt="Amrapali Recruiters"> It was my first visit to Amrapali Group of Institutes to recruit BBA and MBA participants for my organization. I must at the outset congratulate the team Amrapali for been able to develop students with strong potential to succeed in this cut throat competitive world. I wish the institute all the success in days to come. </p>
+                                                        <span class="client-name">Mr. Prabhakar Arya</span>, <span class="client-org">Manager, Operations Religare Health Insurance, Noida</span>
+                                                    </div>
+                                                </div><!-- /.col-md-8 -->	
+                                            </div><!-- /.row -->
+                                        </div><!-- /.item -->
+                                        <div class="item">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-7">
+                                                    <div class="client-testimonial">
+                                                        <p><img hspace="10" align="right" class="img-responsive" style="max-width: 120px;" src="<?PHP echo base_url() . 'assets/img/recruiters/MaheshRathore.jpg'; ?>" alt="Amrapali Recruiters"> It is only good thing which i have to say for your institute " I would like to congratulate the faculty and management of Amrapali Institute of Hotel Management for making the institute stands out among other hotel management institutes, our association with the institute has been a year long and  we have already selected 7 students as they stand out due to their knowledge , grooming, confidence and over all personality which i believe is due to hard work  and discipline of the faculty members. I would like to  see Amrpali Institute of hotel Management become a premier institute in Hotel Management as i believe it has potential to reach there."</p>
+                                                        <span class="client-name">Mahesh Rathore</span>, <span class="client-org">Manager Human Resources, Oberoi Amarvilas </span>
+                                                    </div>
+                                                </div><!-- /.col-md-8 -->
+                                            </div><!-- /.row -->
+                                        </div><!-- /.item -->
+                                    </div><!-- /.carousel-inner -->
+                                </div><!-- /.carousel -->
+                            </section><!-- /.testimonial-wrapper -->                                
+
+                            <div class="advantages-wrapper">
+                                <?php $this->load->view('templates/alumni') ?>                               
+                            </div><!-- /.content-wrapper -->
+                        </div><!-- /.container -->
