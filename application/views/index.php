@@ -39,7 +39,7 @@
                             <!--.item-->
 
                             <div class="item">
-                                <img src="<?php echo base_url('assets/img/slider/bg2.jpg'); ?>" alt="Hero Slide">
+                                <img src="<?php echo base_url('assets/img/slider/bg2.jpg'); ?>" alt="Amrapali Group of Institutes">
                                 <!--Slide Image-->
 
                                 <div class="container">
@@ -55,7 +55,7 @@
                             <!--.item-->
                             
                             <div class="item">
-                                <img src="<?php echo base_url('assets/img/slider/bg3.jpg'); ?>" alt="Hero Slide">
+                                <img src="<?php echo base_url('assets/img/slider/bg3.jpg'); ?>" alt="Amrapali Group of Institutes">
                                 <!--Slide Image-->
 
                                 <div class="container">
@@ -71,7 +71,7 @@
                             <!--.item-->
                             
                             <div class="item">
-                                <img src="<?php echo base_url('assets/img/slider/bg4.jpg'); ?>" alt="Hero Slide">
+                                <img src="<?php echo base_url('assets/img/slider/bg4.jpg'); ?>" alt="Amrapali Group of Institutes">
                                 <!--Slide Image-->
 
                                 <div class="container">

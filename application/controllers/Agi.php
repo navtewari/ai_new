@@ -18,9 +18,10 @@ class Agi extends CI_Controller {
         $this->load->view('templates/footer');
     }
     
-    public function ceoMessage() {                       
+    public function ceoMessage() {             
+        $data_['alumniProfile']= $this->get_all_alumni_enabled();
         $this->load->view('templates/header');
-        $this->load->view('ceo-message');
+        $this->load->view('ceo-message', $data_);
         $this->load->view('templates/footer');
     }
     
