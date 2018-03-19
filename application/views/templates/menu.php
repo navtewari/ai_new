@@ -21,8 +21,8 @@
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
                             <ul class="dropdown-menu">
-                                <li><a href="<?php echo site_url() . '/Agi/ceoMessage'; ?>">CEO's Message</a></li>
-                                <li><a href="#">Aims & Objectives</a></li>
+                                <li><a href="<?php echo site_url('/Agi/ceoMessage'); ?>">CEO's Message</a></li>
+                                <li><a href="<?php echo site_url('/Agi/aimsObjectives'); ?>">Aims &amp; Objectives</a></li>
                                 <li><a href="#">Academic Advisory Council</a></li>
                                 <li><a href="#">Administration</a></li>
                                 <li><a href="#">Vision 2020</a></li>
@@ -41,9 +41,9 @@
                                 <div class='col-sm-8'>
                                     <h3 style='color:#fff'>Faculty</h3>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Technology & Sciences</a></li>
-                                        <li><a href="#">Computer Science & Applications</a></li>
-                                        <li><a href="#">Commerce & Business Management</a></li>
+                                        <li><a href="#">Technology &amp; Sciences</a></li>
+                                        <li><a href="#">Computer Science &amp; Applications</a></li>
+                                        <li><a href="#">Commerce &amp; Business Management</a></li>
                                         <li><a href="#">Hospitality Management</a></li>
                                         <li><a href="#">B.Ed</a></li>
                                     </ul>    
@@ -86,7 +86,7 @@
                         </div><!-- /.submenu-inner -->
                     </div> <!-- /.submenu-wrapper -->
                 </li>
-                <li><a href="#">Training & Placements</a></li>
+                <li><a href="#">Training &amp; Placements</a></li>
                 <li class="dropdown"><a href="#" >Gallery <b class="caret"></b></a>
                     <!-- submenu-wrapper -->
                     <div class="submenu-wrapper submenu-wrapper-topbottom">

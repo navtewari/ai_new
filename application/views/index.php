@@ -94,7 +94,7 @@
                                     <div class="carousel-caption">
                                         <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
                                         <div class="phone animated lightSpeedIn">1800 180 4027</div>
-                                        <h1 class="animated lightSpeedIn hidden-xs">Associations & Togetherness</h1> 
+                                        <h1 class="animated lightSpeedIn hidden-xs">Associations &amp; Togetherness</h1> 
                                     </div>
                                     <!--.carousel-caption-->
                                 </div>
@@ -232,8 +232,8 @@
                                                 <span class="icon bg1 flaticon-increasing5"></span>
                                             </a>
                                             <div class="media-body">
-                                                <h3 class="media-heading"><a href="#">Technology & Sciences</a></h3>
-                                                <p>Computer Science & Engineering (CSE)<br>Mechanical Engineering (ME)<br>Electronics and Communications Engineering (ECE)<br>Electrical and Electronics Engineering (EEE)<br>Diploma in ME <br>Dimploma in EE</p>                                                    
+                                                <h3 class="media-heading"><a href="#">Technology &amp; Sciences</a></h3>
+                                                <p>Computer Science &amp; Engineering (CSE)<br>Mechanical Engineering (ME)<br>Electronics and Communications Engineering (ECE)<br>Electrical and Electronics Engineering (EEE)<br>Diploma in ME <br>Dimploma in EE</p>                                                    
                                                 <a class="btn btn-primary btn-lg wow fadeInDown" href="#">Know More</a>
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
@@ -245,7 +245,7 @@
                                             </a>
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="#">Hospitality Management</a></h3>
-                                                <p>Bachelor of Hotel Management & Catering Technology (BHMCT)<br>Bachelor of Hospitality Management (BHM)<br>Diploma in Hotel Management & Catering Technology (DHMCT)<br>Diploma in Hotel Management (DHM)</p>
+                                                <p>Bachelor of Hotel Management &amp; Catering Technology (BHMCT)<br>Bachelor of Hospitality Management (BHM)<br>Diploma in Hotel Management &amp; Catering Technology (DHMCT)<br>Diploma in Hotel Management (DHM)</p>
                                                 <a class="btn btn-primary btn-lg wow fadeInDown" href="#">Know More</a>
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
@@ -256,7 +256,7 @@
                                                 <span class="icon bg2 flaticon-syncing"></span>
                                             </a>
                                             <div class="media-body">
-                                                <h3 class="media-heading"><a href="#">Commerce & Business Management</a></h3>
+                                                <h3 class="media-heading"><a href="#">Commerce &amp; Business Management</a></h3>
                                                 <p>Masters of Business Administration (MBA)<br>Bachelor of Business Administration (BBA)<br>Bachelor of Commerce (Honours) (B.Com.)</p>
                                                 <a class="btn btn-primary btn-lg wow fadeInDown" href="#">Know More</a>
                                             </div> <!-- /.media-body -->
@@ -269,7 +269,7 @@
                                                 <span class="icon bg3 flaticon-file24"></span>
                                             </a>
                                             <div class="media-body">
-                                                <h3 class="media-heading"><a href="#">Computer Science & Applications</a></h3>
+                                                <h3 class="media-heading"><a href="#">Computer Science &amp; Applications</a></h3>
                                                 <p>Masters of Computer Applications (MCA)<br>Masters of Computer Applications Lateral Entry (MCA - Direct IInd year)<br>Bachelor of Computer Applications (BCA)</p>
                                                 <a class="btn btn-primary btn-lg wow fadeInDown" href="#">Know More</a>
                                             </div> <!-- /.media-body -->
