@@ -46,9 +46,9 @@
                                                     <p>
                                                         Pursuit of excellence is part of our culture. Our experience in the field of professional education gives us the capability to conceive and implement changes. Through routine modifications in curricula, we not only strengthen budding professionals with sound knowledge but also nurture them for entering the professional world successfully. We aim at developing and enriching students so that they develop multi-dimensional, competent personalities, consisting of important attributes such as:
                                                         <p style="margin-left: 20px;">
-                                                            » Pursuit of Excellence <br>
-                                                            » Cultivation of Hunger for Knowledge, Technical Skills, Problem Analysis, Research etc <br>
-                                                            » Commitment to Teamwork
+                                                            &raquo; Pursuit of Excellence <br>
+                                                            &raquo; Cultivation of Hunger for Knowledge, Technical Skills, Problem Analysis, Research etc <br>
+                                                            &raquo; Commitment to Teamwork
                                                         </p>
                                                     </p>
 

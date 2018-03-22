@@ -47,6 +47,36 @@ class Agi extends CI_Controller {
         $this->load->view('about-us/academic-advisory-council', $data_);
         $this->load->view('templates/footer');
     }
+
+    function administration(){
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Administration";
+
+        $this->load->view('templates/header');
+        $this->load->view('about-us/administration', $data_);
+        $this->load->view('templates/footer');
+    }
+
+    function vision(){
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Vision 2020";
+
+        $this->load->view('templates/header');
+        $this->load->view('about-us/vision', $data_);
+        $this->load->view('templates/footer');
+    }
+
+    function mission(){
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Management Board";
+
+        $this->load->view('templates/header');
+        $this->load->view('about-us/management-board', $data_);
+        $this->load->view('templates/footer');   
+    }
 // ---- End of About Us Menu 
 
 

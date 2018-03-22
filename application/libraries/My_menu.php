@@ -8,9 +8,9 @@ class My_menu{
             "CEO's Message" 			=> '/Agi/ceoMessage',
             "Aims &amp; Objectives" 	=> '/Agi/aimsObjectives',
             "Academic Advisory Council" => '/Agi/academicAdvisoryCouncil',
-            "Administration" 			=> '#',
-            "Vision 2020" 				=> '#',
-            "Management Board" 			=> '#',
+            "Administration" 			=> '/Agi/administration',
+            "Vision 2020" 				=> '/Agi/vision',
+            "Management Board" 			=> '/Agi/mission',
             "Group Profile" 			=> '#',
         );
 
@@ -52,7 +52,8 @@ class My_menu{
 
         // Training & Placements
         $menu['tnp'] = array(
-            "Training &amp; Placements" => "#"
+            "Training &amp; Placements" => "#",
+            "ATraining &amp; Placements" => "#"
         );
 
         // Gallery

@@ -9,45 +9,42 @@
 
                 <li><a href="#">About <i class="fa fa-arrow-down"></i></a>
                     <ul style="background: #444444">                        
-                        <li><a href="#">CEO's Message</a></li>
-                        <li><a href="#">Aims &amp; Objectives</a></li>
-                        <li><a href="#">Academic Advisory Council</a></li>
-                        <li><a href="#">Administration</a></li>
-                        <li><a href="#">Vision 2020</a></li>
-                        <li><a href="#">Management Board</a></li>
-                        <li><a href="#">Group Profile</a></li>
+                        <?php foreach($menu_all['aboutus'] as $title => $path){?>
+                            <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                        <?php } ?>
                     </ul>
                 </li>
 
                 <li><a href="#">Faculty <i class="fa fa-arrow-down"></i></a>
                     <ul style="background: #444444">  
-                        <li><a href="#">Technology &amp; Sciences</a></li>
-                        <li><a href="#">Computer Science &amp; Applications</a></li>
-                        <li><a href="#">Commerce &amp; Business Management</a></li>
-                        <li><a href="#">Hospitality Management</a></li>
-                        <li><a href="#">B.Ed</a></li>
+                        <?php foreach($menu_all['academics']['faculty'] as $title => $path){?>
+                            <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                        <?php } ?>
                     </ul>
                 </li>
 
                 <li><a href="#">Admission <i class="fa fa-arrow-down"></i></a>
                     <ul style="background: #444444">  
-                        <li><a href="#">Why Amrapali?</a></li>
-                        <li><a href="#">Apply Online</a></li>
-                        <li><a href="#">Admission Procedure</a></li>
-                        <li><a href="#">Fee Structures</a></li>
-                        <li><a href="#">FAQ's</a></li>
+                        <?php foreach($menu_all['admissions'] as $title => $path){?>
+                            <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                        <?php } ?>
                     </ul>
                 </li>
+                <?php if(count($menu_all['tnp']) == 1){?>
                 <li><a href="#">Training &amp; Placements</a></li>
-                <li><a href="#"> <i class="fa fa-arrow-down"></i>Gallery</a>
+                <?php } else { ?>
+                <li><a href="#">Training &amp; Placements <i class="fa fa-arrow-down"></i></a>
                     <ul style="background: #444444">  
-                        <li><a href="#">Photos</a></li>
-                        <li><a href="#">Videos</a></li>
-                        <li><a href="#">Amrapali in Google</a></li>
-                        <li><a href="#">Amrapali in Youtube</a></li>
-                        <li><a href="#">NewsLetters</a></li>
-                        <li><a href="#">Publications</a></li>
-                        <li><a href="#">Expert's View</a></li>
+                        <?php foreach($menu_all['tnp'] as $title => $path){?>
+                            <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                        <?php } ?>
+                    </ul>
+                <?php } ?>
+                <li><a href="#">Gallery <i class="fa fa-arrow-down"></i></a>
+                    <ul style="background: #444444">  
+                        <?php foreach($menu_all['gallery'] as $title => $path){?>
+                            <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                        <?php } ?>
                     </ul>
                 </li>
                 <li><a href="#">Contact</a></li>
