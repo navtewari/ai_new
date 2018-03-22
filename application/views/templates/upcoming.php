@@ -1,6 +1,6 @@
 <div class="vticker" style="min-height:250px;">
     <ul>
-        <?php foreach ($upcoming as $item) { ?>
+        <?php foreach ($commondata_['upcoming'] as $item) { ?>
             <li>
                 <blockquote style="border-color: #0099cc;">
                 <p style="font-weight: 400;"><?php echo $item->SUBJECT; ?></p>

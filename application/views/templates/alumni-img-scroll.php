@@ -6,7 +6,7 @@
                                                         <div class="carousel-inner">
                                                             <?php
                                                             $i = 1;
-                                                            foreach ($alumniProfile as $item) {
+                                                            foreach ($alumni['alumniProfile'] as $item) {
                                                                 ?>
                                                                 <div <?php
                                                                 if ($i == 1) {

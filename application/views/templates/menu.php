@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
             </button>
             <!-- offcanvas-trigger-effects -->
-            <h1 class="logo"><a class="navbar-brand" href="<?php echo site_url() . '/Agi'; ?>"><img src="<?php echo base_url('assets/img/logo.png'); ?>" alt="" class="hidden-xs"><img src="<?php echo base_url('assets/img/logo-small.png'); ?>" alt="" class="hidden-lg" style="margin-top:-10px;"></a></h1>
+            <h1 class="logo"><a class="navbar-brand" href="<?php echo site_url('/Agi'); ?>"><img src="<?php echo base_url('assets/img/logo.png'); ?>" alt="" class="hidden-xs"><img src="<?php echo base_url('assets/img/logo-small.png'); ?>" alt="" class="hidden-lg" style="margin-top:-10px;"></a></h1>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -21,13 +21,9 @@
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
                             <ul class="dropdown-menu">
-                                <li><a href="<?php echo site_url('/Agi/ceoMessage'); ?>">CEO's Message</a></li>
-                                <li><a href="<?php echo site_url('/Agi/aimsObjectives'); ?>">Aims &amp; Objectives</a></li>
-                                <li><a href="#">Academic Advisory Council</a></li>
-                                <li><a href="#">Administration</a></li>
-                                <li><a href="#">Vision 2020</a></li>
-                                <li><a href="#">Management Board</a></li>
-                                <li><a href="#">Group Profile</a></li>
+                                <?php foreach($menu_all['aboutus'] as $title => $path){?>
+                                    <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                <?php } ?>
                             </ul>
                         </div><!-- /.submenu-inner -->
                     </div> <!-- /.submenu-wrapper -->
@@ -41,30 +37,28 @@
                                 <div class='col-sm-8'>
                                     <h3 style='color:#fff'>Faculty</h3>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Technology &amp; Sciences</a></li>
-                                        <li><a href="#">Computer Science &amp; Applications</a></li>
-                                        <li><a href="#">Commerce &amp; Business Management</a></li>
-                                        <li><a href="#">Hospitality Management</a></li>
-                                        <li><a href="#">B.Ed</a></li>
+                                        <?php foreach($menu_all['academics']['faculty'] as $title => $path){?>
+                                            <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                        <?php } ?>
                                     </ul>    
                                     <hr>
                                     <h3 style='color:#fff'>Facilities</h3>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Infrastructure</a></li>
-                                        <li><a href="#">Library</a></li>                                        
+                                        <?php foreach($menu_all['academics']['facilities'] as $title => $path){?>
+                                            <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                        <?php } ?>                                        
                                     </ul>                                                                                                                                          
                                 </div>
                                 <div class='col-sm-4'>                                    
                                     <h3 style='color:#fff'>Syllabus</h3>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">B. Tech</a></li>
-                                        <li><a href="#">MCA</a></li>                                        
-                                        <li><a href="#">MBA</a></li>                                        
-                                        <li><a href="#">BHMCT</a></li>                                        
-                                        <li><a href="#">BCA</a></li>                                        
-                                        <li><a href="#">BBA</a></li> 
+                                        <?php foreach($menu_all['academics']['syllabus'] as $title => $path){?>
+                                            <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                        <?php } ?>
                                         <hr>
-                                        <li><a href="#">FDP</a></li>
+                                        <?php foreach($menu_all['academics']['others'] as $title => $path){?>
+                                            <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                        <?php } ?>
                                     </ul>                                    
                                 </div>
                             </div>                            
@@ -77,28 +71,39 @@
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
                             <ul class="dropdown-menu">
-                                <li><a href="#">Why Amrapali?</a></li>
-                                <li><a href="#">Apply Online</a></li>
-                                <li><a href="#">Admission Procedure</a></li>
-                                <li><a href="#">Fee Structures</a></li>
-                                <li><a href="#">FAQ's</a></li>
+                                <?php foreach($menu_all['admissions'] as $title => $path){?>
+                                    <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                <?php } ?>
+                            </ul>
+                        </div><!-- /.submenu-inner -->
+                    </div><!-- /.submenu-wrapper -->
+                </li>
+                <?php if(count($menu_all['tnp']) == 1){?>
+                <?php foreach($menu_all['tnp'] as $title => $path){?>
+                    <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                <?php } ?>
+                <?php } else { ?>
+                <li class="dropdown"><a href="#" >Training &amp; Placements <b class="caret"></b></a>
+                    <!-- submenu-wrapper -->
+                    <div class="submenu-wrapper submenu-wrapper-topbottom">
+                        <div class="submenu-inner  submenu-inner-topbottom">
+                            <ul class="dropdown-menu">
+                                <?php foreach($menu_all['tnp'] as $title => $path){?>
+                                    <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                <?php } ?>
                             </ul>
                         </div><!-- /.submenu-inner -->
                     </div> <!-- /.submenu-wrapper -->
                 </li>
-                <li><a href="#">Training &amp; Placements</a></li>
+                <?php } ?>
                 <li class="dropdown"><a href="#" >Gallery <b class="caret"></b></a>
                     <!-- submenu-wrapper -->
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
                             <ul class="dropdown-menu">
-                                <li><a href="#">Photos</a></li>
-                                <li><a href="#">Videos</a></li>
-                                <li><a href="#">Amrapali in Google</a></li>
-                                <li><a href="#">Amrapali in Youtube</a></li>
-                                <li><a href="#">NewsLetters</a></li>
-                                <li><a href="#">Publications</a></li>
-                                <li><a href="#">Expert's View</a></li>
+                                <?php foreach($menu_all['gallery'] as $title => $path){?>
+                                    <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                <?php } ?>
                             </ul>
                         </div><!-- /.submenu-inner -->
                     </div> <!-- /.submenu-wrapper -->
@@ -108,15 +113,31 @@
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
                             <ul class="dropdown-menu">
-                                <li><a href="#">Alumni Connect Programme</a></li>
-                                <li><a href="#">Alumni Registration</a></li>
-                                <li><a href="#">Our Distinguished Alumni</a></li>
-                                <li><a href="#">Alumni Speaks</a></li>
+                                <?php foreach($menu_all['alumni_menu'] as $title => $path){?>
+                                    <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                <?php } ?>
                             </ul>
                         </div><!-- /.submenu-inner -->
                     </div> <!-- /.submenu-wrapper -->
                 </li>
-                <li><a href="#">Contact us</a></li>
+                <?php if(count($menu_all['contactus']) == 1){?>
+                    <?php foreach($menu_all['contactus'] as $title => $path){?>
+                        <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                    <?php } ?>
+                <?php } else { ?>
+                    <li class="dropdown"><a href="#" >Contact Us <b class="caret"></b></a>
+                        <!-- submenu-wrapper -->
+                        <div class="submenu-wrapper submenu-wrapper-topbottom">
+                            <div class="submenu-inner  submenu-inner-topbottom">
+                                <ul class="dropdown-menu">
+                                    <?php foreach($menu_all['contactus'] as $title => $path){?>
+                                        <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                    <?php } ?>
+                                </ul>
+                            </div><!-- /.submenu-inner -->
+                        </div> <!-- /.submenu-wrapper -->
+                    </li>
+                <?php } ?>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container -->

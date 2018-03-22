@@ -12,12 +12,12 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="page-header">
-                                            <h1>Aims &amp; Objectives</h1>
+                                            <h1><?php echo $title;?></h1>
                                         </div>
                                         <ol class="breadcrumb">
                                             <li><a href="#">Home</a></li>
                                             <li><a href="#">About Us</a></li>
-                                            <li class="active">Aims &amp; Objectives</li>
+                                            <li class="active">Academic Advisory Council</li>
                                         </ol>
                                     </div>
                                 </div><!-- /.row -->
@@ -32,7 +32,7 @@
                                         <div class="col-xs-12 col-md-9 col-sm-8">
                                             <article class="blog-post-wrapper single-article">
                                                 <header class="entry-header">                                                    
-                                                    <h2 class="entry-title"><a href="blog-single.html">Aims &amp; Objectives</a></h2>
+                                                    <h2 class="entry-title"><a href="blog-single.html">Academic Advisory Council</a></h2>
                                                 </header><!-- /.entry-header -->                                                
 
                                                 <div class="entry-content">
