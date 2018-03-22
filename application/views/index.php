@@ -206,7 +206,7 @@
                                     <div class="row">
                                         <div class="col-sm-3 text-center experiance-tab-content wow fadeInLeft">
                                             <h1>18+</h1>
-                                            <p>Years of Academic Excellence</p>
+                                            <p style="text-align:center">Years of Academic Excellence</p>
                                         </div><!--/.col-sm-6 -->
                                         <div class="col-sm-3 text-center experiance-tab-content wow fadeInRight">
                                             <h1>200+</h1>

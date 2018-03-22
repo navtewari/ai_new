@@ -47,7 +47,16 @@
                         <?php } ?>
                     </ul>
                 </li>
-                <li><a href="#">Contact</a></li>
+                <?php if(count($menu_all['contactus']) == 1){?>
+                <li><a href="#">Contact us</a></li>
+                <?php } else {?>
+                <li><a href="#">Contact us <i class="fa fa-arrow-down"></i></a>
+                    <ul style="background: #444444">  
+                        <?php foreach($menu_all['contactus'] as $title => $path){?>
+                            <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                        <?php } ?>
+                    </ul>
+                <?php } ?>
             </ul>
         </div>
     </div>
