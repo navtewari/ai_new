@@ -3,7 +3,7 @@
                                                     <p>RECENT NEWS</p>
                                                 </div>
                                                 <ul>
-                                                    <?php foreach ($commondata_['rnews_'] as $item) { ?>
+                                                    <?php foreach ($alumni['rnews_'] as $item) { ?>
                                                         <div>
                                                             <li><span><?php echo $item->SUBJECT; ?> &ndash; 
                                                                     <?php if ($item->PATH_ATTACH != 'x') { ?>
