@@ -52,8 +52,7 @@ class My_menu{
 
         // Training & Placements
         $menu['tnp'] = array(
-            "Training &amp; Placements" => "#",
-            "ATraining &amp; Placements" => "#"
+            "Training &amp; Placements" => "#"
         );
 
         // Gallery
