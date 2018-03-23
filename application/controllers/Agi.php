@@ -19,8 +19,7 @@ class Agi extends CI_Controller {
     
 // About Us Menu Methods
     function ceoMessage() {
-        $data_['menu_all'] = $this->my_menu->site_menu();
-        $data_['commondata_'] = $this->commondata();
+        $data_['menu_all'] = $this->my_menu->site_menu();        
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = "CEO's Message";
 
@@ -93,6 +92,7 @@ class Agi extends CI_Controller {
 
     function ouralumni(){
         $data_['alumniProfile']= $this->wm->get_all_alumniProfile_distinct();
+		$data_['rnews_'] = $this->wm->get_most_recent_news();
         return $data_;
     }
 
