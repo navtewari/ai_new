@@ -360,5 +360,4 @@ jQuery(function ($) {
 
             });
         }());
-
 }); // JQuery end

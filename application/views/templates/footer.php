@@ -135,26 +135,37 @@
             dd.start();
         });
 
+        $(".expand").on( "click", function() {
+            $(this).next().slideToggle(200);
+            $expand = $(this).find(">:first-child");
+            
+            if($expand.text() == "+") {
+              $expand.text("-");
+            } else {
+              $expand.text("+");
+            }
+        });
+
     });
 </script>
 <!-- wow.min.js -->
-<script src="<?php echo base_url('assets/js/wow.min.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/wow.min.js'); ?>?ver=1.0"></script>
 <!-- owl-carousel -->
-<script src="<?php echo base_url('assets/owl-carousel/owl.carousel.min.js'); ?>"></script>
+<script src="<?php echo base_url('assets/owl-carousel/owl.carousel.min.js'); ?>?ver=1.0"></script>
 <!-- smoothscroll -->
-<script src="<?php echo base_url('assets/js/smoothscroll.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/smoothscroll.js'); ?>?ver=1.0"></script>
 <!-- Offcanvas Menu -->
-<script src="<?php echo base_url('assets/js/hippo-offcanvas.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/hippo-offcanvas.js'); ?>?ver=1.0"></script>
 <!-- easypiechart -->
-<script src="<?php echo base_url('assets/js/jquery.easypiechart.min.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/jquery.easypiechart.min.js'); ?>?ver=1.0"></script>
 <!-- Scrolling Nav JavaScript -->
-<script src="<?php echo base_url('assets/js/jquery.easing.min.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/jquery.easing.min.js'); ?>?ver=1.0"></script>
 <!-- Magnific-popup -->
-<script src="<?php echo base_url('assets/js/jquery.magnific-popup.min.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/jquery.magnific-popup.min.js'); ?>?ver=1.0"></script>
 <!-- Shuffle.min js -->
-<script src="<?php echo base_url('assets/js/jquery.shuffle.min.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/jquery.shuffle.min.js'); ?>?ver=1.0"></script>
 <!-- Custom Script -->
-<script src="<?php echo base_url('assets/js/scripts.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/scripts.js'); ?>?ver=1.0"></script>
 
 <?php $this->load->view('templates/analyticstracking');?>
 </body>
