@@ -1,5 +1,3 @@
-
-
 <section class="footer-widget-wrapper">
     <div class="container">
         <div class="row">

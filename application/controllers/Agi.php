@@ -77,7 +77,30 @@ class Agi extends CI_Controller {
         $this->load->view('about-us/management-board', $data_);
         $this->load->view('templates/footer');   
     }
+
+    function groupProfile(){
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Group Profile";
+
+        $this->load->view('templates/header');
+        $this->load->view('about-us/group-profile', $data_);
+        $this->load->view('templates/footer');      
+    }
 // ---- End of About Us Menu 
+
+
+// Academics Menu Methods
+    function technologyAndSciences(){
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Technology &amp; Sciences";
+
+        $this->load->view('templates/header');
+        $this->load->view('academics/technology-n-sciences', $data_);
+        $this->load->view('templates/footer');      
+    }
+// ---- End of Academics Menu 
 
 
 // Common Methods
@@ -90,7 +113,7 @@ class Agi extends CI_Controller {
         return $data_;
     }
 
-    function ouralumni(){
+    function ouralumni(){ // Need this at every page with news headings
         $data_['alumniProfile']= $this->wm->get_all_alumniProfile_distinct();
 		$data_['rnews_'] = $this->wm->get_most_recent_news();
         return $data_;

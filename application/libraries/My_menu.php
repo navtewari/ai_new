@@ -11,13 +11,13 @@ class My_menu{
             "Administration" 			=> '/Agi/administration',
             "Vision 2020" 				=> '/Agi/vision',
             "Management Board" 			=> '/Agi/mission',
-            "Group Profile" 			=> '#',
+            "Group Profile" 			=> '/Agi/groupProfile',
         );
 
         // Academics
         $menu['academics'] = array(
         	'faculty' => array(
-	            "Technology &amp; Sciences" 			=> '#',
+	            "Technology &amp; Sciences" 			=> '/Agi/technologyAndSciences',
 	            "Computer Science &amp; Applications" 	=> '#',
 	            "Commerce &amp; Business Management" 	=> '#',
 	            "Hospitality Management" 				=> '#',

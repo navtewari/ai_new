@@ -31,6 +31,8 @@
                                     <div class="row">
                                         <div class="col-xs-12 col-md-9 col-sm-8">
                                             <article class="blog-post-wrapper single-article">
+                                                    <?php $this->load->view('templates/ticker-news');?>                                         
+                                                    
                                                 <header class="entry-header">                                                    
                                                     <h2 class="entry-title"><a href="blog-single.html"><?php echo $title;?></a></h2>
                                                 </header><!-- /.entry-header -->                                                

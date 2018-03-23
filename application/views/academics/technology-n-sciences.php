@@ -31,34 +31,31 @@
                                     <div class="row">
                                         <div class="col-xs-12 col-md-9 col-sm-8">
                                             <article class="blog-post-wrapper single-article">
-                                                <header class="entry-header">       
-                                                    <?php $this->load->view('templates/ticker-news');?>                                         
-                                                                                                 
+                                                <?php $this->load->view('templates/ticker-news');?>                                         
+                                                    
+                                                <header class="entry-header">                                                    
                                                     <h2 class="entry-title"><a href="blog-single.html"><?php echo $title;?></a></h2>
                                                 </header><!-- /.entry-header -->                                                
 
                                                 <div class="entry-content">
                                                     <p>
-                                                        Objectives are not fate; they are directions. They are not commands; they are commitments. They do not determine the future; they are means to mobilize the resources and energies of the business for making the future.
+                                                       The latest member of the Amrapali family is the Amrapali Institute of Technology and Sciences (AITS).
                                                     </p>
                                                     <p>
-                                                        The pace of change is ever accelerating, and with change comes the challenge to adapt and improve. For over 17 years the Amrapali Group of Institutes has been successful keeping up its pace with the changing professional education. The Group aims at providing high-quality professional education judiciously supplemented with competent learning and advanced training.
+                                                        AITS is affiliated to the Uttarakhand Technical University, having met the norms stipulated by the All India Council for Technical Education (AICTE). The impressive building housing AITS provides the students many laboratories, including large, internet-enabled computer labs as well as a Communications lab.
                                                     </p>
-
                                                     <p>
-                                                        Pursuit of excellence is part of our culture. Our experience in the field of professional education gives us the capability to conceive and implement changes. Through routine modifications in curricula, we not only strengthen budding professionals with sound knowledge but also nurture them for entering the professional world successfully. We aim at developing and enriching students so that they develop multi-dimensional, competent personalities, consisting of important attributes such as:
-                                                        <p style="margin-left: 20px;">
-                                                            &raquo; Pursuit of Excellence <br>
-                                                            &raquo; Cultivation of Hunger for Knowledge, Technical Skills, Problem Analysis, Research etc <br>
-                                                            &raquo; Commitment to Teamwork
-                                                        </p>
+                                                        The students have, at their disposal, well-stocked libraries that also provide access to online journals. Well-maintained hostels provide students with comfortable living conditions conducive to academic excellence.
                                                     </p>
-
-                                                    <p>In AGI we endeavour to groom our students in such a way that wherever they go they make a distinctive difference and contribute to bring transformation in the system through holistic development. All our students get an opportunity of exposure to corporate environment by spending time in different Organizations through training, interactions with people of national and international stature for massive change of so-called 'mindset'. Thus, as a student you certainly can expect to have an enriching and life turning experience that should propel you to take advantage of the new opportunities in life.</p>
-
                                                     <p>
-                                                        As the world transits into a globalising 'Knowledge Economy', constituent institutes of the Group have been marching ahead with tireless efforts. We work with the objective of providing students a clear understanding of fundamentals so as to mould them into capable professionals possessing creative mind-sets, balanced vision and passion for excellence clubbed with competent practical skills. The Institutes within the Group transform students into better citizens by inculcating values and ethics that promote well-being of the society.
+                                                        Being a part of the esteemed Amrapali Group of Institutions, AITS benefits from having access to a centrally administered Placement Cell which has a long experience of providing placement related guidance and help to students of AITS's sister institutions.
                                                     </p>
+                                                    <p>
+                                                        Setup with the express intent of providing education in cutting-edge technologies, AITS offers, to its 8th batch commencing in the academic year 2013-2014, Bachelor of Technology courses in the following branches:
+                                                    </p>
+                                                    <p>
+                                                    </p>
+                                                    
                                                 </div><!-- /.entry-content -->
                                             </article>                                            
                                         </div><!-- /.col-md-9 -->
