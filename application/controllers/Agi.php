@@ -20,6 +20,7 @@ class Agi extends CI_Controller {
 // About Us Menu Methods
     function ceoMessage() {
         $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['commondata_'] = $this->commondata();
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = "CEO's Message";
 

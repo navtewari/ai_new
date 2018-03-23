@@ -77,8 +77,8 @@ class My_menu{
         //Contact Us
         $menu['contactus'] = array(
             "Contact Us" => "#",
-        );
-        
+        );	       
+		
         return $menu;
     }
 }

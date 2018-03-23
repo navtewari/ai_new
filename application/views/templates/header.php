@@ -31,6 +31,8 @@
         <link href="<?php echo base_url('assets/css/style.css'); ?>" rel="stylesheet">
         <!-- Responsive CSS -->
         <link href="<?php echo base_url('assets/css/responsive.css'); ?>" rel="stylesheet">
+        
+        <link href="<?php echo base_url('assets/css/ticker.css'); ?>" rel="stylesheet">
 
         <script src="<?php echo base_url('assets/js/vendor/modernizr-2.8.1.min.js'); ?>"></script>
         <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->

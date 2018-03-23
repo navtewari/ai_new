@@ -104,6 +104,7 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
 <script src="<?PHP echo base_url() . 'assets/js/jquery.easy-ticker.js'; ?>"></script>
+<script src="<?PHP echo base_url() . 'assets/js/ticker.js'; ?>"></script>
 
 <script type="text/javascript">
     $(document).ready(function () {
