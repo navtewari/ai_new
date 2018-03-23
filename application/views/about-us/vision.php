@@ -1,9 +1,4 @@
     <body>
-        <style type="text/css">
-            li{
-                margin-left: 25px;
-            }
-        </style>
         <div id="st-container" class="st-container">
             <div class="st-pusher">
                 <div class="st-content">
