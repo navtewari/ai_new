@@ -27,7 +27,6 @@ class Agi extends CI_Controller {
         $this->load->view('about-us/ceo-message', $data_);
         $this->load->view('templates/footer');
     }
-
     function aimsObjectives(){
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
@@ -37,7 +36,6 @@ class Agi extends CI_Controller {
         $this->load->view('about-us/aims-objectives', $data_);
         $this->load->view('templates/footer');
     }
-
     function academicAdvisoryCouncil(){
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
@@ -47,7 +45,6 @@ class Agi extends CI_Controller {
         $this->load->view('about-us/academic-advisory-council', $data_);
         $this->load->view('templates/footer');
     }
-
     function administration(){
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
@@ -57,7 +54,6 @@ class Agi extends CI_Controller {
         $this->load->view('about-us/administration', $data_);
         $this->load->view('templates/footer');
     }
-
     function vision(){
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
@@ -67,7 +63,6 @@ class Agi extends CI_Controller {
         $this->load->view('about-us/vision', $data_);
         $this->load->view('templates/footer');
     }
-
     function mission(){
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
@@ -77,7 +72,6 @@ class Agi extends CI_Controller {
         $this->load->view('about-us/management-board', $data_);
         $this->load->view('templates/footer');   
     }
-
     function groupProfile(){
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
@@ -91,15 +85,74 @@ class Agi extends CI_Controller {
 
 
 // Academics Menu Methods
+    // Faculty Sub-menu
     function technologyAndSciences(){
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = "Technology &amp; Sciences";
 
         $this->load->view('templates/header');
-        $this->load->view('academics/technology-n-sciences', $data_);
+        $this->load->view('academics/faculty/technology-n-sciences', $data_);
         $this->load->view('templates/footer');      
     }
+    function commerceAndBusinessMgmt(){
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Commerce &amp; Business Management";
+
+        $this->load->view('templates/header');
+        $this->load->view('academics/faculty/commerce-n-business-mgmt', $data_);
+        $this->load->view('templates/footer');      
+    }
+    function computerScienceAndApplications(){
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Computer Science &amp; Applications";
+
+        $this->load->view('templates/header');
+        $this->load->view('academics/faculty/computer-science-n-applications', $data_);
+        $this->load->view('templates/footer');      
+    }
+    function hospitalityManagement(){
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Hospitality Management";
+
+        $this->load->view('templates/header');
+        $this->load->view('academics/faculty/hospitality-management', $data_);
+        $this->load->view('templates/footer');      
+    }
+    function bEd(){
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Bachelor of Education";
+
+        $this->load->view('templates/header');
+        $this->load->view('academics/faculty/b-ed', $data_);
+        $this->load->view('templates/footer');         
+    }
+    // ----- End of Faculty sub-menu
+
+    // Facilties sub-menu
+    function infrastructure(){
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Infrastructure";
+
+        $this->load->view('templates/header');
+        $this->load->view('academics/facilities/infra', $data_);
+        $this->load->view('templates/footer');            
+    }
+    function library(){
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Library";
+
+        $this->load->view('templates/header');
+        $this->load->view('academics/facilities/lib', $data_);
+        $this->load->view('templates/footer');
+    }
+    // end of Facilties sub-menu
 // ---- End of Academics Menu 
 
 

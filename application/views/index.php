@@ -1,3 +1,15 @@
+<?php
+    $slider_ = array(
+        'bg1.jpg'=>'Rich Library Support',
+        'bg2.jpg'=>'Eminent Speakers enlightening our scholars',
+        'bg3.jpg'=>'Hands-on experience through industrial training in reputed organisations',
+        'bg4.jpg'=>'Celebration &amp; Enthusiasm at annual functions',
+        'bg5.jpg'=>'Associations &amp; Togetherness',
+        'bg6.jpg'=>'Over 80,000 books, periodicals, international journals and other research material',
+        'bg7.jpg'=>'Eminent Speakers enlightening our scholars',
+        'bg8.jpg'=>'Participatory Sessions'
+    );
+?>
 <body>
     <div id="st-container" class="st-container">
         <div class="st-pusher">
@@ -22,133 +34,25 @@
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <img src="<?php echo base_url('assets/img/slider/bg1.jpg'); ?>" alt="Hero Slide">
+                            <?php $loop1 = 0; $sliderno = mt_rand(0,count($slider_)-1);?>
+                            <?php foreach($slider_ as $img=>$item){?>
+                            <div class="item<?php if($loop1 == $sliderno) echo ' active';?>">
+                                <img src="<?php echo base_url('assets/img/slider/'.$img); ?>" alt="Hero Slide">
                                 <!--Slide Image-->
 
                                 <div class="container">
                                     <div class="carousel-caption">
                                         <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
                                         <div class="phone animated lightSpeedIn">1800 180 4027</div>
-                                        <h1 class="animated lightSpeedIn hidden-xs">Rich Library Support</h1>                                            
+                                        <h1 class="animated lightSpeedIn hidden-xs"><?php echo $item; ?></h1>                                            
                                     </div>
                                     <!--.carousel-caption-->
                                 </div>
                                 <!--.container-->
                             </div>
                             <!--.item-->
-
-                            <div class="item">
-                                <img src="<?php echo base_url('assets/img/slider/bg2.jpg'); ?>" alt="Amrapali Group of Institutes">
-                                <!--Slide Image-->
-
-                                <div class="container">
-                                    <div class="carousel-caption">
-                                        <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
-                                        <div class="phone animated lightSpeedIn">1800 180 4027</div>
-                                        <h1 class="animated lightSpeedIn hidden-xs">Eminent Speakers enlightening our scholars</h1> 
-                                    </div>
-                                    <!--.carousel-caption-->
-                                </div>
-                                <!--.container-->
-                            </div>
-                            <!--.item-->
-                            
-                            <div class="item">
-                                <img src="<?php echo base_url('assets/img/slider/bg3.jpg'); ?>" alt="Amrapali Group of Institutes">
-                                <!--Slide Image-->
-
-                                <div class="container">
-                                    <div class="carousel-caption">
-                                        <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
-                                        <div class="phone animated lightSpeedIn">1800 180 4027</div>
-                                        <h1 class="animated lightSpeedIn hidden-xs">Hands-on experience through industrial training in reputed organisations</h1> 
-                                    </div>
-                                    <!--.carousel-caption-->
-                                </div>
-                                <!--.container-->
-                            </div>
-                            <!--.item-->
-                            
-                            <div class="item">
-                                <img src="<?php echo base_url('assets/img/slider/bg4.jpg'); ?>" alt="Amrapali Group of Institutes">
-                                <!--Slide Image-->
-
-                                <div class="container">
-                                    <div class="carousel-caption">
-                                        <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
-                                        <div class="phone animated lightSpeedIn">1800 180 4027</div>
-                                        <h1 class="animated lightSpeedIn hidden-xs">Celebration & Enthusiasm at annual functions</h1> 
-                                    </div>
-                                    <!--.carousel-caption-->
-                                </div>
-                                <!--.container-->
-                            </div>
-                            <!--.item-->
-                            
-                            <div class="item">
-                                <img src="<?php echo base_url('assets/img/slider/bg5.jpg'); ?>" alt="Hero Slide">
-                                <!--Slide Image-->
-
-                                <div class="container">
-                                    <div class="carousel-caption">
-                                        <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
-                                        <div class="phone animated lightSpeedIn">1800 180 4027</div>
-                                        <h1 class="animated lightSpeedIn hidden-xs">Associations &amp; Togetherness</h1> 
-                                    </div>
-                                    <!--.carousel-caption-->
-                                </div>
-                                <!--.container-->
-                            </div>
-                            <!--.item-->
-                            
-                            <div class="item">
-                                <img src="<?php echo base_url('assets/img/slider/bg6.jpg'); ?>" alt="Hero Slide">
-                                <!--Slide Image-->
-
-                                <div class="container">
-                                    <div class="carousel-caption">
-                                        <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
-                                        <div class="phone animated lightSpeedIn">1800 180 4027</div>
-                                        <h1 class="animated lightSpeedIn hidden-xs">Over 80,000 books, periodicals, international journals and other research material</h1> 
-                                    </div>
-                                    <!--.carousel-caption-->
-                                </div>
-                                <!--.container-->
-                            </div>
-                            <!--.item-->
-                            
-                            <div class="item">
-                                <img src="<?php echo base_url('assets/img/slider/bg7.jpg'); ?>" alt="Hero Slide">
-                                <!--Slide Image-->
-
-                                <div class="container">
-                                    <div class="carousel-caption">
-                                        <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
-                                        <div class="phone animated lightSpeedIn">1800 180 4027</div>
-                                        <h1 class="animated lightSpeedIn hidden-xs">Eminent Speakers enlightening our scholars</h1> 
-                                    </div>
-                                    <!--.carousel-caption-->
-                                </div>
-                                <!--.container-->
-                            </div>
-                            <!--.item-->
-                            <div class="item">
-                                <img src="<?php echo base_url('assets/img/slider/bg8.jpg'); ?>" alt="Hero Slide">
-                                <!--Slide Image-->
-
-                                <div class="container">
-                                    <div class="carousel-caption">
-                                        <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
-                                        <div class="phone animated lightSpeedIn">1800 180 4027</div>
-                                        <h1 class="animated lightSpeedIn hidden-xs">Participatory Sessions</h1> 
-                                    </div>
-                                    <!--.carousel-caption-->
-                                </div>
-                                <!--.container-->
-                            </div>
-                            <!--.item-->
-
+                            <?php $loop1++;?>
+                            <?php } ?>
                         </div>
                         <!--.carousel-inner-->
 

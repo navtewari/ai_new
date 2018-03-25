@@ -18,14 +18,14 @@ class My_menu{
         $menu['academics'] = array(
         	'faculty' => array(
 	            "Technology &amp; Sciences" 			=> '/Agi/technologyAndSciences',
-	            "Computer Science &amp; Applications" 	=> '#',
-	            "Commerce &amp; Business Management" 	=> '#',
-	            "Hospitality Management" 				=> '#',
-	            "B.Ed" 									=> '#'
+	            "Computer Science &amp; Applications" 	=> '/Agi/computerScienceAndApplications',
+	            "Commerce &amp; Business Management" 	=> '/Agi/commerceAndBusinessMgmt',
+	            "Hospitality Management" 				=> '/Agi/hospitalityManagement',
+	            "B.Ed" 									=> '/Agi/bEd'
         	),
         	'facilities' => array(
-        		"Infrastructure" 	=> '#',
-	            "Library" 			=> '#',
+        		"Infrastructure" 	=> '/Agi/infrastructure',
+	            "Library" 			=> '/Agi/library',
         	),
         	'syllabus' => array(
         		"B. Tech" 			=> '#',

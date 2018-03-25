@@ -2677,4 +2677,15 @@ span {
 .clear-li-border{
     border-top: 1px solid #f0f0f0 !important;
 }
-
+.my-strips{
+    display: block !important;
+    padding: 5px !important;
+    background: #fafafa;
+    border-top: #f0f0f0 solid 1px !important;
+    border-bottom: #f0f0f0 solid 0px !important;
+    font-family: verdana;
+    margin-bottom: 3px;
+}
+.anchor-color-dark{
+    color: #777777;
+}
