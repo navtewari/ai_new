@@ -37,6 +37,7 @@
                                                     <h2 class="entry-title"><a href="#"><?php echo $title;?></a></h2>
                                                 </header><!-- /.entry-header -->                                                
                                                 <div class="entry-content" style="overflow: hidden">
+                                                    <img src="<?php echo base_url('assets/img/hm.jpg'); ?>" class="img-responsive " alt="">                                                 
                                                     <blockquote>
                                                         <p>
 
@@ -47,11 +48,11 @@
                                                     <h3>Courses Offered</h3>
                                                     <p>
                                                         <div class="col-sm-12">
-                                                            <ul style="list-style-type: circle !important" id="integration-list">
-                                                                <li class="myli_for_page">Bachelor of Hotel Management &amp; Catering Technology [<b>BHMCT</b>]</li>
-                                                                <li class="myli_for_page">Bachelor of Hospitality Management [<b>BHM</b>]</li>
-                                                                <li class="myli_for_page">Diploma in Hotel Management &AMP; Catering Technology [<b>DHMCT</b>]</li>
-                                                                <li class="myli_for_page">Diploma in Hotel Management [<b>DHM</b>]</li>
+                                                            <ul class="check-square">
+                                                                <li>Bachelor of Hotel Management &amp; Catering Technology [<b>BHMCT</b>]</li>
+                                                                <li>Bachelor of Hospitality Management [<b>BHM</b>]</li>
+                                                                <li>Diploma in Hotel Management &AMP; Catering Technology [<b>DHMCT</b>]</li>
+                                                                <li>Diploma in Hotel Management [<b>DHM</b>]</li>
                                                             </ul>
                                                         </div>
                                                     </p>

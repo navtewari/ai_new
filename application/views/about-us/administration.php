@@ -37,17 +37,17 @@
 
                                                 <div class="entry-content">
                                                     <p>
-                                                       <ul class="list-group" style="line-height: 30px;">
-                                                            <li>&raquo; Dr. Pankaj Shah, Registrar 
-                                                            <li>&raquo; Mr. Sanjay Pasricha, Head Admission 
-                                                            <li>&raquo; Ms. Andleeb Kamaal, Manager (Marketing)
-                                                            <li>&raquo; Mr. H.K. Uprety, Asstt. Administrative Officer 
-                                                            <li>&raquo; Mr. N.K. Gupta, Accounts Officer 
-                                                            <li>&raquo; Mr. Gopal Sharma, Asstt. Manager (Office Admin.)
-                                                            <li>&raquo; Mr. D.S. Rawat, Warden Boys Hostel
-                                                            <li>&raquo; Mrs. Abha Chaturvedi, Warden Girls Hostel 
-                                                            <li>&raquo; Mr. Mohan Chandra Joshi, Asst. Warden Boys Hostel
-                                                            <li>&raquo; Mrs. Kavita Tiwari, Asst. Warden Girls Hostel
+                                                       <ul class="check-square">
+                                                            <li> Dr. Pankaj Shah, Registrar 
+                                                            <li> Mr. Sanjay Pasricha, Head Admission 
+                                                            <li> Ms. Andleeb Kamaal, Manager (Marketing)
+                                                            <li> Mr. H.K. Uprety, Asstt. Administrative Officer 
+                                                            <li> Mr. N.K. Gupta, Accounts Officer 
+                                                            <li> Mr. Gopal Sharma, Asstt. Manager (Office Admin.)
+                                                            <li> Mr. D.S. Rawat, Warden Boys Hostel
+                                                            <li> Mrs. Abha Chaturvedi, Warden Girls Hostel 
+                                                            <li> Mr. Mohan Chandra Joshi, Asst. Warden Boys Hostel
+                                                            <li> Mrs. Kavita Tiwari, Asst. Warden Girls Hostel
                                                         </ul>
                                                     </p>
                                                 </div><!-- /.entry-content -->

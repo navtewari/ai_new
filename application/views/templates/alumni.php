@@ -69,7 +69,7 @@
                                                                     <div class="col-xs-12">
                                                                         <div class="portfolio-item">
                                                                             <div class="item-inner">
-                                                                                <p align="justify"><img hspace="10" align="left" class="img-responsive" style="max-width: 80px;" src="<?PHP echo base_url() . 'assets/img/alumni/' . $value['photo']; ?>" alt="Amrapali Alumni">
+                                                                                <p align="justify"><img hspace="10" align="left" class="img-responsive" style="margin-right:10px; max-width: 80px;" src="<?PHP echo base_url() . 'assets/img/alumni/' . $value['photo']; ?>" alt="Amrapali Alumni">
                                                                                     <?php echo $value['text_']; ?>                                                                                    
                                                                                 </p>                              
                                                                                 <h5 style="clear: both;margin-top:30px;">

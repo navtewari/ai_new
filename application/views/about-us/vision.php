@@ -44,7 +44,7 @@
                                                     <p>
                                                         Today, the vision that founding members of the group had conceptualized appears clear and close with few more challenges for which the entire team of Amrapali Group of Institutes is geared up. For fulfilling diverse expectations of wide range of stakeholders including students, parents and society at large the institute's efforts have been visible through: 
 
-                                                        <ul class="list-group" style="line-height: 25px; list-style-type: circle;">
+                                                        <ul class="check-square">
                                                             <li> Improved rankings of our institutes at State and National Level
                                                             <li> Increasing number of student intake every year
                                                             <li> Recognition and acceptance of our student's in the corporate world
@@ -57,7 +57,7 @@
                                                     <p>
                                                         The next phase of our vision is to make Amrapali Group the premier provider of higher professional education in the state of Uttarakhand. Our aim is to make ourselves the preferred choice for professional education amongst students of the state and outside. We are moving ahead with commitment and results are visible, through an array of indicators. The dream destination is hoped to be arrived at by 2020, when we should actually be able to taste the fruit of our teamwork, by making the Amrapali Group of Institutes an internationally renowned private professional-educational brand. In this direction we are continuously striving for: 
                                                         
-                                                        <ul class="list-group" style="line-height: 25px; list-style-type: circle;">
+                                                        <ul class="check-square">
                                                             <li>Strong commitment and focus on Campus to Career Pathways
                                                             <li>Increasing Student's Support 
                                                             <li>Increasing relevance of the Courses 

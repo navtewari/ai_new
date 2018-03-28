@@ -39,25 +39,7 @@
 
                                                 <div class="entry-content">
                                                     <p>
-                                                        Objectives are not fate; they are directions. They are not commands; they are commitments. They do not determine the future; they are means to mobilize the resources and energies of the business for making the future.
-                                                    </p>
-                                                    <p>
-                                                        The pace of change is ever accelerating, and with change comes the challenge to adapt and improve. For over 17 years the Amrapali Group of Institutes has been successful keeping up its pace with the changing professional education. The Group aims at providing high-quality professional education judiciously supplemented with competent learning and advanced training.
-                                                    </p>
-
-                                                    <p>
-                                                        Pursuit of excellence is part of our culture. Our experience in the field of professional education gives us the capability to conceive and implement changes. Through routine modifications in curricula, we not only strengthen budding professionals with sound knowledge but also nurture them for entering the professional world successfully. We aim at developing and enriching students so that they develop multi-dimensional, competent personalities, consisting of important attributes such as:
-                                                        <p style="margin-left: 20px;">
-                                                            » Pursuit of Excellence <br>
-                                                            » Cultivation of Hunger for Knowledge, Technical Skills, Problem Analysis, Research etc <br>
-                                                            » Commitment to Teamwork
-                                                        </p>
-                                                    </p>
-
-                                                    <p>In AGI we endeavour to groom our students in such a way that wherever they go they make a distinctive difference and contribute to bring transformation in the system through holistic development. All our students get an opportunity of exposure to corporate environment by spending time in different Organizations through training, interactions with people of national and international stature for massive change of so-called 'mindset'. Thus, as a student you certainly can expect to have an enriching and life turning experience that should propel you to take advantage of the new opportunities in life.</p>
-
-                                                    <p>
-                                                        As the world transits into a globalising 'Knowledge Economy', constituent institutes of the Group have been marching ahead with tireless efforts. We work with the objective of providing students a clear understanding of fundamentals so as to mould them into capable professionals possessing creative mind-sets, balanced vision and passion for excellence clubbed with competent practical skills. The Institutes within the Group transform students into better citizens by inculcating values and ethics that promote well-being of the society.
+                                                        <ul class="check-square" style="line-height: 25px;"> <li>Prof. N.K. Taneja, Vice-Chancellor, CCS University, Meerut. <li>Prof. S.P. Singh, Ex Vice-Chancellor, HNB Garhwal University, Srinagar (Garhwal). <li>Prof. B.S. Rajput, Ex Vice-Chancellor, Kumaun University, Nainital. <li>Prof. R.C. Pant, Ex Vice-Chancellor, Kumaun University, Nainital. <li>Prof. Y.P. Gupta, Ex- Principal, BCT-KEC, Dwarahat. <li>Mr. Mahendra Pal Singh, Advocate Uttarakhand High Court, Nainital. <li>Prof. Shekhar Verma, IIIT Allahabad. <li>Prof. Durgesh Pant, Director – IT, Uttarakhand Open University, Haldwani. <li>Prof. R.C. Mishra, Uttarakhand Open University, Haldwani. <li>Prof. J.K. Goyal, Director JIMS, Noida. <li>Mr. Rohit Dar, GM Marriott. <li>Dr. Sudhir Andrews, Executive Director, Skill Maker Training Services, Dubai. <li>Mr. R.C. Pandey, Principal, G.I.H.M. Dehradun. <li>Mr. Abhimanyu Kayashtha, Corporate GM, Howard Johnson. <li>Mr. Chanchal Kumar Singh, Project Officer, EDI STED. <li>Prof. (Dr.). S.K. Singh, COO Amrapali Group of Institutes, Haldwani <li>Prof. H.D. Bist, Retd. Professor, IIT Kanpur </ul>
                                                     </p>
                                                 </div><!-- /.entry-content -->
                                             </article>                                            

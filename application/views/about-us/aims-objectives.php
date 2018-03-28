@@ -38,7 +38,8 @@
                                                 </header><!-- /.entry-header -->                                                
 
                                                 <div class="entry-content">
-                                                    <p>
+                                                    <img src="<?php echo base_url('assets/img/all-pages.png'); ?>" class="img-responsive" alt=""> 
+                                                    <p style="margin-top: 10px;">
                                                         Objectives are not fate; they are directions. They are not commands; they are commitments. They do not determine the future; they are means to mobilize the resources and energies of the business for making the future.
                                                     </p>
                                                     <p>

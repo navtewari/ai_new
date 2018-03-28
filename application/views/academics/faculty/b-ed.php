@@ -37,6 +37,7 @@
                                                     <h2 class="entry-title"><a href="#"><?php echo $title;?></a></h2>
                                                 </header><!-- /.entry-header -->                                                
                                                 <div class="entry-content" style="overflow: hidden">
+                                                    <img src="<?php echo base_url('assets/img/fdp.jpg'); ?>" class="img-responsive " alt="">                                                 
                                                     <blockquote>
                                                         <p>
 
