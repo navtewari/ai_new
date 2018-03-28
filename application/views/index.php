@@ -75,7 +75,7 @@
                                 <div class="row"> 
                                     <div class="col-lg-7 col-md-8">
                                         <h1 class="wow fadeInDown">Welcome to Amrapali Group of Institutes</h1>
-                                        <p class="wow fadeInDown">Objectively enable leading-edge infrastructures whereas tactical imperatives. Enthusiastically disintermediate adaptive systems.</p>
+                                        <p class="wow fadeInDown">AMRAPALI Group of Institutes was established in 1999 under the aegis of Modern Academy Society.</p>
 
                                         <div class="typography-page-tab" role="tabpanel">
                                             <!-- Nav tabs -->
@@ -109,7 +109,7 @@
                                 <div class="css-tab text-center">
                                     <div class="row">
                                         <div class="col-sm-3 text-center experiance-tab-content wow fadeInLeft">
-                                            <h1>18+</h1>
+                                            <h1>19+ <?php echo date('Y');?></h1>
                                             <p style="text-align:center">Years of Academic Excellence</p>
                                         </div><!--/.col-sm-6 -->
                                         <div class="col-sm-3 text-center experiance-tab-content wow fadeInRight">
