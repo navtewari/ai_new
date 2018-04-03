@@ -7,7 +7,8 @@ class Agi extends CI_Controller {
         parent::__construct();
         $this->load->model('Web_model', 'wm');
     }
-    function index() {                
+    function index() {   
+        $data_['menu_active'] =1;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['commondata_'] = $this->commondata();
         $data_['alumni'] = $this->ouralumni();
@@ -19,6 +20,7 @@ class Agi extends CI_Controller {
     
 // About Us Menu Methods
     function ceoMessage() {
+        $data_['menu_active'] =2;
         $data_['menu_all'] = $this->my_menu->site_menu();        
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = "CEO's Message";
@@ -28,6 +30,7 @@ class Agi extends CI_Controller {
         $this->load->view('templates/footer');
     }
     function aimsObjectives(){
+        $data_['menu_active'] =2;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = "Aims &amp; Objectives";
@@ -37,6 +40,7 @@ class Agi extends CI_Controller {
         $this->load->view('templates/footer');
     }
     function academicAdvisoryCouncil(){
+        $data_['menu_active'] =2;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = "Academic Advisory Council";
@@ -46,6 +50,7 @@ class Agi extends CI_Controller {
         $this->load->view('templates/footer');
     }
     function administration(){
+        $data_['menu_active'] =2;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = "Administration";
@@ -55,6 +60,7 @@ class Agi extends CI_Controller {
         $this->load->view('templates/footer');
     }
     function vision(){
+        $data_['menu_active'] =2;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = "Vision 2020";
@@ -64,6 +70,7 @@ class Agi extends CI_Controller {
         $this->load->view('templates/footer');
     }
     function mission(){
+        $data_['menu_active'] =2;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = "Management Board";
@@ -73,6 +80,7 @@ class Agi extends CI_Controller {
         $this->load->view('templates/footer');   
     }
     function groupProfile(){
+        $data_['menu_active'] =2;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = "Group Profile";
@@ -87,6 +95,7 @@ class Agi extends CI_Controller {
 // Academics Menu Methods
     // Faculty Sub-menu
     function technologyAndSciences(){
+        $data_['menu_active'] =3;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = "Technology &amp; Sciences";
@@ -96,6 +105,7 @@ class Agi extends CI_Controller {
         $this->load->view('templates/footer');      
     }
     function commerceAndBusinessMgmt(){
+        $data_['menu_active'] =3;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = "Commerce &amp; Business Management";
@@ -105,6 +115,7 @@ class Agi extends CI_Controller {
         $this->load->view('templates/footer');      
     }
     function computerScienceAndApplications(){
+        $data_['menu_active'] =3;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = "Computer Science &amp; Applications";
@@ -114,6 +125,7 @@ class Agi extends CI_Controller {
         $this->load->view('templates/footer');      
     }
     function hospitalityManagement(){
+        $data_['menu_active'] =3;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = "Hospitality Management";
@@ -123,6 +135,7 @@ class Agi extends CI_Controller {
         $this->load->view('templates/footer');      
     }
     function bEd(){
+        $data_['menu_active'] =3;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = "Bachelor of Education";
@@ -135,6 +148,7 @@ class Agi extends CI_Controller {
 
     // Facilties sub-menu
     function infrastructure(){
+        $data_['menu_active'] =3;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = "Infrastructure";
@@ -144,6 +158,7 @@ class Agi extends CI_Controller {
         $this->load->view('templates/footer');            
     }
     function library(){
+        $data_['menu_active'] =3;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = "Library";

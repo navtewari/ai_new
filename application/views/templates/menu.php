@@ -14,9 +14,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="<?php echo site_url() . '/Agi'; ?>">Home</a></li>
+                <li class="<?php if($menu_active==1){echo 'active';}?>"><a href="<?php echo site_url() . '/Agi'; ?>">Home</a></li>
 
-                <li class="dropdown"><a href="#" >About Us<b class="caret"></b></a>
+                <li class="dropdown <?php if($menu_active==2){echo 'active';}?>"><a href="#">About Us<b class="caret"></b></a>
                     <!-- submenu-wrapper -->
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
@@ -29,7 +29,7 @@
                     </div> <!-- /.submenu-wrapper -->
                 </li>
 
-                <li class="dropdown"><a href="#" >Academics <b class="caret"></b></a>
+                <li class="dropdown <?php if($menu_active==3){echo 'active';}?>"><a href="#" >Academics <b class="caret"></b></a>
                     <!-- submenu-wrapper -->
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
@@ -66,7 +66,7 @@
                     </div> <!-- /.submenu-wrapper -->
                 </li>
 
-                <li class="dropdown"><a href="#" >Admissions <b class="caret"></b></a>
+                <li class="dropdown <?php if($menu_active==4){echo 'active';}?>"><a href="#" >Admissions <b class="caret"></b></a>
                     <!-- submenu-wrapper -->
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
@@ -83,7 +83,7 @@
                     <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
                 <?php } ?>
                 <?php } else { ?>
-                <li class="dropdown"><a href="#" >Training &amp; Placements <b class="caret"></b></a>
+                <li class="dropdown <?php if($menu_active==5){echo 'active';}?>"><a href="#" >Training &amp; Placements <b class="caret"></b></a>
                     <!-- submenu-wrapper -->
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
@@ -96,7 +96,7 @@
                     </div> <!-- /.submenu-wrapper -->
                 </li>
                 <?php } ?>
-                <li class="dropdown"><a href="#" >Gallery <b class="caret"></b></a>
+                <li class="dropdown <?php if($menu_active==6){echo 'active';}?>"><a href="#">Gallery <b class="caret"></b></a>
                     <!-- submenu-wrapper -->
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
@@ -108,7 +108,7 @@
                         </div><!-- /.submenu-inner -->
                     </div> <!-- /.submenu-wrapper -->
                 </li>
-                <li class="dropdown"><a href="#" >Alumni <b class="caret"></b></a>
+                <li class="dropdown <?php if($menu_active==7){echo 'active';}?>"><a href="#" >Alumni <b class="caret"></b></a>
                     <!-- submenu-wrapper -->
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
@@ -125,7 +125,7 @@
                         <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
                     <?php } ?>
                 <?php } else { ?>
-                    <li class="dropdown"><a href="#" >Contact Us <b class="caret"></b></a>
+                    <li class="dropdown <?php if($menu_active==8){echo 'active';}?>"><a href="#" >Contact Us <b class="caret"></b></a>
                         <!-- submenu-wrapper -->
                         <div class="submenu-wrapper submenu-wrapper-topbottom">
                             <div class="submenu-inner  submenu-inner-topbottom">

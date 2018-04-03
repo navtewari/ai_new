@@ -109,7 +109,7 @@
                                 <div class="css-tab text-center">
                                     <div class="row">
                                         <div class="col-sm-3 text-center experiance-tab-content wow fadeInLeft">
-                                            <h1>19+ <?php echo date('Y');?></h1>
+                                            <h1><?php echo (date('Y')-1999) . '+';?></h1>
                                             <p style="text-align:center">Years of Academic Excellence</p>
                                         </div><!--/.col-sm-6 -->
                                         <div class="col-sm-3 text-center experiance-tab-content wow fadeInRight">
