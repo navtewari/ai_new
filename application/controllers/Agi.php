@@ -170,6 +170,18 @@ class Agi extends CI_Controller {
     // end of Facilties sub-menu
 // ---- End of Academics Menu 
 
+    // Admission Menu
+    function whyAmrapali(){
+        $data_['menu_active'] =4;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Why Amrapali?";
+
+        $this->load->view('templates/header');
+        $this->load->view('admissions/why-amrapali', $data_);
+        $this->load->view('templates/footer');            
+    }
+    // ----end of dmission Menu
 
 // Common Methods
     function commondata(){

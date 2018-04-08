@@ -3,7 +3,7 @@
                                                     <h2 class="widget-title">QUICK LINKS</h2>	
                                                     <ul>
                                                         <li><a href="#">Why Amrapali?</a></li>
-                                                        <li><a href="#">Apply Online</a></li>
+                                                        <li><a href="#"><i class="fa fa-cog fa-spin"></i> Apply Online</a></li>
                                                         <li><a href="#">Admission Procedure</a></li>
                                                         <li><a href="#">Fee Structures</a></li>
                                                         <li><a href="#">Training &amp; Placement</a></li>

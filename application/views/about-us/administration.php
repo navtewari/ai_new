@@ -32,7 +32,7 @@
                                         <div class="col-xs-12 col-md-9 col-sm-8">
                                             <article class="blog-post-wrapper single-article">
                                                 <header class="entry-header">                                                    
-                                                    <h2 class="entry-title"><a href="blog-single.html"><?php echo $title;?></a></h2>
+                                                    <h2 class="entry-title"><a href="#"><?php echo $title;?></a></h2>
                                                 </header><!-- /.entry-header -->                                                
 
                                                 <div class="entry-content">

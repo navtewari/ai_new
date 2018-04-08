@@ -34,7 +34,7 @@
                                                 <header class="entry-header">           
                                                     <?php $this->load->view('templates/ticker-news');?>                                         
                                                     
-                                                    <h2 class="entry-title"><a href="blog-single.html"><?php echo $title;?></a></h2>
+                                                    <h2 class="entry-title"><a href="#"><?php echo $title;?></a></h2>
                                                 </header><!-- /.entry-header -->                                                
 
                                                 <div class="entry-content">
