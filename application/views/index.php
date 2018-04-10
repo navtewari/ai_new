@@ -138,7 +138,7 @@
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="#">Technology &amp; Sciences</a></h3>
                                                 <p>Computer Science &amp; Engineering (CSE)<br>Mechanical Engineering (ME)<br>Electronics and Communications Engineering (ECE)<br>Electrical and Electronics Engineering (EEE)<br>Diploma in ME <br>Dimploma in EE</p>                                                    
-                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="#">Know More</a>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('Agi/technologyAndSciences'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->
@@ -150,7 +150,7 @@
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="#">Hospitality Management</a></h3>
                                                 <p>Bachelor of Hotel Management &amp; Catering Technology (BHMCT)<br>Bachelor of Hospitality Management (BHM)<br>Diploma in Hotel Management &amp; Catering Technology (DHMCT)<br>Diploma in Hotel Management (DHM)</p>
-                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="#">Know More</a>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('Agi/hospitalityManagement'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->
@@ -162,7 +162,7 @@
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="#">Commerce &amp; Business Management</a></h3>
                                                 <p>Masters of Business Administration (MBA)<br>Bachelor of Business Administration (BBA)<br>Bachelor of Commerce (Honours) (B.Com.)</p>
-                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="#">Know More</a>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('Agi/commerceAndBusinessMgmt'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->
@@ -175,7 +175,7 @@
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="#">Computer Science &amp; Applications</a></h3>
                                                 <p>Masters of Computer Applications (MCA)<br>Masters of Computer Applications Lateral Entry (MCA - Direct IInd year)<br>Bachelor of Computer Applications (BCA)</p>
-                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="#">Know More</a>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('Agi/computerScienceAndApplications'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->
@@ -188,7 +188,7 @@
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="#">BEd</a></h3>
                                                 <p>B.Ed. stands for an undergraduate academic course known as Bachelor of Education. It is a course offered for those who are interested in pursuing career in teaching and related fields. </p>
-                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="#">Know More</a>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('Agi/bEd'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->
