@@ -180,36 +180,37 @@
                                                     <div class="panel panel-default">
                                                         <div class="panel-heading panel-heading-link" role="tab" id="headingFour">
                                                             <h2 class="panel-title">
-                                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#headingFour" aria-expanded="false" aria-controls="collapseFour">
-                                                                    Electronics and Communications Engineering (ECE)
+                                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                                    Electrical and Electronics Engineering (EEE)
                                                                 </a>
                                                             </h2>
                                                         </div>
                                                         <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                                                             <div class="panel-body">
                                                                 <p>
-                                                                    The Department of Electronics and Communication Engineering offers premium professional training leading to an undergraduate engineering degree. B. Tech. (ECE), while exposing students to modern developments in the fields of Electronics and Communication, Possessing excellent infrastructure that is teamed with very capable and motivated faculty members, the department offers an excellent opportunity for budding professionals to hone their skills, to enable them to outperform their competitors.
+                                                                    Electrical and Electronics Engineering is one of the largest departments of AITS, which offers diploma in Engineering and B. Tech in Electrical and Electronics Engineering. The department has a rich tradition of teaching and research and is widely recognized to be a pioneer in Electrical and Electronics Engineering in Uttarakhand. The department’s vision is to impart the most up to date training and quality knowledge. The department provides the best of both core branches of Electrical Engineering and Electronics Engineering. The department has established itself as a frontier of knowledge in many areas like energy studies, electrical drives, high voltage engineering, single processing, bio medical instrumentation, power electronics etc. The department is committed to provide the student with a stimulating and rewarding learning experience with the end result of industry ready individuals with high technical knowhow.
                                                                 </p>
                                                                 <p>
-                                                                    The curriculum followed in the department has been designed to provide insights into concepts of digital processing of information for efficient communication, since digital electronics circuits have grown enormously in functionality in modern times. The syllabus provides balanced coverage of theory and practice of modern electronics, featuring courses such as Communication Engineering, DSP Architectures and Systems, Communication Switching Systems, Electronics Devices and Circuits, Microwave Components and Circuits, Satellite Communication, Photonic Devices and Systems, VLSI, Nano Technology, Wireless Communication etc. An exclusive computing facility includes state-of-the-art computer systems and software tools like PSPICE, CAD, Synthesis Tools and other allied packages.
+                                                                    The department has a blend of highly qualified and dynamic faculty members, many of whom possess rich experience in academics and industry. The faculty members are dedicated, constantly striving to attain high standards of teaching and work towards creating research orientation among students. Keeping up with modern practices, the department exposes students to cutting edge projects and regular industrial visits. Students are kept update with latest technical development through guest lectures and online courses of NPTEL at regular intervals. To convert and engineering student into a dynamic professional the department has 03 socio-technical clubs which works closely with the modern trends in industry namely: Club Grooming, Kalam Memorial Diligent Club and Fanatics Students Club.
                                                                 </p>
                                                                 <p>
                                                                     The department constantly strives to involve students in various co-curricular and extra-curricular activities. Of particular note is the popular Robotics Club, which provides students with a unique platform for overall technical development in the field of Electronics and Communications.
                                                                 </p>
                                                                 <b>Departmental Laboratories</b>
                                                                 <ol>
-                                                                    <li class="myli_for_page">Analog Integrated Circuits</li>
-                                                                    <li class="myli_for_page">Analog Communication</li>
-                                                                    <li class="myli_for_page">Basic Electronics</li>
-                                                                    <li class="myli_for_page">Digital Electronics</li>
-                                                                    <li class="myli_for_page">Digital Communication</li>
-                                                                    <li class="myli_for_page">Digital Signal Processing</li>
-                                                                    <li class="myli_for_page">Microwave</li>
-                                                                    <li class="myli_for_page">Optical Fibre Communication</li>
-                                                                    <li class="myli_for_page">Printed Circuit Board</li>
-                                                                    <li class="myli_for_page">Simulation</li>
-                                                                    <li class="myli_for_page">Electronic Devices and Circuits</li>
-                                                                    <li class="myli_for_page">Computer Aided Design</li>
+                                                                    <li class="myli_for_page">Electrical Drives</li>
+                                                                    <li class="myli_for_page">Power System</li>
+                                                                    <li class="myli_for_page">Basic Electrical</li>
+                                                                    <li class="myli_for_page">Control System</li>
+                                                                    <li class="myli_for_page">Electrical Workshop</li>
+                                                                    <li class="myli_for_page">Electromechanical Energy Conversion - I</li>
+                                                                    <li class="myli_for_page">Electromechanical Energy Conversion – II</li>
+                                                                    <li class="myli_for_page">Microprocessor</li>
+                                                                    <li class="myli_for_page">Network &amp; Measurement</li>
+                                                                    <li class="myli_for_page">Power Electronics</li>
+                                                                    <li class="myli_for_page">Power Simulation</li>
+                                                                    <li class="myli_for_page">Workshop Technology</li>
+                                                                    <li class="myli_for_page">Engineering Drawing</li>
                                                                 </ol> 
                                                             </div>
                                                         </div>
