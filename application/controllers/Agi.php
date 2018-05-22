@@ -98,7 +98,7 @@ class Agi extends CI_Controller {
         $data_['menu_active'] =3;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
-        $data_['title'] = "Technology &amp; Sciences";
+        $data_['title'] = "Faculty of Technology &amp; Sciences";
 
         $this->load->view('templates/header');
         $this->load->view('academics/faculty/technology-n-sciences', $data_);
@@ -108,7 +108,7 @@ class Agi extends CI_Controller {
         $data_['menu_active'] =3;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
-        $data_['title'] = "Commerce &amp; Business Management";
+        $data_['title'] = "Faculty of Commerce &amp; Business Management";
 
         $this->load->view('templates/header');
         $this->load->view('academics/faculty/commerce-n-business-mgmt', $data_);
@@ -118,7 +118,7 @@ class Agi extends CI_Controller {
         $data_['menu_active'] =3;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
-        $data_['title'] = "Computer Science &amp; Applications";
+        $data_['title'] = "Faculty of Computer Science &amp; Applications";
 
         $this->load->view('templates/header');
         $this->load->view('academics/faculty/computer-science-n-applications', $data_);
@@ -128,7 +128,7 @@ class Agi extends CI_Controller {
         $data_['menu_active'] =3;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
-        $data_['title'] = "Hospitality Management";
+        $data_['title'] = "Faculty of Hospitality Management";
 
         $this->load->view('templates/header');
         $this->load->view('academics/faculty/hospitality-management', $data_);
@@ -138,7 +138,7 @@ class Agi extends CI_Controller {
         $data_['menu_active'] =3;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
-        $data_['title'] = "Bachelor of Education";
+        $data_['title'] = "Faculty of Bachelor of Education";
 
         $this->load->view('templates/header');
         $this->load->view('academics/faculty/b-ed', $data_);

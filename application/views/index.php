@@ -75,7 +75,8 @@
                                 <div class="row"> 
                                     <div class="col-lg-7 col-md-8">
                                         <h1 class="wow fadeInDown">Welcome to Amrapali Group of Institutes</h1>
-                                        <p class="wow fadeInDown">AMRAPALI Group of Institutes was established in 1999 under the aegis of Modern Academy Society.</p>
+                                        <h3 class="wow fadeInDown">We call ourself an Institution ready for the REAL WORLD</h3>
+                                        <p class="wow fadeInDown">At AGI, we don't just teach theory. We teach you how to put theory into practice. Study with us so that you can take your ideas and make them REAL.</p>
 
                                         <div class="typography-page-tab" role="tabpanel">
                                             <!-- Nav tabs -->
@@ -97,9 +98,7 @@
                                                 </div>                       
                                             </div>               
                                         </div>
-
                                     </div>
-
                                     <div class="col-lg-5 col-md-4"></div>
                                 </div><!-- /.row -->
                             </section><!-- /.intro-wrapper -->
@@ -121,7 +120,7 @@
                                             <p style="text-align:center">Bright Students</p>
                                         </div><!--/.col-sm-6 -->
                                         <div class="col-sm-3 text-center experiance-tab-content wow fadeInRight">
-                                            <h1>10000+</h1>
+                                            <h1>18000+</h1>
                                             <p  style="text-align: center">Glorious Alumni</p>
                                         </div><!--/.col-sm-6 -->
                                     </div><!-- /.row -->                                        
@@ -132,11 +131,11 @@
                                 <div class="row">
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
-                                            <a class="media-left" href="#">
-                                                <span class="icon bg1 flaticon-increasing5"></span>
+                                            <a class="media-left" href="<?php echo site_url('Agi/technologyAndSciences'); ?>">
+                                                <img src="<?php echo base_url(). "assets/img/aits1.jpg"?>" title="AITS" style="max-width: 120px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
-                                                <h3 class="media-heading"><a href="#">Technology &amp; Sciences</a></h3>
+                                                <h3 class="media-heading"><a href="<?php echo site_url('Agi/technologyAndSciences'); ?>">Technology &amp; Sciences</a></h3>
                                                 <p>Computer Science &amp; Engineering (CSE)<br>Mechanical Engineering (ME)<br>Electronics and Communications Engineering (ECE)<br>Electrical and Electronics Engineering (EEE)<br>Diploma in ME <br>Dimploma in EE</p>                                                    
                                                 <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('Agi/technologyAndSciences'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
@@ -144,11 +143,11 @@
                                     </div> <!-- /.col-md-6 -->
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
-                                            <a class="media-left" href="#">
-                                                <span class="icon bg4 flaticon-royalty"></span>
+                                            <a class="media-left" href="<?php echo site_url('Agi/hospitalityManagement'); ?>">
+                                                <img src="<?php echo base_url(). "assets/img/aihm1.jpg"?>" title="AIHM" style="max-width: 140px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
-                                                <h3 class="media-heading"><a href="#">Hospitality Management</a></h3>
+                                                <h3 class="media-heading"><a href="<?php echo site_url('Agi/hospitalityManagement'); ?>">Hospitality Management</a></h3>
                                                 <p>Bachelor of Hotel Management &amp; Catering Technology (BHMCT)<br>Bachelor of Hospitality Management (BHM)<br>Diploma in Hotel Management &amp; Catering Technology (DHMCT)<br>Diploma in Hotel Management (DHM)</p>
                                                 <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('Agi/hospitalityManagement'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
@@ -156,11 +155,11 @@
                                     </div> <!-- /.col-md-6 -->
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
-                                            <a class="media-left" href="#">
-                                                <span class="icon bg2 flaticon-syncing"></span>
+                                            <a class="media-left" href="<?php echo site_url('Agi/commerceAndBusinessMgmt'); ?>">
+                                                <img src="<?php echo base_url(). "assets/img/fcbm1.jpg"?>" title="FCBM" style="max-width: 120px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
-                                                <h3 class="media-heading"><a href="#">Commerce &amp; Business Management</a></h3>
+                                                <h3 class="media-heading"><a href="<?php echo site_url('Agi/commerceAndBusinessMgmt'); ?>">Commerce &amp; Business Management</a></h3>
                                                 <p>Masters of Business Administration (MBA)<br>Bachelor of Business Administration (BBA)<br>Bachelor of Commerce (Honours) (B.Com.)</p>
                                                 <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('Agi/commerceAndBusinessMgmt'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
@@ -169,11 +168,11 @@
 
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
-                                            <a class="media-left" href="#">
-                                                <span class="icon bg3 flaticon-file24"></span>
+                                            <a class="media-left" href="<?php echo site_url('Agi/computerScienceAndApplications'); ?>">
+                                                <img src="<?php echo base_url(). "assets/img/fcsa1.jpg"?>" title="FCSA" style="max-width: 140px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
-                                                <h3 class="media-heading"><a href="#">Computer Science &amp; Applications</a></h3>
+                                                <h3 class="media-heading"><a href="<?php echo site_url('Agi/computerScienceAndApplications'); ?>">Computer Science &amp; Applications</a></h3>
                                                 <p>Masters of Computer Applications (MCA)<br>Masters of Computer Applications Lateral Entry (MCA - Direct IInd year)<br>Bachelor of Computer Applications (BCA)</p>
                                                 <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('Agi/computerScienceAndApplications'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
@@ -182,16 +181,17 @@
 
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
-                                            <a class="media-left" href="#">
-                                                <span class="icon bg4 flaticon-royalty"></span>
+                                            <a class="media-left" href="<?php echo site_url('Agi/bEd'); ?>">
+                                                <img src="<?php echo base_url(). "assets/img/bed1.jpg"?>" title="BED" style="min-width: 120px;max-width: 120px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
-                                                <h3 class="media-heading"><a href="#">BEd</a></h3>
+                                                <h3 class="media-heading"><a href="<?php echo site_url('Agi/bEd'); ?>">BEd</a></h3>
                                                 <p>B.Ed. stands for an undergraduate academic course known as Bachelor of Education. It is a course offered for those who are interested in pursuing career in teaching and related fields. </p>
                                                 <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('Agi/bEd'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->
+                                    
                                 </div> <!-- /.row -->
                             </section>                                                               
                             <section class="trusted-client-wrapper">
@@ -228,7 +228,7 @@
                                             <div class="row">
                                                 <div class="col-md-12 col-sm-7">
                                                     <div class="client-testimonial">
-                                                        <p><img hspace="10" align="right" class="img-responsive" style="max-width: 120px;" src="<?PHP echo base_url() . 'assets/img/recruiters/RahulBhatia.jpg'; ?>" alt="Amrapali Recruiters"> My association with Amrapali Group of Institutes at Haldwani is a long one and throughout it has been a journey filled with tremendous outcomes for all those involved.. B.Tech graduates that we have recruited in the past have demonstrated learning attitude, perseverance and hard work in their corporate lives.</p>
+                                                        <p><img align="right" class="img-responsive" style="max-width: 120px;margin-left:20px;" src="<?PHP echo base_url() . 'assets/img/recruiters/RahulBhatia.jpg'; ?>" alt="Amrapali Recruiters"> My association with Amrapali Group of Institutes at Haldwani is a long one and throughout it has been a journey filled with tremendous outcomes for all those involved.. B.Tech graduates that we have recruited in the past have demonstrated learning attitude, perseverance and hard work in their corporate lives.</p>
                                                         <span class="client-name">Rahul Bhatia</span>, <span class="client-org">Manager HR, Wipro Technologies</span>
                                                     </div>
                                                 </div><!-- /.col-md-8 -->	                                                   
@@ -238,7 +238,7 @@
                                             <div class="row">
                                                 <div class="col-md-12 col-sm-7">
                                                     <div class="client-testimonial">
-                                                        <p><img hspace="10" align="right" class="img-responsive" style="max-width: 120px;" src="<?PHP echo base_url() . 'assets/img/recruiters/PrabhakarArya.jpg'; ?>" alt="Amrapali Recruiters"> It was my first visit to Amrapali Group of Institutes to recruit BBA and MBA participants for my organization. I must at the outset congratulate the team Amrapali for been able to develop students with strong potential to succeed in this cut throat competitive world. I wish the institute all the success in days to come. </p>
+                                                        <p><img hspace="10" align="right" class="img-responsive" style="max-width: 120px;margin-left:20px;" src="<?PHP echo base_url() . 'assets/img/recruiters/PrabhakarArya.jpg'; ?>" alt="Amrapali Recruiters"> It was my first visit to Amrapali Group of Institutes to recruit BBA and MBA participants for my organization. I must at the outset congratulate the team Amrapali for been able to develop students with strong potential to succeed in this cut throat competitive world. I wish the institute all the success in days to come. </p>
                                                         <span class="client-name">Mr. Prabhakar Arya</span>, <span class="client-org">Manager, Operations Religare Health Insurance, Noida</span>
                                                     </div>
                                                 </div><!-- /.col-md-8 -->	
@@ -248,7 +248,7 @@
                                             <div class="row">
                                                 <div class="col-md-12 col-sm-7">
                                                     <div class="client-testimonial">
-                                                        <p><img hspace="10" align="right" class="img-responsive" style="max-width: 120px;" src="<?PHP echo base_url() . 'assets/img/recruiters/MaheshRathore.jpg'; ?>" alt="Amrapali Recruiters"> It is only good thing which i have to say for your institute " I would like to congratulate the faculty and management of Amrapali Institute of Hotel Management for making the institute stands out among other hotel management institutes, our association with the institute has been a year long and  we have already selected 7 students as they stand out due to their knowledge , grooming, confidence and over all personality which i believe is due to hard work  and discipline of the faculty members. I would like to  see Amrpali Institute of hotel Management become a premier institute in Hotel Management as i believe it has potential to reach there."</p>
+                                                        <p><img hspace="10" align="right" class="img-responsive" style="max-width: 120px;margin-left:20px;" src="<?PHP echo base_url() . 'assets/img/recruiters/MaheshRathore.jpg'; ?>" alt="Amrapali Recruiters"> It is only good thing which i have to say for your institute " I would like to congratulate the faculty and management of Amrapali Institute of Hotel Management for making the institute stands out among other hotel management institutes, our association with the institute has been a year long and  we have already selected 7 students as they stand out due to their knowledge , grooming, confidence and over all personality which i believe is due to hard work  and discipline of the faculty members. I would like to  see Amrpali Institute of hotel Management become a premier institute in Hotel Management as i believe it has potential to reach there."</p>
                                                         <span class="client-name">Mahesh Rathore</span>, <span class="client-org">Manager Human Resources, Oberoi Amarvilas </span>
                                                     </div>
                                                 </div><!-- /.col-md-8 -->

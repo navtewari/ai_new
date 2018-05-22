@@ -15,7 +15,7 @@
                                         <h1><?php echo $title; ?></h1>
                                     </div>
                                     <ol class="breadcrumb">
-                                        <li><a href="#">Home</a></li>
+                                        <li><a href="<?php echo site_url('agi')?>">Home</a></li>
                                         <li><a href="#">About Us</a></li>
                                         <li class="active"><?php echo $title; ?></li>
                                     </ol>
@@ -38,22 +38,30 @@
                                             </header><!-- /.entry-header -->                                                
 
                                             <div class="entry-content">
-                                                <img src="<?php echo base_url('assets/img/all-pages.png'); ?>" class="img-responsive" alt=""> 
+                                                <img src="<?php echo base_url('assets/img/all-pages.jpg'); ?>" class="img-responsive" alt=""> 
                                                 <p style="margin-top: 10px;">
-                                                    <b>AMRAPALI Group of Institutes</b> was established in 1999 under the aegis of Modern Academy Society. The Institute constituting the group are:
+                                                    Established in 1999 under the aegis of Modern Academy Society, <b>Amrapali Group of Institutes (AGI)</b> is a renowned
+centre of learning in Haldwani. The five different faculty of AGI are::
                                                 <ul class="check-square">
-                                                    <li> Institute of Technology &amp; Sciences (AITS)</li>
-                                                    <li> Institute of Management &amp; Computer Applications (AIMCA)</li>
-                                                    <li> Institute of Hospitality Management (AIHM)</li>
-                                                    <li> Institute of Applied Sciences (AIAS)</li> 
+                                                    <li> Faculty of Technology &amp; Sciences</li>
+                                                    <li> Faculty of Computer Science &amp; Applications</li>
+                                                    <li> Faculty of Hospitality Management</li>
+                                                    <li> Faculty of Commerce &amp; Business Management</li> 
+                                                    <li> Faculty of Education</li> 
                                                 </ul>
                                                 </p>
                                                 <p>
-                                                    All these Institutes of the Group lay emphasis on Teaching, Learning, Research, Consultancy and Management Development, which are the defining features of all good professional educational institutions. The Institutes ensure quality education at under-graduate and post-graduate levels, which is achieved through hard work, dedication, commitment, character building, practical exposure, innovative methodologies, specialized training and expert interaction.
+                                                    The various courses offered by the Institutes are afliated to Uttarakhand Technical University, Kumaun University,
+Uttarakhand Open University and Uttrarakhand Board of Technical Education and are approved by theAll India
+Council for Technical Education and National Council for Teacher Education.
                                                 </p>
                                                 <p>
-                                                    The various courses offered by the Group are affiliated to Uttarakhand Technical University, Kumaun University, Uttarakhand Open University and Uttarakhand Board of Technical Education and are approved by the All India Council for Technical Education and National Council for Teacher Education.
+                                                    In its 19 years of existence, the Amrapali Group of Institutes has emerged as a crowning glory of the beautiful district
+of Nainital. Currently, around 3800 students are pursuing their education in Commerce & Management, Computer
+Science, Education, Engineering and Hospitality Management. Amrapali Group has carved a niche for itself, to
+become the premier private professional educational Institution in the Kumaun region of Uttarakhand.
                                                 </p>
+                                                <p>&nbsp;</p>
                                                 <h3>Location</h3>
                                                 <p>
                                                     <b>Destination Haldwani:</b> Nestled in the lap of the mighty Himalayas, Haldwani is almost adjacent to the world renowned Corbett Tiger Reserve; it lies in the foothills of the mighty Himalayas at a distance of 38 km. from Nainital, the Sarovar Nagari of Uttarakhand. By road, it is 286 km. from Delhi, 300 km. from Dehradun and 350 km. from Lucknow.<br><br>

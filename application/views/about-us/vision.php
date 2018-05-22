@@ -15,7 +15,7 @@
                                             <h1><?php echo $title;?></h1>
                                         </div>
                                         <ol class="breadcrumb">
-                                            <li><a href="#">Home</a></li>
+                                            <li><a href="<?php echo site_url('agi');?>">Home</a></li>
                                             <li><a href="#">About Us</a></li>
                                             <li class="active"><?php echo $title;?></li>
                                         </ol>
@@ -31,13 +31,14 @@
                                     <div class="row">
                                         <div class="col-xs-12 col-md-9 col-sm-8">
                                             <article class="blog-post-wrapper single-article">
-                                                    <?php $this->load->view('templates/ticker-news');?>                                         
-                                                    
-                                                <header class="entry-header">                                                    
-                                                    <h2 class="entry-title"><a href="#"><?php echo $title;?></a></h2>
+                                                    <?php $this->load->view('templates/ticker-news');?>                 
+                                                <header class="entry-header">
+                                                    <h2 class="entry-title"><a href="#"><?php echo $title;?></a></h2>                                                    
                                                 </header><!-- /.entry-header -->                                                
 
                                                 <div class="entry-content">
+                                                    <img src="<?php echo base_url('assets/img/all-pages.jpg'); ?>" class="img-responsive" alt="">
+                                                    <p>&nbsp;</p>
                                                     <p>
                                                        The Amrapali Group of Institutes has embarked a successful journey since its inception in 1999. Having traversed for more than a decade-and-a-half the institute is now a leader in the integration of teaching and learning, advancement of the knowledge base through research and scholarship, and leadership in service and outreach. At its foundation lies a confirmed conviction of developing professionals who will provide leadership and exemplary services to improve the lives of individuals in a changing, challenging and competitive global society.
                                                     </p>

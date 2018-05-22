@@ -15,7 +15,7 @@
                                             <h1><?php echo $title;?></h1>
                                         </div>
                                         <ol class="breadcrumb">
-                                            <li><a href="#">Home</a></li>
+                                            <li><a href="<?php echo site_url('agi');?>">Home</a></li>
                                             <li><a href="#">About Us</a></li>
                                             <li class="active"><?php echo $title;?></li>
                                         </ol>
@@ -53,13 +53,17 @@
                                                         </div>
                                                         <p>&nbsp;</p>
                                                         <h3>Mission</h3>
-                                                        <p>To provide education that promotes the well being of the individual and the nation.</p>
-
+                                                        <p>Creating learner centric environment where every student can achieve their full potential</p>
+                                                        <p>&nbsp;</p>
                                                         <h3>Vision</h3>
-                                                        <p>To groom professionals with the confidence to excel all over the world.</p>
-                                                        <h3>Quality Statement</h3>
-                                                        <p>To strive for all-round excellence and suitably prepare students for leading a professional life with personal integrity and civic responsibility.</p>
-                                                    </p>
+                                                        <p>To be a Leading Professional Institution valuing Student Success</p>
+                                                        <p>&nbsp;</p>
+                                                        <h3>Our Values</h3>
+                                                        <p><b>Focus:</b> We identify and align individual goals and strengthen focus in all our endeavours and approaches of academic discourse. We respect the individuality of learners.</p><p><b>Commitment:</b> It's important to be focussed, but it's even more important to be committed. Things won't always go the way we want them to but if we stay committed, we will stay focussed.</p>
+                                                        <p><b>Excellence:</b> Maintain a high standard of integrity and performance leading to the achievement of academic and professional goals and success of the students at AGI.</p>
+                                                        <p><b>Ethical: </b>Transparency and an ethic of fairness is the core of AGI. Creative Expression: We believe in harnessing a Culture of inquiry and evidence-based decision making in order to engage creative mind-set of students and other stake holders. </p>
+                                                        <p><b>Collaboration:</b> Collaboration is a driving force at AGI
+to strive ahead towards student excellence. </p>                                                    
                                                 </div><!-- /.entry-content -->
                                             </article>                                            
                                         </div><!-- /.col-md-9 -->

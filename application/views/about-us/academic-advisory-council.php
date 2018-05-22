@@ -15,7 +15,7 @@
                                             <h1><?php echo $title;?></h1>
                                         </div>
                                         <ol class="breadcrumb">
-                                            <li><a href="#">Home</a></li>
+                                            <li><a href="<?php echo site_url('agi');?>">Home</a></li>
                                             <li><a href="#">About Us</a></li>
                                             <li class="active"><?php echo $title;?></li>
                                         </ol>
@@ -39,7 +39,7 @@
 
                                                 <div class="entry-content">
                                                     <p>
-                                                        <ul class="check-square" style="line-height: 25px;"> <li>Prof. N.K. Taneja, Vice-Chancellor, CCS University, Meerut. <li>Prof. S.P. Singh, Ex Vice-Chancellor, HNB Garhwal University, Srinagar (Garhwal). <li>Prof. B.S. Rajput, Ex Vice-Chancellor, Kumaun University, Nainital. <li>Prof. R.C. Pant, Ex Vice-Chancellor, Kumaun University, Nainital. <li>Prof. Y.P. Gupta, Ex- Principal, BCT-KEC, Dwarahat. <li>Mr. Mahendra Pal Singh, Advocate Uttarakhand High Court, Nainital. <li>Prof. Shekhar Verma, IIIT Allahabad. <li>Prof. Durgesh Pant, Director – IT, Uttarakhand Open University, Haldwani. <li>Prof. R.C. Mishra, Uttarakhand Open University, Haldwani. <li>Prof. J.K. Goyal, Director JIMS, Noida. <li>Mr. Rohit Dar, GM Marriott. <li>Dr. Sudhir Andrews, Executive Director, Skill Maker Training Services, Dubai. <li>Mr. R.C. Pandey, Principal, G.I.H.M. Dehradun. <li>Mr. Abhimanyu Kayashtha, Corporate GM, Howard Johnson. <li>Mr. Chanchal Kumar Singh, Project Officer, EDI STED. <li>Prof. (Dr.). S.K. Singh, COO Amrapali Group of Institutes, Haldwani <li>Prof. H.D. Bist, Retd. Professor, IIT Kanpur </ul>
+                                                        <ul class="check-square" style="line-height: 25px;"> <li>Prof. N.K. Taneja, Vice-Chancellor, CCS University, Meerut. <li>Prof. S.P. Singh, Ex Vice-Chancellor, HNB Garhwal University, Srinagar (Garhwal). <li>Prof. B.S. Rajput, Ex Vice-Chancellor, Kumaun University, Nainital. <li>Prof. R.C. Pant, Ex Vice-Chancellor, Kumaun University, Nainital. <li>Prof. Y.P. Gupta, Ex- Principal, BCT-KEC, Dwarahat. <li>Mr. Mahendra Pal Singh, Advocate Uttarakhand High Court, Nainital. <li>Prof. Shekhar Verma, IIIT Allahabad. <li>Prof. Durgesh Pant, Director – IT, Uttarakhand Open University, Haldwani. <li>Prof. R.C. Mishra, Uttarakhand Open University, Haldwani. <li>Prof. J.K. Goyal, Director JIMS, Noida. <li>Mr. Rohit Dar, GM Marriott. <li>Dr. Sudhir Andrews, Executive Director, Skill Maker Training Services, Dubai. <li>Mr. Abhimanyu Kayashtha, Corporate GM, Howard Johnson<li>Mr. Chanchal Kumar Singh, Project Officer, EDI STED<li>Prof. (Dr.). S.K. Singh, COO Amrapali Group of Institutes, Haldwani<li>Prof. H.D. Bist, Retd. Professor, IIT Kanpur <li>Mr. Ashutosh Gilra, Chief Representative (India), Geron Card Clothing (Jiangsu) Co. Ltd.<li>Mr. Anshu Singhal, Director, Sofcon Systems India Pvt. Ltd. <li>Mr. Rishikant Shrotriya, General Manager, Hungama.com</ul>
                                                     </p>
                                                 </div><!-- /.entry-content -->
                                             </article>                                            

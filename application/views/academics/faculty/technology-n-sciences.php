@@ -40,20 +40,13 @@
                                             <div class="entry-content" style="overflow: hidden">
                                                 <img src="<?php echo base_url('assets/img/tech.jpg'); ?>" class="img-responsive " alt=""> 
                                                 <p style="margin-top: 10px;">
-                                                    The latest member of the Amrapali family is the Amrapali Institute of Technology and Sciences (AITS).
+                                                    Faculty of Technology & Sciences is a leader in engineering education and research, attracting some of the brightest minds. With a strong foundation built on innovation, research opportunities and entrepreneurial intent, we produce students that are sought after by renowned companies.
                                                 </p>
                                                 <p>
-                                                    AITS is affiliated to the Uttarakhand Technical University, having met the norms stipulated by the All India Council for Technical Education (AICTE). The impressive building housing AITS provides the students many laboratories, including large, internet-enabled computer labs as well as a Communications lab.
+                                                    You will be empowered from the very start of your education at Amrapali. All budding engineers in computer science, electrical, mechanical and electronics at Faculty of Technology & Sciences are driven by unanswered questions and passionate about new discoveries. 
                                                 </p>
-                                                <p>
-                                                    The students have, at their disposal, well-stocked libraries that also provide access to online journals. Well-maintained hostels provide students with comfortable living conditions conducive to academic excellence.
-                                                </p>
-                                                <p>
-                                                    Being a part of the esteemed Amrapali Group of Institutions, AITS benefits from having access to a centrally administered Placement Cell which has a long experience of providing placement related guidance and help to students of AITS's sister institutions.
-                                                </p>
-                                                <p>
-                                                    Setup with the express intent of providing education in cutting-edge technologies, AITS offers, to its 8th batch commencing in the academic year 2013-2014, Bachelor of Technology courses in the following branches:
-                                                </p>
+                                                <p>Develop your skills first-hand in state-of-the-art facilities using real world processes and technology. Learn and get trained from the best mentors in the region.</p>
+                                                <p> Faculty of Technology & Sciences combines best engineering programmes with hands-on learning that takes students beyond the classroom. </p>
                                                 <p>
                                                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="margin-top: 30px;">
                                                     <div class="panel panel-default">
