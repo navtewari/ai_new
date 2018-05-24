@@ -31,7 +31,9 @@
                     </ul>
                 </li>
                 <?php if(count($menu_all['tnp']) == 1){?>
-                <li><a href="#">Training &amp; Placements</a></li>
+                    <?php foreach($menu_all['tnp'] as $title => $path){?>
+                        <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                    <?php } ?>
                 <?php } else { ?>
                 <li><a href="#">Training &amp; Placements <i class="fa fa-arrow-down"></i></a>
                     <ul style="background: #444444">  

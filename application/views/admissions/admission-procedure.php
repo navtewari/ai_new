@@ -40,6 +40,7 @@
                                                 <img src="<?php echo base_url('assets/img/admission.jpg'); ?>" class="img-responsive" alt=""> 
                                                 <p>&nbsp;</p>
                                                 <h3>Admission procedure for courses are as follows:</h3>
+                                                
                                                 <div class="job-details" style="margin-top: 20px;">
                                                     <div class="panel-group" id="accordion1">
                                                           <div class="panel panel-default">                                                            

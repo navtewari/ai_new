@@ -97,7 +97,7 @@ class Agi extends CI_Controller {
     function technologyAndSciences(){
         $data_['menu_active'] =3;
         $data_['menu_all'] = $this->my_menu->site_menu();
-        $data_['alumni'] = $this->ouralumni();
+        $data_['alumni'] = $this->ouralumni('fts');
         $data_['title'] = "Faculty of Technology &amp; Sciences";
 
         $this->load->view('templates/header');
@@ -107,7 +107,7 @@ class Agi extends CI_Controller {
     function commerceAndBusinessMgmt(){
         $data_['menu_active'] =3;
         $data_['menu_all'] = $this->my_menu->site_menu();
-        $data_['alumni'] = $this->ouralumni();
+        $data_['alumni'] = $this->ouralumni('fcbm');
         $data_['title'] = "Faculty of Commerce &amp; Business Management";
 
         $this->load->view('templates/header');
@@ -117,7 +117,7 @@ class Agi extends CI_Controller {
     function computerScienceAndApplications(){
         $data_['menu_active'] =3;
         $data_['menu_all'] = $this->my_menu->site_menu();
-        $data_['alumni'] = $this->ouralumni();
+        $data_['alumni'] = $this->ouralumni('fcsa');
         $data_['title'] = "Faculty of Computer Science &amp; Applications";
 
         $this->load->view('templates/header');
@@ -127,7 +127,7 @@ class Agi extends CI_Controller {
     function hospitalityManagement(){
         $data_['menu_active'] =3;
         $data_['menu_all'] = $this->my_menu->site_menu();
-        $data_['alumni'] = $this->ouralumni();
+        $data_['alumni'] = $this->ouralumni('fhm');
         $data_['title'] = "Faculty of Hospitality Management";
 
         $this->load->view('templates/header');
@@ -202,7 +202,30 @@ class Agi extends CI_Controller {
         $this->load->view('admissions/fee-structure', $data_);
         $this->load->view('templates/footer');            
     }
-    // ----end of dmission Menu
+    // ----end of admission Menu
+
+    // Training & Placement
+    function trainingAndPlacement(){
+        $data['menu_active'] =5;
+        $data['menu_all'] = $this->my_menu->site_menu();
+        $data['alumni'] = $this->ouralumni();
+        $data['title'] = "Training &amp; Placement";
+
+        $data['placement_FCSA'] = $this->wm->fetch_placement_crs_wise('FCSA');
+        $data['placement_FCBM'] = $this->wm->fetch_placement_crs_wise('FCBM');
+        $data['placement_FTS'] = $this->wm->fetch_placement_crs_wise('FTS');
+        $data['placement_FHM'] = $this->wm->fetch_placement_crs_wise('FHM');
+
+        $data['pl_FHM'] = $this->wm->current_yr_palcement('FHM');
+        $data['pl_FCSA'] = $this->wm->current_yr_palcement('FCSA');
+        $data['pl_FTS'] = $this->wm->current_yr_palcement('FTS');
+        $data['pl_FCBM'] = $this->wm->current_yr_palcement('FCBM');
+
+        $this->load->view('templates/header');
+        $this->load->view('training-and-placement/training-and-placement', $data);
+        $this->load->view('templates/footer');               
+    }
+    // ----end of training & placement
 
 // Common Methods
     function commondata(){
@@ -214,8 +237,8 @@ class Agi extends CI_Controller {
         return $data_;
     }
 
-    function ouralumni(){ // Need this at every page with news headings
-        $data_['alumniProfile']= $this->wm->get_all_alumniProfile_distinct();
+    function ouralumni($clg = ''){ // Need this at every page with news headings
+        $data_['alumniProfile']= $this->wm->get_all_alumniProfile_distinct($clg);
 		$data_['rnews_'] = $this->wm->get_most_recent_news();
         return $data_;
     }

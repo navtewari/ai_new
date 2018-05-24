@@ -143,16 +143,47 @@ class Web_model extends CI_Model {
         return $query;
     }
 
-    public function get_all_alumniProfile_distinct(){        
+    public function get_all_alumniProfile_distinct($clg = ''){        
         $this->db->order_by('date', 'desc');        
         $this->db->where('status', 1);
-        $this->db->distinct('course');
-        $this->db->group_by('course');
+        if($clg != ''){
+            $this->db->where('college', $clg);
+        }
+        //$this->db->distinct('course');
+        //$this->db->group_by('course');
         $query = $this->db->get('alumniprofile');
-        //echo $this->db->last_query();
-        //exit();
         return $query->result();
     }  
+    
+
+    public function fetch_placement_crs_wise($dept_) {
+        $this->db->where('DEPARTMENT', $dept_);
+        $this->db->order_by('COURSE');
+        $this->db->order_by('ID');
+        //$this -> db -> order_by('YEAR', 'desc');
+        $query = $this->db->get('placement_data_course_wise');
+        // Exceptional Handling
+        $this->_db_error();
+        // --------------------
+        return $query->result();
+    }
+
+    public function current_yr_palcement($dept_) {
+        $this->db->where('YEAR', date('Y'));
+        $this->db->where('DEPARTMENT', $dept_);
+        $query = $this->db->get('placement_data_course_wise');
+
+        // Exceptional Handling
+        $this->_db_error();
+        // --------------------
+
+        if ($query->num_rows() > 0) {
+            $bool_ = 'yes';
+        } else {
+            $bool_ = date('Y');
+        }
+        return $bool_;
+    }
     
     function _db_error() {
         //exception handling ------------------

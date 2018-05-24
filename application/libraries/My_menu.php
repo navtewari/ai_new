@@ -50,7 +50,7 @@ class My_menu {
 
         // Training & Placements
         $menu['tnp'] = array(
-            "Training &amp; Placements" => "#"
+            "Training &amp; Placements" => "/Agi/trainingAndPlacement"
         );
 
         // Gallery
