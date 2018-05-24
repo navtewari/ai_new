@@ -58,7 +58,7 @@
 .testimonial-wrapper .carousel-indicators {
 	right: 0;
 	left: inherit;
-	bottom: 20px;
+	bottom: -30px;
 	width: 100%;
 }
 .testimonial-wrapper .client-testimonial {

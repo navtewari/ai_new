@@ -15,7 +15,7 @@
                                             <h1><?php echo $title;?></h1>
                                         </div>
                                         <ol class="breadcrumb">
-                                            <li><a href="#">Home</a></li>
+                                            <li><a href="<?php echo site_url('agi');?>">Home</a></li>
                                             <li><a href="#">About Us</a></li>
                                             <li class="active"><?php echo $title;?></li>
                                         </ol>
@@ -372,6 +372,13 @@
                                                             </ul>
                                                         </div>
                                                     </p>
+                                                    <p style="clear: both">&nbsp;</p>
+                                                    <h3>Other Facilities</h3>
+                                                    <p>The campus has an ATM, Stationery & Photocopy Counter and a Coffee and Bake stuff kiosk. The boys & girls hostel houses a Gymnasium for students. The gym is open to all hostel residents after classes. Besides it the hostels have sports facilities like badminton and table tennis, besides this they can enjoy other sports like- basketball, volley ball, cricket, football etc.</p>
+                                                    <p>The hostels have laundry facilities and dedicated 24 hour vehicle for medical emergencies.</p>
+                                                    <p style="clear: both">&nbsp;</p>
+                                                    <h3>Transportation</h3>
+                                                    <p>AGI has a fleet of very comfortable vehicles for pick and drop of our students and staff from across the city and nearby cities. Our transport fleet includes University buses, official commercial vehicles.</p>
                                                 </div><!-- /.entry-content -->
                                             </article>                                            
                                         </div><!-- /.col-md-9 -->

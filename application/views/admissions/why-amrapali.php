@@ -15,7 +15,7 @@
                                         <h1><?php echo $title; ?></h1>
                                     </div>
                                     <ol class="breadcrumb">
-                                        <li><a href="#">Home</a></li>
+                                        <li><a href="<?php echo site_url('agi');?>">Home</a></li>
                                         <li><a href="#">Admissions</a></li>
                                         <li class="active"><?php echo $title; ?></li>
                                     </ol>
@@ -32,14 +32,27 @@
                                     <div class="col-xs-12 col-md-9 col-sm-8">
                                         <article class="blog-post-wrapper single-article">
                                             <header class="entry-header">       
-                                                <?php $this->load->view('templates/ticker-news'); ?>                                         
-
+                                                <?php $this->load->view('templates/ticker-news'); ?>
                                                 <h2 class="entry-title"><a href="#"><?php echo $title; ?></a></h2>
                                             </header><!-- /.entry-header -->                                                
 
                                             <div class="entry-content">
                                                 <img src="<?php echo base_url('assets/img/all-pages.png'); ?>" class="img-responsive" alt=""> 
-                                                <div class="job-details" style="margin-top: 20px;">                                                
+
+                                                <div class="job-details" style="margin-top: 20px;">
+                                                    <h2>We Call Ourself an Institution ready for the Real World</h2>
+                                                    <p>At AGI, we don't just teach theory. We teach you how to put theory into practice. Study with us so that you can  take your ideas and make them REAL. </p>
+                                                    <p><b>The AGI difference:</b></p>
+                                                    <ul class="check-square">
+                                                        <li>Real-world courses</li>
+                                                        <li>Be job ready</li>
+                                                        <li>Learn from experienced Faculty</li>
+                                                        <li>Green Campus</li>
+                                                        <li>Good Employment Record</li>
+                                                        <li>Connected with global companies</li>
+                                                        <li>Ranked High</li>
+                                                    </ul>
+                                                    <p>&nbsp;</p>
                                                     <dl>
                                                         <dt><b>Our Strength</b></dt>
                                                         <dd>200+ Full Time Faculty Members</dd>

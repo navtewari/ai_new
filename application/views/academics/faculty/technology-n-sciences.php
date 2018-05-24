@@ -39,6 +39,8 @@
 
                                             <div class="entry-content" style="overflow: hidden">
                                                 <img src="<?php echo base_url('assets/img/tech.jpg'); ?>" class="img-responsive " alt=""> 
+                                                <p>&nbsp;</p>
+                                                <h2 class="panel-title">ENGINEERING BEYOND IDEAS</h2>                                                
                                                 <p style="margin-top: 10px;">
                                                     Faculty of Technology & Sciences is a leader in engineering education and research, attracting some of the brightest minds. With a strong foundation built on innovation, research opportunities and entrepreneurial intent, we produce students that are sought after by renowned companies.
                                                 </p>

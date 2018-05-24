@@ -15,7 +15,7 @@
                                             <h1><?php echo $title;?></h1>
                                         </div>
                                         <ol class="breadcrumb">
-                                            <li><a href="#">Home</a></li>
+                                            <li><a href="<?php echo site_url('agi');?>">Home</a></li>
                                             <li><a href="#">About Us</a></li>
                                             <li class="active"><?php echo $title;?></li>
                                         </ol>
@@ -37,14 +37,8 @@
                                                     <h2 class="entry-title"><a href="#"><?php echo $title;?></a></h2>
                                                 </header><!-- /.entry-header -->                                                
                                                 <div class="entry-content" style="overflow: hidden">
-                                                    <img src="<?php echo base_url('assets/img/hm.jpg'); ?>" class="img-responsive " alt="">                                                 
-                                                    <blockquote>
-                                                        <p>
-
-                                                            "Education is the manifestation of the perfection already in man."  - Swami Vivekanada
-                                                        </p>
-                                                    </blockquote>
-                                                    
+                                                    <img src="<?php echo base_url('assets/img/hm.jpg'); ?>" class="img-responsive " alt="">                            
+                                                    <p>&nbsp;</p>
                                                     <h3>Courses Offered</h3>
                                                     <p>
                                                         <div class="col-sm-12">
@@ -59,10 +53,14 @@
                                                     <p style="clear: both">&nbsp;</p>
                                                     <h3>Why choose Hotel Management at Amrapali Institute?</h3>
                                                     <p>
-                                                        A major aspect while choosing the career to pursue, after completing class 10th or 12th, is how easily one can get a good job after completion of studies. Hospitality industry leads the service segment of our economy, being the second largest job provider in the country after Healthcare. At Amrapali Institute students are prepared for various aspects of the hospitality industry such as Core Operations, Management, Sales and Marketing etc. Our curriculum combines theory with authentic hands-on learning experience and students have numerous opportunities to interact with industry professionals.
+                                                        The World Travel Organization predicts that it will triple in size by the year 2020, becoming one of the largest industries in the world. This growth will continue in same way and industry will become largest employment provider by 2030.
                                                     </p>
                                                     <p>
-                                                        Students also get access to hands-on real-life training programme incorporated in their day to day activities to facilitate their on-job training. All the programmes conducted at the Institute are overseen by an Industry Advisory Board made up of professionals from across the spectrum of the industry. Our Centralised Training &amp; Placement Department (CTPD) provides students with employment opportunities by inviting the top companies of the industry to our campus for recruitment drives, thus helping our placement rate exceed 95 percent. During its over decade long existence as an institution of academic excellence, The Institute has been able to place its students in reputed national as well as international chain properties such as Taj, Oberoi, Sheraton, ITC, Hyatt, Mariott, Hilton, Le Meridien, Radisson, Oak Wood , Park Plaza, Sayaji, Club Mahindra, CCD, Barista to name a few. Currently our alumni are working at various managerial positions at various hotels in India as well as abroad.
+                                                        Our curriculum combines theory with authentic hands-on learning experience and students have numerous opportunities to interact with industry professionals. Students also get access to hands-on real-life training programme incorporated in their day to day activities to make them industry fit.
+                                                    </p>
+                                                    <p>The skills learned at Faculty of Hospitality Management at AGI are applicable not just in Hospitality Industry, but to the entire Service Sector and Tourism-related businesses. A career in the Hospitality Industry includes opportunities in many different areas apart from hotels
+                                                    </p>
+                                                    <p>The various courses at FHM provides students exposure to basic practical skills that are expected of any Chef, F&B Service Expert, Room Division Manager or any other hospitality professional along with the skill orientation through various training sessions by industry experts to have latests kills. The learning environment encourages students not only to invest their minds in Classrooms and Practical Labs but also showcase their talent in extracurricular and co-curricular activities along with wide range exposure through participation in National Level competitions
                                                     </p>
                                                 </div><!-- /.entry-content -->
                                             </article>                                            

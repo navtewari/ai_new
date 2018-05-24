@@ -181,6 +181,27 @@ class Agi extends CI_Controller {
         $this->load->view('admissions/why-amrapali', $data_);
         $this->load->view('templates/footer');            
     }
+    function admissionProcedure(){
+        $data_['menu_active'] =4;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Admission Procedure";
+
+        $this->load->view('templates/header');
+        $this->load->view('admissions/admission-procedure', $data_);
+        $this->load->view('templates/footer');            
+    }
+
+    function feeStructure(){
+        $data_['menu_active'] =4;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Fee Structure";
+
+        $this->load->view('templates/header');
+        $this->load->view('admissions/fee-structure', $data_);
+        $this->load->view('templates/footer');            
+    }
     // ----end of dmission Menu
 
 // Common Methods

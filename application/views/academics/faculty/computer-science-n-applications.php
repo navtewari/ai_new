@@ -15,7 +15,7 @@
                                         <h1><?php echo $title; ?></h1>
                                     </div>
                                     <ol class="breadcrumb">
-                                        <li><a href="#">Home</a></li>
+                                        <li><a href="<?php echo site_url('agi');?>">Home</a></li>
                                         <li><a href="#">About Us</a></li>
                                         <li class="active"><?php echo $title; ?></li>
                                     </ol>
@@ -57,23 +57,42 @@
                                                 </p>
                                                 <p style="clear: both">&nbsp;</p>
                                                 <p>
-                                                    Amrapali Institute offers the best way of achieving their aspirations to the students aiming to be Computer Science Professionals. We follow a flexible curriculum to mould them into dexterious IT Professionals equipped with competent expertise and skills. A broad exposure to career oriented programmes helps them to shape their mental faculties as per the requirement of today's competitive global economy.
+                                                    <b>At AGI's Faculty of Computer Science & Applications (FCSA) we differentiate our budding graduates through:</b>
+                                                    <div class="col-sm-12">
+                                                        <ul class="check-circle">
+                                                            <li>Dedicated sessions for international certification
+from Microsoft, Red Hat, Oracle, CISCO, IBM etc</li>
+                                                            <li>Practical training and projects to cover Database administration, System maintenance, Java, C# & .NET framework, Android & IOS application, Security analysis etc.</li>
+                                                            <li>Exhaustive pre placement and soft skill training by
+trained experts for proper job placement.</li>
+                                                        </ul>
+                                                    </div>
+                                                </p>
+                                                <p>&nbsp;</p>
+                                                <p>
+                                                    We are living in the era of Information Technology. All most all parts of the human life is heavily dependent on Computer Science & Application e.g. Administration, Defense , Public Safety, Accounting, Bank ing, Spac e Te chnology, Education, Entertainment, Manufacturing Industry, Medical Science etc. 
                                                 </p>
                                                 <p>
-                                                    Both the Postgraduate and Undergraduate programmes conducted by us are interactive, learning-based and flexible. It focuses on nurturing a unique environment to supports professional learning and fosters confidence and teamwork. Amrapali Institute has strongly knit academic, professional and alumni communities together, to provide students the latest, most upgraded and enhanced practical inputs; thus making them suitable for the competitive global village. Faculty members regularly upgrade their skills in the latest technologies by envolving themselves into various projects by reputed companies such as IBM, Adobe, Oracle, etc.
+                                                    A computer application professional have a lots of options to work in various Government & Public Sector Organizations as Information Technology Officer, Software Programmer, System Administrator, Security Analyst. Apart from Government sector, private sector also offers all the above roles and position to Computer Application professionals with lucrative salaries. 
                                                 </p>
-                                                <p>
-                                                    A comprehensive library of software is maintained and suitably updated, to encouraged the enhancement of their technical capabilities. The Institute has tied up with Microsoft for using its range of software under the Microsoft Academic Alliance, which include Windows OS series, Microsoft Office series as well as MS-Visual Studio .NET. The institute also has Oracle, UNIX, Red Hat Linux, C and C ++, MS SQL Server and IBM Technologies such as DB2, Eclipse etc.
-                                                </p>
-                                                <p>
-                                                    The institute uses tools such as case studies, problem-based learning, feasibility reports, field project etc. along with conventional lectures, to encourage maximum participation of students in the process of learning. To prepare students with mindsets suitable for the prevailing competitive corporate environment, mentors at the institute work diligently with the students throughout the year.
-                                                </p>
+                                                
                                             </div><!-- /.entry-content -->
                                         </article>                                            
                                     </div><!-- /.col-md-9 -->
 
                                     <div class="col-xs-12 col-md-3 col-sm-4" align="center">
-                                        <?php $this->load->view('templates/quick-links'); ?>                                            
+                                                                                    
+                                        <div class="sidebar-wrapper" align="left">
+                                            <h2 class="wow fadeInDown" align="center">Certifications in</h2>
+                                            <ul class="check-circle" style="padding-left: .6em;">
+                                                <li>Advanced Office Automation</li>
+                                                <li>Responsive Web Application Development</li>
+                                                <li>Mobile Application Development (Android & IOS)</li>
+                                                <li>Graphics & Animation</li>
+                                            </ul>
+                                        </div>
+                                        <p>&nbsp;</p><p>&nbsp;</p>
+                                        <?php $this->load->view('templates/quick-links'); ?>                                        
                                         <?php $this->load->view('templates/alumni-img-scroll'); ?>
                                     </div><!-- /.col-md-3 -->
                                 </div><!-- /.row -->

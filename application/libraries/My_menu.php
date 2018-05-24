@@ -42,12 +42,10 @@ class My_menu {
         // Admissions
         $menu['admissions'] = array(
             "Why Amrapali?" => '/Agi/whyAmrapali',
-            "Apply Online" => '#',
-            "Admission Procedure" => '#',
-            "Fee Structures" => '#',
-            "FAQ's" => '#',
-            "Management Board" => '#',
-            "Group Profile" => '#'
+            "Apply Online" => '',
+            "Admission Procedure" => '/Agi/admissionProcedure',
+            "Fee Structures" => '/Agi/feeStructure',
+            "FAQ's" => '#'            
         );
 
         // Training & Placements

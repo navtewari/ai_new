@@ -39,8 +39,9 @@
                                             <div class="entry-content" style="overflow: hidden">
                                                 <img src="<?php echo base_url('assets/img/mgmt.jpg'); ?>" class="img-responsive " alt=""> 
                                                 <p style="margin-top: 10px;">
-                                                    The Department has emerged as a pioneer in imparting management education programme in the state. The MBA curriculum has been designed carefully and is reviewed time to time to upgrade with the emerging requirements of the corporate world. MBA is a two year full time programme consisting of four semesters. In the first two semesters students are exposed to areas of General Management, Organization Behavior, Finance, HRM, System Management etc. In the last two semesters students opt for Specializations along with the core subject.
+                                                    Programmes at Faculty of Commerce & Business Management help you develop the knowledge, hands-on experience and network to find your own path and shape your future. We provide a strong foundation in business principles and the inspiration & encouragement one need to launch own legacy. 
                                                 </p>
+                                                <p>With students from diverse backgrounds and faculty members reflecting strong industry and academic experiences, the programmes including MBA, BBA and B.Com(Hons.) stand out for its focus and character. The programmes' well - thought integration of classes, live business cases, projects, personalized mentoring and several other pedagogies transform and prepare students to manage business organizations in the present uncertain yet challenging times of the 21st century.</p>
                                                 <h3>Courses Offered</h3>
                                                 <p>
                                                 <div class="col-sm-8">
