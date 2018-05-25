@@ -205,7 +205,6 @@ class Web_model extends CI_Model {
         $this->db->order_by('ID', 'desc');
         $this->db->where('STATUS_', 1);
         $query = $this->db->get('activities');
-
         return $query->result();
     }
     

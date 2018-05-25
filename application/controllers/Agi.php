@@ -243,9 +243,10 @@ class Agi extends CI_Controller {
         $data_['menu_active'] = 6;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
-        $data['activity_'] = $this->wm->get_activities();
-        if (count($data['activity_']) == 0)
-            redirect('/');
+        $data_['activity_'] = $this->wm->get_activities();
+        if (count($data_['activity_']) == 0){
+            //redirect('/');
+        }
         $data_['title'] = "Activities";
 
         $this->load->view('templates/header');
@@ -275,6 +276,36 @@ class Agi extends CI_Controller {
         $this->load->view('templates/header');
         $this->load->view('contact/contact', $data_);
         $this->load->view('templates/footer');            
+    }
+    function Contact_Enquiry_email() {
+        //-------------
+        $this->email->set_mailtype("html");
+
+        $msg_ = "<h2 style='color: #000090'>Enquiry:</h2> <br /><span style='font-size: 13px; color: #121212'>";
+        $msg_ = $msg_ . "<b><u>".$this->input->post('txtSubject') . "</u></b><br />";
+        $msg_ = $msg_ . $this->input->post('txtWriteHere') . "<br /><br />";
+        $msg_ = $msg_ . "------------------------ <br />";
+        $msg_ = $msg_ . $this->input->post('txtEnqName') . "<br />";
+        $msg_ = $msg_ . $this->input->post('txtEnqEmail') . "<br /></span>";
+
+        $from_ = "enquiry@amrapali.ac.in";
+        $name_ = $this->input->post('txt_fstName') . ' ' . $this->input->post('txt_lstName');
+
+        $this->email->from($from_, $name_);
+        $this->email->to('enquiry@amrapali.ac.in');
+        $this->email->bcc('coo@amrapali.ac.in, shail70@gmail.com');
+        //$this->email->bcc('nitin.d12@gmail.com');
+
+        $this->email->subject('Enquiry from Website Contact Page: ' . $this->input->post('txtSubject'));
+        $this->email->message($msg_);
+
+        if ($this->email->send()) {
+            $ret_data = "Thanks for your query. We will get back soon...";
+        } else {
+            $ret_data = "X: Server Error !! Try Again...";
+        }
+        //-------------
+        echo $ret_data;
     }
     // -----end of contact
 
