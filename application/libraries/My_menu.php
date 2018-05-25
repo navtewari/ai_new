@@ -45,7 +45,7 @@ class My_menu {
             "Apply Online" => '',
             "Admission Procedure" => '/Agi/admissionProcedure',
             "Fee Structures" => '/Agi/feeStructure',
-            "FAQ's" => '#'            
+            "FAQ's" => '/Agi/faq'            
         );
 
         // Training & Placements
@@ -74,7 +74,7 @@ class My_menu {
 
         //Contact Us
         $menu['contactus'] = array(
-            "Contact Us" => "#",
+            "Contact Us" => "/Agi/contact",
         );
 
         return $menu;

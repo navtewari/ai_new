@@ -202,6 +202,17 @@ class Agi extends CI_Controller {
         $this->load->view('admissions/fee-structure', $data_);
         $this->load->view('templates/footer');            
     }
+
+    function faq(){
+        $data_['menu_active'] =4;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Frequently Asked Questions";
+
+        $this->load->view('templates/header');
+        $this->load->view('admissions/faq', $data_);
+        $this->load->view('templates/footer');            
+    }
     // ----end of admission Menu
 
     // Training & Placement
@@ -226,6 +237,19 @@ class Agi extends CI_Controller {
         $this->load->view('templates/footer');               
     }
     // ----end of training & placement
+
+    // contact
+    function contact(){
+        $data_['menu_active'] =8;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Contact Us";
+
+        $this->load->view('templates/header');
+        $this->load->view('contact/contact', $data_);
+        $this->load->view('templates/footer');            
+    }
+    // -----end of contact
 
 // Common Methods
     function commondata(){

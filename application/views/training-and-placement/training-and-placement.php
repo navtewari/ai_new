@@ -36,7 +36,7 @@
                                             </header><!-- /.entry-header -->                                                
 
                                             <div class="entry-content">
-                                                <img src="<?php echo base_url('assets/img/admission.jpg'); ?>" class="img-responsive" alt=""> 
+                                                <img src="<?php echo base_url('assets/img/tnp.jpg'); ?>" class="img-responsive" alt=""> 
                                                 <p>&nbsp;</p>
                                                 <p>
                                                     The Training & Placement Cell, along with the Alumni of the Institute, aims at making available quality placement opportunities for students and at maintaining linkages with Human Resource Departments in the Industry and Research Organisations. The Cell is headed by a Training and Placement Director (TPD). The Training and Placement Cell is also responsible for maintaining contacts with Industries and for arranging placement visits to the Campus.
