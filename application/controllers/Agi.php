@@ -243,6 +243,9 @@ class Agi extends CI_Controller {
         $data_['menu_active'] = 6;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
+        $data['activity_'] = $this->wm->get_activities();
+        if (count($data['activity_']) == 0)
+            redirect('/');
         $data_['title'] = "Activities";
 
         $this->load->view('templates/header');

@@ -200,6 +200,15 @@ class Web_model extends CI_Model {
         return $bool_;
     }
     
+
+    function get_activities() {
+        $this->db->order_by('ID', 'desc');
+        $this->db->where('STATUS_', 1);
+        $query = $this->db->get('activities');
+
+        return $query->result();
+    }
+    
     function _db_error() {
         //exception handling ------------------
         if ($this->db->trans_status() == FALSE) {
