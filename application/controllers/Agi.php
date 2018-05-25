@@ -238,6 +238,30 @@ class Agi extends CI_Controller {
     }
     // ----end of training & placement
 
+    // Gallery
+    function activities(){
+        $data_['menu_active'] = 6;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Activities";
+
+        $this->load->view('templates/header');
+        $this->load->view('gallery/activities', $data_);
+        $this->load->view('templates/footer');
+    }
+    function newsletters(){
+        // yet to code
+    }
+    function publications(){
+        // yet to code
+    }
+    function expertviews(){
+        // yet to code
+    }
+    // end of gallery
+
+    // Alumni
+    // end of Alumni
     // contact
     function contact(){
         $data_['menu_active'] =8;

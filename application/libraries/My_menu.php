@@ -59,9 +59,10 @@ class My_menu {
             "Videos" => '#',
             "Amrapali in Google" => '#',
             "Amrapali in Youtube" => '#',
-            "NewsLetters" => '#',
-            "Publications" => '#',
-            "Expert's View" => '#'
+            "NewsLetters" => '/Agi/newsletters',
+            "Activities" => '/Agi/activities',
+            "Publications" => '/Agi/publications',
+            "Expert's View" => '/Agi/expertviews'
         );
 
         // Alumni

@@ -19,14 +19,14 @@
                 <div class="footer-widget">
                     <h3 class="wow fadeInDown">Important Links</h3>
                     <ul class="wow fadeInDown">
-                        <li><a href="<?PHP echo site_url('web/amrapaliinstitute/whyus/why1/why2/50'); ?>">Why us</a></li>
-                        <li><a href="<?PHP echo site_url('web/amrapaliinstitute/academics/_infra1/_infra2/7'); ?>">Facilities</a></li>
-                        <li><a href="<?PHP echo site_url('web/amrapaliinstitute/antiragg/antirag1/antirag2/51'); ?>">Anti-Ragging</a></li>
-                        <li><?PHP echo anchor('web/feedbackstudent', "Student's Feedback"); ?></li>
+                        <li><a href="<?PHP echo site_url('Agi/whyAmrapali'); ?>">Why us</a></li>
+                        <li><a href="<?PHP echo site_url('Agi/infrastructure'); ?>">Facilities</a></li>
+                        <li><a href="<?PHP echo site_url('#'); ?>">Anti-Ragging</a></li>
+                        <li><?PHP echo anchor('#', "Student's Feedback"); ?></li>
                         <li><?PHP echo anchor('#', "Teacher's Feedback"); ?></li>
-                        <li><?PHP echo anchor('web/amrapaliinstitute/tnp/tnp1/tnp2/8', 'Training & Placement'); ?></li>
-                        <li><?PHP echo anchor('web/amrapaliinstitute/approvals/appr1/appr2/52', 'Approvals &amp; Affiliations'); ?></li>
-                        <li><?PHP echo anchor('web/amrapaliinstitute/career/carr1/carr2/53', 'Career@Amrapali'); ?></li>
+                        <li><?PHP echo anchor('Agi/trainingAndPlacement', 'Training & Placement'); ?></li>
+                        <li><?PHP echo anchor('#', 'Approvals &amp; Affiliations'); ?></li>
+                        <li><?PHP echo anchor('#', 'Career@Amrapali'); ?></li>
                         <li><a href="https://www.onlinesbi.com/prelogin/icollecthome.htm" target="_bank">Pay Fees Online</a></li>
                     </ul>
                 </div><!-- /.footer-widget -->
