@@ -143,18 +143,33 @@ class Web_model extends CI_Model {
         return $query;
     }
 
-    public function get_all_alumniProfile_distinct($clg = ''){        
+    public function get_all_alumniProfile($clg){        
         $this->db->order_by('date', 'desc');        
         $this->db->where('status', 1);
-        if($clg != ''){
-            $this->db->where('college', $clg);
-        }
-        //$this->db->distinct('course');
-        //$this->db->group_by('course');
+        $this->db->where('pic<>', 'x');
+        $this->db->where('college', $clg);
         $query = $this->db->get('alumniprofile');
         return $query->result();
     }  
     
+    public function get_all_alumniProfile_distinct_general(){        
+        $this->db->order_by('date', 'desc');        
+        $this->db->where('status', 1);
+        $this->db->where('pic<>', 'x');
+        $this->db->distinct('course');
+        $this->db->group_by('course');
+        $query = $this->db->get('alumniprofile');
+        return $query->result();
+    }
+
+    public function get_all_alumniProfile_distinct(){
+        $this->db->order_by('date', 'desc');        
+        $this->db->where('status', 1);
+        $this->db->distinct('course');
+        $this->db->group_by('course');
+        $query = $this->db->get('alumniprofile');
+        return $query->result();
+    }
 
     public function fetch_placement_crs_wise($dept_) {
         $this->db->where('DEPARTMENT', $dept_);

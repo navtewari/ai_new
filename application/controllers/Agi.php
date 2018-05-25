@@ -238,7 +238,11 @@ class Agi extends CI_Controller {
     }
 
     function ouralumni($clg = ''){ // Need this at every page with news headings
-        $data_['alumniProfile']= $this->wm->get_all_alumniProfile_distinct($clg);
+        if($clg != ''){
+            $data_['alumniProfile']= $this->wm->get_all_alumniProfile($clg);
+        } else {
+            $data_['alumniProfile']= $this->wm->get_all_alumniProfile_distinct_general();
+        }
 		$data_['rnews_'] = $this->wm->get_most_recent_news();
         return $data_;
     }
