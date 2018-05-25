@@ -114,64 +114,42 @@
 
 
                             <div class="row">
-                                <div class="col-md-8">
-                                    <h2>Drop us a line</h2>
-
-
-                                <form id="contactForm" action="sendemail.php" method="POST">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                          <div class="input-group">
-                                            <label class="sr-only" for="name">Name</label>
-                                            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                            <input id="name" name="name" type="text" class="form-control"  required="" placeholder="Name">
-                                          </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                          <div class="input-group">
-                                            <label class="sr-only" for="email">Email address</label>
-                                            <span class="input-group-addon" id="basic-addon2"><i class="fa fa-envelope"></i></span>
-                                            <input id="email" name="email" type="email" class="form-control" required="" placeholder="Email">
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                          <div class="input-group">
-                                            <label class="sr-only" for="phone">Phone</label>
-                                            <span class="input-group-addon" id="basic-addon3"><i class="fa fa-phone"></i></span>
-                                            <input id="phone" name="phone" type="text" class="form-control" placeholder="Phone">
-                                          </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                          <div class="input-group">
-                                            <label class="sr-only" for="subject">Subject</label>
-                                            <span class="input-group-addon" id="basic-addon4"><i class="fa fa-file-text"></i></span>
-                                            <input id="subject" name="subject" type="text" class="form-control" required="" placeholder="Subject">
-                                          </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="input-group text-area">
-                                        <label class="sr-only" for="message">Message</label>
-                                        <span class="input-group-addon" id="basic-addon5"><i class="fa fa-file-text-o"></i></span>
-                                        <textarea id="message" name="message" class="form-control" rows="6" required="" placeholder="Message"></textarea>
-                                    </div>
-
-                                    <button type="submit" class="btn btn-primary btn-lg">Send</button>
-                                </form>
-
-                                <div class="map-wrapper">
-                                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3481.9003845618054!2d79.41899030421874!3d29.22648447679785!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb18770875225c2c!2sAmrapali+Institute!5e0!3m2!1sen!2sin!4v1428741750005" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+                                <div class="col-md-6">
+                                    <div class="mini-contact">
+                                            <h2>You can directly write to us</h2><br>
+                                            <?PHP echo form_open('#','id=frmEnquiry name=frmEnquiry role=form'); ?>
+                                            <div class="form-group">
+                                                <label>Your Name</label>
+                                                <input type="text" name="txtEnqName" id="txtEnqName" class="form-control" placeholder="Full Name..." />
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Your Email</label>
+                                                <input type="email" name="txtEnqEmail" id="txtEnqEmail" class="form-control" placeholder="Email..." />
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Subject</label>
+                                                <input type="text" name="txtSubject" id="txtSubject" class="form-control" placeholder="Subject..." />
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Your Enquiry</label>
+                                                <textarea name="txtWriteHere" rows="5" id="txtWriteHere" class="form-control" placeholder="Write here..."></textarea>
+                                            </div>
+                                            <div class="form-group" style="float: left">
+                                                <button type="submit" class="btn btn-primary" name="submit" id="submit">Send</button>
+                                            </div>      
+                                            <div id="cntct_msg_" style="float: left; padding: 5px 0px 0px 5px; min-width: 50px; height: 20px; color: #ff0000"></div>
+                                        <?PHP echo form_close(); ?>                                
                                         </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="mini-contact">                                                                                
+                                <div class="col-md-6">
+                                    <div class="mini-contact">                                                                               
                                         <h2>Visit us</h2>
                                         <address>
-                                            Amrapali Group of Institutes, Shiksha Nagar, <br>Lamachaur, Kaladhungi Road, <br>Haldwani - 263139,<br>Distt.-Nainital (UTTARAKHAND)
+                                            Amrapali Group of Institutes, <br>Shiksha Nagar, Lamachaur, Kaladhungi Road, Haldwani - 263139,<br>Distt.-Nainital (UTTARAKHAND)
                                         </address>
-                                        
+                                    <div class="map-wrapper">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3481.9003845618054!2d79.41899030421874!3d29.22648447679785!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb18770875225c2c!2sAmrapali+Institute!5e0!3m2!1sen!2sin!4v1428741750005" width="100%" height="400" frameborder="0" style="border:0"></iframe>
+                                        </div>
                                     </div>
                                 </div>
                             </div><!-- /.row -->
