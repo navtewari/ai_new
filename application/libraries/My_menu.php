@@ -55,10 +55,10 @@ class My_menu {
 
         // Gallery
         $menu['gallery'] = array(
-            "Photos" => '#',
+            "Photos" => '/Agi/imagePics',
+           // "Videos" => '#',
+           // "Amrapali in Google" => '/Agi/googleGallery',
             "Videos" => '#',
-            "Amrapali in Google" => '#',
-            "Amrapali in Youtube" => '#',
             "NewsLetters" => '/Agi/newsletters',
             "Activities" => '/Agi/activities',
             "Publications" => '/Agi/publications',

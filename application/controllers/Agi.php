@@ -258,6 +258,47 @@ class Agi extends CI_Controller {
     function expertviews(){
         // yet to code
     }
+
+    function imagePics(){
+        $data_['menu_active'] = 6;        
+        $data_['title'] = "Image Gallery (Photos)";
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['gallery_category'] = $this->wm->get_gallery_category();        
+
+        $this->load->view('templates/header');
+        $this->load->view('gallery/imagesPics', $data_);
+        $this->load->view('templates/footer');
+    }
+
+    function imagePicsInner($id__) {
+        $data_['menu_active'] = 6;        
+        $data_['title1'] = "Image Gallery (Photos)";
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+         
+        $data_['gallery_category'] = $this->wm->get_gallery_categorybyID($id__);
+        foreach ($data_['gallery_category'] as $grp_item) {            
+            $data_['title'] = $grp_item->CATEGORY;
+        }
+        $data_['gallery_'] = $this->wm->get_gallery($id__);
+
+        $this->load->view('templates/header');
+        $this->load->view('gallery/imagesPicsInner', $data_);
+        $this->load->view('templates/footer');
+    }
+
+    function googleGallery(){
+        $data_['menu_active'] = 6;        
+        $data_['title'] = "Amrapali in Google";
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();            
+
+        $this->load->view('templates/header');
+        $this->load->view('gallery/imageGallery', $data_);
+       $this->load->view('templates/footer');
+    }
+    
     // end of gallery
 
     // Alumni

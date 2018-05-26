@@ -199,6 +199,26 @@ class Web_model extends CI_Model {
         }
         return $bool_;
     }
+
+    function get_gallery_category() {
+        $this->db->where('STATUS', 1);
+        $this->db->order_by('DATE_', 'DESC');
+        $query = $this->db->get('gallery_category');
+        return $query->result();
+    }
+
+    function get_gallery($id__) {
+        $this->db->where('STATUS', 1);
+        $this->db->where('CATEG_ID', $id__);
+        $query = $this->db->get('gallery');
+        return $query->result();
+    }
+    function get_gallery_categorybyID($id__) {
+        $this->db->where('STATUS', 1);
+        $this->db->where('CATEG_ID', $id__);
+        $query = $this->db->get('gallery_category');
+        return $query->result();
+    }
     
     function _db_error() {
         //exception handling ------------------
