@@ -1,51 +1,66 @@
-	<link rel="stylesheet" href="<?PHP echo base_url() . 'nitnav/video/videolightbox.css';?>" type="text/css" />
-	<link rel="stylesheet" type="text/css" href="<?PHP echo base_url() . 'nitnav/video/overlay-minimal.css';?>"/>
-	<script src="<?PHP echo base_url() . 'nitnav/video/jquery.js';?>" type="text/javascript"></script>
-	<script src="<?PHP echo base_url() . 'nitnav/video/swfobject.js';?>" type="text/javascript"></script>
-			
-	<?PHP
-		$this->load->view('templates/headPanel'); 
-	?>
-    <!--/#title-->
-    <section id="about-us" class="container">
-        <div class="row">
-		<div class="videogallery">
-		<a class="voverlay" href="<?PHP echo base_url() . 'nitnav/video/player.swf?url=video/amrapali1.flv&volume=100';?>" title="amrapali1"><img src="<?PHP echo base_url() . 'nitnav/video/thumbnails/amrapali1.png';?>" alt="amrapali1" /><span>EXPLORE-AMRAPALI</span></a>
-		<a class="voverlay" href="<?PHP echo base_url() . 'nitnav/video/player.swf?url=video/amrapali5.flv&volume=100';?>" title="amrapali5"><img src="<?PHP echo base_url() . 'nitnav/video/thumbnails/amrapali5.png';?>" alt="amrapali5" /><span>EXPLORE-AMRAPALI</span></a>
-		<a class="voverlay" href="<?PHP echo base_url() . 'nitnav/video/player.swf?url=video/amrapali6.flv&volume=100';?>" title="amrapali6"><img src="<?PHP echo base_url() . 'nitnav/video/thumbnails/amrapali6.png';?>" alt="amrapali6" /><span>EXPLORE-AMRAPALI</span></a>
-		<a class="voverlay" href="<?PHP echo base_url() . 'nitnav/video/player.swf?url=video/amrapali7.flv&volume=100';?>" title="amrapali7"><img src="<?PHP echo base_url() . 'nitnav/video/thumbnails/amrapali7.png';?>" alt="amrapali7" /><span>EXPLORE-AMRAPALI</span></a>
-		<a class="voverlay" href="<?PHP echo base_url() . 'nitnav/video/player.swf?url=video/amrapali8.flv&volume=100';?>" title="amrapali8"><img src="<?PHP echo base_url() . 'nitnav/video/thumbnails/amrapali8.png';?>" alt="amrapali8" /><span>EXPLORE-AMRAPALI</span></a><br />
-		<br><br>
-		<div style="width: 1025; background-color:#CCCCCC; height: 1px;"></div>
-		<br>
-		<a class="voverlay" href="index_videolb/player.swf?url=video/abhudaya_1.flv&volume=100';?>" title="abhudaya_1"><img src="<?PHP echo base_url() . 'nitnav/video/thumbnails/abhudaya_1.png';?>" alt="abhudaya_1" /><span>ABHYODAYA-2015</span></a>
-		<a class="voverlay" href="index_videolb/player.swf?url=video/abhudaya_2.flv&volume=100';?>" title="abhudaya_2"><img src="<?PHP echo base_url() . 'nitnav/video/thumbnails/abhudaya_2.png';?>" alt="abhudaya_2" /><span>ABHYODAYA-2015</span></a>
-		<br><br>
-		<div style="width: 1025; background-color:#CCCCCC; height: 1px;"></div>
-		<br>
-		<a class="voverlay" href="<?PHP echo base_url() . 'nitnav/video/player.swf?url=video/spandan_2014_1.flv&volume=100';?>" title="spandan_2014_1"><img src="<?PHP echo base_url() . 'nitnav/video/thumbnails/spandan_2014_1.png';?>" alt="spandan_2014_1" /><span>SPANDAN-2014</span></a>
-		<a class="voverlay" href="<?PHP echo base_url() . 'nitnav/video/player.swf?url=video/spandan_2014_2.flv&volume=100';?>" title="spandan_2014_2"><img src="<?PHP echo base_url() . 'nitnav/video/thumbnails/spandan_2014_2.png';?>" alt="spandan_2014_2" /><span>SPANDAN-2014</span></a>
-		<a class="voverlay" href="<?PHP echo base_url() . 'nitnav/video/player.swf?url=video/spandan_2014_3.flv&volume=100';?>" title="spandan_2014_3"><img src="<?PHP echo base_url() . 'nitnav/video/thumbnails/spandan_2014_3.png';?>" alt="spandan_2014_3" /><span>SPANDAN-2014</span></a>
-		<a class="voverlay" href="<?PHP echo base_url() . 'nitnav/video/player.swf?url=video/spandan_2014_4.flv&volume=100';?>" title="spandan_2014_4"><img src="<?PHP echo base_url() . 'nitnav/video/thumbnails/spandan_2014_4.png';?>" alt="spandan_2014_4" /><span>SPANDAN-2014</span></a>
-		<a class="voverlay" href="<?PHP echo base_url() . 'nitnav/video/player.swf?url=video/spandan_2014_5.flv&volume=100';?>" title="spandan_2014_5"><img src="<?PHP echo base_url() . 'nitnav/video/thumbnails/spandan_2014_5.png';?>" alt="spandan_2014_5" /><span>SPANDAN-2014</span></a>
-		<a class="voverlay" href="<?PHP echo base_url() . 'nitnav/video/player.swf?url=video/spandan_2014_6.flv&volume=100';?>" title="spandan_2014_6"><img src="<?PHP echo base_url() . 'nitnav/video/thumbnails/spandan_2014_6.png';?>" alt="spandan_2014_6" /><span>SPANDAN-2014</span></a>
-		<a class="voverlay" href="<?PHP echo base_url() . 'nitnav/video/player.swf?url=video/spandan_2014_7.flv&volume=100';?>" title="spandan_2014_7"><img src="<?PHP echo base_url() . 'nitnav/video/thumbnails/spandan_2014_7.png';?>" alt="spandan_2014_7" /><span>SPANDAN-2014</span></a>
-		<a class="voverlay" href="<?PHP echo base_url() . 'nitnav/video/player.swf?url=video/spandan_2014_8.flv&volume=100';?>" title="spandan_2014_8"><img src="<?PHP echo base_url() . 'nitnav/video/thumbnails/spandan_2014_8.png';?>" alt="spandan_2014_8" /><span>SPANDAN-2014</span></a>
-		<a class="voverlay" href="<?PHP echo base_url() . 'nitnav/video/player.swf?url=video/spandan_2014_9.flv&volume=100';?>" title="spandan_2014_9"><img src="<?PHP echo base_url() . 'nitnav/video/thumbnails/spandan_2014_9.png';?>" alt="spandan_2014_9" /><span>SPANDAN-2014</span></a><br />
-		
-		<br><br>
-		<div style="width: 1025; background-color:#CCCCCC; height: 1px;"></div>
-		<br>
-		<a class="voverlay" href="<?PHP echo base_url() . 'nitnav/video/player.swf?url=video/amrapali2.flv&volume=100';?>" title="amrapali2"><img src="<?PHP echo base_url() . 'nitnav/video/thumbnails/amrapali2.png';?>" alt="amrapali2" /><span>SPANDAN-2013</span></a>
-		<a class="voverlay" href="<?PHP echo base_url() . 'nitnav/video/player.swf?url=video/amrapali3.flv&volume=100';?>" title="amrapali3"><img src="<?PHP echo base_url() . 'nitnav/video/thumbnails/amrapali3.png';?>" alt="amrapali3" /><span>SPANDAN-2013</span></a>
-		<a class="voverlay" href="<?PHP echo base_url() . 'nitnav/video/player.swf?url=video/amrapali4.flv&volume=100';?>" title="amrapali4"><img src="<?PHP echo base_url() . 'nitnav/video/thumbnails/amrapali4.png';?>" alt="amrapali4" /><span>SPANDAN-2013</span></a>
-		</div>
-		<p>&nbsp;</p>
-		
-		<script src="<?PHP echo base_url() . 'nitnav/video/jquery.tools.min.js';?>" type="text/javascript"></script>
-		<script src="<?PHP echo base_url() . 'nitnav/video/videolightbox.js';?>" type="text/javascript"></script>
-		<!-- End VideoLightBox.com BODY section -->
+	<link rel="stylesheet" href="<?PHP echo base_url() . 'assets/video/videolightbox.css';?>" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="<?PHP echo base_url() . 'assets/video/overlay-minimal.css';?>"/>
+	<script src="<?PHP echo base_url() . 'assets/video/jquery.js';?>" type="text/javascript"></script>
+	<script src="<?PHP echo base_url() . 'assets/video/swfobject.js';?>" type="text/javascript"></script>
+<body>
+    <div id="st-container" class="st-container">
+        <div class="st-pusher">
+            <div class="st-content">
+                <div class="st-content-inner">
+                    <header>
+                        <?php $this->load->view('templates/menu'); ?>
+                    </header>
 
-        </div><!--/.row-->
-	</section>
-    
+                    <section class="page-header-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="page-header">
+                                        <h1><?php echo $title; ?></h1>
+                                    </div>
+                                    <ol class="breadcrumb">
+                                        <li><a href="<?php echo site_url('agi');?>">Home</a></li>
+                                        <li><a href="#">Gallery</a></li>
+                                        <li class="active"><?php echo $title; ?></li>
+                                    </ol>
+                                </div>
+                            </div><!-- /.row -->
+                        </div><!-- /.container-fluid -->
+                    </section>
+
+                    <div class="container">
+                    <div class="content-wrapper">
+                        <div class="inner-content">
+                            <?php $this->load->view('templates/ticker-news');?>                            
+                            <header class="entry-header">                                                    
+                                <h2 class="entry-title"><a href="#"><?php echo $title; ?></a></h2>
+                                <br>
+                            </header><!-- /.entry-header -->
+                            
+                            <div class="row four-column">
+                                <div id="grid">                                    
+                                    <div class="portfolio-item col-sm-6 col-md-2">
+												<a class="voverlay" href="<?PHP echo base_url() . 'assets/video/player.swf?url=video/amrapali1.flv&volume=100';?>" title="amrapali1"><img src="<?PHP echo base_url() . 'assets/video/thumbnails/amrapali1.png';?>" alt="amrapali1" /></a>
+										</div>
+										<div class="portfolio-item col-sm-6 col-md-2">
+												<a class="voverlay" href="<?PHP echo base_url() . 'assets/video/player.swf?url=video/amrapali5.flv&volume=100';?>" title="amrapali5"><img src="<?PHP echo base_url() . 'assets/video/thumbnails/amrapali5.png';?>" alt="amrapali5" /></a>
+										</div>
+										<div class="portfolio-item col-sm-6 col-md-2">
+												<a class="voverlay" href="<?PHP echo base_url() . 'assets/video/player.swf?url=video/amrapali6.flv&volume=100';?>" title="amrapali6"><img src="<?PHP echo base_url() . 'assets/video/thumbnails/amrapali6.png';?>" alt="amrapali6" /></a>
+										</div>
+										<div class="portfolio-item col-sm-6 col-md-2">
+												<a class="voverlay" href="<?PHP echo base_url() . 'assets/video/player.swf?url=video/amrapali7.flv&volume=100';?>" title="amrapali7"><img src="<?PHP echo base_url() . 'assets/video/thumbnails/amrapali7.png';?>" alt="amrapali7" /></a>
+										</div>
+										<div class="portfolio-item col-sm-6 col-md-2">
+												<a class="voverlay" href="<?PHP echo base_url() . 'assets/video/player.swf?url=video/amrapali8.flv&volume=100';?>" title="amrapali8"><img src="<?PHP echo base_url() . 'assets/video/thumbnails/amrapali8.png';?>" alt="amrapali8" /></a><br />
+										</div>
+                                    </div><!-- /.single-portfolio -->                                  
+                                </div><!-- /#grid -->
+                            </div><!-- /.row -->
+                        </div><!-- /.inner-content -->
+                    </div><!-- /.content-wrapper -->
+                </div><!-- /.container -->
+
+    <!--/#title-->
+<script src="<?PHP echo base_url() . 'assets/video/jquery.tools.min.js';?>" type="text/javascript"></script>
+<script src="<?PHP echo base_url() . 'assets/video/videolightbox.js';?>" type="text/javascript"></script>

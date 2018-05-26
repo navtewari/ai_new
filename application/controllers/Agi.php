@@ -168,6 +168,18 @@ class Agi extends CI_Controller {
         $this->load->view('templates/footer');
     }
     // end of Facilties sub-menu
+    // fdp sub-menu
+    function fdp(){
+        $data_['menu_active'] =3;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Faculty Development Programme";
+
+        $this->load->view('templates/header');
+        $this->load->view('academics/fdp', $data_);
+        $this->load->view('templates/footer');            
+    }
+    //End of fdp sub-menu
 // ---- End of Academics Menu 
 
     // Admission Menu
@@ -254,13 +266,51 @@ class Agi extends CI_Controller {
         $this->load->view('templates/footer');
     }
     function newsletters(){
-        // yet to code
+        $data_['menu_active'] = 6;        
+        $data_['title'] = "Newsletters";
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['gallery_category'] = $this->wm->get_gallery_category();        
+
+        $this->load->view('templates/header');
+        $this->load->view('gallery/newsletters', $data_);
+        $this->load->view('templates/footer');
     }
+
     function publications(){
-        // yet to code
+        $data_['menu_active'] = 6;        
+        $data_['title'] = "Our Publications";
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['gallery_category'] = $this->wm->get_gallery_category();        
+
+        $this->load->view('templates/header');
+        $this->load->view('gallery/publication', $data_);
+        $this->load->view('templates/footer');
     }
+
+    function acme(){
+        $data_['menu_active'] = 6;        
+        $data_['title'] = "ACME";
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['gallery_category'] = $this->wm->get_gallery_category();        
+
+        $this->load->view('templates/header');
+        $this->load->view('gallery/acme', $data_);
+        $this->load->view('templates/footer');
+    }
+
     function expertviews(){
-        // yet to code
+        $data_['menu_active'] = 6;        
+        $data_['title'] = "Expert Views";
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['gallery_category'] = $this->wm->get_gallery_category();        
+
+        $this->load->view('templates/header');
+        $this->load->view('gallery/expertView', $data_);
+        $this->load->view('templates/footer');
     }
 
     function imagePics(){
@@ -302,10 +352,42 @@ class Agi extends CI_Controller {
         $this->load->view('gallery/imageGallery', $data_);
        $this->load->view('templates/footer');
     }
+
+    function videos(){
+        $data_['menu_active'] = 6;        
+        $data_['title'] = "Explore Amrapali";
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();            
+
+        $this->load->view('templates/header');
+        $this->load->view('gallery/videoGallery', $data_);
+       $this->load->view('templates/footer');
+    }
+
+    function youtubeGallery(){
+        $data_['menu_active'] = 6;        
+        $data_['title'] = "Video Gallery";
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();            
+
+        $this->load->view('templates/header');
+        $this->load->view('gallery/youtubeGallery', $data_);
+       $this->load->view('templates/footer');
+    }
     
     // end of gallery
 
     // Alumni
+    function alumniConnect(){
+        $data_['menu_active'] = 7;        
+        $data_['title'] = "Alumni Connect Program";
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();            
+
+        $this->load->view('templates/header');
+        $this->load->view('alumni/alumniConnect', $data_);
+       $this->load->view('templates/footer');
+    }
     // end of Alumni
     // contact
     function contact(){
@@ -318,6 +400,7 @@ class Agi extends CI_Controller {
         $this->load->view('contact/contact', $data_);
         $this->load->view('templates/footer');            
     }
+
     function Contact_Enquiry_email() {
         //-------------
         $this->email->set_mailtype("html");

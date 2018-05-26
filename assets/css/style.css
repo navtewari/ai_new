@@ -1356,9 +1356,9 @@ BLOG PAGE
     padding: 60px;
 }
 .blog-post-wrapper {
-    padding: 0 0 60px;
-    margin: 0 0 60px;
-    border-bottom: 2px solid #e3e3e3;
+    padding: 0;
+    margin: 0;
+    /*border-bottom: 2px solid #e3e3e3;*/
 }
 .entry-header {}
 
@@ -1482,9 +1482,9 @@ BLOG PAGE
 SINGLE BLOG
 -------------------------------------------------------------------*/
 .blog-post-wrapper.single-article {
-    padding: 0 0 40px;
-    margin: 0 0 40px;
-    border-bottom: 1px solid #e3e3e3;
+    padding: 0;
+    margin: 0;
+    /*border-bottom: 1px solid #e3e3e3;*/
 }
 
 .about-author .media img {

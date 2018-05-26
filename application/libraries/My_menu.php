@@ -36,7 +36,7 @@ class My_menu {
                 "BBA" => '#'
             ),
             'others' => array(
-                'FDP' => '#'
+                'FDP' => '/Agi/fdp'
             )
         );
         // Admissions
@@ -56,9 +56,10 @@ class My_menu {
         // Gallery
         $menu['gallery'] = array(
             "Photos" => '/Agi/imagePics',
-           // "Videos" => '#',
+            //"Explore Amrapali" => '/Agi/videos',
+            //"3D 360<sup>o</sup> Virtual Tour" => 'http://golive360.com/demo/amrpali05/all_files/virtual-tour/build.html',
            // "Amrapali in Google" => '/Agi/googleGallery',
-            "Videos" => '#',
+            "Video Gallery" => '/Agi/youtubeGallery',
             "NewsLetters" => '/Agi/newsletters',
             "Activities" => '/Agi/activities',
             "Publications" => '/Agi/publications',
@@ -67,7 +68,7 @@ class My_menu {
 
         // Alumni
         $menu['alumni_menu'] = array(
-            "Alumni Connect Programme" => '#',
+            "Alumni Connect Programme" => 'Agi/alumniConnect',
             "Alumni Registration" => '#',
             "Our Distinguished Alumni" => '#',
             "Alumni Speaks" => '#'
