@@ -166,6 +166,7 @@
 <script src="<?php echo base_url('assets/js/jquery.shuffle.min.js'); ?>?ver=1.0"></script>
 <!-- Custom Script -->
 <script src="<?php echo base_url('assets/js/scripts.js'); ?>?ver=1.0"></script>
+<script src="<?php echo base_url('assets/js/main.js'); ?>?ver=1.0"></script>
 
 <?php $this->load->view('templates/analyticstracking');?>
 </body>

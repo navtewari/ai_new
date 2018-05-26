@@ -14,6 +14,10 @@
         <meta name="copyright" content="AMRAPALI GROUP OF INSTITUTES, HALDWANI">
 
         <title>Amrapali Group of Institutes</title>
+        <script type="text/javascript">
+            site_url_ = "<?php echo site_url(); ?>";
+            base_path = "<?php echo base_url(); ?>";
+        </script>
         <!-- Bootstrap Core CSS -->
         <link href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>?ver=1.0" rel="stylesheet">
         <!-- Web Fonts -->
