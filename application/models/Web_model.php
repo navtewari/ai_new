@@ -325,19 +325,111 @@ class Web_model extends CI_Model {
         $query = $this->db->get('gallery');
         return $query->result();
     }
+
     function get_gallery_categorybyID($id__) {
         $this->db->where('STATUS', 1);
         $this->db->where('CATEG_ID', $id__);
         $query = $this->db->get('gallery_category');
         return $query->result();
-    }
-    
+    }    
 
     function get_activities() {
         $this->db->order_by('ID', 'desc');
         $this->db->where('STATUS_', 1);
         $query = $this->db->get('activities');
         return $query->result();
+    }
+
+    function insert_registration() {
+        $data = array(
+            'course' => $this->input->post('cmbCourse'),
+            'name' => $this->input->post('inputname'),
+            'dob' => $this->input->post('enterdob'),
+            'fatherName' => $this->input->post('fatherName'),
+            'motherName' => $this->input->post('motherName'),
+            'gender' => $this->input->post('gender'),
+            'nationality' => $this->input->post('Nationality'),
+            'caste' => $this->input->post('Category'),
+            'hrCategory' => $this->input->post('hCategory'),
+            'draftNo' => $this->input->post('draftnumber'),
+            'draftDate' => $this->input->post('draftdate'),
+            'draftBank' => $this->input->post('bank')
+        );
+        
+        $query = $this->db->insert('onlineregistration', $data);
+        //echo "<br>" . $this->db->_error_message() . "<br>";        
+        $id__ = $this->db->insert_id();
+        
+       // echo $this->db->last_query();
+       // echo "<br>" . $id__;
+        //exit();
+        // Exceptional Handling
+        $this->_db_error();
+        // --------------------
+
+        $this->session->set_userdata('user', $id__);
+    }
+
+    function update_registration1() {
+        $data = array(
+            'corAddress' => $this->input->post('Correspondance'),
+            'corPhone' => $this->input->post('correspondanceContact'),
+            'perAddress' => $this->input->post('parmanent'),
+            'perPhone' => $this->input->post('parmanentNumber'),
+            'locAddress' => $this->input->post('local'),
+            'locPhone' => $this->input->post('localNumber'),
+            'emailID' => $this->input->post('mail')
+        );
+
+        $this->db->where('regID', $this->session->userdata('user'));
+        $this->db->update('onlineregistration', $data);
+
+        // Exceptional Handling
+        $this->_db_error();
+        // --------------------
+    }
+
+    function update_registration2() {
+        $data = array(
+            'clgLastAttended' => $this->input->post('lastAttended'),
+            'highInstitute' => $this->input->post('txtHsInst'),
+            'highUni' => $this->input->post('txtHsBrdUniv'),
+            'highYear' => $this->input->post('txtHsYr'),
+            'highSubject' => $this->input->post('txtHsSbj'),
+            'highMarks' => $this->input->post('txtHsMrks'),
+            'interInstitute' => $this->input->post('txtInterInst'),
+            'interUni' => $this->input->post('txtInterBrdUniv'),
+            'interYear' => $this->input->post('txtInterYr'),
+            'interSubject' => $this->input->post('txtInterSbj'),
+            'interMarks' => $this->input->post('txtInterMrks'),
+            'gradInstitute' => $this->input->post('txtGradInst'),
+            'gradUni' => $this->input->post('txtGradBrdUniv'),
+            'gradYear' => $this->input->post('txtGradYr'),
+            'gradSubject' => $this->input->post('txtGradSbj'),
+            'gradMarks' => $this->input->post('txtGradMrks'),
+            'otherInstitute' => $this->input->post('txtOtherInst'),
+            'otherUni' => $this->input->post('txtOtherBrdUniv'),
+            'otherYear' => $this->input->post('txtOtherYr'),
+            'otherSubject' => $this->input->post('txtOtherSbj'),
+            'otherMarks' => $this->input->post('txtOtherMrks'),
+            'achievement' => $this->input->post('achievement'),
+            'regDate' => date("Y/m/d")
+        );
+
+        $this->db->where('regID', $this->session->userdata('user'));
+        $this->db->update('onlineregistration', $data);
+        // echo "<br>" . $this->db->_error_message() . "<br>";      
+        // exit();
+        // Exceptional Handling
+        $this->_db_error();
+        // --------------------
+    }
+
+    function getTicket() {
+        $this->db->where('regID', $this->session->userdata('user'));
+        $query = $this->db->get('onlineregistration');
+
+        return $query->row();
     }
     
     function _db_error() {

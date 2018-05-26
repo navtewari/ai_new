@@ -193,6 +193,106 @@ class Agi extends CI_Controller {
         $this->load->view('admissions/why-amrapali', $data_);
         $this->load->view('templates/footer');            
     }
+
+    function onlineRegistration(){
+        $data_['menu_active'] =4;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Online Registration";
+        $this->session->set_userdata('user', '1');
+
+        $this->load->view('templates/header');
+        $this->load->view('admissions/onlineRegistration/steps', $data_);
+        $this->load->view('templates/footer'); 
+    }
+
+    function onlineReg_first() {
+        if ($this->session->userdata('user')) {
+            $data_['menu_active'] =4;
+            $data_['menu_all'] = $this->my_menu->site_menu();
+            $data_['alumni'] = $this->ouralumni();
+            $data_['title'] = "Online Registration - Step 1";            
+
+            $this->load->view('templates/header');
+            $this->load->view('admissions/onlineRegistration/online1', $data_);
+            $this->load->view('templates/footer'); 
+        }else{
+            $this->session->unset_userdata('user');
+            redirect('Agi/');
+        }
+    }
+
+    function onlineReg_second() {
+        if ($this->session->userdata('user')) {
+            $data_['menu_active'] =4;
+            $data_['menu_all'] = $this->my_menu->site_menu();
+            $data_['alumni'] = $this->ouralumni();
+            $data_['title'] = "Online Registration - Step 2";            
+
+            $this->load->view('templates/header');
+            $this->load->view('admissions/onlineRegistration/online2',$data_);
+            $this->load->view('templates/footer'); 
+        }else{
+            $this->session->unset_userdata('user');
+            redirect('Agi/');
+        }
+    }
+
+    function onlineReg_third() {
+        if ($this->session->userdata('user')) {
+            $data_['menu_active'] =4;
+            $data_['menu_all'] = $this->my_menu->site_menu();
+            $data_['alumni'] = $this->ouralumni();
+            $data_['title'] = "Online Registration - Step 3 ";            
+
+            $this->load->view('templates/header');
+            $this->load->view('admissions/onlineRegistration/online3',$data_);
+            $this->load->view('templates/footer'); 
+        }else{
+            $this->session->unset_userdata('user');
+            redirect('Agi/');
+        }
+    }
+
+    function onlineReg_ticket() {
+        if ($this->session->userdata('user')) {
+           $data_['menu_active'] =4;
+            $data_['menu_all'] = $this->my_menu->site_menu();
+            $data_['alumni'] = $this->ouralumni();
+            $data_['title'] = "Online Registration - Ticket ";       
+            $data_['ticket'] = $this->get_ticket();
+            $this->session->unset_userdata('user');
+            $this->load->view('admissions/onlineRegistration/ticket', $data_);
+        } else {
+            $this->session->unset_userdata('user');
+            redirect('Agi');
+        }
+    }
+
+    function insertRegistration() {
+        $this->load->model('web_model', 'wm');
+        $flag = $this->wm->insert_registration();
+        redirect('Agi/onlineReg_second');
+    }
+
+    function updateRegistration1() {
+        $this->load->model('web_model', 'wm');
+        $flag = $this->wm->update_registration1();
+        redirect('Agi/onlineReg_third');
+    }
+
+    function updateRegistration2() {
+        $this->load->model('web_model', 'wm');
+        $flag = $this->wm->update_registration2();
+        redirect('Agi/onlineReg_ticket');
+    }
+
+    function get_ticket() {
+        $this->load->model('web_model', 'wm');
+        $ticket = $this->wm->getTicket();
+        return $ticket;
+    }
+
     function admissionProcedure(){
         $data_['menu_active'] =4;
         $data_['menu_all'] = $this->my_menu->site_menu();

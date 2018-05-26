@@ -42,7 +42,7 @@ class My_menu {
         // Admissions
         $menu['admissions'] = array(
             "Why Amrapali?" => '/Agi/whyAmrapali',
-            "Apply Online" => '',
+            "Apply Online" => 'Agi/onlineRegistration',
             "Admission Procedure" => '/Agi/admissionProcedure',
             "Fee Structures" => '/Agi/feeStructure',
             "FAQ's" => '/Agi/faq'            

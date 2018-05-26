@@ -17,7 +17,7 @@
     <h5>OFFICE COPY</h5>
     	<table width="542" cellpadding="0" cellspacing="0" border="1" bordercolor="#333333">
         	<tr align="center">
-            	<td colspan="2"><img src="<?PHP echo base_url() . 'nitnav/i_m_g_/logo_1.png'?>" title="Amrapali Group of Institutes"></td>
+            	<td colspan="2"><img src="<?PHP echo base_url() . 'assets/img/logo.png'?>" title="Amrapali Group of Institutes"></td>
             </tr>
             <tr height="50" align="center" bgcolor="#F2f2f2">
             	<td class="head" width="242" align="left">Registration token no:<span class="data_large"> <?PHP echo $ticket->regID; ?></span></td>
