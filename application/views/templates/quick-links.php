@@ -10,8 +10,8 @@
                                                         <li><a href="<?php echo site_url('Agi/infrastructure');?>">Infrastructure</a></li>
                                                         <li><a href="<?php echo site_url('Agi/infrastructure');?>">Facilities</a></li>
                                                         <li><a href="<?php echo site_url('Agi/library');?>">Library</a></li>
-                                                        <li><a href="#">Vision 2020</a></li>                                                        
-                                                        <li><a href="#">Contact Us</a></li>
+                                                        <li><a href="<?php echo site_url('Agi/vision');?>">Vision 2020</a></li>                                                        
+                                                        <li><a href="<?php echo site_url('Agi/contact');?>">Contact Us</a></li>
                                                     </ul>
                                                 </aside>                                                
                                             </div><!-- /.sidebar-wrapper -->

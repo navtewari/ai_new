@@ -388,6 +388,85 @@ class Agi extends CI_Controller {
         $this->load->view('alumni/alumniConnect', $data_);
        $this->load->view('templates/footer');
     }
+
+    function alumniRegistration(){
+        $data_['menu_active'] = 7;        
+        $data_['title'] = "Alumni Registration";
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();            
+
+        $this->load->view('templates/header');
+        $this->load->view('alumni/alumniProfile/fillDetail', $data_);
+       $this->load->view('templates/footer');
+    }
+
+    function fillAlumniDetail() {       
+        $confirm = $this->wm->fillAlumniDetail_();
+
+        $this->session->set_flashdata('reg_msg_', $confirm['msg_']);
+        redirect('Agi/alumniRegistration');
+    }
+
+    function getdistingusedAlumni() {
+        $data_['menu_active'] = 7;        
+        $data_['title'] = "Our Distinguished Alumni";
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();         
+        $data_['fac_profile'] = $this->wm->get_all_alumniProfile_enabled();         
+
+        $this->load->view('templates/header');
+        $this->load->view('alumni/distingusedAlumni', $data_);
+       $this->load->view('templates/footer');
+    }
+
+    function getAlumniProfile() {
+        $data_['menu_active'] = 7;        
+        $data_['title'] = "Alumni Profile Panel";
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();         
+        $data_['fac_profile'] = $this->wm->get_alumniProfile();         
+
+        $this->load->view('templates/header');
+        $this->load->view('alumni/alumniProfile/getDetail', $data_);
+        $this->load->view('templates/footer');
+    }
+
+    function deleteAlumniProfile($id) {
+        $this->load->model('web_model', 'wm');
+        $this->wm->deleteAlumniProfile_($id);
+        redirect('Agi/getAlumniProfile');
+    }
+
+    function enabledDisableAlumni($status, $id__) {
+        $this->load->model('web_model', 'wm');
+        $this->wm->enabledDisableAlumni_($status, $id__);
+        redirect('Agi/getAlumniProfile');
+    }
+
+    function getAlumnibyID($id_) {
+        $data_['menu_active'] = 7;        
+        $data_['title'] = "Alumni Profile Panel";
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();         
+        $data_['fac_profile'] = $this->wm->get_alumniProfile();   
+       
+        $data_['facID'] = $this->wm->getAlumnibyID_($id_);
+        $this->load->view('templates/header');
+        $this->load->view('alumni/alumniProfile/getDetailID', $data_);
+        $this->load->view('templates/footer');
+    }
+
+    function alumniSpeaks() {
+        $data_['menu_active'] = 7;        
+        $data_['title'] = "Alumni Speaks";
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();         
+        $data_['fac_profile'] = $this->wm->get_all_alumniProfile_enabled();         
+
+        $this->load->view('templates/header');
+        $this->load->view('alumni/alumniSpeak', $data_);
+       $this->load->view('templates/footer');
+    }
     // end of Alumni
     // contact
     function contact(){

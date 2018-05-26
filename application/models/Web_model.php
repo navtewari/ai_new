@@ -143,16 +143,83 @@ class Web_model extends CI_Model {
         return $query;
     }
 
-    public function get_all_alumniProfile($clg){        
+    function fillAlumniDetail_() {
+        $data = array(
+            'name' => $this->input->post('txtFullName'),
+            'course' => $this->input->post('cmbCourse'),
+            'passout' => $this->input->post('txtPassout'),
+            'email' => $this->input->post('txtEmail'),
+            'mobile' => $this->input->post('txtMobile'),
+            'company' => $this->input->post('txtCompany'),
+            'designation' => $this->input->post('txtDesignation'),
+            'location' => $this->input->post('txtLocation'),
+            'hometown' => $this->input->post('txtHometown'),
+            'suggestion' => $this->input->post('txtSuggestion'),
+            'pic' => 'x'
+        );
+
+        $query = $this->db->insert('alumniprofile', $data);
+        $id__ = $this->db->insert_id();
+
+        // Exceptional Handling
+        $this->_db_error();
+        // --------------------
+
+        if ($query == TRUE) {
+            $config = array(
+                'upload_path' => './assets/alumniPic',
+                'allowed_types' => 'jpg|jpeg',
+                'max_size' => 20,
+                'file_name' => $id__
+            );
+            $file_element_name = 'txtstuPhoto';
+            $this->load->library('upload', $config);
+            $this->upload->initialize($config);
+
+            if ($this->upload->do_upload($file_element_name)) {
+                $path_ji = $this->upload->data();
+                $path_ = $path_ji['file_name'];
+            } else {
+                $path_ = 'x';
+            }
+
+            if ($path_ != 'x') {
+                $data = array(
+                    'pic' => $path_,
+                );
+                $this->db->where('id', $id__);
+                $query = $this->db->update('alumniprofile', $data);
+
+                if ($query == TRUE) {
+                    $bool_ = array('res_' => TRUE, 'msg_' => 'Alumni record Submitted Successfully !!');
+                } else {
+                    $bool_ = array('res_' => FALSE, 'msg_' => 'Alumni record Submitted succesfully but something went wrong in updating photo. Please try again !!');
+                }
+            } else {
+                $bool_ = array('res_' => FALSE, 'msg_' => 'Data submitted succesfully but something went wrong in uploading photo. Please try again !!');
+            }
+        } else {
+            $bool_ = array('res_' => FALSE, 'msg_' => 'Something went wrong. Please try again !!');
+        }
+        return $bool_;
+    }
+
+    function get_all_alumniProfile($clg){        
         $this->db->order_by('date', 'desc');        
         $this->db->where('status', 1);
         $this->db->where('pic<>', 'x');
         $this->db->where('college', $clg);
         $query = $this->db->get('alumniprofile');
         return $query->result();
-    }  
+    }
+
+    function get_alumniProfile() {
+        $this->db->order_by('date', 'desc');
+        $query = $this->db->get('alumniprofile');
+        return $query->result();
+    }
     
-    public function get_all_alumniProfile_distinct_general(){        
+    function get_all_alumniProfile_distinct_general(){        
         $this->db->order_by('date', 'desc');        
         $this->db->where('status', 1);
         $this->db->where('pic<>', 'x');
@@ -160,9 +227,9 @@ class Web_model extends CI_Model {
         $this->db->group_by('course');
         $query = $this->db->get('alumniprofile');
         return $query->result();
-    }
+    }    
 
-    public function get_all_alumniProfile_distinct(){
+    function get_all_alumniProfile_distinct(){
         $this->db->order_by('date', 'desc');        
         $this->db->where('status', 1);
         $this->db->distinct('course');
@@ -171,7 +238,52 @@ class Web_model extends CI_Model {
         return $query->result();
     }
 
-    public function fetch_placement_crs_wise($dept_) {
+    function get_all_alumniProfile_enabled(){        
+        $this->db->order_by('date', 'desc');
+        $this->db->where('status', 1);
+        $query = $this->db->get('alumniprofile');
+        return $query->result();
+    }
+
+    function deleteAlumniProfile_($id_) {
+        //----------------------------------Delete Previous Logo
+        $this->db->where('id', $id_);
+        $query = $this->db->get('alumniprofile');
+
+        if ($query->num_rows() != 0) {
+            $item_ = $query->row();
+
+            if ($item_->pic != 'x') {
+                $file__ = $item_->pic;
+            } else {
+                $file__ = 'x';
+            }
+        }
+        if ($file__ != 'x') {
+            echo $full_path_ = FCPATH . 'nitnav/alumniPic/' . $file__;
+            @unlink($full_path_);
+        }
+
+        $this->db->where('id', $id_);
+        $query = $this->db->delete('alumniprofile');
+    }
+
+    function enabledDisableAlumni_($status, $id__) {
+        $data = array(
+            'status' => $status
+        );
+
+        $this->db->where('id', $id__);
+        $this->db->update('alumniprofile', $data);
+    }
+
+    function getAlumnibyID_($id_) {
+        $this->db->where('id', $id_);
+        $query = $this->db->get('alumniprofile');
+        return $query->result();
+    }
+
+    function fetch_placement_crs_wise($dept_) {
         $this->db->where('DEPARTMENT', $dept_);
         $this->db->order_by('COURSE');
         $this->db->order_by('ID');
@@ -183,7 +295,7 @@ class Web_model extends CI_Model {
         return $query->result();
     }
 
-    public function current_yr_palcement($dept_) {
+    function current_yr_palcement($dept_) {
         $this->db->where('YEAR', date('Y'));
         $this->db->where('DEPARTMENT', $dept_);
         $query = $this->db->get('placement_data_course_wise');

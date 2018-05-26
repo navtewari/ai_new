@@ -68,10 +68,10 @@ class My_menu {
 
         // Alumni
         $menu['alumni_menu'] = array(
-            "Alumni Connect Programme" => 'Agi/alumniConnect',
-            "Alumni Registration" => '#',
-            "Our Distinguished Alumni" => '#',
-            "Alumni Speaks" => '#'
+            "Alumni Connect Programme" => '/Agi/alumniConnect',
+            "Alumni Registration" => '/Agi/alumniRegistration',
+            "Our Distinguished Alumni" => '/Agi/getdistingusedAlumni',
+            "Alumni Speaks" => '/Agi/alumniSpeaks'
         );
 
         //Contact Us
