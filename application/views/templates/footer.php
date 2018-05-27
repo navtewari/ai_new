@@ -35,18 +35,18 @@
                 <div class="footer-widget">
                     <h3 class="wow fadeInDown">Brochures</h3>
                     <ul class="wow fadeInDown">
-                        <li><a href="<?PHP echo base_url('nitnav/dwnlds/brochure/BtechNew.pdf'); ?>" target="_blank">Technology &amp; Sciences</a></li>
-                        <li><a href="<?PHP echo base_url('nitnav/dwnlds/brochure/CSANew.pdf'); ?>" target="_blank">Computer Science &amp; Applications<a/></li>
-                        <li><a href="<?PHP echo base_url('nitnav/dwnlds/brochure/FCBMNew.pdf'); ?>" target="_blank">Commerce &amp; Business Management</a></li>
-                        <li><a href="<?PHP echo base_url('nitnav/dwnlds/brochure/HMNew.pdf'); ?>" target="_blank">Hospitality Management</a></li>
+                        <li><a href="<?PHP echo base_url('assets/dwnlds/brochure/BtechNew.pdf'); ?>" target="_blank">Technology &amp; Sciences</a></li>
+                        <li><a href="<?PHP echo base_url('assets/dwnlds/brochure/CSANew.pdf'); ?>" target="_blank">Computer Science &amp; Applications<a/></li>
+                        <li><a href="<?PHP echo base_url('assets/dwnlds/brochure/FCBMNew.pdf'); ?>" target="_blank">Commerce &amp; Business Management</a></li>
+                        <li><a href="<?PHP echo base_url('assets/dwnlds/brochure/HMNew.pdf'); ?>" target="_blank">Hospitality Management</a></li>
                     </ul>
                     <hr>
                     <h3 class="wow fadeInDown">Downloads</h3>
                     <ul class="wow fadeInDown">
-                        <li><a href="<?PHP echo base_url('nitnav/dwnlds/common/affidavit.pdf'); ?>" target="_blank">Anti-Ragging Format</a></li>
-                        <li><a href="<?PHP echo base_url('nitnav/dwnlds/common/Library Form_Faculty.pdf'); ?>" target="_blank">Library Membership Form (<span style="color: #ffff00">Faculty</span>)</a></li>
-                        <li><a href="<?PHP echo base_url('nitnav/dwnlds/common/Library Form_Student.pdf'); ?>" target="_blank">Library Membership Form (<span style="color: #ffff00">Student</span>)</a></li>
-                        <li><a href="<?PHP echo base_url('nitnav/dwnlds/common/FDP_ApplicationForm.pdf'); ?>" target="_blank">FDP Application Form</a></li>
+                        <li><a href="<?PHP echo base_url('assets/dwnlds/common/affidavit.pdf'); ?>" target="_blank">Anti-Ragging Format</a></li>
+                        <li><a href="<?PHP echo base_url('assets/dwnlds/common/Library Form_Faculty.pdf'); ?>" target="_blank">Library Membership Form (<span style="color: #ffff00">Faculty</span>)</a></li>
+                        <li><a href="<?PHP echo base_url('assets/dwnlds/common/Library Form_Student.pdf'); ?>" target="_blank">Library Membership Form (<span style="color: #ffff00">Student</span>)</a></li>
+                        <li><a href="<?PHP echo base_url('assets/dwnlds/common/FDP_ApplicationForm.pdf'); ?>" target="_blank">FDP Application Form</a></li>
                     </ul>
                 </div><!-- /.footer-widget -->
             </div><!-- /.col-md-2 -->  

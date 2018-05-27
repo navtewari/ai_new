@@ -208,7 +208,7 @@
                                     <?PHP for ($loop = 1; $loop <= 4; $loop++) { ?>
                                         <li class="wow zoomIn"><img class="img-responsive" src="<?PHP echo base_url() . 'assets/img/cmpLogos/h' . $loop . '.png'; ?>" alt="Amrapali Recruiters Logo"></li> 
                                     <?PHP } ?>
-                                    <a class="btn btn-primary btn-lg wow fadeInDown" href="#">See More Recruiters</a>
+                                    <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('Agi/amrapaliRecruiters');?>">See More Recruiters</a>
                                 </ul>                                    
                             </section>
 

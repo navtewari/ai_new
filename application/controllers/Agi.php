@@ -611,6 +611,19 @@ class Agi extends CI_Controller {
         echo $ret_data;
     }
     // -----end of contact
+    
+    //page links (not in main menu)
+        function amrapaliRecruiters(){
+            $data_['menu_active'] =8;
+            $data_['menu_all'] = $this->my_menu->site_menu();
+            $data_['alumni'] = $this->ouralumni();
+            $data_['title'] = "Our Recruiters";
+
+            $this->load->view('templates/header');
+            $this->load->view('pageLinks/recruiters', $data_);
+            $this->load->view('templates/footer');  
+        }
+    // ------end of page links
 
 // Common Methods
     function commondata(){
