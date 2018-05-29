@@ -12,7 +12,8 @@
                         <span style="color:#8EDDFF">Toll-Free: 1800 180 4027 </span><br /><br />
                         Email: &#113;&#117;&#101;&#114;&#121;&#064;&#097;&#109;&#114;&#097;&#112;&#097;&#108;&#105;&#046;&#097;&#099;&#046;&#105;&#110;
                     </address>
-                    <?PHP $this->load->view('templates/socialMedia'); ?>                                                  
+                    <?PHP $this->load->view('templates/socialMedia'); ?><br><br><br>
+                    <p><a>Copyright &copy; 2018 Amrapali Group of Institutes<br>All Rights Reserved.</a> </p>                                                  
                 </div><!-- /.footer-widget -->
             </div><!-- /.col-md-6 -->
             <div class="col-md-2 col-sm-4 col-xs-12">
@@ -80,7 +81,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="copyright wow fadeInDown">
-                    <p>Copyright &copy; 2018 Amrapali Group of Institutes . All Rights Reserved. </p>
+                    <p>Developed & maintained by: Faculty of Comuter Science & Applications, Amrapali Group of Institutes, Haldwani </p>
                 </div><!-- /.copyright -->
             </div><!-- /.col-md-12 -->
         </div><!-- /.row -->

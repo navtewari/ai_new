@@ -17,7 +17,7 @@
                                     </div>
                                     <ol class="breadcrumb">
                                         <li><a href="<?php echo site_url('agi')?>">Home</a></li>
-                                        <li><a href="#">Gallery</a></li>
+                                        <li><a href="#">Alumni</a></li>
                                         <li class="active"><?php echo $title; ?></li>
                                     </ol>
                                 </div>
