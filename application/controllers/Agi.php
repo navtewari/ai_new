@@ -134,6 +134,21 @@ class Agi extends CI_Controller {
         $this->load->view('academics/faculty/hospitality-management', $data_);
         $this->load->view('templates/footer');      
     }
+
+    function mentor(){
+        $data_['menu_active'] =4;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Our Respected Mentors";
+        $data_['fts'] = $this->wm->fetch_faculty('fts');
+        $data_['fhm'] = $this->wm->fetch_faculty('fhm');
+        $data_['fcsa'] = $this->wm->fetch_faculty('fcsa');
+        $data_['fcbm'] = $this->wm->fetch_faculty('fcbm');
+
+        $this->load->view('templates/header');
+        $this->load->view('mentor/mentor', $data_);
+        $this->load->view('templates/footer'); 
+    }
     function bEd(){
         $data_['menu_active'] =3;
         $data_['menu_all'] = $this->my_menu->site_menu();
@@ -565,7 +580,7 @@ class Agi extends CI_Controller {
 
         $this->load->view('templates/header');
         $this->load->view('alumni/alumniSpeak', $data_);
-       $this->load->view('templates/footer');
+        $this->load->view('templates/footer');
     }
     // end of Alumni
     // contact
@@ -644,6 +659,33 @@ class Agi extends CI_Controller {
 		$data_['rnews_'] = $this->wm->get_most_recent_news();
         return $data_;
     }
-
 // End of Common Methods
+
+    // Footer Menu
+    function studentFeedback(){
+        $data_['menu_active'] =4;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Student Feedback";
+        $data_['faits'] = $this->wm->fetch_faculty('fts');
+
+        $this->load->view('templates/header');
+        $this->load->view('feedback/student-feedback', $data_);
+        $this->load->view('templates/footer'); 
+    }
+
+    function feedbackcrs($crs=''){
+        if ($crs == '1') {
+            $this->load->view('feedback/fhm');
+        } else if ($crs == '2') {
+            $this->load->view('feedback/fts');
+        } else if ($crs == '4') {
+            $this->load->view('feedback/fcbm');
+        } else if ($crs == '3') {
+            $this->load->view('feedback/fcsa');
+        } else {
+            redirect('Agi/feedbackstudent');
+        }
+    }
+    // end of footer menu
 }

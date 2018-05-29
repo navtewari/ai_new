@@ -21,7 +21,8 @@ class My_menu {
                 "Computer Science &amp; Applications" => '/Agi/computerScienceAndApplications',
                 "Commerce &amp; Business Management" => '/Agi/commerceAndBusinessMgmt',
                 "Hospitality Management" => '/Agi/hospitalityManagement',
-                "B.Ed" => '/Agi/bEd'
+                "B.Ed" => '/Agi/bEd',
+                "Our Mentors" => '/Agi/mentor'
             ),
             'facilities' => array(
                 "Infrastructure" => '/Agi/infrastructure',
@@ -57,7 +58,7 @@ class My_menu {
         $menu['gallery'] = array(
             "Photos" => '/Agi/imagePics',
             //"Explore Amrapali" => '/Agi/videos',
-            //"3D 360<sup>o</sup> Virtual Tour" => 'http://golive360.com/demo/amrpali05/all_files/virtual-tour/build.html',
+            "3D 360<sup>o</sup> Virtual Tour" => 'http://golive360.com/demo/amrpali05/all_files/virtual-tour/build.html',
            // "Amrapali in Google" => '/Agi/googleGallery',
             "Video Gallery" => '/Agi/youtubeGallery',
             "NewsLetters" => '/Agi/newsletters',

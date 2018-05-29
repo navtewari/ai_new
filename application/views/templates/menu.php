@@ -102,7 +102,11 @@
                         <div class="submenu-inner  submenu-inner-topbottom">
                             <ul class="dropdown-menu">
                                 <?php foreach($menu_all['gallery'] as $title => $path){?>
-                                    <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                    <?php if($title == '3D 360<sup>o</sup> Virtual Tour'){ ?>
+                                        <li><a href="<?php echo $path; ?>"><?php echo $title; ?></a></li>
+                                    <?php } else { ?>
+                                        <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                    <?php } ?>
                                 <?php } ?>
                             </ul>
                         </div><!-- /.submenu-inner -->

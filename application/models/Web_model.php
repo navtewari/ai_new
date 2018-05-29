@@ -431,6 +431,17 @@ class Web_model extends CI_Model {
 
         return $query->row();
     }
+
+    public function fetch_faculty($crs_) {
+        $this->db->where('COURSE', $crs_);
+        $this->db->where('STATUS', 1);
+        $this->db->order_by('SEQ');
+        $query = $this->db->get('faculty');
+        // Exceptional Handling
+        $this->_db_error();
+        // --------------------
+        return $query->result();
+    }
     
     function _db_error() {
         //exception handling ------------------
