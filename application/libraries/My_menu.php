@@ -10,7 +10,7 @@ class My_menu {
             "Academic Advisory Council" => '/Agi/academicAdvisoryCouncil',
             "Administration" => '/Agi/administration',
             "Vision 2020" => '/Agi/vision',
-            "Management Board" => '/Agi/mission',
+            "Management Board" => '/Agi/management',
             "Group Profile" => '/Agi/groupProfile',
         );
 

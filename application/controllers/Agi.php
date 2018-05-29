@@ -69,7 +69,7 @@ class Agi extends CI_Controller {
         $this->load->view('about-us/vision', $data_);
         $this->load->view('templates/footer');
     }
-    function mission(){
+    function management(){
         $data_['menu_active'] =2;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
