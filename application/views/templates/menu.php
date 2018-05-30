@@ -53,7 +53,7 @@
                                     <h3 style='color:#fff'>Syllabus</h3>
                                     <ul class="dropdown-menu">
                                         <?php foreach($menu_all['academics']['syllabus'] as $title => $path){?>
-                                            <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                            <li><a href="<?php echo ($path); ?>" target="_blank"><?php echo $title; ?></a></li>
                                         <?php } ?>
                                         <hr>
                                         <?php foreach($menu_all['academics']['others'] as $title => $path){?>
@@ -103,7 +103,7 @@
                             <ul class="dropdown-menu">
                                 <?php foreach($menu_all['gallery'] as $title => $path){?>
                                     <?php if($title == '3D 360<sup>o</sup> Virtual Tour'){ ?>
-                                        <li><a href="<?php echo $path; ?>"><?php echo $title; ?></a></li>
+                                        <li><a href="<?php echo $path; ?>" target="_blank"><?php echo $title; ?></a></li>
                                     <?php } else { ?>
                                         <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
                                     <?php } ?>
