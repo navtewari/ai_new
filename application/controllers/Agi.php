@@ -582,6 +582,17 @@ class Agi extends CI_Controller {
         $this->load->view('alumni/alumniSpeak', $data_);
         $this->load->view('templates/footer');
     }
+    function alumniVideos() {
+        $data_['menu_active'] = 7;        
+        $data_['title'] = "Alumni Videos";
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();         
+        $data_['fac_profile'] = $this->wm->get_all_alumniProfile_enabled();         
+
+        $this->load->view('templates/header');
+        $this->load->view('alumni/alumniVideo', $data_);
+        $this->load->view('templates/footer');
+    }
     // end of Alumni
     // contact
     function contact(){

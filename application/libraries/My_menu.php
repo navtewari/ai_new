@@ -72,7 +72,8 @@ class My_menu {
             "Alumni Connect Programme" => '/Agi/alumniConnect',
             "Alumni Registration" => '/Agi/alumniRegistration',
             "Our Distinguished Alumni" => '/Agi/getdistingusedAlumni',
-            "Alumni Speaks" => '/Agi/alumniSpeaks'
+            "Alumni Speaks" => '/Agi/alumniSpeaks',
+            "Alumni Videos" => '/Agi/alumniVideos'
         );
 
         //Contact Us

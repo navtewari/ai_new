@@ -34,7 +34,7 @@
         <!-- Custom CSS -->
         <link href="<?php echo base_url('assets/css/style.css'); ?>?ver=1.0" rel="stylesheet">
         <!-- Responsive CSS -->
-        <link href="<?php echo base_url('assets/css/responsive.css'); ?>?ver=1.0" rel="stylesheet">
+        <link href="<?php echo base_url('assets/css/responsive.css'); ?>?ver=1.1" rel="stylesheet">
         
         <link href="<?php echo base_url('assets/css/ticker.css'); ?>?ver=1.0" rel="stylesheet">
 
