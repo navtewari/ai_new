@@ -176,7 +176,6 @@
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->
-                                    
                                 </div> <!-- /.row -->
                             </section>                                                               
                             <section class="trusted-client-wrapper">

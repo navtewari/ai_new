@@ -1,7 +1,7 @@
 <section class="footer-widget-wrapper">
     <div class="container">
         <div class="row">
-            <div class="col-md-2 col-sm-4 col-xs-12">
+            <div class="col-md-3 col-sm-4 col-xs-12">
                 <div class="footer-widget">
                     <h3 class="wow fadeInDown">Important Links</h3>
                     <ul class="wow fadeInDown">
@@ -41,34 +41,33 @@
                 <div class="footer-widget">
                     <h3 class="wow fadeInDown">Contacts</h3>
                     <address>
-                        For Admission:<br>
+                        <b>For Admission:</b><br>
                         Mobile: (+91)-9837302005, (+91)-9759670200, <br /> 
                         (+91)-9759670300, (+91)-9759670400, <br />
-                        (+91)-9759670500.<br>
+                        (+91)-9759670500.<br><br>
                         Email: &#097;&#100;&#109;&#105;&#115;&#115;&#105;&#111;&#110;&#064;&#097;&#109;&#114;&#097;&#112;&#097;&#108;&#105;&#046;&#097;&#099;&#046;&#105;&#110; <br /><br />
-                        For Placement:<br>
+                        <b>For Placement:</b><br>
                         Mobile:<br>
                         For B. Tech: (+91)-7500226007 <br />
                         For MBA: (+91)-8477999500 <br />
                         For MCA: (+91)-9759255613 <br />
-                        For HM: (+91)-9927041565 <br />
+                        For HM: (+91)-9927041565 <br /><br>
                         Email: &#112;&#108;&#097;&#099;&#101;&#109;&#101;&#110;&#116;&#064;&#097;&#109;&#114;&#097;&#112;&#097;&#108;&#105;&#046;&#097;&#099;&#046;&#105;&#110;
                     </address>    
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="col-md-3 col-sm-12 col-xs-12">
                 <div class="footer-widget">  
                     <h3 class="wow fadeInDown">Address</h3>
                     <address>
                         <strong>Amrapali Group of Institutes</strong><br>
-                        Shiksha Nagar<br>
-                        Lamachaur, Haldwani, 263139<br>Nainital, Uttarakhand <br /><br />
+                        Shiksha Nagar, Lamachaur, Haldwani, 263139, Nainital, Uttarakhand <br /><br />
                         <abbr title="Phone">P:</abbr> (+91)-5946-238202-03-04 <br />
                         <span style="color:#8EDDFF">Toll-Free: 1800 180 4027 </span><br /><br />
                         Email: &#113;&#117;&#101;&#114;&#121;&#064;&#097;&#109;&#114;&#097;&#112;&#097;&#108;&#105;&#046;&#097;&#099;&#046;&#105;&#110;
                     </address>
                     <?PHP $this->load->view('templates/socialMedia'); ?><br><br><br>
-                    <p><a>Copyright &copy; 2018 Amrapali Group of Institutes<br>All Rights Reserved.</a> </p>                                                  
+                    <p><a>Copyright &copy; 2018 Amrapali Group of Institutes, All Rights Reserved.</a> </p>                                                  
                 </div><!-- /.footer-widget -->
             </div><!-- /.col-md-6 -->
         </div><!-- /.row -->

@@ -1,6 +1,9 @@
 /* Extra small devices (phones, less than 768px) */
 @media (max-width : 766px) {
 /*Homepage*/
+.hero-slide{
+    margin-top: 50px;
+}
 
 .content-wrapper {
 	top: 0;
@@ -10,7 +13,6 @@
 .intro-wrapper {
 	background: #fff;
 }
-
 
 
 /*less padding for extra small devices*/
