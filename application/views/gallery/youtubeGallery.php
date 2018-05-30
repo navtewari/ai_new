@@ -33,8 +33,8 @@
                                 <br>
                             </header><!-- /.entry-header -->
                             
-                            <div class="row four-column">
-                                <div id="grid">                                    
+                            <div class="entry-content">   
+                                  <ul class="partner-logo">                                     
                                     <div class="col-sm-4">
                                         <iframe width="100%" height="300px" src="https://www.youtube.com/embed/3Z1FCE0jWl0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                     </div> 
@@ -55,9 +55,9 @@
                                     </div>        
                                     <div class="col-sm-4" style="padding-top:50px;">
                                         <h3 align="center"><a href="https://www.youtube.com/channel/UCF8i_kuxpGG5DycApVK8xxg" title="Videos, Amrapali Group of Institutes" target="_blank">For more videos click here</a></h3>
-                                        <a href="https://www.youtube.com/channel/UCF8i_kuxpGG5DycApVK8xxg" title="Videos, Amrapali Group of Institutes" target="_blank"><i class="fa fa-youtube-square fa-5x" style="font-size:100px;color:#990000;margin-left: 130px;"></i></a>
+                                        <a href="https://www.youtube.com/channel/UCF8i_kuxpGG5DycApVK8xxg" title="Videos, Amrapali Group of Institutes" target="_blank"><i class="fa fa-youtube-square fa-5x" style="font-size:100px;color:#990000;"></i></a>
                                     </div>                                
-                                </div><!-- /#grid -->
+                                </ul>
                             </div><!-- /.row -->
                         </div><!-- /.inner-content -->
                     </div><!-- /.content-wrapper -->
