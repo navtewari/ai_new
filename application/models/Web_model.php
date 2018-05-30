@@ -442,6 +442,103 @@ class Web_model extends CI_Model {
         // --------------------
         return $query->result();
     }
+
+    function append_captcha() {
+        $this->load->helper('captcha');
+        $captcha = array(
+            'word' => '',
+            'img_path' => './assets/captcha/',
+            'img_url' => base_url() . 'assets/captcha/',
+            'font_path' => './assets/fonts/times.ttf',
+            'img_width' => '150',
+            'img_height' => '30',
+            'expiration' => '3600'
+        );
+        $cap = create_captcha($captcha);
+
+        $data = array(
+            'captcha_time' => $cap['time'],
+            'ip_address' => $this->input->ip_address(),
+            'word' => $cap['word']
+        );
+
+        $query = $this->db->insert_string('captcha', $data);
+        $this->db->query($query);
+
+        // Exceptional Handling
+        $this->_db_error();
+        // --------------------
+        return $cap['image'];
+    }
+
+
+    function send_resume_for_career_at_ai() {
+        // First, delete old captchas
+        $expiration = time() - 7200; // Two hour limit
+        $this->db->query("DELETE FROM captcha WHERE captcha_time < " . $expiration);
+        // Then see if a captcha exists:
+        $sql = "SELECT COUNT(*) AS count FROM captcha WHERE word = ? AND ip_address = ? AND captcha_time > ?";
+        $binds = array($_POST['txtCaptcha'], $this->input->ip_address(), $expiration);
+        $query = $this->db->query($sql, $binds);
+        $row = $query->row();
+
+
+        if ($row->count > 0) {
+
+            $config = array(
+                'upload_path' => './assets/resume',
+                'allowed_types' => 'doc|docx|pdf',
+            );
+            $file_element_name = 'txtUploadResume';
+            $this->load->library('upload', $config);
+
+            if ($this->upload->do_upload($file_element_name)) {
+                $path_ji = $this->upload->data();
+                $path_ = $path_ji['full_path'];
+            } else {
+                $path_ = 'x';
+            }
+
+            if ($path_ != 'x') {
+                $this->email->set_mailtype("html");
+
+                $this->email->attach($path_);
+
+                $msg_ = "<h3 style='color: #000090'>Post Applied for : <span style='color: #900000'>" . $this->input->post('txtPostAppliedFor') . "</h3>";
+                $msg_ = $msg_ . " <br /><b>In Department</b> " . $this->input->post('cmbDept') . "<br /><br />";
+                $msg_ = $msg_ . "------------------------ <br />";
+                $msg_ = $msg_ . $this->input->post('txtYrName') . "<br />";
+
+                $from_ = $this->input->post('txtYrEmail');
+                $name_ = $this->input->post('txtYrName');
+
+                $this->email->from($from_, $name_);
+                $this->email->to('resume@amrapali.ac.in');
+                $this->email->bcc('office@amrapali.ac.in, ceo@amrapali.ac.in,  coo@amrapali.ac.in');
+                //$this -> email -> bcc('shail70@gmail.com, ceo@amrapali.ac.in, gks9090@gmail.com, office@amrapali.ac.in');
+                //$this->email->bcc('nitin.d12@gmail.com');
+
+                $this->email->subject('Post Applied for : ' . $this->input->post('txtPostAppliedFor'));
+                $this->email->message($msg_);
+
+                if ($this->email->send()) {
+                    $bool_ = array('res' => 'true', 'msg_' => '<b style="color: #0000FF">Resume sent successfully. </b>');
+                    //echo $this->email->print_debugger();
+                } else {
+                    $bool_ = array('res' => 'true', 'msg_' => 'X: Server Error !! Try Again...');
+                }
+            } else {
+                $bool_ = array('res' => 'false', 'msg_' => 'X: Server Error while attaching file !!.');
+                //$bool_ = array('res'=>'false', 'msg_' => 'Attach <b>File must be having</b> .doc/ .docx/ .pdf extentions<br />.');
+            }
+        } else {
+            $bool_ = array('res' => 'false', 'msg_' => 'X: <b>Incorrect Captcha</b> word that appears <br />in the image.');
+        }
+        // Exceptional Handling
+        $this->_db_error();
+        // --------------------
+        return $bool_;
+    }
     
     function _db_error() {
         //exception handling ------------------

@@ -96,7 +96,7 @@
                                                                 <div class="row">
                                                                     <div class="col-sm-6">
                                                                         <b>Course:</b> B.COM HONOURS<br>
-                                                                        <b>Tution Fee:</b> Rs. 20,000* / Sem<br>
+                                                                        <b>Tution Fee:</b> Rs. 25,000* / Sem<br>
                                                                     </div>
                                                                 </div>
                                                               </div>
@@ -151,7 +151,7 @@
                                                                     
                                                                     <div class="col-sm-6">
                                                                         <b>Course:</b> Bachelor of Hospitality Management (BHM-KU)<br>
-                                                                        <b>Tution Fee:</b> Rs. 36,000* / Sem<br>
+                                                                        <b>Tution Fee:</b> Rs. 38,500* / Sem<br>
                                                                     </div>
                                                                 </div>
                                                                 

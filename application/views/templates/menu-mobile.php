@@ -45,12 +45,23 @@
                 <li><a href="#">Gallery <i class="fa fa-arrow-down"></i></a>
                     <ul style="background: #444444">  
                         <?php foreach($menu_all['gallery'] as $title => $path){?>
+                            <?php if($title == '3D 360<sup>o</sup> Virtual Tour'){ ?>
+                                <li><a href="<?php echo $path; ?>"><?php echo $title; ?></a></li>
+                            <?php } else { ?>
+                                <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                            <?php } ?>
+                        <?php } ?>
+                    </ul>
+                </li>
+                <li><a href="#" >Alumni</a>
+                    <ul style="background: #444444">
+                        <?php foreach($menu_all['alumni_menu'] as $title => $path){?>
                             <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
                         <?php } ?>
                     </ul>
                 </li>
                 <?php if(count($menu_all['contactus']) == 1){?>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="<?php echo site_url($path); ?>">Contact us</a></li>
                 <?php } else {?>
                 <li><a href="#">Contact us <i class="fa fa-arrow-down"></i></a>
                     <ul style="background: #444444">  

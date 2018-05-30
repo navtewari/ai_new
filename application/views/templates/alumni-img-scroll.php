@@ -15,7 +15,7 @@
                                                                     echo 'class="item"';
                                                                 }
                                                                 ?>>
-                                                                    <img class="img-thumbnail" style=";max-width: 140px; height:140px;" src="<?php echo base_url('assets/alumniPic/' . $item->pic); ?>" alt="Amrapali Alumni - <?php echo $item->name; ?>">
+                                                                    <img class="img-thumbnail" style=";max-width: 140px; height:140px;" src="<?php echo base_url('assets/alumniPic/' . $item->pic); ?>?ver=1.0" alt="Amrapali Alumni - <?php echo $item->name; ?>">
                                                                     <div>
                                                                         <h3><?php echo $item->name; ?></h3>
                                                                         <h4><?php echo $item->company; ?></h4>

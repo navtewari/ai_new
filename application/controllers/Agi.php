@@ -531,7 +531,7 @@ class Agi extends CI_Controller {
 
         $this->load->view('templates/header');
         $this->load->view('alumni/distingusedAlumni', $data_);
-       $this->load->view('templates/footer');
+        $this->load->view('templates/footer');
     }
 
     function getAlumniProfile() {
@@ -663,7 +663,7 @@ class Agi extends CI_Controller {
 
     // Footer Menu
     function studentFeedback(){
-        $data_['menu_active'] =4;
+        $data_['menu_active'] =1;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = "Student Feedback";
@@ -686,6 +686,24 @@ class Agi extends CI_Controller {
         } else {
             redirect('Agi/feedbackstudent');
         }
+    }
+
+    function career(){
+        $data_['menu_active'] =1;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Career @ Amrapali Group of Institutes";
+
+        $data_['image'] = $this->wm->append_captcha();
+
+        $this->load->view('templates/header');
+        $this->load->view('career/career-at-amrapali', $data_);
+        $this->load->view('templates/footer');
+    }
+
+    function upload_resume_for_career() { // This function is called via ajax
+        $flag_ = $this->wm->send_resume_for_career_at_ai();
+        echo $flag_['msg_'];
     }
     // end of footer menu
 }

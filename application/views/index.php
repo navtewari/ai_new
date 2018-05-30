@@ -107,22 +107,7 @@
                                 <h2 class="section-title-dark wow fadeInDown">Amrapali Advantage</h2>
                                 <div class="css-tab text-center">
                                     <div class="row">
-                                        <div class="col-sm-3 text-center experiance-tab-content wow fadeInLeft">
-                                            <h1><?php echo (date('Y')-1999) . '+';?></h1>
-                                            <p style="text-align:center">Years of Academic Excellence</p>
-                                        </div><!--/.col-sm-6 -->
-                                        <div class="col-sm-3 text-center experiance-tab-content wow fadeInRight">
-                                            <h1>200+</h1>
-                                            <p style="text-align:center">Faculty Members</p>
-                                        </div><!--/.col-sm-6 -->
-                                        <div class="col-sm-3 text-center experiance-tab-content wow fadeInRight">
-                                            <h1>4000+</h1>
-                                            <p style="text-align:center">Bright Students</p>
-                                        </div><!--/.col-sm-6 -->
-                                        <div class="col-sm-3 text-center experiance-tab-content wow fadeInRight">
-                                            <h1>18000+</h1>
-                                            <p  style="text-align: center">Glorious Alumni</p>
-                                        </div><!--/.col-sm-6 -->
+                                        <?php $this->load->view('templates/advantage'); ?>
                                     </div><!-- /.row -->                                        
                                 </div><!-- /.css-tab -->
                             </section>

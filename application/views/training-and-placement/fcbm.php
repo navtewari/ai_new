@@ -20,12 +20,12 @@
 															            <th>YEAR</th>
 															          </tr>
 															        </thead>
-															        <?php if($pl_FHM != 'yes' && $pl_FHM == $loop1){ ?>
+															        <?php if($pl_FCBM != 'yes' && $pl_FCBM == $loop1){ ?>
 															          	<tr>
 															          		<td colspan="4" align="left" style="font-size: 15px; color: #ff0000">Updating...</td>
 															          	</tr>
 															        <?php } ?>
-																        <?php foreach ($placement_FHM as $item) { ?>
+																        <?php foreach ($placement_FCBM as $item) { ?>
 														            		<?php if($item->YEAR == $loop1){ ?>
 																	        <tbody>
 																	          <tr>

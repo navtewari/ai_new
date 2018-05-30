@@ -31,4 +31,44 @@ $(function(){
         }
         return false;
     });
+
+    $('#frmCareer').submit(function(){
+        event.preventDefault();
+        if($.trim($('#txtYrName').val())==''){
+            $('#career_msg_').html('X: Your Name Please...');
+            $('#txtYrName').focus();
+        }else if($.trim($('#txtYrEmail').val())==''){
+            $('#career_msg_').html('X: Your Email Please...');
+            $('#txtYrEmail').focus();
+        }else if($.trim($('#txtPostAppliedFor').val())==''){
+            $('#career_msg_').html('X: Mention the Post you are applying...');
+            $('#txtPostAppliedFor').focus();
+        }else if($.trim($('#cmbDept').val())=='x'){
+            $('#career_msg_').html('X: Select the department for the Post...');
+            $('#cmbDept').focus()
+        }else if($.trim($('#txtUploadResume').val())==''){
+            $('#career_msg_').html('X: Upload your resume...');
+            $('#txtUploadResume').focus();
+        }else if($.trim($('#txtCaptcha').val())==''){
+            $('#career_msg_').html('X: Submit the correct captcha from the image...');
+            $('#txtCaptcha').focus();
+        }else{
+            $('#career_msg_').html('');
+            form_data=$('#frmCareer').serialize();
+            url_=site_url_+'/Agi/upload_resume_for_career';
+            $('#career_msg_').html('<span style="color: #009000">Please wait. Its Sending...</span>');
+            $(this).ajaxSubmit({
+                url:url_,
+                type:'POST',
+                data:form_data,
+                success:function(data){
+                    $('#career_msg_').html(data);
+                    if(data=='<b style="color: #0000FF">Resume sent successfully. </b>'){
+                        $('#frmCareer').resetForm();
+                    }
+                }
+            });
+        }
+    return 1
+    });
 });
