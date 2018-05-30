@@ -22,7 +22,7 @@
                             </a>
                         </h4>
                     </div>
-                    <div id="_collapse<?php echo $item->FAC_ID ?>" class="panel-collapse collapse">
+                    <!--div id="_collapse<?php echo $item->FAC_ID ?>" class="panel-collapse collapse">
                         <div class="panel-body">
                             <div class="col-sm-2">
                                 <?php if ($item->PHOTO_ != 'x') { ?>
@@ -37,7 +37,7 @@
                                 <p><?PHP echo $item->SUMMARY; ?></p>
                             </div>
                         </div>
-                    </div>
+                    </div-->
                 </div>                                    
 
             <?PHP } ?>

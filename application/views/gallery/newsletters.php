@@ -24,7 +24,6 @@
                         </div><!-- /.container-fluid -->
                     </section>
 
-
                     <div class="container">
                         <div class="content-wrapper">
                             <div class="inner-content">
