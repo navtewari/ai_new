@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
             </button>
             <!-- offcanvas-trigger-effects -->
-            <h1 class="logo"><a class="navbar-brand" href="<?php echo site_url('/Agi'); ?>"><img src="<?php echo base_url('assets/img/logo.png'); ?>" alt="" class="hidden-xs"><img src="<?php echo base_url('assets/img/logo-small.png'); ?>" alt="" class="hidden-lg hiddn-md hidden-sm hidden-xl" style="margin-top:-10px;"></a></h1>
+            <h1 class="logo"><a class="navbar-brand" href="<?php echo site_url('/Agi'); ?>"><img src="<?php echo base_url('assets/img/logo.png'); ?>" alt="Amrapali Logo" class="hidden-xs"><img src="<?php echo base_url('assets/img/logo-small.png'); ?>" alt="Amrapali logo" class="hidden-lg hiddn-md hidden-sm hidden-xl" style="margin-top:-10px;"></a></h1>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->

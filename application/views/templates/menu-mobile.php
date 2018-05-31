@@ -1,7 +1,7 @@
 <!-- ======== OFFCANVAS MENU ========= -->
 <div class="offcanvas-menu offcanvas-effect visible-xs">
     <button type="button" class="close" aria-hidden="true" data-toggle="offcanvas" id="off-canvas-close-btn">&times;</button>
-    <h3><img src="<?php echo base_url('assets/img/logo-small.png'); ?>" alt="" class="hidden-lg" style="margin-top:-10px;max-width:60px;"></h3>
+    <h3><img src="<?php echo base_url('assets/img/logo-small.png'); ?>" alt="Amrapali Logo" class="hidden-lg" style="margin-top:-10px;max-width:60px;"></h3>
     <div>
         <div>
             <ul>
