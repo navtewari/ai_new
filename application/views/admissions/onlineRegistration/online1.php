@@ -44,8 +44,7 @@
 												            <label for="cmbCourse" class="control-label col-xs-3">Select Course<span style="color:#990000">*</span></label>
 												            <div class="col-xs-9">
 												                <select name="cmbCourse" class="form-control" required="required">
-										                            <optgroup label="Technology & Sciences">
-										                                <option value="IT">Information Technology</option>
+										                            <optgroup label="Technology & Sciences">								                              
 										                                <option value="CSE">Computer Science &amp; Engineering</option>
 										                                <option value="ME">Mechanical Engineering</option>
 										                                <option value="ECE">Electronics &amp Communications Engineering</option>
