@@ -14,7 +14,7 @@
                         <li><?PHP echo anchor('Agi/trainingAndPlacement', 'Training & Placement'); ?></li>
                         <li><?PHP echo anchor('#', 'Approvals &amp; Affiliations'); ?></li>
                         <li><?PHP echo anchor('Agi/career', 'Career@Amrapali'); ?></li>
-                        <li><a href="https://www.onlinesbi.com/prelogin/icollecthome.htm" target="_bank">Pay Fees Online</a></li>
+                        <!--li><a href="https://www.onlinesbi.com/prelogin/icollecthome.htm" target="_bank">Pay Fees Online</a></li-->
                     </ul>
                 </div><!-- /.footer-widget -->
             </div><!-- /.col-md-2 -->
