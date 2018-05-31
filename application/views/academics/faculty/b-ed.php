@@ -46,7 +46,7 @@
                                                     </blockquote>
                                                     <p>
                                                         <ul>
-                                                            <li class="my-strips"><a href="<?php echo base_url('assets/b_Ed/affidevit.pdf');?>" class="anchor-color-dark">Affedit</a></li>
+                                                            <li class="my-strips"><a href="<?php echo base_url('assets/b_Ed/affidevit.pdf');?>" class="anchor-color-dark">Affidavit</a></li>
                                                             <li class="my-strips"><a href="<?php echo base_url('assets/b_Ed/b_Ed_recognition.pdf');?>" class="anchor-color-dark">Recognition</a></li>
                                                             <li class="my-strips"><a href="<?php echo base_url('assets/b_Ed/faculty.pdf');?>" class="anchor-color-dark">Faculty</a></li>
                                                             <li class="my-strips"><a href="<?php echo base_url('assets/b_Ed/fee.pdf');?>" class="anchor-color-dark">Fees</a></li>
