@@ -56,7 +56,7 @@ hr{
                             <?php $loop1 = 0; $sliderno = mt_rand(0,count($slider_)-1);?>
                             <?php foreach($slider_ as $img=>$item){?>
                             <div class="item<?php if($loop1 == $sliderno) echo ' active';?>">
-                                <img src="<?php echo base_url('assets/img/slider/'.$img); ?>" alt="Hero Slide">
+                                <img src="<?php echo base_url('assets/img/slider/'.$img); ?>" alt="Amrapali Infrastructure">
                                 <!--Slide Image-->
 
                                 <div class="container">
@@ -203,7 +203,7 @@ hr{
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
                                             <a class="media-left" href="<?php echo site_url('Agi/technologyAndSciences'); ?>">
-                                                <img src="<?php echo base_url(). "assets/img/aits1.jpg"?>" title="AITS" style="max-width: 120px;" class="img-responsive">
+                                                <img src="<?php echo base_url(). "assets/img/aits1.jpg"?>" title="AITS" alt="AITS" style="max-width: 120px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="<?php echo site_url('Agi/technologyAndSciences'); ?>">Technology &amp; Sciences</a></h3>
@@ -215,7 +215,7 @@ hr{
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
                                             <a class="media-left" href="<?php echo site_url('Agi/hospitalityManagement'); ?>">
-                                                <img src="<?php echo base_url(). "assets/img/aihm1.jpg"?>" title="AIHM" style="max-width: 140px;" class="img-responsive">
+                                                <img src="<?php echo base_url(). "assets/img/aihm1.jpg"?>" title="AIHM" alt="AIHM" style="max-width: 140px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="<?php echo site_url('Agi/hospitalityManagement'); ?>">Hospitality Management</a></h3>
@@ -227,7 +227,7 @@ hr{
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
                                             <a class="media-left" href="<?php echo site_url('Agi/commerceAndBusinessMgmt'); ?>">
-                                                <img src="<?php echo base_url(). "assets/img/fcbm1.jpg"?>" title="FCBM" style="max-width: 120px;" class="img-responsive">
+                                                <img src="<?php echo base_url(). "assets/img/fcbm1.jpg"?>" title="FCBM" alt="FCBM" style="max-width: 120px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="<?php echo site_url('Agi/commerceAndBusinessMgmt'); ?>">Commerce &amp; Business Management</a></h3>
@@ -240,7 +240,7 @@ hr{
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
                                             <a class="media-left" href="<?php echo site_url('Agi/computerScienceAndApplications'); ?>">
-                                                <img src="<?php echo base_url(). "assets/img/fcsa1.jpg"?>" title="FCSA" style="max-width: 140px;" class="img-responsive">
+                                                <img src="<?php echo base_url(). "assets/img/fcsa1.jpg"?>" title="FCSA" alt="FCSA" style="max-width: 140px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="<?php echo site_url('Agi/computerScienceAndApplications'); ?>">Computer Science &amp; Applications</a></h3>
@@ -253,7 +253,7 @@ hr{
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
                                             <a class="media-left" href="<?php echo site_url('Agi/bEd'); ?>">
-                                                <img src="<?php echo base_url(). "assets/img/bed1.jpg"?>" title="BED" style="min-width: 120px;max-width: 120px;" class="img-responsive">
+                                                <img src="<?php echo base_url(). "assets/img/bed1.jpg"?>" title="BED" alt="BEd" style="min-width: 120px;max-width: 120px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="<?php echo site_url('Agi/bEd'); ?>">BEd</a></h3>
