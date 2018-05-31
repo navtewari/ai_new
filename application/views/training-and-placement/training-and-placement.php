@@ -46,14 +46,15 @@
                                                 </p>
                                                 <p>
                                                     <ul class="check-square" style="margin-left: 10px;">
-                                                        <li>Ranked amongst Top 25 Business Management Institute in India SUN Magazine Survey 2015.</li>
-                                                        <li>Ranked amongst Top 30 Hotel Management Institute in India THE WEEK.</li>
-                                                        <li>Ranked 1st Hotel Management Institute in State for last eight years GHRDC.</li>
-                                                        <li>Ranked 5th Emerging Engineering College in India Higher Education Survey 2014.</li>
-                                                        <li>Awarded Best Institute of Academic Excellence in Uttarakhand Worldwide Achiever Survey.</li>
-                                                        <li>Ranked amongst Top 10 Promising Business Management Institute in India CSR-GHRDC Survey 2013, 2014, 2015.</li>
-                                                        <li>Ranked amongst Top 10 Hotel Management Institute of super excellence in India GHRDC 2015, 2016 & 2017.</li>
-                                                        <li>Ranked amongst top 10 private institutes by Hansa Research Survey 2016 published in The Week magazine.</li>
+                                                        <li>Ranked 9th amoungst the best private institute of Hotel Management in India by Drishti Outlook Survey 2018</li>
+                                                        <li>Ranked amongst top 10 private institutes by Hansa Research Survey 2016 & 2017 published in The Week magazine. </li>
+                                                        <li>Top Ranked Hotel Management Institute in State for last eight years GHRDC</li>
+                                                        <li>Amongst Top Ranked Emerging Engineering College in India Higher Education Survey</li>
+                                                        <li>Awarded Best Institute of Academic Excellence in Uttarakhand Worldwide Achiever Survey</li>
+                                                        <li>Ranked amongst Top 10 Promising Business Management Institute in India CSR-GHRDC Survey 2013, 2014, 2015</li>
+                                                        <li>Ranked amongst  Top 10 Hotel Management Institute of super excellence in India GHRDC 2015, 2016, 2017 & 2018. </li>
+                                                        <li>Education Excellence Award by Tv100 2017-18</li>
+                                                        <li>Ranked amongst Top 30 Hotel Management Institute in India THE WEEK</li>
                                                     </ul>
                                                 </p>
                                                 <div class="job-details" style="margin-top: 0px;">

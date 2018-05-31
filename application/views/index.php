@@ -6,6 +6,16 @@
 .member-info a:hover{
     color: #ffa200;
 }
+ul.check-circle li {
+    display: list-item;
+    position: relative;
+    line-height: 28px;
+    padding-left: 25px;
+    color:#8b4b05;
+}
+hr{
+    border:1px solid #aaaaaa;
+}
 </style>
 <?php
     $slider_ = array(
@@ -121,54 +131,70 @@
                                 </div><!-- /.css-tab -->
                             </section>
                             <section class="trusted-client-wrapper" style="background: url(<?php echo base_url().'assets//img/intro-bg.png'?>) no-repeat top left #000;">
-                                <h2 class="section-title wow fadeInDown" style="color:#f2f2f2">Courses</h2>
-                                <div class="col-md-3">
+                                <div class="col-md-6">
+                                    <h2 class="section-title wow fadeInDown" style="color:#f2f2f2">Courses</h2>
+                                    <div class="col-md-6">
+                                        <div class="info-in-short">                                        
+                                            <div class="member-info" style="background:#ffe2c5">
+                                                <h3>Post Graduate</h3>
+                                                <hr>
+                                                <a href="<?php echo site_url('Agi/computerScienceAndApplications')?>"><i class="fa fa-arrow-circle-right"></i> MCA</a><br> 
+                                                <a href="<?php echo site_url('Agi/computerScienceAndApplications')?>"><i class="fa fa-arrow-circle-right"></i> MCA (LE)</a> <br>
+                                                <a href="<?php echo site_url('Agi/commerceAndBusinessMgmt')?>"><i class="fa fa-arrow-circle-right"></i> MBA</a>
+                                            </div>                                        
+                                        </div>
+                                        <div class="info-in-short">                                        
+                                            <div class="member-info" style="background: #dbffd7">
+                                                <h3>Diploma</h3>
+                                                <hr>
+                                                <a href="<?php echo site_url('Agi/hospitalityManagement')?>"><i class="fa fa-arrow-circle-right"></i> DHMCT</a><br> 
+                                                <a href="<?php echo site_url('Agi/hospitalityManagement')?>"><i class="fa fa-arrow-circle-right"></i> DHM</a> <br>
+                                                <a href="<?php echo site_url('Agi/technologyAndSciences')?>"><i class="fa fa-arrow-circle-right"></i> Diploma Engg.</a>
+                                            </div>                                        
+                                        </div>
+                                    </div><!-- /.col-md-4 -->
+                                    <div class="col-md-6">
+                                        <div class="info-in-short">                                        
+                                            <div class="member-info">
+                                                <h3>Under Graduate</h3>
+                                                <hr>
+                                                <a href="<?php echo site_url('Agi/technologyAndSciences')?>"><i class="fa fa-arrow-circle-right"></i> B.Tech</a><br> 
+                                                <a href="<?php echo site_url('Agi/computerScienceAndApplications')?>"><i class="fa fa-arrow-circle-right"></i> BCA</a> <br>
+                                                <a href="<?php echo site_url('Agi/commerceAndBusinessMgmt')?>"><i class="fa fa-arrow-circle-right"></i> BBA</a><br>
+                                                <a href="<?php echo site_url('Agi/commerceAndBusinessMgmt')?>"><i class="fa fa-arrow-circle-right"></i> B.COM (Hnrs)</a><br>
+                                                <a href="<?php echo site_url('Agi/hospitalityManagement')?>"><i class="fa fa-arrow-circle-right"></i> BHMCT</a><br>
+                                                <a href="<?php echo site_url('Agi/hospitalityManagement')?>"><i class="fa fa-arrow-circle-right"></i> BHM</a><br>
+                                                <a href="<?php echo site_url('Agi/bEd')?>"><i class="fa fa-arrow-circle-right"></i> B.Ed.</a>
+                                            </div>   
+                                            <div class="info-in-short">                                        
+                                            <div class="member-info">
+                                                <h3>Short Diploma</h3>
+                                                <hr>
+                                                <a href="<?php echo site_url('Agi/hospitalityManagement')?>"><i class="fa fa-arrow-circle-right"></i> DHM -Add On</a><br>                     
+                                            </div>                                        
+                                        </div>                                     
+                                        </div>
+                                    </div><!-- /.col-md-4 -->                                    
+                                </div>
+
+                                <div class="col-md-6">
+                                    <h2 class="section-title wow fadeInDown" style="color:#f2f2f2">Rankings</h2>
                                     <div class="info-in-short">                                        
-                                        <div class="member-info">
-                                            <h3>Post Graduate</h3>
-                                            <hr>
-                                            <a href="<?php echo site_url('Agi/computerScienceAndApplications')?>"><i class="fa fa-arrow-circle-right"></i> MCA</a><br> 
-                                            <a href="<?php echo site_url('Agi/computerScienceAndApplications')?>"><i class="fa fa-arrow-circle-right"></i> MCA (LE)</a> <br>
-                                            <a href="<?php echo site_url('Agi/commerceAndBusinessMgmt')?>"><i class="fa fa-arrow-circle-right"></i> MBA</a>
+                                        <div class="member-info">                                            
+                                            <ul class="check-circle" style="font-size:14px;text-align: justify;">
+                                                <li>Ranked 9th amoungst the best private institute of Hotel Management in India by Drishti Outlook Survey 2018</li>
+                                                <li>Ranked amongst top 10 private institutes by Hansa Research Survey 2016 & 2017 published in The Week magazine. </li>
+                                                <li>Top Ranked Hotel Management Institute in State for last eight years GHRDC</li>
+                                                <li>Amongst Top Ranked Emerging Engineering College in India Higher Education Survey</li>
+                                                <li>Awarded Best Institute of Academic Excellence in Uttarakhand Worldwide Achiever Survey</li>
+                                                <li>Ranked amongst Top 10 Promising Business Management Institute in India CSR-GHRDC Survey 2013, 2014, 2015</li>
+                                                <li>Ranked amongst  Top 10 Hotel Management Institute of super excellence in India GHRDC 2015, 2016, 2017 & 2018. </li>
+                                                <li>Education Excellence Award by Tv100 2017-18</li>
+                                                <li>Ranked amongst Top 30 Hotel Management Institute in India THE WEEK</li>
+                                            </ul>
                                         </div>                                        
                                     </div>
-                                </div><!-- /.col-md-4 -->
-                                <div class="col-md-3">
-                                    <div class="info-in-short">                                        
-                                        <div class="member-info">
-                                            <h3>Under Graduate</h3>
-                                            <hr>
-                                            <a href="<?php echo site_url('Agi/technologyAndSciences')?>"><i class="fa fa-arrow-circle-right"></i> B.Tech</a><br> 
-                                            <a href="<?php echo site_url('Agi/computerScienceAndApplications')?>"><i class="fa fa-arrow-circle-right"></i> BCA</a> <br>
-                                            <a href="<?php echo site_url('Agi/commerceAndBusinessMgmt')?>"><i class="fa fa-arrow-circle-right"></i> BBA</a><br>
-                                            <a href="<?php echo site_url('Agi/commerceAndBusinessMgmt')?>"><i class="fa fa-arrow-circle-right"></i> B.COM (Hnrs)</a><br>
-                                            <a href="<?php echo site_url('Agi/hospitalityManagement')?>"><i class="fa fa-arrow-circle-right"></i> BHMCT</a><br>
-                                            <a href="<?php echo site_url('Agi/hospitalityManagement')?>"><i class="fa fa-arrow-circle-right"></i> BHM</a><br>
-                                            <a href="<?php echo site_url('Agi/bEd')?>"><i class="fa fa-arrow-circle-right"></i> B.Ed.</a>
-                                        </div>                                        
-                                    </div>
-                                </div><!-- /.col-md-4 -->
-                                <div class="col-md-3">
-                                    <div class="info-in-short">                                        
-                                        <div class="member-info">
-                                            <h3>Diploma</h3>
-                                            <hr>
-                                            <a href="<?php echo site_url('Agi/hospitalityManagement')?>"><i class="fa fa-arrow-circle-right"></i> DHMCT</a><br> 
-                                            <a href="<?php echo site_url('Agi/hospitalityManagement')?>"><i class="fa fa-arrow-circle-right"></i> DHM</a> <br>
-                                            <a href="<?php echo site_url('Agi/technologyAndSciences')?>"><i class="fa fa-arrow-circle-right"></i> Diploma Engg.</a>
-                                        </div>                                        
-                                    </div>
-                                </div><!-- /.col-md-4 -->
-                                <div class="col-md-3">
-                                    <div class="info-in-short">                                        
-                                        <div class="member-info">
-                                            <h3>Short Diploma</h3>
-                                            <hr>
-                                            <a href="<?php echo site_url('Agi/hospitalityManagement')?>"><i class="fa fa-arrow-circle-right"></i> DHM -Add On</a><br>                     
-                                        </div>                                        
-                                    </div>
-                                </div><!-- /.col-md-4 -->
-                                
+                                </div>
                                 <div style="clear:both"></div>
                             </section>
                             <section class="service-wrapper">
