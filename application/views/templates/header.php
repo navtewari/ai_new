@@ -12,8 +12,9 @@
         <meta name="language" content="English"> 
         <meta name="allow-search" content="yes">
         <meta name="copyright" content="AMRAPALI GROUP OF INSTITUTES, HALDWANI">
+        <meta name="description" content="<?php echo $desc_; ?>" />
 
-        <title>Amrapali Group of Institutes</title>
+        <title><?php echo $titleMain; ?></title>
         <script type="text/javascript">
             site_url_ = "<?php echo site_url(); ?>";
             base_path = "<?php echo base_url(); ?>";
