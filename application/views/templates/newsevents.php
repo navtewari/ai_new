@@ -1,4 +1,4 @@
-<div class="vticker" style="max-height:300px;min-height: 300px;">
+<div class="vticker">
     <ul>               
         <?php foreach ($commondata_['rnews_'] as $item) { ?>
             <li>

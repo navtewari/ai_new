@@ -649,6 +649,17 @@ class Agi extends CI_Controller {
             $this->load->view('pageLinks/recruiters', $data_);
             $this->load->view('templates/footer');  
         }
+
+        function RecruitersTestimonials(){
+            $data_['menu_active'] =8;
+            $data_['menu_all'] = $this->my_menu->site_menu();
+            $data_['alumni'] = $this->ouralumni();
+            $data_['title'] = "Recruiters Testimonials";
+
+            $this->load->view('templates/header');
+            $this->load->view('pageLinks/recruitersSpeak', $data_);
+            $this->load->view('templates/footer');  
+        }
     // ------end of page links
 
 // Common Methods

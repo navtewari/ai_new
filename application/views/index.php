@@ -155,7 +155,7 @@ hr{
                                     </div><!-- /.col-md-4 -->
                                     <div class="col-md-6">
                                         <div class="info-in-short">                                        
-                                            <div class="member-info">
+                                            <div class="member-info" style="background: #dbffd7">
                                                 <h3>Under Graduate</h3>
                                                 <hr>
                                                 <a href="<?php echo site_url('Agi/technologyAndSciences')?>"><i class="fa fa-arrow-circle-right"></i> B.Tech</a><br> 
@@ -167,7 +167,7 @@ hr{
                                                 <a href="<?php echo site_url('Agi/bEd')?>"><i class="fa fa-arrow-circle-right"></i> B.Ed.</a>
                                             </div>   
                                             <div class="info-in-short">                                        
-                                            <div class="member-info">
+                                            <div class="member-info" style="background:#ffe2c5">
                                                 <h3>Short Diploma</h3>
                                                 <hr>
                                                 <a href="<?php echo site_url('Agi/hospitalityManagement')?>"><i class="fa fa-arrow-circle-right"></i> DHM -Add On</a><br>                     
@@ -283,13 +283,16 @@ hr{
                             </section>
 
                             <section class="testimonial-wrapper">
-                                <h2 class="section-title">What our Recruiters Say about us</h2>
+                                <h2 class="section-title">What our Recruiters Say about us
+                                    <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('Agi/RecruitersTestimonials'); ?>">Check More</a>
+                                </h2>
                                 <div id="css-testimonial-carousel" class="carousel slide" data-ride="carousel">
                                     <!-- Indicators -->
                                     <ol class="carousel-indicators">
                                         <li data-target="#css-testimonial-carousel" data-slide-to="0" class="active"></li>
                                         <li data-target="#css-testimonial-carousel" data-slide-to="1"></li>
                                         <li data-target="#css-testimonial-carousel" data-slide-to="2"></li>
+                                        <li data-target="#css-testimonial-carousel" data-slide-to="3"></li>                                        
                                     </ol>
 
                                     <!-- Wrapper for slides -->
@@ -298,8 +301,8 @@ hr{
                                             <div class="row">
                                                 <div class="col-md-12 col-sm-7">
                                                     <div class="client-testimonial">
-                                                        <p><img align="right" class="img-responsive" style="max-width: 120px;margin-left:20px;" src="<?PHP echo base_url() . 'assets/img/recruiters/RahulBhatia.jpg'; ?>" alt="Amrapali Recruiters"> My association with Amrapali Group of Institutes at Haldwani is a long one and throughout it has been a journey filled with tremendous outcomes for all those involved.. B.Tech graduates that we have recruited in the past have demonstrated learning attitude, perseverance and hard work in their corporate lives.</p>
-                                                        <span class="client-name">Rahul Bhatia</span>, <span class="client-org">Manager HR, Wipro Technologies</span>
+                                                        <p><img align="right" class="img-responsive" style="max-width: 120px;margin:10px 20px;" src="<?PHP echo base_url() . 'assets/img/recruiters/YaminiBhakr.jpg'; ?>" alt="Amrapali Recruiters">I have been associated with the institute for past 3 years now and each time the interaction has been very professional. The students from the institute are well-versed with the basics of hospitality industry and are well l trained on personality enhancement. The credit definitely goes to the faculty who has been imparting the knowledge the students. The response from the institute is very prompt.</p><p>I look forward for the fruitful continued professional association with the institute and wish all the students and faculty success for the upcoming years ahead.</p>
+                                                        <span class="client-name">Yamini Bhakri</span>, <span class="client-org">Human Resources Manager, The Hyatt </span>
                                                     </div>
                                                 </div><!-- /.col-md-8 -->	                                                   
                                             </div><!-- /.row -->
@@ -308,8 +311,8 @@ hr{
                                             <div class="row">
                                                 <div class="col-md-12 col-sm-7">
                                                     <div class="client-testimonial">
-                                                        <p><img hspace="10" align="right" class="img-responsive" style="max-width: 120px;margin-left:20px;" src="<?PHP echo base_url() . 'assets/img/recruiters/PrabhakarArya.jpg'; ?>" alt="Amrapali Recruiters"> It was my first visit to Amrapali Group of Institutes to recruit BBA and MBA participants for my organization. I must at the outset congratulate the team Amrapali for been able to develop students with strong potential to succeed in this cut throat competitive world. I wish the institute all the success in days to come. </p>
-                                                        <span class="client-name">Mr. Prabhakar Arya</span>, <span class="client-org">Manager, Operations Religare Health Insurance, Noida</span>
+                                                        <p><img hspace="10" align="right" class="img-responsive" style="max-width: 120px;margin:10px 20px;" src="<?PHP echo base_url() . 'assets/img/recruiters/ParvezShaikh.jpg'; ?>" alt="Amrapali Recruiters"> Karvy Stock Broking has conducted an on-campus drive at Amrapali Group of Institutes and we have seen experienced set of very professional and wellgroomed candidates for our recruitment. The institution has a good talent pool of fresh minds that have been trained to become industry ready in state of the art infrastructure with a very high focus on technical capability as well as soft skills of students.</p>
+                                                        <span class="client-name">Parvez Shaikh</span>, <span class="client-org">AGM – Training, Karvy, Hyderabad </span>
                                                     </div>
                                                 </div><!-- /.col-md-8 -->	
                                             </div><!-- /.row -->
@@ -318,8 +321,18 @@ hr{
                                             <div class="row">
                                                 <div class="col-md-12 col-sm-7">
                                                     <div class="client-testimonial">
-                                                        <p><img hspace="10" align="right" class="img-responsive" style="max-width: 120px;margin-left:20px;" src="<?PHP echo base_url() . 'assets/img/recruiters/MaheshRathore.jpg'; ?>" alt="Amrapali Recruiters"> It is only good thing which i have to say for your institute " I would like to congratulate the faculty and management of Amrapali Institute of Hotel Management for making the institute stands out among other hotel management institutes, our association with the institute has been a year long and  we have already selected 7 students as they stand out due to their knowledge , grooming, confidence and over all personality which i believe is due to hard work  and discipline of the faculty members. I would like to  see Amrpali Institute of hotel Management become a premier institute in Hotel Management as i believe it has potential to reach there."</p>
-                                                        <span class="client-name">Mahesh Rathore</span>, <span class="client-org">Manager Human Resources, Oberoi Amarvilas </span>
+                                                        <p><img hspace="10" align="right" class="img-responsive" style="max-width: 120px;margin:10px 20px;" src="<?PHP echo base_url() . 'assets/img/recruiters/AnuradhaChawla.jpg'; ?>" alt="Amrapali Recruiters">Students of Amrapali have become an essential part of SmartData. For past many years we have been hiring MCA students on various technical profiles and selections have always proved right for our company. Smart Data would like to acknowledge all the students of Faculty of Computer Science & Applications for a great recruiting season. We saw high calibre of intellect and discipline in the team that represented the institute and we are happy to continue this association in future</p>
+                                                        <span class="client-name">Ms. Anuradha Chawla</span>, <span class="client-org">Vice President – Operations, Smart Data Inc</span>
+                                                    </div>
+                                                </div><!-- /.col-md-8 -->
+                                            </div><!-- /.row -->
+                                        </div><!-- /.item -->
+                                        <div class="item">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-7">
+                                                    <div class="client-testimonial">
+                                                        <p><img hspace="10" align="right" class="img-responsive" style="max-width: 120px;margin:10px 20px;" src="<?PHP echo base_url() . 'assets/img/recruiters/SureshShinde.jpg'; ?>" alt="Amrapali Recruiters"> We ventured an on- campus placement drive with the students of Amrapali for the first time. We are always on a lookout for passionate coders and our hiring process is very stringent and continued for weeks with varied levels of difficulties. We would be very pleased to be associated with the institute for a long time to come and add to our bouquet of passionate coding experts that will take Allure Inc. to unprecedented heights.</p>   
+                                                        <span class="client-name">Mr. Suresh Shinde</span>, <span class="client-org">Chief Technology Officer,Allure Inc., Goa</span>
                                                     </div>
                                                 </div><!-- /.col-md-8 -->
                                             </div><!-- /.row -->
