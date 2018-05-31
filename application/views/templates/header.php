@@ -25,7 +25,7 @@
         <!-- Flaticon CSS -->
         <link href="<?php echo base_url('assets/fonts/flaticon/flaticon.css'); ?>?ver=1.0" rel="stylesheet">
         <!-- font-awesome CSS -->
-        <link href="<?php echo base_url('assets/css/font-awesome.min.css'); ?>?ver=1.0" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <!-- owl.carousel CSS -->
         <!-- Offcanvas CSS -->
         <link href="<?php echo base_url('assets/css/hippo-off-canvas.css'); ?>?ver=1.0" rel="stylesheet">
