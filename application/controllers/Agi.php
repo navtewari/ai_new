@@ -904,7 +904,7 @@ class Agi extends CI_Controller {
             $data_['title'] = "Anti-Ragging";
 
             $this->load->view('templates/header', $data_);
-            $this->load->view('pageLinks/antiRagging', $data_);
+            $this->load->view('pageLinks/antiragging', $data_);
             $this->load->view('templates/footer');  
         }
 
