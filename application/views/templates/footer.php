@@ -66,7 +66,10 @@
                         <span style="color:#8EDDFF">Toll-Free: 1800 180 4027 </span><br /><br />
                         Email: &#113;&#117;&#101;&#114;&#121;&#064;&#097;&#109;&#114;&#097;&#112;&#097;&#108;&#105;&#046;&#097;&#099;&#046;&#105;&#110;
                     </address>
-                    <?PHP $this->load->view('templates/socialMedia'); ?><br><br><br>
+                    <div class="social-link">
+                        <?PHP $this->load->view('templates/socialMedia'); ?>
+                    </div>
+                    <br/>
                     <p><a>Copyright &copy; 2018 Amrapali Group of Institutes, All Rights Reserved.</a> </p>                                                  
                 </div><!-- /.footer-widget -->
             </div><!-- /.col-md-6 -->

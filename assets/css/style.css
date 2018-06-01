@@ -1092,6 +1092,18 @@ SOCIAL LINK
 .social-link ul li a i.fa-flickr:hover {
     color: #e21777;
 }
+.social-link ul li a i.fa-instagram {
+    background: #c61c1f;
+}
+.social-link ul li a i.fa-instagram:hover {
+    color: #c61c1f;
+}
+.social-link ul li a i.fa-bold {
+    background: #d48d03;
+}
+.social-link ul li a i.fa-bold:hover {
+    color: #c61c1f;
+}
 
 
 /* ----------------------------------------------------------------
