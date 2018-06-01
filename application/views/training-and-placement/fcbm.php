@@ -29,7 +29,7 @@
 														            		<?php if($item->YEAR == $loop1){ ?>
 																	        <tbody>
 																	          <tr>
-																	            <td><?php echo $item->CRS_NAME;?></td>
+																	            <td style="width:120px;"><?php echo $item->CRS_NAME;?></td>
 																	            <td><?php echo $item->COMPANY;?></td>
 																	            <td><?php echo $item->DESIG_PROFILE;?></td>
 																	            <td><?php echo $item->STUDENT_PALCED;?></td>
