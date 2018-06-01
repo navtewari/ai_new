@@ -35,7 +35,8 @@ class My_menu {
                 "BHMCT" => 'http://uktech.ac.in/courses/',
                 "BCA" => 'https://www.amrapali.ac.in/assets/dwnlds/BCA_SYLLABUS.pdf',
                 "BCA New Syllabus" => 'https://www.amrapali.ac.in/assets/dwnlds/RevisedBCASyllabus(Applicablefrom2016-2017).pdf',
-                "BBA" => 'https://www.amrapali.ac.in/assets/dwnlds/BBA_SYLLABUS.pdf'
+                "BBA" => 'https://www.amrapali.ac.in/assets/dwnlds/BBA_SYLLABUS.pdf',
+                "B.Com.(Hons)" => '#'
             ),
             'others' => array(
                 'FDP' => '/Agi/fdp'

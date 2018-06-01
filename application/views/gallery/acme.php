@@ -175,7 +175,7 @@
                                                         <div id="collapseSix1" class="panel-collapse collapse">
                                                             <div class="panel-body">
                                                                 <p>
-                                                                    <img src="<?PHP echo base_url() . 'assets/i_m_g_/editorialBoard.jpg'; ?>">
+                                                                    <img src="<?PHP echo base_url() . 'assets/img/editorialBoard.jpg'; ?>">
                                                                 </p>
                                                             </div>
                                                         </div>

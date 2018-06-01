@@ -3,7 +3,7 @@
                                             <p style="text-align:center">Years of Academic Excellence</p>
                                         </div><!--/.col-sm-2 -->
                                         <div class="col-sm-2 text-center experiance-tab-content wow fadeInLeft">
-                                            <h1><?php echo "60+";?></h1>
+                                            <h1><?php echo "80+";?></h1>
                                             <p style="text-align:center">on-campus drives</p>
                                         </div><!--/.col-sm-2 -->
                                         <div class="col-sm-2 text-center experiance-tab-content wow fadeInLeft">
