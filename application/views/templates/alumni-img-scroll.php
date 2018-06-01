@@ -20,12 +20,12 @@
                                                                         <h3><?php echo $item->name; ?></h3>
                                                                         <h4><?php echo $item->company; ?></h4>
                                                                     </div>
-                                                                    <a class="btn btn-primary btn-lg wow fadeInDown" href="<?PHP echo site_url('Agi/getdistingusedAlumni'); ?>">See More</a>
                                                                 </div>
                                                                 <?php
                                                                 $i++;
                                                             }
-                                                            ?>                
+                                                            ?>  
+                                                            <a class="btn btn-primary btn-lg wow fadeInDown" href="<?PHP echo site_url('Agi/getdistingusedAlumni'); ?>">See More</a>              
                                                         </div>
 
                                                         <!-- Controls -->

@@ -265,21 +265,23 @@ hr{
                                 </div> <!-- /.row -->
                             </section>                                                               
                             <section class="trusted-client-wrapper">
-                                <h2 class="section-title wow fadeInDown">Our Recruiters</h2>                                                                           
-                                <ul class="partner-logo">
-                                    <?PHP for ($loop = 1; $loop <= 4; $loop++) { ?>
-                                        <li class="wow zoomIn"><img class="img-responsive" src="<?PHP echo base_url() . 'assets/img/cmpLogos/c' . $loop . '.png'; ?>" alt="Amrapali Recruiters Logo"></li> 
-                                    <?PHP } ?>
+                                <link href="<?php echo base_url().'assets/1/thumbnail-slider.css'?>" rel="stylesheet" />
+                                <script src="<?php echo base_url().'assets/1/thumbnail-slider.js'?>" type="text/javascript"></script>
 
-                                    <?PHP for ($loop = 1; $loop <= 4; $loop++) { ?>
-                                        <li class="wow zoomIn"><img class="img-responsive" src="<?PHP echo base_url() . 'assets/img/cmpLogos/b' . $loop . '.png'; ?>" alt="Amrapali Recruiters Logo"></li> 
-                                    <?PHP } ?>
-
-                                    <?PHP for ($loop = 1; $loop <= 4; $loop++) { ?>
-                                        <li class="wow zoomIn"><img class="img-responsive" src="<?PHP echo base_url() . 'assets/img/cmpLogos/h' . $loop . '.png'; ?>" alt="Amrapali Recruiters Logo"></li> 
-                                    <?PHP } ?>
+                                <h2 class="section-title wow fadeInDown">Our Recruiters
                                     <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('Agi/amrapaliRecruiters');?>">See More Recruiters</a>
-                                </ul>                                    
+                                </h2>
+
+                                <div id="thumbnail-slider">
+                                    <div class="inner">
+                                        <ul>
+                                    <?PHP for ($loop = 1; $loop <= 45; $loop++) { ?>
+                                        <li class="wow zoomIn"><img class="img-responsive thumb" src="<?PHP echo base_url() . 'assets/img/cmpLogos/' . $loop . '.png'; ?>" alt="Amrapali Recruiters Logo"></li> 
+                                    <?PHP } ?>
+                                </ul>  
+                                    </div>
+                                </div>                                                    
+                                       
                             </section>
 
                             <section class="testimonial-wrapper">
