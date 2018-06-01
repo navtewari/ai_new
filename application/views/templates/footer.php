@@ -7,12 +7,12 @@
                     <ul class="wow fadeInDown">
                         <li><a href="<?PHP echo site_url('Agi/whyAmrapali'); ?>">Why us</a></li>
                         <li><a href="<?PHP echo site_url('Agi/infrastructure'); ?>">Facilities</a></li>
-                        <li><a href="<?PHP echo site_url('#'); ?>">Anti-Ragging</a></li>
+                        <li><a href="<?PHP echo site_url('Agi/antiRagging'); ?>">Anti-Ragging</a></li>
                         <li><a href="<?PHP echo 'https://docs.google.com/forms/d/e/1FAIpQLScCbqIFSl-UCr9Emll9xOGKd3XdMecRuZEZGkFcyBN8ialpPg/viewform'; ?>" target="_blank">Grievance Section</a></li>
                         <li><?PHP echo anchor('Agi/studentFeedback', "Student's Feedback"); ?></li>
                         <li><?PHP echo anchor('#', "Teacher's Feedback"); ?></li>
                         <li><?PHP echo anchor('Agi/trainingAndPlacement', 'Training & Placement'); ?></li>
-                        <li><?PHP echo anchor('#', 'Approvals &amp; Affiliations'); ?></li>
+                        <li><?PHP echo anchor('Agi/approvals', 'Approvals &amp; Affiliations'); ?></li>
                         <li><?PHP echo anchor('Agi/career', 'Career@Amrapali'); ?></li>
                         <!--li><a href="https://www.onlinesbi.com/prelogin/icollecthome.htm" target="_bank">Pay Fees Online</a></li-->
                     </ul>
