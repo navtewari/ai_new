@@ -891,6 +891,38 @@ class Agi extends CI_Controller {
             $this->load->view('pageLinks/recruitersSpeak', $data_);
             $this->load->view('templates/footer');  
         }
+
+        function antiRagging(){
+            $data_ = $this->my_library->heading_for_page(1);      
+       
+            $data_['desc_'] = $data_['desc_'];
+            $data_['titleMain'] = $data_['tmp'];
+
+            $data_['menu_active'] =8;
+            $data_['menu_all'] = $this->my_menu->site_menu();
+            $data_['alumni'] = $this->ouralumni();
+            $data_['title'] = "Anti-Ragging";
+
+            $this->load->view('templates/header', $data_);
+            $this->load->view('pageLinks/antiragging', $data_);
+            $this->load->view('templates/footer');  
+        }
+
+        function approvals(){
+            $data_ = $this->my_library->heading_for_page(1);      
+       
+            $data_['desc_'] = $data_['desc_'];
+            $data_['titleMain'] = $data_['tmp'];
+
+            $data_['menu_active'] =8;
+            $data_['menu_all'] = $this->my_menu->site_menu();
+            $data_['alumni'] = $this->ouralumni();
+            $data_['title'] = "Approvals & Affiliations";
+
+            $this->load->view('templates/header', $data_);
+            $this->load->view('pageLinks/approvals', $data_);
+            $this->load->view('templates/footer');  
+        }
     // ------end of page links
 
 // Common Methods

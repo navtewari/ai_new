@@ -34,6 +34,10 @@
                             
                             <div class="entry-content">                                                      
                                 <ul class="partner-logo">
+                                    <?PHP for ($loop = 1; $loop <= 45; $loop++) { ?>
+                                        <li class="wow zoomIn"><img class="img-responsive" src="<?PHP echo base_url() . 'assets/img/cmpLogos/' . $loop . '.png'; ?>" alt="Amrapali Recruiters Logo"></li> 
+                                    <?PHP } ?>
+
                                     <?PHP for ($loop = 1; $loop <= 25; $loop++) { ?>
                                         <li class="wow zoomIn"><img class="img-responsive" src="<?PHP echo base_url() . 'assets/img/cmpLogos/c' . $loop . '.png'; ?>" alt="Amrapali Recruiters Logo"></li> 
                                     <?PHP } ?>
