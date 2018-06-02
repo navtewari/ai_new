@@ -19,6 +19,6 @@
                                             <p style="text-align:center">Bright Students</p>
                                         </div><!--/.col-sm-2 -->
                                         <div class="col-sm-2 text-center experiance-tab-content wow fadeInRight">
-                                            <h1>15000+</h1>
+                                            <h1>7000+</h1>
                                             <p  style="text-align: center">Glorious Alumni</p>
                                         </div><!--/.col-sm-6 -->

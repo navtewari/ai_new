@@ -38,7 +38,7 @@
                                     <?php foreach ($gallery_category as $grp_item) { ?>
                                     <div class="portfolio-item col-sm-6 col-md-3">
                                         <div class="single-portfolio">
-                                            <img src="<?PHP echo base_url() . 'gallery__Admin__/_assets_/mask/'.$grp_item->PIC; ?>" style="width: 100%;"/>
+                                            <img src="<?PHP echo base_url() . 'gallery__Admin__/_assets_/mask/'.$grp_item->PIC; ?>?ver=1.0" style="width: 100%;"/>
                                             <h4 style="text-align:center; padding-top:15px;"><a href="<?PHP echo site_url('Agi/imagePicsInner/'.$grp_item->CATEG_ID);?>" style="color:red;"><?php echo $grp_item->CATEGORY; ?></a></h4>
                                             <div class="portfolio-links">
                                                 <a href="<?PHP echo site_url('Agi/imagePicsInner/'.$grp_item->CATEG_ID);?>"><i class="fa fa-search-plus"></i></a>
