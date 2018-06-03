@@ -130,7 +130,7 @@ hr{
                                     </div><!-- /.row -->                                        
                                 </div><!-- /.css-tab -->
                             </section>
-                            <section class="trusted-client-wrapper" style="background: url(<?php echo base_url().'assets//img/intro-bg.png'?>) no-repeat top left #000;">
+                            <section class="trusted-client-wrapper" style="background: url(<?php echo base_url().'assets//img/intro-bg2.jpg'?>) no-repeat top left #0e283a;">
                                 <div class="col-md-6">
                                     <h2 class="section-title wow fadeInDown" style="color:#f2f2f2">Courses</h2>
                                     <div class="col-md-6">
