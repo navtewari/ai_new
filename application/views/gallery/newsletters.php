@@ -1,4 +1,9 @@
 <body>
+    <style>
+        .panelsize{
+
+        }
+    </style>
     <div id="st-container" class="st-container">
         <div class="st-pusher">
             <div class="st-content">
@@ -39,8 +44,8 @@
 
                                             <div class="entry-content">
                                                 <img src="<?php echo base_url('assets/img/newsletter.jpg'); ?>" class="img-responsive" alt="">                   
-                                                <p style="clear: both; padding: 5px"></p>
-                                                <p align="justify">
+                                                <div style="clear: both; padding: 15px"></div>
+                                                <div align="justify" class="panelsize col-sm-4">
                                                     <div style="padding: 3px; float: left; background: #808080">
                                                             <a href="<?PHP echo base_url('assets/newsletters/FCSA_AIMCA_2017_vol_12.pdf');?>" target="_blank"><img src="<?PHP echo base_url('assets/img/abhiwyakti_vol12.jpg');?>" title="Abhiwyakti - The reflection of Hotel Management." /></a>
                                                     </div>
@@ -49,8 +54,8 @@
                                                         Abhiwyakti (Vol 12)<br> The reflection of <br />Hotel Management.
                                                         </a>
                                                     </div>
-                                                </p>
-                                                <p align="justify">
+                                                </div>
+                                                <div align="justify" class="panelsize col-sm-4">
                                                     <div style="padding: 3px; float: left; background: #808080">
                                                             <a href="<?PHP echo base_url('assets/newsletters/HM2017.pdf');?>" target="_blank"><img src="<?PHP echo base_url('assets/img/abhiwyakti_vol11.jpg');?>" title="Abhiwyakti - The reflection of Hotel Management." /></a>
                                                     </div>
@@ -60,8 +65,8 @@
                                                                                     The reflection of <br />Hotel Management.
                                                         </a>
                                                     </div>
-                                                </p>
-                                                <p align="justify">
+                                                </div>
+                                                <div align="justify" class="panelsize col-sm-4">
                                                     <div style="padding: 3px; float: left; background: #808080">
                                                             <a href="<?PHP echo base_url('assets/newsletters/HITVol2.pdf');?>" target="_blank">
                                                             <img src="<?PHP echo base_url('assets/img/hit_vol2.jpg');?>" title="Vidut - The reflection of Eletrical &amp; Electronics Engineering" /></a>
@@ -71,9 +76,9 @@
                                                         Annual Magazine of  <br />Amrapali Institute of <br />Hotel Management
                                                         </a>
                                                     </div>
-                                                </p>
-                                                <p style="clear: both; padding: 5px"></p>
-                                                <p align="justify">
+                                                </div>
+                                                <div style="clear: both; padding: 5px"></div>
+                                                <div align="justify" class="panelsize col-sm-4">
                                                     <div style="padding: 3px; float: left; background: #808080">
                                                             <a href="<?PHP echo base_url('assets/newsletters/HM2016.pdf');?>" target="_blank"><img src="<?PHP echo base_url('assets/img/abhiwyakti_vol10.jpg');?>" title="Abhiwyakti - The reflection of Hotel Management." /></a>
                                                     </div>
@@ -83,9 +88,9 @@
                                                                                     The reflection of <br />Hotel Management.
                                                         </a>
                                                     </div>
-                                                </p>
+                                                </div>
                                                 
-                                                <p align="justify">
+                                                <div align="justify" class="panelsize col-sm-4">
                                                     <div style="padding: 3px; float: left; background: #808080">
                                                             <a href="<?PHP echo base_url('assets/newsletters/FCSA_AIMCA_2017_vol_11.pdf');?>" target="_blank"><img src="<?PHP echo base_url('assets/img/sanganan_vol11.jpg');?>" title="Abhiwyakti - The reflection of Hotel Management." /></a>
                                                     </div>
@@ -94,21 +99,21 @@
                                                                                     The reflection of <br />Computer Science <br /> &amp; Applications.
                                                         </a>
                                                     </div>
-                                                </p>
-                                                <p style="clear: both; padding: 5px"></p>
+                                                </div>
+                                                <div style="clear: both; padding: 5px"></div>
                                                 <hr>
-                                                <p style="clear: both; padding: 5px"></p>
-                                                <p align="justify">
+                                                <div style="clear: both; padding: 5px"></div>
+                                                <div align="justify" class="panelsize col-sm-4">
                                                     <div style="padding: 3px; float: left; background: #808080">
                                                             <a href="<?PHP echo base_url('assets/newsletters/EEE_2015_vol_1.pdf');?>" target="_blank"><img src="<?PHP echo base_url('assets/img/vidut.jpg');?>" title="Vidut - The reflection of Eletrical &amp; Electronics Engineering" /></a>
                                                     </div>
                                                     <div style="float: left; padding: 5px">
                                                         <a href="<?PHP echo base_url('assets/newsletters/EEE_2015_vol_1.pdf');?>" target="_blank">
-                                                        The reflection of <br />Eletrical &amp; Electronics <br />Engineering.
+                                                        The reflection of <br />Eletrical &amp; <br>Electronics <br />Engineering.
                                                         </a>
                                                     </div>
-                                                </p>
-                                                <p align="justify">
+                                                </div>
+                                                <div align="justify" class="panelsize col-sm-4">
                                                     <div style="padding: 3px; float: left; background: #808080">
                                                             <a href="<?PHP echo base_url('assets/newsletters/FCSA_AIMCA_2015_vol_1.pdf');?>" target="_blank"><img src="<?PHP echo base_url('assets/img/sanganan.jpg');?>" title="Sanganan - The reflection of Computer Science &amp; Applications" /></a>
                                                     </div>
@@ -117,8 +122,8 @@
                                                                                     The reflection of <br />Computer Science <br />&amp; Applications.
                                                         </a>
                                                     </div>
-                                                </p>
-                                                <p align="justify">
+                                                </div>
+                                                <div align="justify" class="panelsize col-sm-4">
                                                     <div style="padding: 3px; float: left; background: #808080">
                                                             <a href="<?PHP echo base_url('assets/newsletters/FHM_AIHM_2016_vol_11.pdf');?>" target="_blank"><img src="<?PHP echo base_url('assets/img/abhiwyakti.jpg');?>" title="Abhiwyakti - The reflection of Hotel Management." /></a>
                                                     </div>
@@ -127,9 +132,9 @@
                                                                                     The reflection of <br />Hotel Management.
                                                         </a>
                                                     </div>
-                                                </p>
-                                                <p style="clear: both; padding: 5px"></p>
-                                                <p align="justify">
+                                                </div>
+                                                <div style="clear: both; padding: 5px"></div>
+                                                <div align="justify" class="panelsize col-sm-4">
                                                     <div style="padding:3px; float: left; background: #808080">
                                                             <a href="<?PHP echo base_url('assets/newsletters/footprints.pdf');?>" target="_blank"><img src="<?PHP echo base_url('assets/img/footprints.jpg');?>" title="Footprints: Alumni <br />Newsletter" /></a>
                                                     </div>
@@ -138,17 +143,17 @@
                                                             Footprints Alumni <br />Newsletter [2016].
                                                         </a>
                                                     </div>
-                                                </p>
-                                                <p align="justify">
+                                                </div>
+                                                <div align="justify" class="panelsize col-sm-4">
                                                     <div style="padding:3px; float: left; background: #808080">
                                                             <a href="<?PHP echo base_url('assets/newsletters/Kriti2015.pdf');?>" target="_blank"><img src="<?PHP echo base_url('assets/img/kriti2015.jpg');?>" title="Kriti: The reflection of Management Department<br/>Newsletter" style="width:80px" /></a>
                                                     </div>
                                                     <div style="float: left; padding: 5px">
                                                         <a href="<?PHP echo base_url('assets/newsletters/Kriti2015.pdf');?>" target="_blank">
-                                                            The reflection of Management Department <br />Newsletter.
+                                                            The reflection of <br>Management <br>Department <br>Newsletter.
                                                         </a>
                                                     </div>
-                                                </p>
+                                                </div>
                                             </div><!-- /.entry-content -->
                                         </article>                                            
                                     </div><!-- /.col-md-9 -->
