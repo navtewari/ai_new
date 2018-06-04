@@ -334,7 +334,7 @@ class Web_model extends CI_Model {
     }    
 
     function get_activities() {
-        $this->db->order_by('ID', 'desc');
+        $this->db->order_by('DATE_OF_ACTIVITY', 'desc');
         $this->db->where('STATUS_', 1);
         $query = $this->db->get('activities');
         return $query->result();
@@ -513,10 +513,8 @@ class Web_model extends CI_Model {
                 $name_ = $this->input->post('txtYrName');
 
                 $this->email->from($from_, $name_);
-                $this->email->to('resume@amrapali.ac.in');
-                $this->email->bcc('office@amrapali.ac.in, ceo@amrapali.ac.in,  coo@amrapali.ac.in');
-                //$this -> email -> bcc('shail70@gmail.com, ceo@amrapali.ac.in, gks9090@gmail.com, office@amrapali.ac.in');
-                //$this->email->bcc('nitin.d12@gmail.com');
+                $this->email->to('office@amrapali.ac.in');
+                $this->email->bcc('ceo@amrapali.ac.in,  coo@amrapali.ac.in');
 
                 $this->email->subject('Post Applied for : ' . $this->input->post('txtPostAppliedFor'));
                 $this->email->message($msg_);
