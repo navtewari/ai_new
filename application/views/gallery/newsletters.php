@@ -24,6 +24,7 @@
                         </div><!-- /.container-fluid -->
                     </section>
 
+
                     <div class="container">
                         <div class="content-wrapper">
                             <div class="inner-content">
@@ -135,6 +136,16 @@
                                                     <div style="float: left; padding: 5px">
                                                         <a href="<?PHP echo base_url('assets/newsletters/footprints.pdf');?>" target="_blank">
                                                             Footprints Alumni <br />Newsletter [2016].
+                                                        </a>
+                                                    </div>
+                                                </p>
+                                                <p align="justify">
+                                                    <div style="padding:3px; float: left; background: #808080">
+                                                            <a href="<?PHP echo base_url('assets/newsletters/Kriti2015.pdf');?>" target="_blank"><img src="<?PHP echo base_url('assets/img/kriti2015.jpg');?>" title="Kriti: The reflection of Management Department<br/>Newsletter" style="width:80px" /></a>
+                                                    </div>
+                                                    <div style="float: left; padding: 5px">
+                                                        <a href="<?PHP echo base_url('assets/newsletters/Kriti2015.pdf');?>" target="_blank">
+                                                            The reflection of Management Department <br />Newsletter.
                                                         </a>
                                                     </div>
                                                 </p>
