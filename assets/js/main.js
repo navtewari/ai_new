@@ -69,6 +69,36 @@ $(function(){
                 }
             });
         }
-    return 1
+    return 1;
+    });
+
+    $('#frmScoialEnquiry').submit(function(){
+        if($('#txtEnqName').val()==''){
+            $('#cntct_msg_').text('Your Name Please...')
+        }else if($('#txtEnqCity').val()==''){
+            $('#cntct_msg_').text('Your City Please...')
+        }else if($('#txtPhone').val()==''){
+            $('#cntct_msg_').text('Your Phone Please...')
+        }else if($('#txtCourse').val()==''){
+            $('#cntct_msg_').text('Course Please...')
+        }else{
+            form_data=$('#frmScoialEnquiry').serialize();
+            url_=site_url_+'/Agi/Contact_social_Enquiry_email';
+            $('#cntct_msg_').html('<img src="'+base_path+'assets/img/loading.gif" /> Loading...');
+            $.ajax({
+                url:url_,
+                type:'POST',
+                data:form_data,
+                success:function(msg){
+                    $('#cntct_msg_').html(msg);$('#txtEnqName').val('');
+                    $('#txtEnqCity').val('');$('#txtEnqEmail').val('');
+                    $('#txtPhone').val('');
+                    $('#txtPhone').val('');
+                    $('#txtCourse').val('');
+                    $('#txtWriteHere').val('');
+                }
+            });
+        }
+    return false;
     });
 });

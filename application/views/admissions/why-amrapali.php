@@ -42,42 +42,109 @@
                                                 <div class="job-details" style="margin-top: 20px;">
                                                     <h2>We Call Ourself an Institution ready for the Real World</h2>
                                                     <p>At AGI, we don't just teach theory. We teach you how to put theory into practice. Study with us so that you can  take your ideas and make them REAL. </p>
-                                                    <p><b>The AGI difference:</b></p>
-                                                    <ul class="check-square">
-                                                        <li>Real-world courses</li>
-                                                        <li>Be job ready</li>
-                                                        <li>Learn from experienced Faculty</li>
-                                                        <li>Green Campus</li>
-                                                        <li>Good Employment Record</li>
-                                                        <li>Connected with global companies</li>
-                                                        <li>Ranked High</li>
-                                                    </ul>
-                                                    <p>&nbsp;</p>
-                                                    <dl>
-                                                        <dt><b>Our Strength</b></dt>
-                                                        <dd>200+ Full Time Faculty Members</dd>
-                                                        <dd>Research based Teaching Learning Methodology</dd>
-                                                        <dd>Focus on Individual Student through Mentorship Programme</dd>
-                                                        <dd>Advanced Computing Facilities including WIFI Campus</dd>
-                                                        <dd>Regular Training and Skill Enhancement Sessions.</dd>
-                                                        <dd>Frequesnt Expert Sessions.</dd>
-                                                        <dd>One of the Best Libraries across Uttarakhand</dd>
-                                                        <dd>Consistently ranked amongst the Top Colleges</dd>
-                                                        <dd>Academic and Corporate Tie Ups</dd>
-                                                        <dd>More than 700 Placements in 2016-17 Academic Session</dd>
-                                                        <dd>Indoor and Outdoor Sporting Facilities</dd>
-                                                        <dd>Technical and Cultural Events are conducted round the Year</dd>
-                                                    </dl>                                                    
+                                                    
+                                                    <div class="col-sm-12" style="clear: both; padding: 5px"></div>
+                                                    <div class="col-sm-12" style="clear: both;"><p><b>The AGI difference:</b></p></div>
+                                                    <div class="col-sm-12" style="clear: both; padding: 5px"></div>
+                                                    <div class="col-sm-6">
+                                                        <ul class="check-square">
+                                                            <li>Real-world courses</li>
+                                                            <li>Be job ready</li>
+                                                            <li>Learn from experienced Faculty</li>
+                                                            <li>Green Campus</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <ul class="check-square">
+                                                            <li>Good Employment Record</li>
+                                                            <li>Connected with global companies</li>
+                                                            <li>Ranked High</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-12" style="clear: both; padding: 15px"></div>
+                                                    <div class="col-sm-12" style="clear: both;"><p><b>Our Strength:</b></p></div>
+                                                    <div class="col-sm-12" style="clear: both; padding: 5px"></div>
+                                                    <div class="col-sm-6">
+                                                        <dl>
+                                                            <dd>200+ Full Time Faculty Members</dd>
+                                                            <dd>Research based Teaching Learning Methodology</dd>
+                                                            <dd>Focus on Individual Student through Mentorship Programme</dd>
+                                                            <dd>Advanced Computing Facilities including WIFI Campus</dd>
+                                                            <dd>Regular Training and Skill Enhancement Sessions.</dd>
+                                                            <dd>Frequent Expert Sessions.</dd>
+                                                        </dl>  
+                                                    </div> 
+                                                    <div class="col-sm-6">
+                                                        <dl>
+                                                            <dd>One of the Best Libraries across Uttarakhand</dd>
+                                                            <dd>Consistently ranked amongst the Top Colleges</dd>
+                                                            <dd>Academic and Corporate Tie Ups</dd>
+                                                            <dd>More than 700 Placements in 2016-17 Academic Session</dd>
+                                                            <dd>Indoor and Outdoor Sporting Facilities</dd>
+                                                            <dd>Technical and Cultural Events are conducted round the Year</dd>
+                                                        </dl>
+                                                    </div>                                                 
                                                 </div>
                                             </div><!-- /.entry-content -->
                                         </article>                                            
                                     </div><!-- /.col-md-9 -->
-
                                     <div class="col-xs-12 col-md-3 col-sm-4" align="center">
                                         <?php $this->load->view('templates/quick-links'); ?>                                            
                                         <?php $this->load->view('templates/alumni-img-scroll'); ?>
                                     </div><!-- /.col-md-3 -->
                                 </div><!-- /.row -->
+                                <div class="row">
+                                    <div class="col-sm-12" style="clear: both; padding: 15px"></div>
+                                    <div class="col-xs-12 col-md-12 col-sm-12">
+                                        <h3>Submit Your Query here...</h3>
+                                        <div>
+                                            <?PHP echo form_open('#','id=frmScoialEnquiry name=frmScoialEnquiry role=form'); ?>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label>Your Name<sup>*</sup></label>
+                                                    <input type="text" name="txtEnqName" id="txtEnqName" class="form-control" placeholder="Full Name..." />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Your City<sup>*</sup></label>
+                                                    <input type="text" name="txtEnqCity" id="txtEnqCity" class="form-control" placeholder="Your City..." />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label>Your Email</label>
+                                                    <input type="email" name="txtEnqEmail" id="txtEnqEmail" class="form-control" placeholder="Email..." />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Contact No.<sup>*</sup></label>
+                                                    <input type="text" name="txtPhone" id="txtPhone" class="form-control" placeholder="Contact No..." />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12" style="clear: both;"><hr></div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label>Course<sup>*</sup></label>
+                                                    <select class="form-control" name="txtCourse" id="txtCourse">
+                                                        <option value="xx">Select Course</option>
+                                                        <?php foreach($course as $item){?>
+                                                        <option value="<?php echo $item->courseID;?>"><?php echo $item->courseID;?></option>
+                                                        <?php }?>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label>Your Enquiry</label>
+                                                    <textarea name="txtWriteHere" rows="5" id="txtWriteHere" class="form-control" placeholder="Write here..."></textarea>
+                                                </div>
+                                                <div class="form-group" style="float: right; text-align: right">
+                                                    <button type="submit" class="btn btn-default" name="submit" id="submit">Submit</button>
+                                                </div>
+                                                <div id="cntct_msg_" style="float: left; padding: 5px 0px 0px 5px; min-width: 50px; height: 20px; color: #ff0000"></div>
+                                            </div>
+                                            <?PHP echo form_close(); ?>
+                                        </div>
+                                    </div>
+                                </div>
                             </div><!-- /.inner-content -->
                         </div><!-- /.content-wrapper -->
                     </div><!-- /.container -->

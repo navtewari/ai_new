@@ -294,6 +294,7 @@ class Agi extends CI_Controller {
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = "Why Amrapali?";
+        $data_['course'] = $this->wm->get_courses();
 
         $this->load->view('templates/header', $data_);
         $this->load->view('admissions/why-amrapali', $data_);
@@ -466,6 +467,37 @@ class Agi extends CI_Controller {
         $this->load->view('admissions/faq', $data_);
         $this->load->view('templates/footer');            
     }
+    function Contact_social_Enquiry_email() {
+        //-------------
+        $this->email->set_mailtype("html");
+
+        $msg_ = "<h2 style='color: #000090'>Enquiry from [Why Amrapali]:</h2> <br /><span style='font-size: 13px; color: #121212'>";
+        $msg_ = $msg_ . $this->input->post('txtWriteHere') . "<br /><br />";
+        $msg_ = $msg_ . "------------------------ <br />";
+        $msg_ = $msg_ . $this->input->post('txtEnqName') . "<br />";
+        $msg_ = $msg_ . "From - " . $this->input->post('txtEnqCity') . "<br />";
+        $msg_ = $msg_ . $this->input->post('txtPhone') . "<br />";
+        $msg_ = $msg_ . $this->input->post('txtEnqEmail') . "<br /></span>";
+
+        $from_ = "enquiry@amrapali.ac.in";
+        $name_ = $this->input->post('txt_fstName') . ' ' . $this->input->post('txt_lstName');
+
+        $this->email->from($from_, $name_);
+        $this->email->to('coo@amrapali.ac.in');
+        //$this->email->bcc('nitin.d12@gmail.com');
+
+        $this->email->subject('Enquiry from Why Amrapali Web Page for : ' . $this->input->post('txtCourse'));
+        $this->email->message($msg_);
+
+        if ($this->email->send()) {
+            $ret_data = "Thanks for your query. We will get back soon...";
+        } else {
+            $ret_data = "X: Server Error !! Try Again...";
+        }
+        //-------------
+        echo $ret_data;
+    }
+
     // ----end of admission Menu
 
     // Training & Placement
@@ -941,7 +973,7 @@ class Agi extends CI_Controller {
         } else {
             $data_['alumniProfile']= $this->wm->get_all_alumniProfile_distinct_general();
         }
-		$data_['rnews_'] = $this->wm->get_most_recent_news();
+        $data_['rnews_'] = $this->wm->get_most_recent_news();
         return $data_;
     }
 // End of Common Methods

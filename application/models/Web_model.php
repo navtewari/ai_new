@@ -538,6 +538,14 @@ class Web_model extends CI_Model {
         return $bool_;
     }
     
+    function get_courses(){
+        $this->db->order_by('collegeID');
+        $this->db->where('DELCRS', 'n');
+        $query = $this->db->get('course');
+
+        return $query->result();
+    }
+    
     function _db_error() {
         //exception handling ------------------
         if ($this->db->trans_status() == FALSE) {
