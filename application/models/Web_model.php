@@ -432,6 +432,35 @@ class Web_model extends CI_Model {
         return $query->row();
     }
 
+    function get_total_registration() {
+        $data = array('confirm' => 0);
+        $this->db->order_by('regID', 'desc');
+        $query = $this->db->get_where('onlineregistration', $data);
+        // Exceptional Handling
+        $this->_db_error();
+        // --------------------
+        return $query->result();
+    }
+
+    function get_confirmed_registration() {
+        $data = array('confirm' => 1);
+        $this->db->order_by('regID', 'desc');
+        $query = $this->db->get_where('onlineregistration', $data);
+        // Exceptional Handling
+        $this->_db_error();
+        // --------------------
+        return $query->result();
+    }
+
+    function confirm_registration($regID) {
+
+        $this->db->where('regID', $regID);
+        $data = array(
+            'confirm' => '1'
+        );
+        $this->db->update('onlineregistration', $data);
+    }
+
     public function fetch_faculty($crs_) {
         $this->db->where('COURSE', $crs_);
         $this->db->where('STATUS', 1);

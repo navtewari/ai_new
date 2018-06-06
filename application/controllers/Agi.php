@@ -320,7 +320,7 @@ class Agi extends CI_Controller {
 
     function onlineReg_first() {
         if ($this->session->userdata('user')) {
-            $data_ = $this->my_library->heading_for_page(13);      
+            $data_ = $this->my_library->heading_for_page(1);      
        
             $data_['desc_'] = $data_['desc_'];
             $data_['titleMain'] = $data_['tmp'];
@@ -419,6 +419,32 @@ class Agi extends CI_Controller {
         $ticket = $this->wm->getTicket();
         return $ticket;
     }
+
+    function totalRegistration() {
+        $data_ = $this->my_library->heading_for_page(1);      
+       
+        $data_['desc_'] = $data_['desc_'];
+        $data_['titleMain'] = $data_['tmp'];
+
+        $data_['menu_active'] =4;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+
+        $data_['totalReg'] = $this->wm->get_total_registration();
+        $data_['confirmReg'] =  $this->wm->get_confirmed_registration();
+
+        $data_['title'] = "Total Online Registration";
+
+        $this->load->view('templates/header', $data_);
+        $this->load->view('admissions/onlineRegistration/totalRegistration', $data_);
+        $this->load->view('templates/footer');  
+    }
+
+    function confirm_registration($regID) {        
+        $ticket = $this->wm->confirm_registration($regID);
+        redirect('/Agi/totalRegistration');
+    }
+
 
     function admissionProcedure(){
         $data_ = $this->my_library->heading_for_page(16);      
