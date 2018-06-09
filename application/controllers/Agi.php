@@ -830,21 +830,61 @@ class Agi extends CI_Controller {
         $this->load->view('templates/footer');
     }
 
-    function getAlumniProfile() {
-        $data_ = $this->my_library->heading_for_page(55);      
+    function AlumniProfileLogin() {
+        $data_ = $this->my_library->heading_for_page(1);      
        
         $data_['desc_'] = $data_['desc_'];
         $data_['titleMain'] = $data_['tmp'];
 
-        $data_['menu_active'] = 7;        
-        $data_['title'] = "Alumni Profile Panel";
+        $data_['menu_active'] =1;
         $data_['menu_all'] = $this->my_menu->site_menu();
-        $data_['alumni'] = $this->ouralumni();         
-        $data_['fac_profile'] = $this->wm->get_alumniProfile();         
+        $data_['alumni'] = $this->ouralumni();
+        $data_['title'] = "Login to see Alumni Profiles";
+        $this->session->set_userdata('userReg', '');
+        $this->session->set_userdata('userPass', '');
 
         $this->load->view('templates/header', $data_);
-        $this->load->view('alumni/alumniProfile/getDetail', $data_);
-        $this->load->view('templates/footer');
+        $this->load->view('alumni/alumniProfile/regLogin', $data_);
+        $this->load->view('templates/footer'); 
+    }
+
+    function LoginAlumniEnter() {
+        $userName_ = $this->input->post('txtUname');
+        $userPass_ =$this->input->post('txtPass');
+
+        if($userName_ == 'operator' && $userPass_ =='alumniuser'){
+            $this->session->set_userdata('userReg', 'operator');
+            $this->session->set_userdata('userPass', 'alumniuser');
+            $this->session->set_flashdata('_msg_', '');
+            redirect('Agi/getAlumniProfile');
+        }else{
+            $this->session->set_userdata('userReg', '');
+            $this->session->set_userdata('userPass', '');
+            $this->session->set_flashdata('_msg_', 'UserName or Password is Incorrect !! Please login with correct credentials');
+            redirect('Agi/AlumniProfileLogin');
+        }        
+    }
+
+    function getAlumniProfile() {
+        if ($this->session->userdata('userReg')=='operator' && $this->session->userdata('userPass')=='alumniuser')
+        {
+            $data_ = $this->my_library->heading_for_page(55);      
+           
+            $data_['desc_'] = $data_['desc_'];
+            $data_['titleMain'] = $data_['tmp'];
+
+            $data_['menu_active'] = 7;        
+            $data_['title'] = "Alumni Profile Panel";
+            $data_['menu_all'] = $this->my_menu->site_menu();
+            $data_['alumni'] = $this->ouralumni();         
+            $data_['fac_profile'] = $this->wm->get_alumniProfile();         
+
+            $this->load->view('templates/header', $data_);
+            $this->load->view('alumni/alumniProfile/getDetail', $data_);
+            $this->load->view('templates/footer');
+        }else{
+            redirect('Agi/AlumniProfileLogin');
+        }
     }
 
     function deleteAlumniProfile($id) {

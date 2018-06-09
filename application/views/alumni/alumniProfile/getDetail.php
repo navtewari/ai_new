@@ -74,9 +74,11 @@
                                                 <h2 class="entry-title"><a href="#"><?php echo $title; ?></a></h2>
                                             </header><!-- /.entry-header -->
 
-                                            <div class="entry-content"> 
-                                                <section class="panel">
-                                                    <h5>&nbsp;&nbsp;Click on Tab for profile Detail</h5>               
+                                            <div class="entry-content">
+                                            <h4 align="left">&nbsp;&nbsp;Click on Tab for profile Detail 
+                                                <span style="float:right;"><h4><a href="<?php echo site_url('Agi/AlumniProfileLogin');?>">Logout</a></h4></span>
+                                            </h4>                                        
+                                                <section class="panel">                                                                
                                                     <?php foreach ($fac_profile as $item) { ?>
                                                     <div class="col-md-4 col-sm-4 col-xs-12">
                                                         <figure style="background: #f3f3f3;margin-top: 2em;padding:.5em;">
