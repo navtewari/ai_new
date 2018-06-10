@@ -43,19 +43,19 @@
                                                 <blockquote>They were here, Yesterday. Today, they are our Brand Ambassadors in Top Organizations.</blockquote>               
                                                 <?php foreach ($fac_profile as $item) { ?>
                                                     <div class="col-md-4 col-sm-4 col-xs-12" style="max-height:389px;min-height:389px; overflow:hidden;">
-                                                        <figure style="background: #f3f3f3;margin-top: 2em;padding:.5em;">
-                                                            <div class="css-team-avatar" align="center">               
-                                                                <img class="media-object img-responsive" src="<?php echo base_url('assets/alumniPic/' . $item->pic); ?>" alt="Amrapali alumni - <?php echo $item->name; ?>" style="max-width: 140px; height:150px;">             
+                                                        <figure style="background: #f0f0f0; border:#f0f0f0 solid 1px; margin-top: 2em;padding:.5em;">
+                                                            <div class="css-team-avatar" align="center" style="margin-top: 1em; background: #f0f0f0 !important">               
+                                                                <img class="media-object img-responsive" src="<?php echo base_url('assets/alumniPic/' . $item->pic); ?>" alt="Amrapali alumni - <?php echo $item->name; ?>" style="max-width: 130px; height:150px;">             
                                                             </div>
                                                             <div class="css-team-info">
                                                             <h3 class="css-team-heading"><?php echo $item->name; ?><br> <small><?php echo $item->company; ?></small>
-                                                                <br> <small><b>Location: </b><?php echo $item->location; ?></small>
+                                                                <br><small><b>Location: </b><?php echo $item->location; ?></small>
                                                                 <hr><small><b><?php echo $item->course; ?></b></small>
                                                                 <br> <small><b>Passout:</b> <?php echo $item->passout; ?></small>
                                                             </h3>
                                                             </div>
                                                         </figure>
-                                                    </div> 
+                                                    </div>
                                                 <?php } ?>
                                                 </section>                                                 
                                             </div><!-- /.entry-content -->

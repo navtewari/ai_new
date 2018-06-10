@@ -39,8 +39,16 @@
                                             <div class="entry-content">
                                                 <img src="<?php echo base_url('assets/img/admission.jpg'); ?>" class="img-responsive" alt=""> 
                                                 <p>&nbsp;</p>
-                                                <h3>Admission procedure for courses are as follows:</h3>
-                                                
+                                                <h3>Registration procedure:</h3>
+                                                <ul class="check-square" style="font-size: 13px; font-family: verdana">
+                                                    <li>Visit Admission office at AGI campus with your documents and get yourself registered by making the payment of registration fee <b>Rs. 2000/-</b></li>
+                                                    <li>Alternatively <a href="<?php echo site_url('Agi/onlineRegistration');?>" style="color: #0000ff; text-decoration: underline !important;">click here</a> to fill online application form. Submit the application form fill the details of Demand Draft prepared for registration fee and send it trough registered post along with the required document  to the address mentioned below.</li>
+                                                    <li>Note the Demand Draft will be in favour of Amrapali Institute and Payable at Haldwani.</li>
+                                                    <li>Last dates for submission of the application form for different courses will be declared online.</li>
+                                                </ul>
+                                                <p>&nbsp;</p>
+                                                <h3>Eligibility of different courses:</h3>
+
                                                 <div class="job-details" style="margin-top: 20px;">
                                                     <div class="panel-group" id="accordion1">
                                                           <div class="panel panel-default">                                                            

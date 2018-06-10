@@ -73,7 +73,7 @@
                                                             <dd>Regular Training and Skill Enhancement Sessions.</dd>
                                                             <dd>Frequent Expert Sessions.</dd>
                                                         </dl>  
-                                                    </div> 
+                                                    </div>
                                                     <div class="col-sm-6">
                                                         <dl>
                                                             <dd>One of the Best Libraries across Uttarakhand</dd>
