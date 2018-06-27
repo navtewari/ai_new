@@ -40,7 +40,6 @@
                                                        <ul class="check-square">
                                                             <li> Dr. Pankaj Shah, Registrar 
                                                             <li> Mr. Sanjay Pasricha, Head Admission 
-                                                            <li> Ms. Andleeb Kamaal, Manager (Marketing)
                                                             <li> Mr. H.K. Uprety, Asstt. Administrative Officer 
                                                             <li> Mr. N.K. Gupta, Accounts Officer 
                                                             <li> Mr. Gopal Sharma, Asstt. Manager (Office Admin.)
