@@ -105,29 +105,29 @@
                                                                 <div class="col-sm-4">                            
                                                                     <select name="cmbCourse" class="form-control" required="required">
                                                                         <optgroup label="Technology & Sciences">
-                                                                            <option value="Information Technology">Information Technology</option>
-                                                                            <option value="Computer Science &amp; Engineering">Computer Science &amp; Engineering</option>
-                                                                            <option value="Mechanical Engineering">Mechanical Engineering</option>
-                                                                            <option value="Electronics &amp Communications Engineering">Electronics &amp Communications Engineering</option>
-                                                                            <option value="Electrical &amp Electronics Engineering">Electrical &amp Electronics Engineering</option>
-                                                                            <option value="Diploma in Mechanical Engineering">Diploma in Mechanical Engineering</option>
-                                                                            <option value="Diploma in Electrical Engineering">Diploma in Electrical Engineering</option>                                 
+                                                                            <option value="Information Technology~fts">Information Technology</option>
+                                                                            <option value="Computer Science &amp; Engineering~fts">Computer Science &amp; Engineering</option>
+                                                                            <option value="Mechanical Engineering~fts">Mechanical Engineering</option>
+                                                                            <option value="Electronics &amp Communications Engineering~fts">Electronics &amp Communications Engineering</option>
+                                                                            <option value="Electrical &amp Electronics Engineering~fts">Electrical &amp Electronics Engineering</option>
+                                                                            <option value="Diploma in Mechanical Engineering~fts">Diploma in Mechanical Engineering</option>
+                                                                            <option value="Diploma in Electrical Engineering~fts">Diploma in Electrical Engineering</option>                                 
                                                                         </optgroup>
                                                                         <optgroup label="Computer Science & Applications">
-                                                                            <option value="MCA">MCA</option>
-                                                                            <option value="MCA-Direct">MCA(Direct IInd Year)</option>
-                                                                            <option value="BCA">BCA</option>
+                                                                            <option value="MCA~fcsa">MCA</option>
+                                                                            <option value="MCA-Direct~fcsa">MCA(Direct IInd Year)</option>
+                                                                            <option value="BCA~fcsa">BCA</option>
                                                                         </optgroup>
                                                                         <optgroup label="Hospitality Management">
-                                                                            <option value="BHMCT">BHMCT</option>
-                                                                            <option value="DHMCT">DHMCT</option>
-                                                                            <option value="BHM">BHM</option>
-                                                                            <option value="DHM">DHM</option>
+                                                                            <option value="BHMCT~fhm">BHMCT</option>
+                                                                            <option value="DHMCT~fhm">DHMCT</option>
+                                                                            <option value="BHM~fhm">BHM</option>
+                                                                            <option value="DHM~fhm">DHM</option>
                                                                         </optgroup>
                                                                         <optgroup label="Business and Commerce Management">
-                                                                            <option value="MBA">MBA</option>
-                                                                            <option value="BBA">BBA</option>
-                                                                            <option value="BCom (Hon.)">BCom - Honours</option>
+                                                                            <option value="MBA~fcbm">MBA</option>
+                                                                            <option value="BBA~fcbm">BBA</option>
+                                                                            <option value="BCom (Hon.)~fcbm">BCom - Honours</option>
                                                                         </optgroup>
                                                                     </select>                         
                                                                 </div>

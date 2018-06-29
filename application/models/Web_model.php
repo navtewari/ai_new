@@ -144,9 +144,10 @@ class Web_model extends CI_Model {
     }
 
     function fillAlumniDetail_() {
+        $crs = explode("~",$this->input->post('cmbCourse'));
         $data = array(
             'name' => $this->input->post('txtFullName'),
-            'course' => $this->input->post('cmbCourse'),
+            'course' => $crs[0],
             'passout' => $this->input->post('txtPassout'),
             'email' => $this->input->post('txtEmail'),
             'mobile' => $this->input->post('txtMobile'),
@@ -155,7 +156,8 @@ class Web_model extends CI_Model {
             'location' => $this->input->post('txtLocation'),
             'hometown' => $this->input->post('txtHometown'),
             'suggestion' => $this->input->post('txtSuggestion'),
-            'pic' => 'x'
+            'pic' => 'x',
+            'college' => $crs[1]
         );
 
         $query = $this->db->insert('alumniprofile', $data);
@@ -167,7 +169,7 @@ class Web_model extends CI_Model {
 
         if ($query == TRUE) {
             $config = array(
-                'upload_path' => './assets/alumniPic',
+                'upload_path' => './nitnav/alumniPic',
                 'allowed_types' => 'jpg|jpeg',
                 'max_size' => 20,
                 'file_name' => $id__
