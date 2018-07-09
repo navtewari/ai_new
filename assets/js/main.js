@@ -101,4 +101,36 @@ $(function(){
         }
     return false;
     });
+
+    $('#userBrochureEnquiry').submit(function () {
+        if ($('#txtEnqName').val() == '') {
+            $('#cntct_msg_').text('Your Name Please...');
+        } else if ($('#txtEnqEmail').val() == '') {
+            $('#cntct_msg_').text('Your Email Please...');
+        } else if ($('#txtPhone').val() == '') {
+            $('#cntct_msg_').text('Contct Number Please...');
+        } else if ($('#txtBrochure').val() == '0') {
+            $('#cntct_msg_').text('Please select the brochure you want...');
+        } else {
+            form_data = $('#userBrochureEnquiry').serialize();
+            url_ = site_url_ + '/Agi/userBrochureEnquiry';
+            $('#cntct_msg_').html('<img src="' + base_path + 'assets/img/loading.gif" style="width: 20px" /> Working...');
+            $.ajax({
+                url: url_,
+                type: 'POST',
+                data: form_data,
+                success: function (msg) {
+                    $('#cntct_msg_').html(msg);
+
+                    $('#txtEnqName').val('');
+                    $('#txtEnqEmail').val('');
+                    $('#txtPhone').val('');                    
+                }, 
+                error: function(xhr, status, error){
+                    $('#cntct_msg_').html(xhr.responseText);                    
+                }
+            });
+        }
+        return false;
+    });
 });

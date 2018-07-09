@@ -513,9 +513,7 @@ class Web_model extends CI_Model {
         $query = $this->db->query($sql, $binds);
         $row = $query->row();
 
-
         if ($row->count > 0) {
-
             $config = array(
                 'upload_path' => './assets/resume',
                 'allowed_types' => 'doc|docx|pdf',
@@ -569,6 +567,80 @@ class Web_model extends CI_Model {
         return $bool_;
     }
     
+    function send_brochure_user(){
+        $emailID_ = $this->input->post('txtEnqEmail');
+        $name_ = $this->input->post('txtEnqName');
+        $phone_ = $this->input->post('txtPhone');
+        $brochure_ = $this->input->post('txtBrochure');
+
+        
+        $path_ = 'x';
+
+        if($brochure_=='1'){
+            $downloadBrochure = 'Technology And Sciences Brochure';
+            $path_ = './assets/dwnlds/brochure/BtechNew.pdf';
+        }else if ($brochure_=='2'){
+            $downloadBrochure = 'Commerce And Business Management Brochure';
+            $path_ = './assets/dwnlds/brochure/FCBMNew.pdf';
+        }else if ($brochure_=='3'){
+            $downloadBrochure = 'Computer Science And Applications Brochure';
+            $path_ = './assets/dwnlds/brochure/CSANew.pdf';
+        }else if ($brochure_=='4'){
+            $downloadBrochure = 'Hospitality Management Brochure';
+            $path_ = './assets/dwnlds/brochure/HMNew.pdf';
+        }else if ($brochure_=='5'){
+            $downloadBrochure = 'B.Sc ';
+            $path_ = './assets/dwnlds/brochure/B.sc.Hons.pdf';
+        }
+
+        $data = array(
+            'Name' => $name_,
+            'emailID' => $emailID_,
+            'contactNo' => $phone_,
+            'Requirement' => $downloadBrochure                                
+        );
+        
+        $query = $this->db->insert('userdata', $data);
+        
+        if ($query == TRUE) {
+                $bool_ = array('res_' => TRUE, 'msg_' => 'Data Submitted Successfully !!');
+        } else {
+            $bool_ = array('res_' => FALSE, 'msg_' => 'Data not updated !! Try Again');
+        }
+
+        $this->_db_error();
+
+        if ($path_ != 'x') {
+                $this->email->set_mailtype("html");
+
+                $this->email->attach($path_);
+
+                $msg_ = "<h3 style='color: #000090'>Brochure you requested : <span style='color: #900000'>" . $downloadBrochure . "</h3>";                
+                $msg_ = $msg_ . "------------------------ <br />";
+                $msg_ = $msg_ .  "We call ourself an Institution ready for the REAL WORLD. <br/>
+At AGI, we don't just teach theory. We teach you how to put theory into practice. Study with us so that you can take your ideas and make them REAL.<br /><br /> Thanks for requesting the download. ";               
+
+                $this->email->from('office@amrapali.ac.in');
+                $this->email->to('$emailID_');
+                $this->email->bcc('navtewari@gmail.com');
+
+                $this->email->subject('Brochure: Amrapali Group of Institutes');
+                $this->email->message($msg_);
+
+                if ($this->email->send()) {
+                    $bool_ = array('res' => 'true', 'msg_' => '<b style="color: #0000FF">Resume sent successfully. </b>');
+                    //echo $this->email->print_debugger();
+                } else {
+                    $bool_ = array('res' => 'true', 'msg_' => 'X: Server Error !! Try Again...');
+                }
+            } else {
+                $bool_ = array('res' => 'false', 'msg_' => 'X: Server Error while attaching file !!.');
+                //$bool_ = array('res'=>'false', 'msg_' => 'Attach <b>File must be having</b> .doc/ .docx/ .pdf extentions<br />.');
+            }
+
+        return $bool_;
+    }
+
     function get_courses(){
         $this->db->order_by('collegeID');
         $this->db->where('DELCRS', 'n');

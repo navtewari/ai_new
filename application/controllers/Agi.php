@@ -1140,5 +1140,10 @@ class Agi extends CI_Controller {
         $flag_ = $this->wm->send_resume_for_career_at_ai();
         echo $flag_['msg_'];
     }
+
+    function userBrochureEnquiry(){
+        $flag_ = $this->wm->send_brochure_user();
+        echo $flag_['msg_'];
+    }
     // end of footer menu
 }

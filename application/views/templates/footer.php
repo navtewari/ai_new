@@ -21,13 +21,13 @@
             <div class="col-md-3 col-sm-4 col-xs-12">
                 <div class="footer-widget">
                     <h3 class="wow fadeInDown">Brochures</h3>
-                    <ul class="wow fadeInDown">
-                        <li><a href="<?PHP echo base_url('assets/dwnlds/brochure/BtechNew.pdf'); ?>" target="_blank">Technology &amp; Sciences</a></li>
-                        <li><a href="<?PHP echo base_url('assets/dwnlds/brochure/CSANew.pdf'); ?>" target="_blank">Computer Science &amp; Applications<a/></li>
-                        <li><a href="<?PHP echo base_url('assets/dwnlds/brochure/FCBMNew.pdf'); ?>" target="_blank">Commerce &amp; Business Management</a></li>
-                        <li><a href="<?PHP echo base_url('assets/dwnlds/brochure/HMNew.pdf'); ?>" target="_blank">Hospitality Management</a></li>
+                    <ul class="wow fadeInDown">                        
+                        <li><a href="#" data-target="#myModal" data-toggle="modal">Technology &amp; Sciences</a></li>
+                        <li><a href="#" data-target="#myModal" data-toggle="modal">Computer Science &amp; Applications<a/></li>
+                        <li><a href="#" data-target="#myModal" data-toggle="modal">Commerce &amp; Business Management</a></li>
+                        <li><a href="#" data-target="#myModal" data-toggle="modal">Hospitality Management</a></li>
                     </ul>
-                    <hr>
+                    <hr/>
                     <h3 class="wow fadeInDown">Downloads</h3>
                     <ul class="wow fadeInDown">
                         <li><a href="<?PHP echo base_url('assets/dwnlds/common/affidavit.pdf'); ?>" target="_blank">Anti-Ragging Format</a></li>
@@ -92,6 +92,66 @@
 </div> <!-- .st-content-inner -->
 </div> <!-- .st-content -->
 </div> <!-- .st-pusher -->
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2 class="modal-title">Brochures</h4>
+      </div>
+      <div class="modal-body">
+        <h4>Give your details and we will e-mail you the seleted brochure</h4>
+            <?PHP echo form_open('#','id=userBrochureEnquiry name=userBrochureEnquiry role=form'); ?>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Your Name<sup>*</sup></label>
+                        <input type="text" name="txtEnqName" id="txtEnqName" class="form-control" placeholder="Full Name..." />
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email</label>
+                        <input type="email" name="txtEnqEmail" id="txtEnqEmail" class="form-control" placeholder="Email..." />
+                    </div>
+                </div>
+                <div class="col-sm-6">                    
+                    <div class="form-group">
+                        <label>Contact No.<sup>*</sup></label>
+                        <input type="text" name="txtPhone" id="txtPhone" class="form-control" placeholder="Contact No..." />
+                    </div>
+                    <div class="form-group">
+                        <label>Brochure<sup>*</sup></label>
+                        <select class="form-control" name="txtBrochure" id="txtBrochure">
+                            <option value="0">Select Brochure</option>
+                            <option value="1">Technology &amp; Sciences</option>
+                            <option value="2">Commerce &amp; Business Management</option>
+                            <option value="3">Computer Science &amp; Applications</option>
+                            <option value="4">Hospitality Management</option>                            
+                            <option value="4">B.Sc. (Hons.)</option>                            
+                        </select>
+                    </div>
+                </div>                            
+                <div class="col-sm-12">                    
+                    <div class="form-group" style="float: right; text-align: right">
+                        <button type="submit" class="btn btn-primary" name="submit" id="submit">Submit</button>
+                    </div>
+                    <div id="cntct_msg_" style="float: left; padding: 5px 0px 0px 5px; min-width: 50px; height: 20px; color: #ff0000"></div>
+                </div>
+            </div>
+            <?PHP echo form_close(); ?>  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!---Modal ends here--->
 
 <?php $this->load->view('templates/menu-mobile'); ?>
 </div><!-- /st-container -->
