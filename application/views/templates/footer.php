@@ -104,7 +104,7 @@
         <h2 class="modal-title">Brochures</h4>
       </div>
       <div class="modal-body">
-        <h4>Give your details and we will e-mail you the seleted brochure</h4>
+        <h4>Give your details and we will e-mail you the selected brochure</h4>
             <?PHP echo form_open('#','id=userBrochureEnquiry name=userBrochureEnquiry role=form'); ?>
             <div class="row">
                 <div class="col-sm-6">
@@ -231,7 +231,7 @@
 <!-- Custom Script -->
 <script src="<?php echo base_url('assets/js/jquery.form.js'); ?>?ver=1.0"></script>
 <script src="<?php echo base_url('assets/js/scripts.js'); ?>?ver=1.0"></script>
-<script src="<?php echo base_url('assets/js/main.js'); ?>?ver=1.2"></script>
+<script src="<?php echo base_url('assets/js/main.js'); ?>?ver=1.3"></script>
 
 <?php $this->load->view('templates/analyticstracking');?>
 </body>

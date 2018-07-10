@@ -620,15 +620,15 @@ class Web_model extends CI_Model {
                 $msg_ = $msg_ .  "We call ourself an Institution ready for the REAL WORLD. <br/>
 At AGI, we don't just teach theory. We teach you how to put theory into practice. Study with us so that you can take your ideas and make them REAL.<br /><br /> Thanks for requesting the download. ";               
 
-                $this->email->from('office@amrapali.ac.in');
-                $this->email->to('$emailID_');
+                $this->email->from('office@amrapali.ac.in', 'Amrapali Group of Institutes');
+                $this->email->to($emailID_);
                 $this->email->bcc('navtewari@gmail.com');
 
                 $this->email->subject('Brochure: Amrapali Group of Institutes');
                 $this->email->message($msg_);
 
                 if ($this->email->send()) {
-                    $bool_ = array('res' => 'true', 'msg_' => '<b style="color: #0000FF">Resume sent successfully. </b>');
+                    $bool_ = array('res' => 'true', 'msg_' => '<b style="color: #0000FF">Brochure sent successfully. Check your email to see vibrant Amrapali.</b>');
                     //echo $this->email->print_debugger();
                 } else {
                     $bool_ = array('res' => 'true', 'msg_' => 'X: Server Error !! Try Again...');
