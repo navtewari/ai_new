@@ -69,6 +69,7 @@
                                                                             <b>Tution Fee:</b> Rs. 20,000* / Sem<br>
                                                                         </div>
                                                                     </div>
+                                                                    <br>* subject to change as per University norms
                                                               </div>
                                                             </div>
                                                           </div>
@@ -99,6 +100,7 @@
                                                                         <b>Tution Fee:</b> Rs. 25,000* / Sem<br>
                                                                     </div>
                                                                 </div>
+                                                                <br>* subject to change as per University norms
                                                               </div>
                                                             </div>
                                                           </div>
@@ -128,7 +130,8 @@
                                                                         <b>Course:</b> BACHELOR OF COMPUTER APPLICATIONS (BCA)<br>
                                                                         <b>Tution Fee:</b> Rs. 30,000* / Sem<br>
                                                                     </div>
-                                                                </div>                
+                                                                </div> 
+                                                                <br>* subject to change as per University norms               
                                                               </div>
                                                             </div>
                                                           </div>
@@ -173,13 +176,53 @@
                                                                         <b>Tution Fee:</b>  As per Uttarakhand Open University norms<br>
                                                                     </div>
                                                                 </div>
+                                                                <br>* subject to change as per University norms
                                                               </div>
                                                             </div>
                                                           </div>                                            
                                                 </div>
+
+                                                <div style="padding:20px; background: #f2f2f2">
+                                                <br>
+                                                <h4>Give your details and we will e-mail you the detailed fee structure of selected course</h4>
+                                                <?PHP echo form_open('#','id=userFeeEnquiry name=userFeeEnquiry role=form'); ?>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label>Your Name<sup>*</sup></label>
+                                                            <input type="text" name="txtEnqName" id="txtEnqName" class="form-control" placeholder="Full Name..." />
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Your Email</label>
+                                                            <input type="email" name="txtEnqEmail" id="txtEnqEmail" class="form-control" placeholder="Email..." />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">                    
+                                                        <div class="form-group">
+                                                            <label>Contact No.<sup>*</sup></label>
+                                                            <input type="text" name="txtPhone" id="txtPhone" class="form-control" placeholder="Contact No..." />
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Course<sup>*</sup></label>
+                                                            <select class="form-control" name="txtCourse" id="txtCourse">
+                                                                <option value="0">Select Course</option>
+                                                                <?php foreach($course as $item){?>
+                                                                <option value="<?php echo $item->courseID;?>"><?php echo $item->courseID;?></option>
+                                                                <?php }?>
+                                                            </select>
+                                                        </div>
+                                                    </div>                            
+                                                    <div class="col-sm-12">                    
+                                                        <div class="form-group" style="float: right; text-align: right">
+                                                            <button type="submit" class="btn btn-primary" name="submit" id="submit">Submit</button>
+                                                        </div>
+                                                        <div id="cntct_msg_1" style="float: left; padding: 5px 0px 0px 5px; min-width: 50px; height: 20px; color: #ff0000"></div>
+                                                    </div>
+                                                </div>
+                                                <?PHP echo form_close();?>
+                                                </div>
                                             </div><!-- /.entry-content -->
-                                        </article>                                            
-                                        <br>* subject to change as per University norms
+                                        </article>                                                                                                                           
                                     </div><!-- /.col-md-9 -->
 
                                     <div class="col-xs-12 col-md-3 col-sm-4" align="center">

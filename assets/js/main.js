@@ -108,7 +108,7 @@ $(function(){
         } else if ($('#txtEnqEmail').val() == '') {
             $('#cntct_msg_').text('Your Email Please...');
         } else if ($('#txtPhone').val() == '') {
-            $('#cntct_msg_').text('Contct Number Please...');
+            $('#cntct_msg_').text('Contact Number Please...');
         } else if ($('#txtBrochure').val() == '0') {
             $('#cntct_msg_').text('Please select the brochure you want...');
         } else {
@@ -128,6 +128,37 @@ $(function(){
                 }, 
                 error: function(xhr, status, error){
                     $('#cntct_msg_').html(xhr.responseText);                    
+                }
+            });
+        }
+        return false;
+    });
+
+    $('#userFeeEnquiry').submit(function () {
+        if ($('#txtEnqName').val() == '') {
+            $('#cntct_msg_1').text('Your Name Please...');
+        } else if ($('#txtEnqEmail').val() == '') {
+            $('#cntct_msg_1').text('Your Email Please...');
+        } else if ($('#txtPhone').val() == '') {
+            $('#cntct_msg_1').text('Contact Number Please...');
+        } else if ($('#txtCourse').val() == '0') {
+            $('#cntct_msg_1').text('Please select the Course for fee structure you want...');
+        } else {
+            form_data = $('#userFeeEnquiry').serialize();
+            url_ = site_url_ + '/Agi/userFeeEnquiry';
+            $('#cntct_msg_1').html('<img src="' + base_path + 'assets/img/loading.gif" style="width: 20px" /> Working...');
+            $.ajax({
+                url: url_,
+                type: 'POST',
+                data: form_data,
+                success: function (msg) {
+                    $('#cntct_msg_1').html(msg);
+                    $('#txtEnqName').val('');
+                    $('#txtEnqEmail').val('');
+                    $('#txtPhone').val('');                    
+                }, 
+                error: function(xhr, status, error){
+                    $('#cntct_msg_1').html(xhr.responseText);                    
                 }
             });
         }

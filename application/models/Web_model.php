@@ -641,6 +641,53 @@ At AGI, we don't just teach theory. We teach you how to put theory into practice
         return $bool_;
     }
 
+    function send_fee_enquiry(){
+        $emailID_ = $this->input->post('txtEnqEmail');
+        $name_ = $this->input->post('txtEnqName');
+        $phone_ = $this->input->post('txtPhone');
+        $course_ = $this->input->post('txtCourse');      
+
+        $data = array(
+            'Name' => $name_,
+            'emailID' => $emailID_,
+            'contactNo' => $phone_,
+            'Requirement' => $course_                                
+        );
+        
+        $query = $this->db->insert('userdata', $data);
+        
+        if ($query == TRUE) {
+                $this->email->set_mailtype("html");                
+
+                $msg_ = "<h3 style='color: #000090'>Fees Query From Website  : <span style='color: #900000'> www.amrapali.ac.in</h3>";                
+                $msg_ = $msg_ . "------------------------ <br />";
+                $msg_ = $msg_ .  "Name: " . $name_ . "<br>";               
+                $msg_ = $msg_ .  "Email: " . $emailID_ . "<br>"; 
+                $msg_ = $msg_ .  "Phone: " . $phone_ . "<br>"; 
+                $msg_ = $msg_ .  "Fee Structure required for Course: " . $course_ . "<br>"; 
+
+                $this->email->from($emailID_, $name_);
+                $this->email->to('navtewari@gmail.com');
+                //$this->email->bcc('navtewari@gmail.com');
+
+                $this->email->subject('Fee Structure Required: Amrapali Group of Institutes');
+                $this->email->message($msg_);
+
+                if ($this->email->send()) {
+                    $bool_ = array('res' => 'true', 'msg_' => '<b style="color: #0000FF">Request submitted successfully. You will get the detail soon in your e-mail.</b>');
+                    //echo $this->email->print_debugger();
+                } else {
+                    $bool_ = array('res' => 'true', 'msg_' => 'X: Server Error !! Try Again...');
+                }
+        } else {
+            $bool_ = array('res_' => FALSE, 'msg_' => 'Data not updated !! Try Again');
+        }
+
+        $this->_db_error();                            
+
+        return $bool_;
+    }
+
     function get_courses(){
         $this->db->order_by('collegeID');
         $this->db->where('DELCRS', 'n');

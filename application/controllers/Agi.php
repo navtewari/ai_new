@@ -513,6 +513,7 @@ class Agi extends CI_Controller {
         $data_['menu_active'] =4;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['alumni'] = $this->ouralumni();
+        $data_['course'] = $this->wm->get_courses();
         $data_['title'] = "Fee Structure";
 
         $this->load->view('templates/header', $data_);
@@ -1144,6 +1145,11 @@ class Agi extends CI_Controller {
     function userBrochureEnquiry(){
         $flag_ = $this->wm->send_brochure_user();
         echo $flag_['msg_'];
+    }
+
+    function userFeeEnquiry(){
+        $flag_ = $this->wm->send_fee_enquiry();
+        echo $flag_['msg_'];   
     }
     // end of footer menu
 }
