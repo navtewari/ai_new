@@ -152,12 +152,16 @@ $(function(){
                 type: 'POST',
                 data: form_data,
                 success: function (msg) {
+                    $('#feestructure').show();
+                    $('#feeform').hide();
                     $('#cntct_msg_1').html(msg);
                     $('#txtEnqName').val('');
                     $('#txtEnqEmail').val('');
                     $('#txtPhone').val('');                    
-                }, 
+                },
                 error: function(xhr, status, error){
+                    $('#feestructure').hide();
+                    $('#feeform').show();
                     $('#cntct_msg_1').html(xhr.responseText);                    
                 }
             });

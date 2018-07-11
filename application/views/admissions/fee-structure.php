@@ -15,7 +15,7 @@
                                         <h1><?php echo $title; ?></h1>
                                     </div>
                                     <ol class="breadcrumb">
-                                        <li><a href="<?php echo site_url('agi');?>">Home</a></li>
+                                        <li><a href="<?php echo site_url('agi'); ?>">Home</a></li>
                                         <li><a href="#">Admissions</a></li>
                                         <li class="active"><?php echo $title; ?></li>
                                     </ol>
@@ -38,27 +38,27 @@
 
                                             <div class="entry-content">
                                                 <img src="<?php echo base_url('assets/img/admission.jpg'); ?>" class="img-responsive" alt=""> 
-                                                <p>&nbsp;</p>
-                                                <h3>Admission procedure for courses are as follows:</h3>
-                                                <div class="job-details" style="margin-top: 20px;">
+                                                <p>&nbsp;</p>                                                
+                                                <div class="job-details" id="feestructure" style="margin-top: 20px;display:none;">
+                                                    <h3>Fee structure for courses are as follows:</h3>
                                                     <div class="panel-group" id="accordion1">
-                                                          <div class="panel panel-default">                                                            
-                                                                <div class="panel-heading panel-heading-link" role="tab" id="headingOne">
-                                                                    <h2 class="panel-title">
-                                                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                                            Faculty of Technology & Sciences
-                                                                        </a>
-                                                                    </h2>
-                                                                </div>
+                                                        <div class="panel panel-default">          
+                                                            <div class="panel-heading panel-heading-link" role="tab" id="headingOne">
+                                                                <h2 class="panel-title">
+                                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                                        Faculty of Technology & Sciences
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
                                                             <div id="collapseOne" class="panel-collapse collapse">
-                                                              <div class="panel-body">
+                                                                <div class="panel-body">
                                                                     <div class="row">
                                                                         <div class="col-sm-6" style="background-color:#F0F0F0;  padding: 10px;">
                                                                             <b>Course:</b> B.Tech.<br>
                                                                             <b>Tution Fee:</b> Rs. 36,000* / Sem<br>
                                                                             <b>Lateral entry:</b> Rs. 36,000* / Sem<br>
                                                                         </div>
-                                                                        
+
                                                                         <div class="col-sm-6">
                                                                             <b>Course:</b> Polytechnic<br>
                                                                             <b>Tution Fee:</b> Rs. 20,000* / Sem<br>
@@ -70,10 +70,10 @@
                                                                         </div>
                                                                     </div>
                                                                     <br>* subject to change as per University norms
-                                                              </div>
+                                                                </div>
                                                             </div>
-                                                          </div>
-                                                          <div class="panel panel-default">
+                                                        </div>
+                                                        <div class="panel panel-default">
                                                             <div class="panel-heading panel-heading-link" role="tab" id="headingOne">
                                                                 <h2 class="panel-title">
                                                                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1" aria-expanded="false" aria-controls="collapseOne">
@@ -82,29 +82,29 @@
                                                                 </h2>
                                                             </div>
                                                             <div id="collapseTwo1" class="panel-collapse collapse">
-                                                              <div class="panel-body">
-                                                                <div class="row">
-                                                                    <div class="col-sm-6" style="background-color:#F0F0F0;  padding: 10px;">
-                                                                        <b>Course:</b> MASTER OF BUSINESS ADMINISTRATION (MBA)<br>
-                                                                        <b>Tution Fee:</b> Rs. 50,000* / Sem<br>
+                                                                <div class="panel-body">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-6" style="background-color:#F0F0F0;  padding: 10px;">
+                                                                            <b>Course:</b> MASTER OF BUSINESS ADMINISTRATION (MBA)<br>
+                                                                            <b>Tution Fee:</b> Rs. 50,000* / Sem<br>
+                                                                        </div>
+
+                                                                        <div class="col-sm-6">
+                                                                            <b>Course:</b> BACHELOR OF BUSINESS ADMINISTRATION (BBA)<br>
+                                                                            <b>Tution Fee:</b> Rs. 30,000* / Sem<br>
+                                                                        </div>
                                                                     </div>
-                                                                    
-                                                                    <div class="col-sm-6">
-                                                                        <b>Course:</b> BACHELOR OF BUSINESS ADMINISTRATION (BBA)<br>
-                                                                        <b>Tution Fee:</b> Rs. 30,000* / Sem<br>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-6">
+                                                                            <b>Course:</b> B.COM HONOURS<br>
+                                                                            <b>Tution Fee:</b> Rs. 25,000* / Sem<br>
+                                                                        </div>
                                                                     </div>
+                                                                    <br>* subject to change as per University norms
                                                                 </div>
-                                                                <div class="row">
-                                                                    <div class="col-sm-6">
-                                                                        <b>Course:</b> B.COM HONOURS<br>
-                                                                        <b>Tution Fee:</b> Rs. 25,000* / Sem<br>
-                                                                    </div>
-                                                                </div>
-                                                                <br>* subject to change as per University norms
-                                                              </div>
                                                             </div>
-                                                          </div>
-                                                          <div class="panel panel-default">
+                                                        </div>
+                                                        <div class="panel panel-default">
                                                             <div class="panel-heading panel-heading-link" role="tab" id="headingOne">
                                                                 <h2 class="panel-title">
                                                                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1" aria-expanded="false" aria-controls="collapseOne">
@@ -113,30 +113,30 @@
                                                                 </h2>
                                                             </div>
                                                             <div id="collapseThree1" class="panel-collapse collapse">
-                                                              <div class="panel-body">
-                                                                <div class="row">
-                                                                    <div class="col-sm-6" style="background-color:#F0F0F0;  padding: 10px;">
-                                                                        <b>Course:</b> MASTER OF COMPUTER APPLICATIONS (MCA)<br>
-                                                                        <b>Tution Fee:</b> Rs. 44,000* / Sem<br>
+                                                                <div class="panel-body">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-6" style="background-color:#F0F0F0;  padding: 10px;">
+                                                                            <b>Course:</b> MASTER OF COMPUTER APPLICATIONS (MCA)<br>
+                                                                            <b>Tution Fee:</b> Rs. 44,000* / Sem<br>
+                                                                        </div>
+
+                                                                        <div class="col-sm-6">
+                                                                            <b>Course:</b> MASTER OF COMPUTER APPLICATIONS  (MCA II Year Direct)<br>
+                                                                            <b>Tution Fee:</b> Rs. 44,000* / Sem<br>
+                                                                        </div>
                                                                     </div>
-                                                                    
-                                                                    <div class="col-sm-6">
-                                                                        <b>Course:</b> MASTER OF COMPUTER APPLICATIONS  (MCA II Year Direct)<br>
-                                                                        <b>Tution Fee:</b> Rs. 44,000* / Sem<br>
-                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-6">
+                                                                            <b>Course:</b> BACHELOR OF COMPUTER APPLICATIONS (BCA)<br>
+                                                                            <b>Tution Fee:</b> Rs. 30,000* / Sem<br>
+                                                                        </div>
+                                                                    </div> 
+                                                                    <br>* subject to change as per University norms               
                                                                 </div>
-                                                                <div class="row">
-                                                                    <div class="col-sm-6">
-                                                                        <b>Course:</b> BACHELOR OF COMPUTER APPLICATIONS (BCA)<br>
-                                                                        <b>Tution Fee:</b> Rs. 30,000* / Sem<br>
-                                                                    </div>
-                                                                </div> 
-                                                                <br>* subject to change as per University norms               
-                                                              </div>
                                                             </div>
-                                                          </div>
-                                                          
-                                                          <div class="panel panel-default">
+                                                        </div>
+
+                                                        <div class="panel panel-default">
                                                             <div class="panel-heading panel-heading-link" role="tab" id="headingOne">
                                                                 <h2 class="panel-title">
                                                                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour1" aria-expanded="false" aria-controls="collapseOne">
@@ -145,81 +145,81 @@
                                                                 </h2>
                                                             </div>
                                                             <div id="collapseFour1" class="panel-collapse collapse">
-                                                              <div class="panel-body">
-                                                                <div class="row">
-                                                                    <div class="col-sm-6" style="background-color:#F0F0F0; padding: 10px;">
-                                                                        <b>Course:</b> Bachelor of Hotel Management &amp; Catering Technology (BHMCT)<br>
-                                                                        <b>Tution Fee:</b> Rs. 42,500* / Sem<br>
-                                                                    </div>
-                                                                    
-                                                                    <div class="col-sm-6">
-                                                                        <b>Course:</b> Bachelor of Hospitality Management (BHM-KU)<br>
-                                                                        <b>Tution Fee:</b> Rs. 38,500* / Sem<br>
-                                                                    </div>
-                                                                </div>
-                                                                
-                                                                <div class="row">
-                                                                    <div class="col-sm-6">
-                                                                        <b>Course:</b> Diploma in Hotel Management &amp; Catering Technology (DHMCT)<br>
-                                                                        <b>Tution Fee:</b> Rs. 25,000* / Sem<br>
-                                                                    </div>
-                                                                    
-                                                                    <div class="col-sm-6" style="background-color:#F0F0F0; padding: 10px;">
-                                                                        <b>Course:</b> Bachelor of Hospitality Management (BHM-UOU)<br>
-                                                                        <b>Tution Fee:</b> As per Uttarakhand Open University norms<br>
-                                                                    </div>
-                                                                </div>
-                                                                
-                                                                <div class="row">
-                                                                    <div class="col-sm-6" style="background-color:#F0F0F0; padding: 10px;">
-                                                                        <b>Course:</b> Diploma in Hotel Management (DHM)<br>
-                                                                        <b>Tution Fee:</b>  As per Uttarakhand Open University norms<br>
-                                                                    </div>
-                                                                </div>
-                                                                <br>* subject to change as per University norms
-                                                              </div>
-                                                            </div>
-                                                          </div>                                            
-                                                </div>
+                                                                <div class="panel-body">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-6" style="background-color:#F0F0F0; padding: 10px;">
+                                                                            <b>Course:</b> Bachelor of Hotel Management &amp; Catering Technology (BHMCT)<br>
+                                                                            <b>Tution Fee:</b> Rs. 42,500* / Sem<br>
+                                                                        </div>
 
-                                                <div style="padding:20px; background: #f2f2f2">
-                                                <br>
-                                                <h4>Give your details and we will e-mail you the detailed fee structure of selected course</h4>
-                                                <?PHP echo form_open('#','id=userFeeEnquiry name=userFeeEnquiry role=form'); ?>
-                                                <div class="row">
-                                                    <div class="col-sm-6">
-                                                        <div class="form-group">
-                                                            <label>Your Name<sup>*</sup></label>
-                                                            <input type="text" name="txtEnqName" id="txtEnqName" class="form-control" placeholder="Full Name..." />
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label>Your Email</label>
-                                                            <input type="email" name="txtEnqEmail" id="txtEnqEmail" class="form-control" placeholder="Email..." />
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6">                    
-                                                        <div class="form-group">
-                                                            <label>Contact No.<sup>*</sup></label>
-                                                            <input type="text" name="txtPhone" id="txtPhone" class="form-control" placeholder="Contact No..." />
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label>Course<sup>*</sup></label>
-                                                            <select class="form-control" name="txtCourse" id="txtCourse">
-                                                                <option value="0">Select Course</option>
-                                                                <?php foreach($course as $item){?>
-                                                                <option value="<?php echo $item->courseID;?>"><?php echo $item->courseID;?></option>
-                                                                <?php }?>
-                                                            </select>
-                                                        </div>
-                                                    </div>                            
-                                                    <div class="col-sm-12">                    
-                                                        <div class="form-group" style="float: right; text-align: right">
-                                                            <button type="submit" class="btn btn-primary" name="submit" id="submit">Submit</button>
-                                                        </div>
-                                                        <div id="cntct_msg_1" style="float: left; padding: 5px 0px 0px 5px; min-width: 50px; height: 20px; color: #ff0000"></div>
+                                                                        <div class="col-sm-6">
+                                                                            <b>Course:</b> Bachelor of Hospitality Management (BHM-KU)<br>
+                                                                            <b>Tution Fee:</b> Rs. 38,500* / Sem<br>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-sm-6">
+                                                                            <b>Course:</b> Diploma in Hotel Management &amp; Catering Technology (DHMCT)<br>
+                                                                            <b>Tution Fee:</b> Rs. 25,000* / Sem<br>
+                                                                        </div>
+
+                                                                        <div class="col-sm-6" style="background-color:#F0F0F0; padding: 10px;">
+                                                                            <b>Course:</b> Bachelor of Hospitality Management (BHM-UOU)<br>
+                                                                            <b>Tution Fee:</b> As per Uttarakhand Open University norms<br>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-sm-6" style="background-color:#F0F0F0; padding: 10px;">
+                                                                            <b>Course:</b> Diploma in Hotel Management (DHM)<br>
+                                                                            <b>Tution Fee:</b>  As per Uttarakhand Open University norms<br>
+                                                                        </div>
+                                                                    </div>
+                                                                    <br>* subject to change as per University norms
+                                                                </div>
+                                                            </div>
+                                                        </div>                                            
                                                     </div>
                                                 </div>
-                                                <?PHP echo form_close();?>
+                                                <div style="padding:20px; background: #f2f2f2" id="feeform">
+                                                    <br>
+                                                    <h4>Fill your details and check the fee structure of All Courses</h4>
+                                                    <?PHP echo form_open('#', 'id=userFeeEnquiry name=userFeeEnquiry role=form'); ?>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group">
+                                                                <label>Your Name<sup>*</sup></label>
+                                                                <input type="text" name="txtEnqName" id="txtEnqName" class="form-control" placeholder="Full Name..." />
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Your Email</label>
+                                                                <input type="email" name="txtEnqEmail" id="txtEnqEmail" class="form-control" placeholder="Email..." />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">                    
+                                                            <div class="form-group">
+                                                                <label>Contact No.<sup>*</sup></label>
+                                                                <input type="text" name="txtPhone" id="txtPhone" class="form-control" placeholder="Contact No..." />
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Course<sup>*</sup></label>
+                                                                <select class="form-control" name="txtCourse" id="txtCourse">
+                                                                    <option value="0">Select Course</option>
+                                                                    <?php foreach ($course as $item) { ?>
+                                                                        <option value="<?php echo $item->courseID; ?>"><?php echo $item->courseID; ?></option>
+                                                                    <?php } ?>
+                                                                </select>
+                                                            </div>
+                                                        </div>                            
+                                                        <div class="col-sm-12">                    
+                                                            <div class="form-group" style="float: right; text-align: right">
+                                                                <button type="submit" class="btn btn-primary" name="submit" id="submit">Submit</button>
+                                                            </div>
+                                                            <div id="cntct_msg_1" style="float: left; padding: 5px 0px 0px 5px; min-width: 50px; height: 20px; color: #ff0000"></div>
+                                                        </div>
+                                                    </div>
+                                                    <?PHP echo form_close(); ?>
                                                 </div>
                                             </div><!-- /.entry-content -->
                                         </article>                                                                                                                           

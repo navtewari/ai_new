@@ -657,7 +657,7 @@ At AGI, we don't just teach theory. We teach you how to put theory into practice
         $query = $this->db->insert('userdata', $data);
         
         if ($query == TRUE) {
-                $this->email->set_mailtype("html");                
+                /*$this->email->set_mailtype("html");                
 
                 $msg_ = "<h3 style='color: #000090'>Fees Query From Website  : <span style='color: #900000'> www.amrapali.ac.in</h3>";                
                 $msg_ = $msg_ . "------------------------ <br />";
@@ -678,7 +678,8 @@ At AGI, we don't just teach theory. We teach you how to put theory into practice
                     //echo $this->email->print_debugger();
                 } else {
                     $bool_ = array('res' => 'true', 'msg_' => 'X: Server Error !! Try Again...');
-                }
+                }*/
+            $bool_ = array('res_' => TRUE, 'msg_' => 'Data Submitted Successfully');
         } else {
             $bool_ = array('res_' => FALSE, 'msg_' => 'Data not updated !! Try Again');
         }
