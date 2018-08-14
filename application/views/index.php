@@ -18,15 +18,18 @@ hr{
 }
 </style>
 <?php
-    $slider_ = array(
+    $slider_1 = array(
         'bg1.jpg'=>'Rich Library Support',
         'bg2.jpg'=>'Eminent Speakers enlightening our scholars',
         'bg3.jpg'=>'Hands-on experience through industrial training in reputed organisations',
-        'bg4.jpg'=>'Celebration &amp; Enthusiasm at annual functions',
+        'bg4.jpg'=>'Celebration &amp; Enthusiasm at aDnnual functions',
         'bg5.jpg'=>'Associations &amp; Togetherness',
         'bg6.jpg'=>'Over 80,000 books, periodicals, international journals and other research material',
         'bg7.jpg'=>'Eminent Speakers enlightening our scholars',
         'bg8.jpg'=>'Participatory Sessions'
+    );
+     $slider_ = array(
+        'bg0.jpg'=>'Happy Independance Day'
     );
 ?>
 <body>
@@ -53,16 +56,16 @@ hr{
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
-                            <?php $loop1 = 0; $sliderno = mt_rand(0,count($slider_)-1);?>
+                            <?php $loop1 = 0; $sliderno = 0;//mt_rand(0,count($slider_)-1);?>
                             <?php foreach($slider_ as $img=>$item){?>
                             <div class="item<?php if($loop1 == $sliderno) echo ' active';?>">
-                                <img src="<?php echo base_url('assets/img/slider/'.$img); ?>" alt="Amrapali Infrastructure">
+                                <img src="<?php echo base_url('assets/img/slider/'.$img); ?>?version=1.2" alt="Amrapali Infrastructure">
                                 <!--Slide Image-->
 
                                 <div class="container">
                                     <div class="carousel-caption">
-                                        <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
-                                        <div class="phone animated lightSpeedIn">1800 180 4027</div>
+                                        <small class="animated fadeIn">HAPPY INDEPENDANCE DAY<!--CALL US TODAY (Toll Free)--></small>
+                                        <div class="phone animated lightSpeedIn"><!--1800 180 4027--></div>
                                         <h1 class="animated lightSpeedIn hidden-xs"><?php echo $item; ?></h1>                                            
                                     </div>
                                     <!--.carousel-caption-->
