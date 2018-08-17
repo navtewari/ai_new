@@ -18,7 +18,7 @@ hr{
 }
 </style>
 <?php
-    $slider_1 = array(
+    $slider_ = array(
         'bg1.jpg'=>'Rich Library Support',
         'bg2.jpg'=>'Eminent Speakers enlightening our scholars',
         'bg3.jpg'=>'Hands-on experience through industrial training in reputed organisations',
@@ -28,9 +28,9 @@ hr{
         'bg7.jpg'=>'Eminent Speakers enlightening our scholars',
         'bg8.jpg'=>'Participatory Sessions'
     );
-     $slider_ = array(
+    /*$slider_ = array(
         'bg0.jpg'=>'Happy Independance Day'
-    );
+    );*/
 ?>
 <body>
     <div id="st-container" class="st-container">
@@ -59,13 +59,13 @@ hr{
                             <?php $loop1 = 0; $sliderno = 0;//mt_rand(0,count($slider_)-1);?>
                             <?php foreach($slider_ as $img=>$item){?>
                             <div class="item<?php if($loop1 == $sliderno) echo ' active';?>">
-                                <img src="<?php echo base_url('assets/img/slider/'.$img); ?>?version=1.2" alt="Amrapali Infrastructure">
+                                <img src="<?php echo base_url('assets/img/slider/'.$img); ?>?version=1.3" alt="Amrapali Infrastructure">
                                 <!--Slide Image-->
 
                                 <div class="container">
                                     <div class="carousel-caption">
-                                        <small class="animated fadeIn">HAPPY INDEPENDANCE DAY<!--CALL US TODAY (Toll Free)--></small>
-                                        <div class="phone animated lightSpeedIn"><!--1800 180 4027--></div>
+                                        <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
+                                        <div class="phone animated lightSpeedIn">1800 180 4027</div>
                                         <h1 class="animated lightSpeedIn hidden-xs"><?php echo $item; ?></h1>                                            
                                     </div>
                                     <!--.carousel-caption-->
@@ -309,7 +309,7 @@ hr{
                                                         <p><img align="right" class="img-responsive" style="max-width: 120px;margin:10px 20px;" src="<?PHP echo base_url() . 'assets/img/recruiters/YaminiBhakr.jpg'; ?>" alt="Amrapali Recruiters">I have been associated with the institute for past 3 years now and each time the interaction has been very professional. The students from the institute are well-versed with the basics of hospitality industry and are well l trained on personality enhancement. The credit definitely goes to the faculty who has been imparting the knowledge the students. The response from the institute is very prompt.</p><p>I look forward for the fruitful continued professional association with the institute and wish all the students and faculty success for the upcoming years ahead.</p>
                                                         <span class="client-name">Yamini Bhakri</span>, <span class="client-org">Human Resources Manager, The Hyatt </span>
                                                     </div>
-                                                </div><!-- /.col-md-8 -->	                                                   
+                                                </div><!-- /.col-md-8 -->                                                      
                                             </div><!-- /.row -->
                                         </div><!-- /.item -->
                                         <div class="item">
@@ -319,7 +319,7 @@ hr{
                                                         <p><img hspace="10" align="right" class="img-responsive" style="max-width: 120px;margin:10px 20px;" src="<?PHP echo base_url() . 'assets/img/recruiters/ParvezShaikh.jpg'; ?>" alt="Amrapali Recruiters"> Karvy Stock Broking has conducted an on-campus drive at Amrapali Group of Institutes and we have seen experienced set of very professional and wellgroomed candidates for our recruitment. The institution has a good talent pool of fresh minds that have been trained to become industry ready in state of the art infrastructure with a very high focus on technical capability as well as soft skills of students.</p>
                                                         <span class="client-name">Parvez Shaikh</span>, <span class="client-org">AGM – Training, Karvy, Hyderabad </span>
                                                     </div>
-                                                </div><!-- /.col-md-8 -->	
+                                                </div><!-- /.col-md-8 -->   
                                             </div><!-- /.row -->
                                         </div><!-- /.item -->
                                         <div class="item">
