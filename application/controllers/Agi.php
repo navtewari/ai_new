@@ -650,7 +650,22 @@ class Agi extends CI_Controller {
         $this->load->view('gallery/publication', $data_);
         $this->load->view('templates/footer');
     }
+    function archive(){
+        $data_ = $this->my_library->heading_for_page(59);      
+       
+        $data_['desc_'] = $data_['desc_'];
+        $data_['titleMain'] = $data_['tmp'];
 
+        $data_['menu_active'] = 6;        
+        $data_['title'] = "ACME ARCHIVE";
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+        $data_['gallery_category'] = $this->wm->get_gallery_category();        
+
+        $this->load->view('templates/header', $data_);
+        $this->load->view('gallery/archive', $data_);
+        $this->load->view('templates/footer');
+    }
     function acme(){
         $data_ = $this->my_library->heading_for_page(59);      
        
