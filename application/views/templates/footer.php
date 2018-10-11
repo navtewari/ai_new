@@ -234,6 +234,5 @@
 <script src="<?php echo base_url('assets/js/main.js'); ?>?ver=1.5"></script>
 
 <?php $this->load->view('templates/analyticstracking');?>
-test
 </body>
 </html>
