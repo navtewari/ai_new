@@ -185,7 +185,7 @@ hr{
                                     <div class="info-in-short">                                        
                                         <div class="member-info">                                            
                                             <ul class="check-circle" style="font-size:14px;text-align: justify;">
-                                                <li>Ranked 9th amoungst the best private institute of Hotel Management in India by Drishti Outlook Survey 2018</li>
+                                                <li>Ranked 9th amongst the best private institute of Hotel Management in India by Drishti Outlook Survey 2018</li>
                                                 <li>Ranked amongst top 10 private institutes by Hansa Research Survey 2016 & 2017 published in The Week magazine. </li>
                                                 <li>Top Ranked Hotel Management Institute in State for last eight years GHRDC</li>
                                                 <li>Amongst Top Ranked Emerging Engineering College in India Higher Education Survey</li>
