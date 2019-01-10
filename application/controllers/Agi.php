@@ -701,6 +701,7 @@ class Agi extends CI_Controller {
     }
 
     function imagePics(){
+       // redirect ('agi');
         $data_ = $this->my_library->heading_for_page(1);      
        
         $data_['desc_'] = $data_['desc_'];
@@ -1165,6 +1166,61 @@ class Agi extends CI_Controller {
     function userFeeEnquiry(){
         $flag_ = $this->wm->send_fee_enquiry();
         echo $flag_['msg_'];   
+    }
+    
+    function kdmm2018(){
+        $data_ = $this->my_library->heading_for_page(1);      
+       
+        $data_['desc_'] = $data_['desc_'];
+        $data_['titleMain'] = $data_['tmp'];
+
+        $data_['menu_active'] =0;
+        $data_['menu_all'] = $this->my_menu->site_menu();        
+        $data_['title'] = "KDMM 2018";
+
+        $data_['image'] = $this->wm->append_captcha();
+
+        $this->load->view('templates/header', $data_);
+        $this->load->view('events/kdmm', $data_);
+        $this->load->view('templates/footer');
+    }
+    
+    function spandan2019(){
+        $data_['college'] = $this->wm->vol_getCollege();
+        $data_['course'] = $this->wm->vol_getCourse_with_Sem();
+        $data_['events'] = $this->wm->vol_getEvents();
+        $data_['committee'] = $this->wm->vol_getCommittees();
+        $data_['positions'] = $this->wm->vol_getPosition();
+
+        $data_['title'] = 'Spandan 2019 invites student volunteers';
+       
+        $data_['desc_'] = "Spandan 2019 invites voluteers for different Organising teams";
+        $data_['titleMain'] = 'Spandan 2019 invites student volunteers';
+
+        $data_['menu_active'] =1;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+
+        $this->load->view('templates/header', $data_);
+        $this->load->view('volunteers/index', $data_);
+        $this->load->view('templates/footer');            
+    }
+    function volunteer(){
+        if($this->wm->volunteer()){
+            $page_ = 'agi/spandan2019';
+            $this->session->set_flashdata('vol_msg', 'Successfully submitted your volunteership.');
+        } else {
+            $page_ = 'agi/spandan2019';
+            $this->session->set_flashdata('vol_msg', 'Something goes wrong. Please try again!!');
+        }
+
+        redirect('agi/spandan2019');
+    }
+
+    function getCommittee_n_position(){
+        $data_['committee'] = $this->wm->vol_getCommittees();
+        $data_['position'] = $this->wm->vol_getPosition();
+        echo json_encode($data_);
     }
     // end of footer menu
 }

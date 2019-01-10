@@ -168,4 +168,36 @@ $(function(){
         }
         return false;
     });
+
+    $('#cmbEvent').change(function(){
+        var url_ = site_url_ + "/agi/getCommittee_n_position";
+        if($('#cmbEvent').val() != ''){
+            var data_ = "cmbEvent="+$('#cmbEvent').val();
+            $('#cmbCommittee').html("<option value=''>Loading...</option>");
+            $('#cmbPosition').html("<option value=''>Loading...</option>");
+            $.ajax({
+                type: 'POST',
+                url: url_,
+                data: data_,
+                success:  function(data){
+                    var obj = JSON.parse(data);
+                    var str = '';
+                    str = str + "<option value=''>Select Committee</option>";
+                    for(i=0; i<obj.committee.length; i++){
+                        str = str + "<option value='"+obj.committee[i].CMTID+"'>"+obj.committee[i].C_NAME+"</option>"
+                    }
+                    $('#cmbCommittee').html(str);
+                    str = '';
+                    str = str + "<option value=''>Select Position</option>";
+                    for(i=0; i<obj.position.length; i++){
+                        str = str + "<option value='"+obj.position[i].POSID+"'>"+obj.position[i].P_NAME+"</option>"
+                    }
+                    $('#cmbPosition').html(str);
+                }
+            });
+        } else {
+            $('#cmbCommittee').html("<option value=''>Select Committee</option>");
+            $('#cmbPosition').html("<option value=''>Select Position</option>");
+        }
+    });
 });

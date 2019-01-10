@@ -231,7 +231,7 @@
 <!-- Custom Script -->
 <script src="<?php echo base_url('assets/js/jquery.form.js'); ?>?ver=1.0"></script>
 <script src="<?php echo base_url('assets/js/scripts.js'); ?>?ver=1.0"></script>
-<script src="<?php echo base_url('assets/js/main.js'); ?>?ver=1.5"></script>
+<script src="<?php echo base_url('assets/js/main.js'); ?>?ver=1.7"></script>
 
 <?php $this->load->view('templates/analyticstracking');?>
 </body>

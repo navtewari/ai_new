@@ -697,6 +697,56 @@ At AGI, we don't just teach theory. We teach you how to put theory into practice
         return $query->result();
     }
     
+    // Spandan 2019 Volunteers
+    function vol_getCollege(){
+        $query = $this->db->get('vol_college');
+        return $query->result();
+    }
+    function vol_getCourse_with_Sem(){
+        $query = $this->db->get('vol_course');
+        return $query->result();
+    }
+    function vol_getEvents(){
+        $query = $this->db->get('vol_events');
+        return $query->result();
+    }
+    function vol_getCommittees(){
+        if($this->input->post('cmbEvent')){
+            $this->db->where_in('EVENTID', array($this->input->post('cmbEvent'),'GEN'));
+        }
+        $query = $this->db->get('vol_committee');
+        return $query->result();
+    }
+    function vol_getPosition(){
+        if($this->input->post('cmbEvent')){
+            $this->db->where_in('EVENTID', array($this->input->post('cmbEvent'),'GEN'));
+        }
+        $query = $this->db->get('vol_position');
+        return $query->result();
+    }
+    function volunteer(){
+        $data = array(
+            'NAME_' => $this->input->post('txtVol_Name'),
+            'CLG_CODE' => $this->input->post('cmbCollege'),
+            'CRS_CODE' => $this->input->post('cmbCourse')."-".$this->input->post('cmbSem'),
+            'EVENTID' => $this->input->post('cmbEvent'),
+            'CMTEE_ID' => $this->input->post('cmbCommittee'),
+            'POSTN_ID' => $this->input->post('cmbPosition'),
+            'MOB' => $this->input->post('txtVol_Mob'),
+            'EMAIL' => $this->input->post('txtVol_Email'),
+            'USERNAME' => $this->input->post('txtVol_Name')
+        );
+        if($this->db->insert('`vol_volunteers` ', $data)){
+            $bool_ = true;
+        } else {
+            $bool_ = false;
+        }
+
+        $this->_db_error();
+        
+        return $bool_;
+    }
+    // -----------------------
     function _db_error() {
         //exception handling ------------------
         if ($this->db->trans_status() == FALSE) {
