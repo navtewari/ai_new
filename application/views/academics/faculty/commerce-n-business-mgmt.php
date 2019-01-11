@@ -49,6 +49,8 @@
                                                         <li class="myli_for_page">Masters of Business Administration [<b>MBA</b>]</li>
                                                         <li class="myli_for_page">Bachelor of Business Administration [<b>BBA</b>]</li>
                                                         <li class="myli_for_page">Bachelor of Commerce (Honours) [<b>B.Com.</b>]</li>
+                                                        <li class="myli_for_page">B.Sc (Honours) [<b>B.Sc. (H)</b>]</li>
+                                                        <li class="myli_for_page">Retail Management</li>
                                                     </ul>
                                                 </div>
                                                 <div class="col-sm-4">

@@ -80,7 +80,7 @@
                                             </tr>
                                             <tr>
                                                 <td align="center">4</td>
-                                                <td>Prof. (Dr.) Atam Parkash Papreja, Director</td>
+                                                <td>Prof. (Dr.) M.K. Pandey, Director</td>
                                                 <td>Amrapali Institute of Technology &amp; Sciences</td>
                                                 <td>(+91)-8076683636</td>
                                                 <td>director.aits@amrapali.ac.in</td>
