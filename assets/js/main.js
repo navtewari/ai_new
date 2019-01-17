@@ -1,5 +1,5 @@
 $(function(){
-	$('#frmEnquiry').submit(function () {
+    $('#frmEnquiry').submit(function () {
         if ($('#txtEnqName').val() == '') {
             $('#cntct_msg_').text('Your Name Please...');
         } else if ($('#txtEnqEmail').val() == '') {
@@ -137,13 +137,13 @@ $(function(){
     $('#userFeeEnquiry').submit(function () {
         if ($('#txtEnqName').val() == '') {
             $('#cntct_msg_1').text('Your Name Please...');
-        } else if ($('#txtEnqEmail').val() == '') {
+        }/* else if ($('#txtEnqEmail').val() == '') {
             $('#cntct_msg_1').text('Your Email Please...');
         } else if ($('#txtPhone').val() == '') {
             $('#cntct_msg_1').text('Contact Number Please...');
         } else if ($('#txtCourse').val() == '0') {
             $('#cntct_msg_1').text('Please select the Course for fee structure you want...');
-        } else {
+        } */else {
             form_data = $('#userFeeEnquiry').serialize();
             url_ = site_url_ + '/Agi/userFeeEnquiry';
             $('#cntct_msg_1').html('<img src="' + base_path + 'assets/img/loading.gif" style="width: 20px" /> Working...');
@@ -168,7 +168,7 @@ $(function(){
         }
         return false;
     });
-
+    
     $('#cmbEvent').change(function(){
         var url_ = site_url_ + "/agi/getCommittee_n_position";
         if($('#cmbEvent').val() != ''){

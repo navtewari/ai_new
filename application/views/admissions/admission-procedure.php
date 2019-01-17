@@ -143,6 +143,17 @@
                                                                             Direct admission on the basis of 10+2 marks. Eligible student can register themselves directly to the Institute.<br>
                                                                             Eligible student are required to Register to the Institute either in person or online here or download application form
                                                                         </div>
+                                                                        <div class="col-sm-6">&nbsp;</div>
+                                                                        <div class="col-sm-6">
+                                                                            <b>Course:</b> CERTIFICATE COURSE IN RETAIL MGMT. (CRM)<br>
+                                                                            <b>Affiliation:</b> KUMAUN UNIVERSITY<br>
+                                                                            <b>Duration:</b> 1 year<br>
+                                                                            <b>Eligibility#:</b> 10 + 2 with 40% marks<br>
+                                                                            <b>Tuition Fee#:</b>  <a href="<?PHP echo site_url('Agi/feeStructure');?>">Click to see</a><br><br>
+                                                                            <b>Admission Procedure (BBA)</b><br>
+                                                                            Direct admission on the basis of 10+2 marks. Eligible student can register themselves directly to the Institute.<br>
+                                                                            Eligible student are required to Register to the Institute either in person or online here or download application form
+                                                                        </div>
                                                                     </div>
                                                                     
                                                                     <div class="row">
