@@ -17,7 +17,9 @@ hr{
     border:1px solid #aaaaaa;
 }
 </style>
+
 <?php
+    
     $slider_ = array(
         'bg1.jpg'=>'Rich Library Support',
         'bg2.jpg'=>'Eminent Speakers enlightening our scholars',
@@ -28,9 +30,11 @@ hr{
         'bg7.jpg'=>'Eminent Speakers enlightening our scholars',
         'bg8.jpg'=>'Participatory Sessions'
     );
-    /*$slider_ = array(
+    /*
+    $slider_ = array(
         'bg0.jpg'=>'Happy Independance Day'
-    );*/
+    );
+    */
 ?>
 <body>
     <div id="st-container" class="st-container">
@@ -40,7 +44,6 @@ hr{
                     <header>
                         <?php $this->load->view('templates/menu'); ?>
                     </header>
-
                     <div id="x-corp-carousel" class="carousel slide hero-slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
