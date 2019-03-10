@@ -111,6 +111,9 @@ hr{
                                                 <li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">Announcement</a></li>                        
                                             </ul>
                                             <!-- Tab panes -->
+                                            <style>
+                                                .attach{text-decoration: none; color:#fff; background: #cc3300; padding: 2px; border-radius: 3px}
+                                            </style>
                                             <div class="tab-content tabs">
                                                 <div role="tabpanel" class="tab-pane fade in active" id="Section1">
                                                     <?php $this->load->view('templates/newsevents'); ?>
