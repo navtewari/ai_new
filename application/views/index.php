@@ -17,24 +17,20 @@ hr{
     border:1px solid #aaaaaa;
 }
 </style>
-
 <?php
-    
-    $slider_ = array(
+    $slider_ = array(    	      
         'bg1.jpg'=>'Rich Library Support',
         'bg2.jpg'=>'Eminent Speakers enlightening our scholars',
         'bg3.jpg'=>'Hands-on experience through industrial training in reputed organisations',
-        'bg4.jpg'=>'Celebration &amp; Enthusiasm at aDnnual functions',
+        'bg4.jpg'=>'Celebration &amp; Enthusiasm at annual functions',
         'bg5.jpg'=>'Associations &amp; Togetherness',
         'bg6.jpg'=>'Over 80,000 books, periodicals, international journals and other research material',
         'bg7.jpg'=>'Eminent Speakers enlightening our scholars',
-        'bg8.jpg'=>'Participatory Sessions'
+        'bg8.jpg'=>'Participatory Sessions'        
     );
-    /*
-    $slider_ = array(
-        'bg0.jpg'=>'Happy Independance Day'
-    );
-    */
+   /* $slider_ = array(
+        'bg0.jpg'=>'<a href="#">Late Smt. Kamla Dhingra Memorial Meet</a>',
+    );*/
 ?>
 <body>
     <div id="st-container" class="st-container">
@@ -44,6 +40,7 @@ hr{
                     <header>
                         <?php $this->load->view('templates/menu'); ?>
                     </header>
+
                     <div id="x-corp-carousel" class="carousel slide hero-slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
@@ -55,6 +52,7 @@ hr{
                             <li data-target="#x-corp-carousel" data-slide-to="5"></li>
                             <li data-target="#x-corp-carousel" data-slide-to="6"></li>
                             <li data-target="#x-corp-carousel" data-slide-to="7"></li>
+                            <li data-target="#x-corp-carousel" data-slide-to="8"></li>                            
                         </ol>
 
                         <!-- Wrapper for slides -->
@@ -111,9 +109,6 @@ hr{
                                                 <li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">Announcement</a></li>                        
                                             </ul>
                                             <!-- Tab panes -->
-                                            <style>
-                                                .attach{text-decoration: none; color:#fff; background: #cc3300; padding: 2px; border-radius: 3px}
-                                            </style>
                                             <div class="tab-content tabs">
                                                 <div role="tabpanel" class="tab-pane fade in active" id="Section1">
                                                     <?php $this->load->view('templates/newsevents'); ?>
@@ -127,7 +122,14 @@ hr{
                                             </div>               
                                         </div>
                                     </div>
-                                    <div class="col-lg-5 col-md-4"></div>
+                                    <div class="col-lg-5 col-md-4" style="background:rgba(255,255,255,.7);padding:1em;">
+                                        <div id="fb-root"></div>
+											<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2"></script>											
+											<div class="fb-video" data-href="https://www.facebook.com/AGI.HLD/videos/2086748414773429/" data-width="auto" data-show-text="true"><blockquote cite="https://developers.facebook.com/AGI.HLD/videos/2086748414773429/" class="fb-xfbml-parse-ignore">
+												<a href="https://developers.facebook.com/AGI.HLD/videos/2086748414773429/">Carnival 2019 :Aftermovie</a><p>Amrapali Group of Institutes proudly presents the aftermovie of Carnival-2019 showing the glimpses of the annual fest of the college.
+											For better experience watch in HD &amp; with Earphones.</p>Posted by <a href="https://www.facebook.com/AGI.HLD/">Amrapali Group of Institutes Haldwani</a> on Wednesday, 6 March 2019</blockquote></div>
+										</div>	
+                                                                       
                                 </div><!-- /.row -->
                             </section><!-- /.intro-wrapper -->
 
@@ -192,7 +194,7 @@ hr{
                                         <div class="member-info">                                            
                                             <ul class="check-circle" style="font-size:14px;text-align: justify;">
                                                 <li>Ranked 9th amongst the best private institute of Hotel Management in India by Drishti Outlook Survey 2018</li>
-                                                <li>Ranked amongst top 10 private institutes by Hansa Research Survey 2016 & 2017 published in The Week magazine. </li>
+                                                <li>Ranked amongst top 10 private Institutes by Hansa Research Survey 2016 & 2017 published in The Week magazine. </li>
                                                 <li>Top Ranked Hotel Management Institute in State for last eight years GHRDC</li>
                                                 <li>Amongst Top Ranked Emerging Engineering College in India Higher Education Survey</li>
                                                 <li>Awarded Best Institute of Academic Excellence in Uttarakhand Worldwide Achiever Survey</li>
