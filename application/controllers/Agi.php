@@ -1222,5 +1222,37 @@ class Agi extends CI_Controller {
         $data_['position'] = $this->wm->vol_getPosition();
         echo json_encode($data_);
     }
+
+    function workshop(){
+       
+        $data_['desc_'] = "Cloud Computing";
+        $data_['titleMain'] = "WORKSHOP ON CLOUD COMPUTING";
+
+        $data_['menu_active'] =0;
+        $data_['menu_all'] = $this->my_menu->site_menu();        
+        $data_['title'] = "WORKSHOP";
+
+        $data_['image'] = $this->wm->append_captcha();
+
+        $this->load->view('templates/header', $data_);
+        $this->load->view('events/workshop', $data_);
+        $this->load->view('templates/footer');
+    }
+
+    function sandhaan2019(){
+
+        $data_['title'] = 'Sandhaan 2019: An Annual Tech Fest';
+       
+        $data_['desc_'] = "Sandhaan 2019 an Annual Tech Fest";
+        $data_['titleMain'] = 'Sandhaan 2019 an Annual Tech Fest';
+
+        $data_['menu_active'] =1;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+
+        $this->load->view('templates/header', $data_);
+        $this->load->view('events/sandhaan', $data_);
+        $this->load->view('templates/footer');            
+    }
     // end of footer menu
 }
