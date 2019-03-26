@@ -39,14 +39,15 @@
                             <div class="content-wrapper">
                                 <div class="inner-content">
                                     <div class="row">
-                                        <div class="col-xs-12 col-md-8 col-sm-8">
+                                        <div class="col-xs-12 col-md-12 col-sm-12">
                                             <article class="blog-post-wrapper single-article">
                                                 <header class="entry-header">                                                    
-                                                    <h2 class="entry-title"><a href="#"><?php echo $title;?></a></h2>
+                                                    <h2 class="entry-title" style="float: left"><a href="#"><?php echo $title;?></a></h2>
+                                                    <div style="float: right"><a href="https://goo.gl/forms/4YbDyaTPehzCxFh22" target="_blank" style="padding: 5px 15px; border-radius: 8px; background: #ff5400; color: #ffffff; font-weight: bold">Register here</a></div>
                                                 </header><!-- /.entry-header -->                                                
 
                                                 <div class="entry-content">
-                                                    <img src="<?php echo base_url('assets/img/sandhaan.jpg'); ?>" class="img-responsive" alt=""> 
+                                                    <img src="<?php echo base_url('assets/img/sandhaan.jpg'); ?>?version=1.0" class="img-responsive" alt=""> 
                                                 <p style="margin-top: 10px;">
                                                     <p>
                                                         <img src="<?php echo base_url('assets/img/wings.png'); ?>" class="img-responsive" alt=""> 
@@ -110,8 +111,22 @@
                                                         </div>
                                                         <div id="eposter" class="panel-collapse collapse" role="tabpanel" aria-labelledby="event3">
                                                             <div class="panel-body">
-                                                                The competition provides an opportunity to the students to show their artistic sense and command on specific computer designing software(s). Poster Competition involved drawing in provided charts/paper on the given theme. <br>
-                                                                <span style="font-size: 10px"><b>*Note</b>: Photoshop, CorelDRAW, MS-PAINT etc.can be used. </span>
+                                                                <b>E-Poster</b><br>
+                                                                The competition provides an opportunity to school/college level students to show their artistic sense and command on computer designing software so that they can produce good visualizations in their careers. Participants will be given a theme on which they have to deign E-Poster. <br>
+                                                                <b>SOFTWARE(S) TO BE USED</b><br>
+                                                                &nbsp;&nbsp;•&nbsp;ADOBE PHOTOSHOP<br>
+                                                                &nbsp;&nbsp;•&nbsp;ADOBE ILLUSTRATOR<br>
+                                                                &nbsp;&nbsp;•&nbsp;COREL DRAW<br>
+                                                                &nbsp;&nbsp;•&nbsp;COREL PHOTO-PAINT<br>
+                                                                &nbsp;&nbsp;•&nbsp;MS-PAINT
+
+                                                                <br><br>
+
+                                                                <b>Poster</b><br>
+                                                                Poster competition is to provide platform and encourage students to showcase their drawing talent and creativity on a given theme.
+                                                                <br><br>
+                                                                <a href="<?php echo base_url('assets/sandhaan/codex.pdf');?>" class="detail_" target="_blank">Click for Rules</a>
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -126,7 +141,24 @@
                                                         <div id="codex" class="panel-collapse collapse" role="tabpanel" aria-labelledby="event4">
                                                             <div class="panel-body">
                                                                 The competition provides an opportunity to the students to show their programming and innovative skills. Participants has to design a game or any given entities under this activity.<br>
-                                                                <span style="font-size: 10px"><b>*Note</b>: C/ C++/ Java/ VB.Net/ PHP can be used. (Student have to fill the choice at the time of Registration) </span>
+                                                                <p>
+                                                                    <b><u>ROUNDS</u></b><br>
+                                                                    1. Elimination Round (only for AGI students).<br>
+                                                                    2. Debugging Round<br>
+                                                                    3. Programming Round<br>
+                                                                </p>
+                                                                Any of the following rules may be changed without prior notice as may seem fit by the event/game master or the organizing committee:<br>
+                                                                <b>General Rules</b><br>
+                                                                A). This game is a team based event, each team consisting of maximum 2 members.<br>
+                                                                B). Each team should nominate a leader to whom all the details and information regarding the event will be conveyed. It is the responsibility of the team leader to convey them to his/her team mate.<br>
+                                                                C). LANGUAGES ALLOWED: C, C++, Java<br>
+                                                                D). The Tournament Organizers reserves all the rights to cancel or modify the event rules, if fraud of any kind is detected, technical failures or any other factor beyond reasonable control that impairs the integrity of the event.<br>
+                                                                ROUNDS<br>
+                                                                E). In case during any round, if PC stops/lags for any team then there is a provision for extra time if justified or as may seem fit by the event master.<br>
+                                                                F). Teams/Participants unavailable at the time of their event will be disqualified after a wait period (since the event starts) of 15 Min.<br>
+                                                                G). Terminal will be provided to each team along with the pen and paper and so personal laptops aren’t allowed.<br>
+                                                                <a href="<?php echo base_url('assets/sandhaan/codex.pdf');?>" class="detail_" target="_blank">Click for more Detail</a>
+                                                                <span style="font-size: 10px"><b>*Note</b>: C/ C++/ Java can be used. (Student have to fill the choice at the time of Registration) </span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -140,7 +172,57 @@
                                                         </div>
                                                         <div id="treasurehunt" class="panel-collapse collapse" role="tabpanel" aria-labelledby="event5">
                                                             <div class="panel-body">
-                                                                Your eyes wide open, And brains screwed tightly, Your correct instincts, guiding you lightly, May be you can get some real pleasure, So, come and participate in ‘The hunt’ for treasure.
+                                                                <div style="text-align: center">IF YOU THINK YOUR MIND IS NOT TOO BLUNT ………………. WHY DON’T YOU COME AND TRY <br> <h3 style="color: #900000">THE TREASURE HUNT</h3>
+                                                                </div>
+                                                                <h4>INTRODUCTION</h4>
+                                                                <p>
+                                                                    A TREASURE…….!!!! Exciting …isn’t it<b>?????</b> Exciting surprise gifts waiting for you. Your soaring minds and your right approach could fetch you a real prize…..!!!!!!!!!!!!!!
+                                                                </p>
+                                                                <h4>DESCRIPTION</h4>
+                                                                <p>
+                                                                   Imagine you found an old map which shows where a treasure is hidden …………….<BR> 
+But those days have gone where you could find treasures by just a mere map, here you would actually have to apply your brains. Every step towards the treasure will bring you exciting gifts.<BR>
+It’s a race of hurdles you can say, but not to be won by the cavalry….your intellect would be the helping hand.
+
+                                                                </p>
+
+                                                                <h4>PROCESS OF CONDUCT</h4>
+                                                                <p>
+                                                                   The event consists of three rounds:<BR>
+                                                                    <ul>
+                                                                        <li><b>ROUND 1</b>: ELIMINATION ROUND (If no. of teams exceed 15)</li>
+                                                                        <li><b>ROUND 2</b>: ACTIVITY ROUND</li>
+                                                                        <li><b>ROUND 3</b>: THE HUNT</li>
+                                                                    </ul>
+                                                                </p>
+
+                                                                <h4>GENERAL RULES</h4>
+                                                                <p>
+                                                                    1) A team shall consist of TWO participants.<BR>
+                                                                    2) Participants shall not be allowed to use mobile phones or any other gadget.<BR>
+                                                                    3) The committee holds all due rights to make any modifications in the rules if required.
+                                                                </p>
+
+                                                                <h4>ROUND 1: ELIMINATION ROUND (If the participating teams exceed 15 no.)</h4>
+                                                                <p>
+                                                                    1)  30 objective type questions will be asked.<br>
+                                                                    2)  Time available for answering the questions is 15mins.<br>
+                                                                    3)  No negative marking will be done.<br>
+                                                                    4)  Top 15 teams will be short listed for the next round.
+                                                                </p>
+
+                                                                <h4>ROUND 2: Activity round</h4>
+                                                                <p>
+                                                                   1)   All the short listed teams have to perform some activity based tasks in a certain time.<br>
+                                                                    2)  6 best teams will be shortlisted for the next round.
+                                                                </p>
+
+                                                                <h4>ROUND 3: THE HUNT</h4>
+                                                                <p>
+                                                                   1)   Teams will be undergoing a RUN for treasure. During this course of RUN the teams will encounter some technical hurdles and on completion of which will provide them clues to reach the final TREASURE.<br>
+                                                                    2)  The team which will discover the treasure first will be the winner of the event.<br>
+
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -190,11 +272,12 @@
                                                     </div>
                                                 </div>                                 
                                         </div><!-- /.col-md-9 -->
-                                        <div class="col-xs-12 col-md-4 col-sm-4" align="center">
-                                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf44lg_6beuiE9b9eHGDBbCmE_qZPcJlcdmfVsVfV8U2QduMA/viewform?embedded=true" width="100%" height="1700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                                            <?php //$this->load->view('templates/quick-links');?>                                            
-                                            <?php // $this->load->view('templates/alumni-img-scroll');?>
-                                        </div><!-- /.col-md-3 -->
+                                        <div class="col-xs-12 col-md-12 col-sm-12">
+                                            <a href="<?php echo base_url('assets/img/sandhaanbanner.jpg');?>" target="_blank">
+                                                <img src="<?php echo base_url('assets/img/sandhaanbanner.jpg');?>" border="0">
+                                            </a>
+                                        </div>
+                                        <div style="float: right; margin-top: 20px"><a href="https://goo.gl/forms/4YbDyaTPehzCxFh22" target="_blank" style="padding: 5px 15px; border-radius: 8px; background: #ff5400; color: #ffffff; font-weight: bold">Register here</a></div>
                                     </div><!-- /.row -->
                                 </div><!-- /.inner-content -->
                             </div><!-- /.content-wrapper -->

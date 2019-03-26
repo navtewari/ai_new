@@ -21,10 +21,11 @@ hr{
 <?php
     
     $slider_ = array(
+        'bg0.jpg'=>'Sandhaan 2019 - Annual Tech Fest',
         'bg1.jpg'=>'Rich Library Support',
         'bg2.jpg'=>'Eminent Speakers enlightening our scholars',
         'bg3.jpg'=>'Hands-on experience through industrial training in reputed organisations',
-        'bg4.jpg'=>'Celebration &amp; Enthusiasm at aDnnual functions',
+        'bg4.jpg'=>'Celebration &amp; Enthusiasm at Annual functions',
         'bg5.jpg'=>'Associations &amp; Togetherness',
         'bg6.jpg'=>'Over 80,000 books, periodicals, international journals and other research material',
         'bg7.jpg'=>'Eminent Speakers enlightening our scholars',
@@ -32,9 +33,10 @@ hr{
     );
     /*
     $slider_ = array(
-        'bg0.jpg'=>'Happy Independance Day'
+        'bg0.jpg'=>'Sandhaan 2019 - Annual Tech Fest'
     );
     */
+    
 ?>
 <body>
     <div id="st-container" class="st-container">
@@ -62,7 +64,9 @@ hr{
                             <?php $loop1 = 0; $sliderno = 0;//mt_rand(0,count($slider_)-1);?>
                             <?php foreach($slider_ as $img=>$item){?>
                             <div class="item<?php if($loop1 == $sliderno) echo ' active';?>">
-                                <img src="<?php echo base_url('assets/img/slider/'.$img); ?>?version=1.3" alt="Amrapali Infrastructure">
+                                <a href="https://amrapali.ac.in/sandhaan" target="_blank">
+                                <img src="<?php echo base_url('assets/img/slider/'.$img); ?>?version=2.1" alt="<?php echo $item; ?>">
+                                </a>
                                 <!--Slide Image-->
 
                                 <div class="container">
@@ -127,7 +131,14 @@ hr{
                                             </div>               
                                         </div>
                                     </div>
-                                    <div class="col-lg-5 col-md-4"></div>
+                                    <div class="col-lg-5 col-md-4" style="background:rgba(255,255,255,.7);padding:1em;">
+                                        <div id="fb-root"></div>
+                                            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2"></script>                                          
+                                            <div class="fb-video" data-href="https://www.facebook.com/AGI.HLD/videos/2086748414773429/" data-width="auto" data-show-text="true"><blockquote cite="https://developers.facebook.com/AGI.HLD/videos/2086748414773429/" class="fb-xfbml-parse-ignore">
+                                                <a href="https://developers.facebook.com/AGI.HLD/videos/2086748414773429/">Carnival 2019 :Aftermovie</a><p>Amrapali Group of Institutes proudly presents the aftermovie of Carnival-2019 showing the glimpses of the annual fest of the college.
+                                            For better experience watch in HD &amp; with Earphones.</p>Posted by <a href="https://www.facebook.com/AGI.HLD/">Amrapali Group of Institutes Haldwani</a> on Wednesday, 6 March 2019</blockquote></div>
+                                        </div>  
+                                    </div>
                                 </div><!-- /.row -->
                             </section><!-- /.intro-wrapper -->
 

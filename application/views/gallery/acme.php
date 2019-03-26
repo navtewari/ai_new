@@ -291,7 +291,7 @@
                                                             <div class="panel-body">
                                                                 <p>
                                                                     Click on Image to  download latest Issue of ACME
-                                                                    <a href="<?PHP echo base_url() . 'assets/dwnlds/acme/ACMEFULl.pdf'; ?>" target="_blank"><img src="<?PHP echo base_url() . 'assets/img/acme.jpg'; ?>" style="max-width:100px;"></a>
+                                                                    <a href="<?PHP echo base_url() . 'assets/dwnlds/acme/vol13.pdf'; ?>" target="_blank"><img src="<?PHP echo base_url() . 'assets/img/acme.jpg'; ?>" style="max-width:100px;"></a>
                                                                 </p>
                                                             </div>
                                                         </div>
