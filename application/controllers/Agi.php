@@ -552,8 +552,8 @@ class Agi extends CI_Controller {
         $name_ = $this->input->post('txt_fstName') . ' ' . $this->input->post('txt_lstName');
 
         $this->email->from($from_, $name_);
-        $this->email->to('coo@amrapali.ac.in');
-        //$this->email->bcc('nitin.d12@gmail.com');
+        $this->email->to('ao@amrapali.ac.in');
+        $this->email->cc('coo@amrapali.ac.in');
 
         $this->email->subject('Enquiry from Why Amrapali Web Page for : ' . $this->input->post('txtCourse'));
         $this->email->message($msg_);

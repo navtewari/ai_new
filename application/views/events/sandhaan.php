@@ -47,7 +47,7 @@
                                                 </header><!-- /.entry-header -->                                                
 
                                                 <div class="entry-content">
-                                                    <img src="<?php echo base_url('assets/img/sandhaan.jpg'); ?>?version=1.0" class="img-responsive" alt=""> 
+                                                    <img src="<?php echo base_url('assets/img/sandhaan.jpg'); ?>?version=1.2" class="img-responsive" alt=""> 
                                                 <p style="margin-top: 10px;">
                                                     <p>
                                                         <img src="<?php echo base_url('assets/img/wings.png'); ?>" class="img-responsive" alt=""> 

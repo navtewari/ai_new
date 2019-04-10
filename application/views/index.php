@@ -65,7 +65,7 @@ hr{
                             <?php foreach($slider_ as $img=>$item){?>
                             <div class="item<?php if($loop1 == $sliderno) echo ' active';?>">
                                 <a href="https://amrapali.ac.in/sandhaan" target="_blank">
-                                <img src="<?php echo base_url('assets/img/slider/'.$img); ?>?version=2.1" alt="<?php echo $item; ?>">
+                                <img src="<?php echo base_url('assets/img/slider/'.$img); ?>?version=2.2" alt="<?php echo $item; ?>">
                                 </a>
                                 <!--Slide Image-->
 
