@@ -55,18 +55,18 @@
                                                                     <div class="row">
                                                                         <div class="col-sm-6" style="background-color:#F0F0F0;  padding: 10px;">
                                                                             <b>Course:</b> B.Tech.<br>
-                                                                            <b>Tution Fee:</b> Rs. 36,000* / Sem<br>
+                                                                            <b>Academic Fee:</b> Rs. 36,000* / Sem<br>
                                                                             <b>Lateral entry:</b> Rs. 36,000* / Sem<br>
                                                                         </div>
 
                                                                         <div class="col-sm-6">
                                                                             <b>Course:</b> Polytechnic<br>
-                                                                            <b>Tution Fee:</b> Rs. 20,000* / Sem<br>
+                                                                            <b>Academic Fee:</b> Rs. 20,000* / Sem<br>
                                                                         </div>
 
                                                                         <div class="col-sm-6" style="background-color:#F0F0F0;  padding: 10px;">
                                                                             <b>Course:</b> B.SC HONOURS<br>
-                                                                            <b>Tution Fee:</b> Rs. 20,000* / Sem<br>
+                                                                            <b>Academic Fee:</b> Rs. 20,000* / Sem<br>
                                                                         </div>
                                                                     </div>
                                                                     <br>* subject to change as per University norms
@@ -86,18 +86,18 @@
                                                                     <div class="row">
                                                                         <div class="col-sm-6" style="background-color:#F0F0F0;  padding: 10px;">
                                                                             <b>Course:</b> MASTER OF BUSINESS ADMINISTRATION (MBA)<br>
-                                                                            <b>Tution Fee:</b> Rs. 50,000* / Sem<br>
+                                                                            <b>Academic Fee:</b> Rs. 50,000* / Sem<br>
                                                                         </div>
 
                                                                         <div class="col-sm-6">
                                                                             <b>Course:</b> BACHELOR OF BUSINESS ADMINISTRATION (BBA)<br>
-                                                                            <b>Tution Fee:</b> Rs. 30,000* / Sem<br>
+                                                                            <b>Academic Fee:</b> Rs. 30,000* / Sem<br>
                                                                         </div>
                                                                     </div>
                                                                     <div class="row">
                                                                         <div class="col-sm-6">
                                                                             <b>Course:</b> B.COM HONOURS<br>
-                                                                            <b>Tution Fee:</b> Rs. 25,000* / Sem<br>
+                                                                            <b>Academic Fee:</b> Rs. 25,000* / Sem<br>
                                                                         </div>
                                                                     </div>
                                                                     <br>* subject to change as per University norms
@@ -117,18 +117,18 @@
                                                                     <div class="row">
                                                                         <div class="col-sm-6" style="background-color:#F0F0F0;  padding: 10px;">
                                                                             <b>Course:</b> MASTER OF COMPUTER APPLICATIONS (MCA)<br>
-                                                                            <b>Tution Fee:</b> Rs. 44,000* / Sem<br>
+                                                                            <b>Academic Fee:</b> Rs. 44,000* / Sem<br>
                                                                         </div>
 
                                                                         <div class="col-sm-6">
                                                                             <b>Course:</b> MASTER OF COMPUTER APPLICATIONS  (MCA II Year Direct)<br>
-                                                                            <b>Tution Fee:</b> Rs. 44,000* / Sem<br>
+                                                                            <b>Academic Fee:</b> Rs. 44,000* / Sem<br>
                                                                         </div>
                                                                     </div>
                                                                     <div class="row">
                                                                         <div class="col-sm-6">
                                                                             <b>Course:</b> BACHELOR OF COMPUTER APPLICATIONS (BCA)<br>
-                                                                            <b>Tution Fee:</b> Rs. 30,000* / Sem<br>
+                                                                            <b>Academic Fee:</b> Rs. 30,000* / Sem<br>
                                                                         </div>
                                                                     </div> 
                                                                     <br>* subject to change as per University norms               
@@ -149,31 +149,31 @@
                                                                     <div class="row">
                                                                         <div class="col-sm-6" style="background-color:#F0F0F0; padding: 10px;">
                                                                             <b>Course:</b> Bachelor of Hotel Management &amp; Catering Technology (BHMCT)<br>
-                                                                            <b>Tution Fee:</b> Rs. 42,500* / Sem<br>
+                                                                            <b>Academic Fee:</b> Rs. 42,500* / Sem<br>
                                                                         </div>
 
                                                                         <div class="col-sm-6">
                                                                             <b>Course:</b> Bachelor of Hospitality Management (BHM-KU)<br>
-                                                                            <b>Tution Fee:</b> Rs. 38,500* / Sem<br>
+                                                                            <b>Academic Fee:</b> Rs. 38,500* / Sem<br>
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="row">
                                                                         <div class="col-sm-6">
                                                                             <b>Course:</b> Diploma in Hotel Management &amp; Catering Technology (DHMCT)<br>
-                                                                            <b>Tution Fee:</b> Rs. 25,000* / Sem<br>
+                                                                            <b>Academic Fee:</b> Rs. 25,000* / Sem<br>
                                                                         </div>
 
                                                                         <div class="col-sm-6" style="background-color:#F0F0F0; padding: 10px;">
                                                                             <b>Course:</b> Bachelor of Hospitality Management (BHM-UOU)<br>
-                                                                            <b>Tution Fee:</b> As per Uttarakhand Open University norms<br>
+                                                                            <b>Academic Fee:</b> As per Uttarakhand Open University norms<br>
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="row">
                                                                         <div class="col-sm-6" style="background-color:#F0F0F0; padding: 10px;">
                                                                             <b>Course:</b> Diploma in Hotel Management (DHM)<br>
-                                                                            <b>Tution Fee:</b>  As per Uttarakhand Open University norms<br>
+                                                                            <b>Academic Fee:</b>  As per Uttarakhand Open University norms<br>
                                                                         </div>
                                                                     </div>
                                                                     <br>* subject to change as per University norms

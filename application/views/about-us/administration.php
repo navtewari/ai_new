@@ -43,7 +43,7 @@
                                                             <li> Mr. H.K. Uprety, Asstt. Administrative Officer 
                                                             <li> Mr. N.K. Gupta, Accounts Officer 
                                                             <li> Mr. Gopal Sharma, Asstt. Manager (Office Admin.)
-                                                            <li> Mr. D.S. Rawat, Warden Boys Hostel
+                                                            <li> Mr. Deepak Sharma, Warden Boys Hostel
                                                             <li> Mrs. Abha Chaturvedi, Warden Girls Hostel 
                                                             <li> Mr. Mohan Chandra Joshi, Asst. Warden Boys Hostel
                                                             <li> Mrs. Kavita Tiwari, Asst. Warden Girls Hostel

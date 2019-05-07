@@ -42,14 +42,15 @@
                                                         <div class="col-sm-3 col-xs-6 col-lg-3">
                                                             <img hspace="10" vspace="10" src="<?PHP echo base_url('assets/img/cd_1.jpg');?>?ver=1.0" style="width: 120px" class="img-responsive">
                                                         </div>
-                                                        <div class="col-sm-3 col-xs-6 col-lg-3">
-                                                            <img hspace="10" vspace="10" src="<?PHP echo base_url('assets/img/mg_1.jpg');?>?ver=1.0" style="width: 120px" class="img-responsive">
-                                                        </div>
+                                                        
                                                         <div class="col-sm-3 col-xs-6 col-lg-3">
                                                             <img hspace="10" vspace="10" src="<?PHP echo base_url('assets/img/nd_1.jpg');?>?ver=1.0" style="width: 120px" class="img-responsive">
                                                         </div>
                                                         <div class="col-sm-3 col-xs-6 col-lg-3">
                                                             <img hspace="10" vspace="10" src="<?PHP echo base_url('assets/img/ceo.jpg');?>?ver=1.0" style="width: 120px" class="img-responsive">
+                                                        </div>
+                                                        <div class="col-sm-3 col-xs-6 col-lg-3">
+                                                            <img hspace="10" vspace="10" src="<?PHP echo base_url('assets/img/mg_3.jpg');?>?ver=1.0" style="width: 120px" class="img-responsive">
                                                         </div>
                                                         <p>&nbsp;</p>
                                                         <h3>Mission</h3>
