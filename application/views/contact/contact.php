@@ -148,8 +148,16 @@
                                             Amrapali Group of Institutes, <br>Shiksha Nagar, Lamachaur, Kaladhungi Road, Haldwani - 263139,<br>Distt.-Nainital (UTTARAKHAND)
                                         </address>
                                     <div class="map-wrapper">
-                                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3481.9003845618054!2d79.41899030421874!3d29.22648447679785!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb18770875225c2c!2sAmrapali+Institute!5e0!3m2!1sen!2sin!4v1428741750005" width="100%" height="400" frameborder="0" style="border:0"></iframe>
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3481.9003845618054!2d79.41899030421874!3d29.22648447679785!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb18770875225c2c!2sAmrapali+Institute!5e0!3m2!1sen!2sin!4v1428741750005" width="100%" height="200" frameborder="0" style="border:0"></iframe>
                                         </div>
+
+                                        <address>
+                                            <h2>North East Outreach Cell @ Silchar</h2>
+                                            <b><i>- An information center of Amrapali Group Of Institutes</i></b><br><br>       
+                                            G- 86, Near BATAYAAN, Ground floor, 
+         Goldigi Mall, Nazir Patty, Silchar 
+         District: Cachar, Assam 788001 
+                                        </address>
                                     </div>
                                 </div>
                             </div><!-- /.row -->

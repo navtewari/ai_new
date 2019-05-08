@@ -53,7 +53,10 @@
                         For MCA: (+91)-9759255613 <br />
                         For HM: (+91)-9927041565 <br /><br>
                         Email: &#112;&#108;&#097;&#099;&#101;&#109;&#101;&#110;&#116;&#064;&#097;&#109;&#114;&#097;&#112;&#097;&#108;&#105;&#046;&#097;&#099;&#046;&#105;&#110;
-                    </address>    
+                    </address>  
+                    <div class="social-link">
+                        <?PHP $this->load->view('templates/socialMedia'); ?>
+                    </div>  
                 </div>
             </div>
             <div class="col-md-3 col-sm-12 col-xs-12">
@@ -66,11 +69,13 @@
                         <span style="color:#8EDDFF">Toll-Free: 1800 180 4027 </span><br /><br />
                         Email: &#113;&#117;&#101;&#114;&#121;&#064;&#097;&#109;&#114;&#097;&#112;&#097;&#108;&#105;&#046;&#097;&#099;&#046;&#105;&#110;
                     </address>
-                    <div class="social-link">
-                        <?PHP $this->load->view('templates/socialMedia'); ?>
-                    </div>
-                    <br/>
-                    <p><a>Copyright &copy; 2018 Amrapali Group of Institutes, All Rights Reserved.</a> </p>                                                  
+                    <hr>
+                    <address>
+                        <h4 style="color:#f2f2f2">North East Outreach Cell @ Silchar</h4>
+                        <b><i>- An information center of Amrapali Group Of Institutes</i></b><br><br>       
+                        G- 86, Near BATAYAAN, Ground floor, Goldigi Mall, Nazir Patty, Silchar District: Cachar, Assam 788001 
+                                        </address>
+                                                                     
                 </div><!-- /.footer-widget -->
             </div><!-- /.col-md-6 -->
         </div><!-- /.row -->
@@ -83,7 +88,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="copyright wow fadeInDown">
-                    <p>Developed & maintained by: Faculty of Comuter Science & Applications, Amrapali Group of Institutes, Haldwani </p>
+                    <p><a>Copyright &copy; 2018 Amrapali Group of Institutes, All Rights Reserved.</a>  Developed & maintained by: Faculty of Comuter Science & Applications, Amrapali Group of Institutes, Haldwani </p>
                 </div><!-- /.copyright -->
             </div><!-- /.col-md-12 -->
         </div><!-- /.row -->
