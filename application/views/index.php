@@ -21,7 +21,6 @@ hr{
 <?php
     
     $slider_ = array(
-        'bg0.jpg'=>'Sandhaan 2019 - Annual Tech Fest',
         'bg1.jpg'=>'Rich Library Support',
         'bg2.jpg'=>'Eminent Speakers enlightening our scholars',
         'bg3.jpg'=>'Hands-on experience through industrial training in reputed organisations',
@@ -61,12 +60,10 @@ hr{
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
-                            <?php $loop1 = 0; $sliderno = 0;//mt_rand(0,count($slider_)-1);?>
+                            <?php $loop1 = 0; $sliderno = mt_rand(0,count($slider_)-1);?>
                             <?php foreach($slider_ as $img=>$item){?>
                             <div class="item<?php if($loop1 == $sliderno) echo ' active';?>">
-                                <a href="https://amrapali.ac.in/sandhaan" target="_blank">
                                 <img src="<?php echo base_url('assets/img/slider/'.$img); ?>?version=2.2" alt="<?php echo $item; ?>">
-                                </a>
                                 <!--Slide Image-->
 
                                 <div class="container">
