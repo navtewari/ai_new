@@ -127,15 +127,7 @@ hr{
                                                 </div>                       
                                             </div>               
                                         </div>
-                                    </div>
-                                    <div class="col-lg-5 col-md-4" style="background:rgba(255,255,255,.7);padding:1em;">
-                                        <div id="fb-root"></div>
-                                            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2"></script>                                          
-                                            <div class="fb-video" data-href="https://www.facebook.com/AGI.HLD/videos/2086748414773429/" data-width="auto" data-show-text="true"><blockquote cite="https://developers.facebook.com/AGI.HLD/videos/2086748414773429/" class="fb-xfbml-parse-ignore">
-                                                <a href="https://developers.facebook.com/AGI.HLD/videos/2086748414773429/">Carnival 2019 :Aftermovie</a><p>Amrapali Group of Institutes proudly presents the aftermovie of Carnival-2019 showing the glimpses of the annual fest of the college.
-                                            For better experience watch in HD &amp; with Earphones.</p>Posted by <a href="https://www.facebook.com/AGI.HLD/">Amrapali Group of Institutes Haldwani</a> on Wednesday, 6 March 2019</blockquote></div>
-                                        </div>  
-                                    </div>
+                                    </div>                                    
                                 </div><!-- /.row -->
                             </section><!-- /.intro-wrapper -->
 
