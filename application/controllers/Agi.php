@@ -1255,4 +1255,79 @@ class Agi extends CI_Controller {
         $this->load->view('templates/footer');            
     }
     // end of footer menu
+
+    // Faculty Profile--------------------------------------------
+    public function facultyProfile() {
+        $data_ = $this->my_library->heading_for_page(65);      
+       
+        $data_['desc_'] = $data_['desc_'];
+        $data_['titleMain'] = $data_['tmp'];
+
+        $data_['menu_active'] =1; 
+        $data_['menu_all'] = $this->my_menu->site_menu();               
+        $data_['title'] = "Faculty Profile";
+
+        $this->load->view('templates/header', $data_);
+        $this->load->view('facultyProfile/fillDetail');
+        $this->load->view('templates/footer');  
+    }
+
+    public function fillFacultyDetail() {
+        $this->load->model('web_model', 'wm');
+        $confirm = $this->wm->fillFacultyDetail_();
+
+        $this->session->set_flashdata('reg_msg_', $confirm['msg_']);
+        redirect('web/facultyProfile');
+    }
+
+    public function deleteFacultyProfile($id) {
+        $this->load->model('web_model', 'wm');
+        $data['facID'] = $this->wm->deleteFacultyProfile_($id);
+        redirect('agi/getProfile/gksFaculty');
+    }
+
+    public function getFacultybyID($id) {
+        $data_ = $this->my_library->heading_for_page(65);      
+       
+        $data_['desc_'] = $data_['desc_'];
+        $data_['titleMain'] = $data_['tmp'];
+
+        $data_['menu_active'] =1; 
+        $data_['menu_all'] = $this->my_menu->site_menu();               
+        $data_['title'] = "Faculty Profile";
+
+
+        $this->load->model('web_model', 'wm');
+        if ($id != 0) {
+            $data['facID'] = $this->wm->getFacultybyID_($id);
+        } else {
+            $data['facID'] = $this->wm->get_all_facultyProfile();
+        }
+
+        $this->load->view('facultyProfile/getDetailID', $data);
+        
+    }
+
+    public function getProfile($user = 'a') {
+        if ($user == 'gksFaculty') {
+            $data_ = $this->my_library->heading_for_page(65);      
+       
+            $data_['desc_'] = $data_['desc_'];
+            $data_['titleMain'] = $data_['tmp'];
+
+            $data_['menu_active'] =1; 
+            $data_['menu_all'] = $this->my_menu->site_menu();               
+            $data_['title'] = "Faculty Profile";
+
+            $this->load->model('web_model', 'wm');
+            $data_['fac_profile'] = $this->wm->get_all_facultyProfile();
+
+            $this->load->view('templates/header', $data_);
+            $this->load->view('facultyProfile/getDetail');
+            $this->load->view('templates/footer');
+        } else {
+            redirect('agi/index');
+        }
+    }
+    // faculty Profile ends
 }

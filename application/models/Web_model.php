@@ -755,6 +755,112 @@ At AGI, we don't just teach theory. We teach you how to put theory into practice
         //-------------------------------------
     }
 
+    //-----------------------faculty Profile
+    public function fillFacultyDetail_() {
+        $data = array(
+            'facultyPic' => 'x',
+            'name' => $this->input->post('txtFullName'),
+            'dob' => $this->input->post('txtDOB'),
+            'gender' => $this->input->post('optGender'),
+            'qualification' => $this->input->post('txtQualification'),
+            'teachingExp' => $this->input->post('txtTeaching'),
+            'researchExp' => $this->input->post('txtResearch'),
+            'industryExp' => $this->input->post('txtIndustry'),
+            'otherExp' => $this->input->post('txtOther'),
+            'specialization' => $this->input->post('txtSpecialization'),
+            'graduateSubject' => $this->input->post('txtGraduateSubject'),
+            'pgSubject' => $this->input->post('txtPGraduateSubject'),
+            'researchBachelors' => $this->input->post('researchBach'),
+            'researchMasters' => $this->input->post('researchMaster'),
+            'researchPhD' => $this->input->post('researchDoctorate'),
+            'conference_seminar' => $this->input->post('conference'),
+            'project' => $this->input->post('projects'),
+            'publications' => $this->input->post('researchPub'),
+            'emailID' => $this->input->post('txtEmail'),
+            'mobile' => $this->input->post('txtMobile')
+        );
+
+        $query = $this->db->insert('faculty_profile', $data);
+        $id__ = $this->db->insert_id();
+
+        // Exceptional Handling
+        $this->_db_error();
+        // --------------------
+
+        if ($query == TRUE) {
+            $config = array(
+                'upload_path' => './nitnav/facultyPic',
+                'allowed_types' => 'jpg|gif|jpeg',
+                'file_name' => $id__
+            );
+            $file_element_name = 'txtfacPhoto';
+            $this->load->library('upload', $config);
+
+            if ($this->upload->do_upload($file_element_name)) {
+                $path_ji = $this->upload->data();
+                $path_ = $path_ji['file_name'];
+            } else {
+                $path_ = 'x';
+            }
+
+            if ($path_ != 'x') {
+                $data = array(
+                    'facultyPic' => $path_
+                );
+                $this->db->where('profileID', $id__);
+                $query = $this->db->update('faculty_profile', $data);
+
+                if ($query == TRUE) {
+                    $bool_ = array('res_' => TRUE, 'msg_' => 'Faculty record Submitted Successfully !!');
+                } else {
+                    $bool_ = array('res_' => FALSE, 'msg_' => 'Faculty record Submitted succesfully but something went wrong in updating photo. Please try again !!');
+                }
+            } else {
+                $bool_ = array('res_' => FALSE, 'msg_' => 'Data submitted succesfully but something went wrong in uploading photo. Please try again !!');
+            }
+        } else {
+            $bool_ = array('res_' => FALSE, 'msg_' => 'Something went wrong. Please try again !!');
+        }
+        return $bool_;
+    }
+
+    function get_all_facultyProfile() {
+        $this->db->order_by('profileID', 'desc');
+        $query = $this->db->get('faculty_profile');
+        return $query->result();
+    }
+
+    function getFacultybyID_($id) {
+        $this->db->where('profileID', $id);
+        $query = $this->db->get('faculty_profile');
+        return $query->result();
+    }
+
+    function deleteFacultyProfile_($id_) {
+
+        //----------------------------------Delete Previous Logo
+        $this->db->where('profileID', $id_);
+        $query = $this->db->get('faculty_profile');
+
+        if ($query->num_rows() != 0) {
+            $item_ = $query->row();
+
+            if ($item_->facultyPic != 'x') {
+                $file__ = $item_->facultyPic;
+            } else {
+                $file__ = 'x';
+            }
+        }
+        if ($file__ != 'x') {
+            echo $full_path_ = FCPATH . 'nitnav/facultyPic/' . $file__;
+            @unlink($full_path_);
+        }
+
+        $this->db->where('profileID', $id_);
+        $query = $this->db->delete('faculty_profile');
+    }
+    //---------------------------------------
+
 }
 
 ?>

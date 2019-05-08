@@ -1,6 +1,6 @@
 <style type="text/css">
     @page {
-        size:letter; margin:0;
+        size:letter; margin:3em 0;
     }
 
     @media print {      
@@ -14,7 +14,7 @@
         font-family: 'Times New Roman';
     }
 </style>
-<link href="<?PHP echo base_url() . 'nitnav/css/bootstrap.min.css'; ?>" rel="stylesheet">
+<link href="<?PHP echo base_url() . 'assets/css/bootstrap.min.css'; ?>" rel="stylesheet">
 
 <section id="about-us" class="container">
     <?php foreach ($facID as $item) { ?>
@@ -40,7 +40,7 @@
                     <div class="col-xs-5"><h4>Educational Qualification</h4></div>
                     <div class="col-xs-7"><h4 align="left"><?php echo $item->qualification; ?></h4></div>  
                 </div>
-                <div class="col-xs-2"><img src="<?php echo base_url('nitnav/facultyPic/' . $item->facultyPic); ?>" style='max-width:200px;'></div>
+                <div class="col-xs-2"><img src="<?php echo base_url('assets/facultyPic/' . $item->facultyPic); ?>" style='max-width:200px;'></div>
             </div>            
             <div class="clearfix"></div>
             <div class="col-lg-12">

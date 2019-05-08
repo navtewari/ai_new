@@ -216,6 +216,12 @@ class My_library {
                 $data['desc_'] = "Improved rankings of our institutes at State and National Level, Recognition and acceptance of our student's in the corporate world, Multi Dimensional Collaborations with Industry, Enriched Learning Environment, Successful Alumni";
                
                 break;
+            case 65:
+                $data['tmp'] = "Faculty Profile ";
+                
+                $data['desc_'] = "Improved rankings of our institutes at State and National Level, Recognition and acceptance of our student's in the corporate world, Multi Dimensional Collaborations with Industry, Enriched Learning Environment, Successful Alumni";
+               
+                break;
             default:
                 $data['tmp'] = "Heading Error";
                 $data['keys_'] = 'Amrapali';
