@@ -1277,7 +1277,7 @@ class Agi extends CI_Controller {
         $confirm = $this->wm->fillFacultyDetail_();
 
         $this->session->set_flashdata('reg_msg_', $confirm['msg_']);
-        redirect('web/facultyProfile');
+        redirect('agi/facultyProfile');
     }
 
     public function deleteFacultyProfile($id) {

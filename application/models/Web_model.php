@@ -789,7 +789,7 @@ At AGI, we don't just teach theory. We teach you how to put theory into practice
 
         if ($query == TRUE) {
             $config = array(
-                'upload_path' => './nitnav/facultyPic',
+                'upload_path' => './assets/facultyPic',
                 'allowed_types' => 'jpg|gif|jpeg',
                 'file_name' => $id__
             );
@@ -852,7 +852,7 @@ At AGI, we don't just teach theory. We teach you how to put theory into practice
             }
         }
         if ($file__ != 'x') {
-            echo $full_path_ = FCPATH . 'nitnav/facultyPic/' . $file__;
+            echo $full_path_ = FCPATH . 'assets/facultyPic/' . $file__;
             @unlink($full_path_);
         }
 

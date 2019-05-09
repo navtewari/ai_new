@@ -51,7 +51,7 @@
                                                         'id' => 'frmFaculty_',
                                                     );
                                                     ?>
-                                                    <?php echo form_open_multipart('web/fillFacultyDetail', $attrib_); ?>
+                                                    <?php echo form_open_multipart('agi/fillFacultyDetail', $attrib_); ?>
                                                     <div class="form-group">                        
                                                         <label class="col-sm-3 control-label mendatory1">Photo<span class="mendatory1">*</span></label>
                                                         <div class="col-sm-9">
