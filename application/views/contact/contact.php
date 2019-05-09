@@ -156,7 +156,8 @@
                                             <b><i>- An information center of Amrapali Group Of Institutes</i></b><br><br>       
                                             G- 86, Near BATAYAAN, Ground floor, 
          Goldigi Mall, Nazir Patty, Silchar 
-         District: Cachar, Assam 788001 
+         District: Cachar, Assam 788001 <br>
+         Contact Number: 07060016494
                                         </address>
                                     </div>
                                 </div>
